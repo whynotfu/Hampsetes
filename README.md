@@ -1,4 +1,4 @@
-<h1>🎰🎰🎰 KAZINO PROJECT 🎰🎰🎰</h1>r
+<h1>🎰🎰🎰 KAZINO PROJECT 🎰🎰🎰</h1>
 <hr>
 <h3>Our team:</h3>
 <ul>
