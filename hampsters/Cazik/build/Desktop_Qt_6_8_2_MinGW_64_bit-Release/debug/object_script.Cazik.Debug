@@ -1,0 +1,14 @@
+debug/authregform.o
+debug/baraban.o
+debug/casinomainwindow.o
+debug/client_functions.o
+debug/kosti.o
+debug/main.o
+debug/managerform.o
+debug/ruletka.o
+debug/moc_authregform.o
+debug/moc_baraban.o
+debug/moc_casinomainwindow.o
+debug/moc_kosti.o
+debug/moc_managerform.o
+debug/moc_ruletka.o
