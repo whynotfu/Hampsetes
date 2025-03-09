@@ -8,6 +8,8 @@
 #include <QtNetwork>
 #include <QByteArray>
 
+
+
 namespace Ui {
 class AuthRegForm;
 }
