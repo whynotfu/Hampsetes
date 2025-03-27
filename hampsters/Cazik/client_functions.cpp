@@ -1,127 +1,128 @@
-/*!
- * \file client_functions.cpp
- * \brief Реализация вспомогательных функций для казино.
- *
- * Этот файл содержит реализации функций для авторизации, регистрации,
- * получения пути к ресурсам, генерации случайного числа для игровых слотов
- * и перемешивания массива.
- */
-
 #include "client_functions.h"
 #include <ctime>
-#include <algorithm>
 
-/*!
- * \brief Проверяет корректность данных для авторизации.
- *
- * Функция служит заглушкой для проверки авторизации пользователя.
- * Возвращает \c true, если логин равен "bobr" и пароль равен "123", иначе — \c false.
- *
- * \param login Логин пользователя.
- * \param password Пароль пользователя.
- * \return \c true, если данные авторизации корректны, иначе \c false.
- */
-bool auth(QString login, QString password)
+#include <QTableWidgetItem>
+
+int robuks;
+QString currentUsername;
+
+// Заполняем пользователей
+QList<User> users = {
+    {
+        .login = "bobr",
+        .password = "123",
+        .role = "admin",
+        .balance = 1000,
+        .total_bets = 5,
+        .total_wins = 200,
+        .last_login = QDateTime::currentDateTime(),
+        .is_auth = true
+    },
+    {
+        .login = "alice",
+        .password = "abc",
+        .role = "user",
+        .balance = 500,
+        .total_bets = 10,
+        .total_wins = 100,
+        .last_login = QDateTime::currentDateTime(),
+        .is_auth = false
+    },
+    {
+        .login = "john",
+        .password = "qwerty",
+        .role = "user",
+        .balance = 2000,
+        .total_bets = 0,
+        .total_wins = 0,
+        .last_login = QDateTime::currentDateTime(),
+        .is_auth = true
+    }
+};
+
+int auth(QString login, QString password)
 {
-    if(login == "bobr" && password == "123")
-    {
-        return true;
+    // Проходим по всем пользователям в глобальном списке
+    for (int i = 0; i < users.size(); ++i) {
+        if (users[i].login == login && users[i].password == password) {
+            // Проверяем роль пользователя
+            if (users[i].role == "admin") {
+                return 2; // Успешный вход администратора
+            } else {
+                return 1; // Успешный вход обычного пользователя
+            }
+        }
     }
-    else
-    {
-        return false;
-    }
+
+    // Если пользователь не найден или данные неверны
+    return 3; // Неудачный вход
 }
 
-/*!
- * \brief Проверяет корректность данных для регистрации.
- *
- * Функция служит заглушкой для регистрации пользователя.
- * Если одно из полей (логин, пароль или проверка пароля) пустое, возвращается \c false.
- * Если логин не равен "bobr" и пароль совпадает с подтверждением, возвращается \c true.
- *
- * \param login Логин пользователя.
- * \param password Пароль пользователя.
- * \param check_password Подтверждение пароля.
- * \return \c true, если регистрация может быть выполнена, иначе \c false.
- */
 bool reg(QString login, QString password, QString check_password)
 {
-    if(login == "" || password == "" || check_password == "")
-    {
+    // Проверяем, что поля не пустые
+    if (login.isEmpty() || password.isEmpty() || check_password.isEmpty()) {
         return false;
     }
-    if(login != "bobr" && password == check_password)
-    {
-        return true;
-    }
-    else
-    {
+
+    // Проверяем совпадение паролей
+    if (password != check_password) {
         return false;
     }
+
+    // Проверяем уникальность логина
+    for (const User& user : users) {
+        if (user.login == login) {
+            return false;
+        }
+    }
+
+    // Создаем нового пользователя
+    User newUser;
+    newUser.login = login;
+    newUser.password = password;
+    newUser.role = "user";         // Новый пользователь всегда имеет роль "user"
+    newUser.balance = 0;           // Начальный баланс равен 0
+    newUser.total_bets = 0;        // Нет ставок
+    newUser.total_wins = 0;        // Нет выигрышей
+    newUser.last_login = QDateTime::currentDateTime(); // Текущее время
+    newUser.is_auth = false;       // Пользователь еще не авторизован
+
+    // Добавляем нового пользователя в список
+    users.append(newUser);
+
+    return true; // Регистрация успешна
 }
 
-/*!
- * \brief Возвращает путь к ресурсам.
- *
- * Функция возвращает строку с путем к директории, где хранятся ресурсы казино.
- *
- * \return Строка, содержащая путь к ресурсам.
- */
-QString path()
-{
-    return "C:/Desktop/Desktop/CasinoQt/Cazik/";
+QString path(){
+    return "C:/Users/Илья/Desktop/Cazik (3)/Cazik/";
 }
 
-/*!
- * \brief Генерирует случайное число для игровых слотов.
- *
- * Функция генерирует три случайных числа в диапазоне от 1 до 3.
- * Если все три числа равны, возвращается это число (1, 2 или 3).
- * Если хотя бы одно число отличается от других, возвращается 0.
- *
- * \return Случайное число от 1 до 3, если все числа совпадают, иначе 0.
- */
-int slots_rand()
-{
+
+// Функция возвразающая рандомное число от 1 до 3
+int slots_rand(){
+    srand(static_cast<unsigned int>(time(0)));
+
     int num1 = rand() % 3 + 1;
     int num2 = rand() % 3 + 1;
     int num3 = rand() % 3 + 1;
 
-    if (num1 == num2 && num2 == num3)
-    {
-        if (num1 == 1)
-        {
+    if (num1 == num2 && num2 == num3){
+        if (num1 == 1){
             return 1;
         }
-        else if(num1 == 2)
-        {
+        else if(num1 == 2){
             return 2;
         }
-        else
-        {
-            return 3;
-        }
+        else{return 3;}
     }
-    else
-    {
-        return 0;
-    }
+    else{return 0;}
+
 }
 
-/*!
- * \brief Перемешивает элементы массива.
- *
- * Функция реализует алгоритм Фишера–Йетса для случайного перемешивания
- * массива целых чисел. Используется исключительно для изменения порядка картинок.
- *
- * \param arr Указатель на массив целых чисел.
- * \param size Размер массива.
- */
-void shuffleArray(int* arr, int size)
-{
-    for (int i = size - 1; i > 0; --i)
-    {
+// Функция для перемешки массива - нужна исключительно для картинок
+void shuffleArray(int* arr, int size) {
+    for (int i = size - 1; i > 0; --i) {
         int j = rand() % (i + 1);
         std::swap(arr[i], arr[j]);
     }
