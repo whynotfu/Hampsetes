@@ -4,10 +4,7 @@
 #include <QObject>
 #include <QTcpServer>
 #include <QTcpSocket>
-#include <QtNetwork>
-#include <QByteArray>
-#include <QDebug>
-#include <QList>  // Для хранения списка клиентов
+#include <QList>
 
 class MyTcpServer : public QObject
 {
@@ -16,17 +13,13 @@ public:
     explicit MyTcpServer(QObject *parent = nullptr);
     ~MyTcpServer();
 
-public slots:
-    void slotNewConnection();        // Обработчик нового подключения
-    void slotClientDisconnected();   // Обработчик отключения клиента
-    void slotServerRead();           // Обработчик чтения данных от клиента
+private slots:
+    void slotNewConnection();
 
 private:
-    QTcpServer *mTcpServer;          // Слушающий сервер
-    QTcpSocket *mTcpSocket;          // Сокет для одного клиента
-    QList<QTcpSocket*> mClientSockets; // Список для хранения всех клиентов
-
-    void sendToAllClients(const QString &message); // Функция для отправки сообщений всем клиентам
+    QTcpServer* mTcpServer;
+    QList<QTcpSocket*> mClientSockets;
+    QByteArray parsing(const QString& data, qintptr descriptor);  // Заглушка
 };
 
 #endif // MYTCPSERVER_H
