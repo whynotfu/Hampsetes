@@ -1,60 +1,62 @@
 #include "mytcpserver.h"
 #include <QDebug>
-
-MyTcpServer::MyTcpServer(QObject *parent) : QObject(parent)
+#include <QCoreApplication>
+#include<QString>
+#include "func2server.h"
+MyTcpServer::~MyTcpServer()
 {
-    mTcpServer = new QTcpServer(this);
-    connect(mTcpServer, &QTcpServer::newConnection, this, &MyTcpServer::slotNewConnection);
 
-    if (!mTcpServer->listen(QHostAddress::Any, 33333)) {
+    mTcpServer->close();
+    //server_status=0;
+}
+
+MyTcpServer::MyTcpServer(QObject *parent) : QObject(parent){
+    mTcpServer = new QTcpServer(this);
+
+    connect(mTcpServer, &QTcpServer::newConnection,
+            this, &MyTcpServer::slotNewConnection);
+
+    if(!mTcpServer->listen(QHostAddress::Any, 33333)){
         qDebug() << "server is not started";
     } else {
+        //server_status=1;
         qDebug() << "server is started";
     }
 }
 
-MyTcpServer::~MyTcpServer()
-{
-    mTcpServer->close();
-    for (QTcpSocket* socket : mClientSockets) {
-        socket->close();
-        socket->deleteLater();
-    }
+void MyTcpServer::slotNewConnection(){
+    QTcpSocket* mTcpSocket = mTcpServer->nextPendingConnection();
+    connect(mTcpSocket, &QTcpSocket::readyRead,this,&MyTcpServer::slotServerRead);
+    connect(mTcpSocket,&QTcpSocket::disconnected,this,&MyTcpServer::slotClientDisconnected);
+
+    Sockets.push_back(mTcpSocket);
 }
 
-void MyTcpServer::slotNewConnection()
-{
-    QTcpSocket* clientSocket = mTcpServer->nextPendingConnection();
-    mClientSockets.append(clientSocket);
-    clientSocket->write("Hello, World!!! I am echo server!\r\n");
+void MyTcpServer::slotServerRead(){
+    QTcpSocket* senderSocket = qobject_cast<QTcpSocket*>(sender());
+    QString res = "";
+    while(senderSocket->bytesAvailable()>0)
+    {
+        QByteArray array = senderSocket->readAll();
+        qDebug() << array << "\n";
 
-    connect(clientSocket, &QTcpSocket::readyRead, this, [this, clientSocket]() {
-        QString res;
-        while (clientSocket->bytesAvailable() > 0) {
-            QByteArray array = clientSocket->readAll();
-            qDebug() << array;
-
-            QString receivedData = QString::fromUtf8(array);
-            if (receivedData.endsWith("\r\n")) {
-                receivedData.chop(2);
-            }
-
-            res.append(receivedData);
+        QString receivedData = QString::fromUtf8(array);
+        if (receivedData.endsWith("\r\n")) {
+            receivedData.chop(2);
         }
 
-        QByteArray response = parsing(res, clientSocket->socketDescriptor());
-        clientSocket->write(response);
-    });
-
-    connect(clientSocket, &QTcpSocket::disconnected, this, [this, clientSocket]() {
-        mClientSockets.removeAll(clientSocket);
-        clientSocket->deleteLater();
-    });
+        if(array=="\x01")
+        {
+            senderSocket->write(parsing(res));
+            res = "";
+        }
+        else
+            res.append(receivedData);
+    }
+    senderSocket->write(parsing(res));
 }
 
-// Заглушка функции парсинга
-QByteArray MyTcpServer::parsing(const QString& data, qintptr descriptor)
-{
-    QString response = QString("Echo [%1]: %2\r\n").arg(descriptor).arg(data);
-    return response.toUtf8();
+void MyTcpServer::slotClientDisconnected(){
+    QTcpSocket* senderSocket = qobject_cast<QTcpSocket*>(sender());
+    senderSocket->close();
 }

@@ -92,6 +92,7 @@
 #define __FLT32_MAX_10_EXP__ 38
 #define __FLT64X_EPSILON__ 1.08420217248550443400745280086994171e-19F64x
 #define __STDC_HOSTED__ 1
+#define __DEC64_MIN_EXP__ (-382)
 #define __WIN64 1
 #define __cpp_decltype_auto 201304L
 #define __DBL_DIG__ 15
@@ -448,7 +449,6 @@
 #define __INT16_C(c) c
 #define __STDC__ 1
 #define __PTRDIFF_TYPE__ long long int
-#define __DEC64_MIN_EXP__ (-382)
 #define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_16 1
 #define __FLT32X_MIN_10_EXP__ (-307)
 #define __UINTPTR_TYPE__ long long unsigned int

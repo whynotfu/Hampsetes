@@ -16,7 +16,7 @@ CXX           = g++
 DEFINES       = -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -DQT_DEPRECATED_WARNINGS -DQT_QML_DEBUG -DQT_NO_DEBUG -DQT_NETWORK_LIB -DQT_CORE_LIB
 CFLAGS        = -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra $(DEFINES)
 CXXFLAGS      = -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -fexceptions -mthreads $(DEFINES)
-INCPATH       = -I../../../lab1 -I. -IC:/Qt/6.8.2/mingw_64/include -IC:/Qt/6.8.2/mingw_64/include/QtNetwork -IC:/Qt/6.8.2/mingw_64/include/QtCore -Irelease -IC:/Qt/6.8.2/mingw_64/mkspecs/win32-g++ 
+INCPATH       = -I../../../ServerNaMnogoTipochkov -I. -IC:/Qt/6.8.2/mingw_64/include -IC:/Qt/6.8.2/mingw_64/include/QtNetwork -IC:/Qt/6.8.2/mingw_64/include/QtCore -Irelease -IC:/Qt/6.8.2/mingw_64/mkspecs/win32-g++ 
 LINKER      =        g++
 LFLAGS        =        -Wl,-s -Wl,-subsystem,console -mthreads
 LIBS        =        C:\Qt\6.8.2\mingw_64\lib\libQt6Network.a C:\Qt\6.8.2\mingw_64\lib\libQt6Core.a   
@@ -456,7 +456,7 @@ release/moc_mytcpserver.cpp: ../../mytcpserver.h \
 		C:/Qt/6.8.2/mingw_64/include/QtCore/QDebug \
 		release/moc_predefs.h \
 		C:/Qt/6.8.2/mingw_64/bin/moc.exe
-	C:\Qt\6.8.2\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/alina/Downloads/lab1/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Qt/6.8.2/mingw_64/mkspecs/win32-g++ -IC:/Users/alina/Downloads/lab1 -IC:/Qt/6.8.2/mingw_64/include -IC:/Qt/6.8.2/mingw_64/include/QtNetwork -IC:/Qt/6.8.2/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\mytcpserver.h -o release\moc_mytcpserver.cpp
+	C:\Qt\6.8.2\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/nasty/Desktop/ServerNaMnogoTipochkov/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Qt/6.8.2/mingw_64/mkspecs/win32-g++ -IC:/Users/nasty/Desktop/ServerNaMnogoTipochkov -IC:/Qt/6.8.2/mingw_64/include -IC:/Qt/6.8.2/mingw_64/include/QtNetwork -IC:/Qt/6.8.2/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\mytcpserver.h -o release\moc_mytcpserver.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -538,7 +538,67 @@ release/func2server.o: ../../func2server.cpp ../../func2server.h \
 		C:/Qt/6.8.2/mingw_64/include/QtCore/q20memory.h \
 		C:/Qt/6.8.2/mingw_64/include/QtCore/qbytearrayalgorithms.h \
 		C:/Qt/6.8.2/mingw_64/include/QtCore/qbytearrayview.h \
-		C:/Qt/6.8.2/mingw_64/include/QtCore/qstringfwd.h
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qstringfwd.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/QString \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qstring.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qchar.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qstringview.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qstringliteral.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qstringalgorithms.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qlatin1stringview.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qanystringview.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qutf8stringview.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qstringtokenizer.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qstringbuilder.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qstringconverter.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qstringconverter_base.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/QDebug \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qdebug.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qtextstream.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qiodevicebase.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qcontiguouscache.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qsharedpointer.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qshareddata.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qhashfunctions.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qsharedpointer_impl.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qmetatype.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qdatastream.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qscopedpointer.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qfloat16.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qmath.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qalgorithms.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qiterable.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qmetacontainer.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qcontainerinfo.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qtaggedpointer.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qobjectdefs.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qobjectdefs_impl.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qfunctionaltools_impl.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qscopeguard.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qlist.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qiterator.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qbytearraylist.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qstringlist.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qstringmatcher.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qmap.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qshareddata_impl.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qset.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qhash.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qvarlengtharray.h \
+		C:/Qt/6.8.2/mingw_64/include/QtNetwork/QTcpSocket \
+		C:/Qt/6.8.2/mingw_64/include/QtNetwork/qtcpsocket.h \
+		C:/Qt/6.8.2/mingw_64/include/QtNetwork/qtnetworkglobal.h \
+		C:/Qt/6.8.2/mingw_64/include/QtNetwork/qtnetwork-config.h \
+		C:/Qt/6.8.2/mingw_64/include/QtNetwork/qtnetworkexports.h \
+		C:/Qt/6.8.2/mingw_64/include/QtNetwork/qabstractsocket.h \
+		C:/Qt/6.8.2/mingw_64/include/QtNetwork/qhostaddress.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qiodevice.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qobject.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qcoreevent.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qobject_impl.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qbindingstorage.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/qvariant.h \
+		C:/Qt/6.8.2/mingw_64/include/QtCore/q23utility.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\func2server.o ..\..\func2server.cpp
 
 release/main.o: ../../main.cpp C:/Qt/6.8.2/mingw_64/include/QtCore/QCoreApplication \
