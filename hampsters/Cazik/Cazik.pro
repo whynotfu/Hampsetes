@@ -15,6 +15,7 @@ SOURCES += \
     baraban.cpp \
     casinomainwindow.cpp \
     client_functions.cpp \
+    gtn.cpp \
     kliker.cpp \
     kosti.cpp \
     main.cpp \
@@ -28,6 +29,7 @@ HEADERS += \
     baraban.h \
     casinomainwindow.h \
     client_functions.h \
+    gtn.h \
     kliker.h \
     kosti.h \
     managerform.h \
@@ -44,6 +46,7 @@ FORMS += \
     authregform.ui \
     baraban.ui \
     casinomainwindow.ui \
+    gtn.ui \
     kliker.ui \
     kosti.ui \
     personal_page.ui \

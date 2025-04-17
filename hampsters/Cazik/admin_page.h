@@ -18,6 +18,7 @@ public:
     explicit admin_page(QWidget *parent = nullptr);
     ~admin_page();
     void viewStatistics();
+    void slot_show();
 
 private slots:
     // Слот для обработки нажатия кнопки "Пополнить баланс"

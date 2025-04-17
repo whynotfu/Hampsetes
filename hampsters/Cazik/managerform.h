@@ -7,9 +7,12 @@
 #include "baraban.h"
 #include "ruletka.h"
 #include "kliker.h"
+#include "gtn.h"
 
+#include "kosti.h"
 #include "admin_page.h"
 #include "personal_page.h"
+
 
 class ManagerForm : public QMainWindow
 {
@@ -25,8 +28,10 @@ private:
     Baraban* barabanform;
     Ruletka* ruletka;
     Kliker* clicker;
+    Kosti* kosti;
+    Gtn* gtn;
 
-    // admin_page* adminPanel;          // Админ-панель
-    // personal_page* userPanel;        // Пользовательская панель
+    admin_page* adminPanel;          // Админ-панель
+    personal_page* userPanel;        // Пользовательская панель
 };
 #endif // MANAGERFORM_H

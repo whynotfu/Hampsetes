@@ -14,6 +14,7 @@ class personal_page : public QDialog
 public:
     explicit personal_page(QWidget *parent = nullptr);
     void displayUserStatistics(const QString& currentUsername);
+    void slot_show();
 
     ~personal_page();
 

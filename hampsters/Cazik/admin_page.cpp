@@ -102,3 +102,7 @@ void admin_page::addMoneyToUser()
         qDebug() << "User not found!";
     }
 }
+
+void admin_page::slot_show(){
+    this->show();
+}

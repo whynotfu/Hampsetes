@@ -19,6 +19,11 @@ Kosti::Kosti(QWidget *parent)
     this->setFixedSize(800,600);
 }
 
+void Kosti::slot_show(){
+    this->show();
+    //ui->count_robux->setText(QString::number(robuks));
+}
+
 Kosti::~Kosti()
 {
     delete ui;

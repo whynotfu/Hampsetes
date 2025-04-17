@@ -15,8 +15,13 @@ public:
     explicit Kosti(QWidget *parent = nullptr);
     ~Kosti();
 
+    void slot_show();
+
 private:
     Ui::Kosti *ui;
+
+signals:
+    void to_main();
 };
 
 #endif // KOSTI_H

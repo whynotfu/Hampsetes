@@ -66,3 +66,7 @@ void personal_page::displayUserStatistics(const QString& currentUsername)
     ui->labelTotalWins->setText(QString::number(currentUser.total_wins));
     ui->labelLastLogin->setText(currentUser.last_login.toString("yyyy-MM-dd hh:mm:ss"));
 }
+
+void personal_page::slot_show(){
+    this->show();
+}
