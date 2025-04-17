@@ -1,2 +1,5 @@
 .DS_Store
 hampsters/.DS_Store
+
+/hampsters/Cazik/*.user.*
+/hampsters/Cazik/build/
