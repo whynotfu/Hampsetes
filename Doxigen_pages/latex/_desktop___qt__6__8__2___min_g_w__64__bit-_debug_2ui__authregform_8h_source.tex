@@ -1,0 +1,139 @@
+\doxysection{ui\+\_\+authregform.\+h}
+\hypertarget{_desktop___qt__6__8__2___min_g_w__64__bit-_debug_2ui__authregform_8h_source}{}\label{_desktop___qt__6__8__2___min_g_w__64__bit-_debug_2ui__authregform_8h_source}\index{/Users/sasha/polytech/Hampsetes/hampsters/Cazik/build/Desktop\_Qt\_6\_8\_2\_MinGW\_64\_bit-\/Debug/ui\_authregform.h@{/Users/sasha/polytech/Hampsetes/hampsters/Cazik/build/Desktop\_Qt\_6\_8\_2\_MinGW\_64\_bit-\/Debug/ui\_authregform.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/********************************************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ Form\ generated\ from\ reading\ UI\ file\ 'authregform.ui'}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ Created\ by:\ Qt\ User\ Interface\ Compiler\ version\ 6.8.2}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**}}
+\DoxyCodeLine{00006\ \textcolor{comment}{**\ WARNING!\ All\ changes\ made\ in\ this\ file\ will\ be\ lost\ when\ recompiling\ UI\ file!}}
+\DoxyCodeLine{00007\ \textcolor{comment}{********************************************************************************/}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ UI\_AUTHREGFORM\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ UI\_AUTHREGFORM\_H}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <QtCore/QVariant>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QtWidgets/QApplication>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QtWidgets/QDialog>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QtWidgets/QFormLayout>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <QtWidgets/QHBoxLayout>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <QtWidgets/QLabel>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <QtWidgets/QLineEdit>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <QtWidgets/QPushButton>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <QtWidgets/QWidget>}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ui___auth_reg_form}{Ui\_AuthRegForm}}}
+\DoxyCodeLine{00025\ \{}
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ QLabel\ *FonLabel;}
+\DoxyCodeLine{00028\ \ \ \ \ QWidget\ *horizontalLayoutWidget;}
+\DoxyCodeLine{00029\ \ \ \ \ QHBoxLayout\ *horizontalLayout;}
+\DoxyCodeLine{00030\ \ \ \ \ QPushButton\ *RegButton;}
+\DoxyCodeLine{00031\ \ \ \ \ QPushButton\ *AuthButton;}
+\DoxyCodeLine{00032\ \ \ \ \ QPushButton\ *ToRegButton;}
+\DoxyCodeLine{00033\ \ \ \ \ QWidget\ *formLayoutWidget;}
+\DoxyCodeLine{00034\ \ \ \ \ QFormLayout\ *formLayout;}
+\DoxyCodeLine{00035\ \ \ \ \ QLineEdit\ *Passwordline;}
+\DoxyCodeLine{00036\ \ \ \ \ QLabel\ *PasswordLabel;}
+\DoxyCodeLine{00037\ \ \ \ \ QLineEdit\ *Loginline;}
+\DoxyCodeLine{00038\ \ \ \ \ QLabel\ *LoginLabel;}
+\DoxyCodeLine{00039\ \ \ \ \ QLineEdit\ *Repeatline;}
+\DoxyCodeLine{00040\ \ \ \ \ QLabel\ *RepeatLabel;}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ setupUi(QDialog\ *AuthRegForm)}
+\DoxyCodeLine{00043\ \ \ \ \ \{}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (AuthRegForm-\/>objectName().isEmpty())}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ AuthRegForm-\/>setObjectName(\textcolor{stringliteral}{"{}AuthRegForm"{}});}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ AuthRegForm-\/>resize(400,\ 300);}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ FonLabel\ =\ \textcolor{keyword}{new}\ QLabel(AuthRegForm);}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ FonLabel-\/>setObjectName(\textcolor{stringliteral}{"{}FonLabel"{}});}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ FonLabel-\/>setGeometry(QRect(-\/10,\ 0,\ 421,\ 311));}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ horizontalLayoutWidget\ =\ \textcolor{keyword}{new}\ QWidget(AuthRegForm);}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ horizontalLayoutWidget-\/>setObjectName(\textcolor{stringliteral}{"{}horizontalLayoutWidget"{}});}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ horizontalLayoutWidget-\/>setGeometry(QRect(70,\ 220,\ 250,\ 80));}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ horizontalLayout\ =\ \textcolor{keyword}{new}\ QHBoxLayout(horizontalLayoutWidget);}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ horizontalLayout-\/>setObjectName(\textcolor{stringliteral}{"{}horizontalLayout"{}});}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ horizontalLayout-\/>setContentsMargins(0,\ 0,\ 0,\ 0);}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ RegButton\ =\ \textcolor{keyword}{new}\ QPushButton(horizontalLayoutWidget);}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ RegButton-\/>setObjectName(\textcolor{stringliteral}{"{}RegButton"{}});}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ horizontalLayout-\/>addWidget(RegButton);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ AuthButton\ =\ \textcolor{keyword}{new}\ QPushButton(horizontalLayoutWidget);}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ AuthButton-\/>setObjectName(\textcolor{stringliteral}{"{}AuthButton"{}});}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ horizontalLayout-\/>addWidget(AuthButton);}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ ToRegButton\ =\ \textcolor{keyword}{new}\ QPushButton(horizontalLayoutWidget);}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ ToRegButton-\/>setObjectName(\textcolor{stringliteral}{"{}ToRegButton"{}});}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ horizontalLayout-\/>addWidget(ToRegButton);}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ formLayoutWidget\ =\ \textcolor{keyword}{new}\ QWidget(AuthRegForm);}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ formLayoutWidget-\/>setObjectName(\textcolor{stringliteral}{"{}formLayoutWidget"{}});}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ formLayoutWidget-\/>setGeometry(QRect(70,\ 60,\ 251,\ 171));}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ formLayout\ =\ \textcolor{keyword}{new}\ QFormLayout(formLayoutWidget);}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ formLayout-\/>setObjectName(\textcolor{stringliteral}{"{}formLayout"{}});}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ formLayout-\/>setContentsMargins(0,\ 0,\ 0,\ 0);}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ Passwordline\ =\ \textcolor{keyword}{new}\ QLineEdit(formLayoutWidget);}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ Passwordline-\/>setObjectName(\textcolor{stringliteral}{"{}Passwordline"{}});}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ formLayout-\/>setWidget(3,\ QFormLayout::FieldRole,\ Passwordline);}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ PasswordLabel\ =\ \textcolor{keyword}{new}\ QLabel(formLayoutWidget);}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ PasswordLabel-\/>setObjectName(\textcolor{stringliteral}{"{}PasswordLabel"{}});}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ formLayout-\/>setWidget(3,\ QFormLayout::LabelRole,\ PasswordLabel);}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ Loginline\ =\ \textcolor{keyword}{new}\ QLineEdit(formLayoutWidget);}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ Loginline-\/>setObjectName(\textcolor{stringliteral}{"{}Loginline"{}});}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ formLayout-\/>setWidget(2,\ QFormLayout::FieldRole,\ Loginline);}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ LoginLabel\ =\ \textcolor{keyword}{new}\ QLabel(formLayoutWidget);}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ LoginLabel-\/>setObjectName(\textcolor{stringliteral}{"{}LoginLabel"{}});}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ formLayout-\/>setWidget(2,\ QFormLayout::LabelRole,\ LoginLabel);}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ Repeatline\ =\ \textcolor{keyword}{new}\ QLineEdit(formLayoutWidget);}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ Repeatline-\/>setObjectName(\textcolor{stringliteral}{"{}Repeatline"{}});}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ formLayout-\/>setWidget(4,\ QFormLayout::FieldRole,\ Repeatline);}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ RepeatLabel\ =\ \textcolor{keyword}{new}\ QLabel(formLayoutWidget);}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ RepeatLabel-\/>setObjectName(\textcolor{stringliteral}{"{}RepeatLabel"{}});}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ formLayout-\/>setWidget(4,\ QFormLayout::LabelRole,\ RepeatLabel);}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ retranslateUi(AuthRegForm);}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ QMetaObject::connectSlotsByName(AuthRegForm);}
+\DoxyCodeLine{00111\ \ \ \ \ \}\ \textcolor{comment}{//\ setupUi}}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keywordtype}{void}\ retranslateUi(QDialog\ *AuthRegForm)}
+\DoxyCodeLine{00114\ \ \ \ \ \{}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ AuthRegForm-\/>setWindowTitle(QCoreApplication::translate(\textcolor{stringliteral}{"{}AuthRegForm"{}},\ \textcolor{stringliteral}{"{}Dialog"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ FonLabel-\/>setText(QString());}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ RegButton-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}AuthRegForm"{}},\ \textcolor{stringliteral}{"{}Reg"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ AuthButton-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}AuthRegForm"{}},\ \textcolor{stringliteral}{"{}Auth"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ ToRegButton-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}AuthRegForm"{}},\ \textcolor{stringliteral}{"{}ToReg"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ PasswordLabel-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}AuthRegForm"{}},\ \textcolor{stringliteral}{"{}Password"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ LoginLabel-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}AuthRegForm"{}},\ \textcolor{stringliteral}{"{}Login"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ RepeatLabel-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}AuthRegForm"{}},\ \textcolor{stringliteral}{"{}Repeat\ password"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00123\ \ \ \ \ \}\ \textcolor{comment}{//\ retranslateUi}}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00125\ \};}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00127\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00128\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ui_1_1_auth_reg_form}{AuthRegForm}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_ui___auth_reg_form}{Ui\_AuthRegForm}}\ \{\};}
+\DoxyCodeLine{00129\ \}\ \textcolor{comment}{//\ namespace\ Ui}}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00131\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00133\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ UI\_AUTHREGFORM\_H}}
+
+\end{DoxyCode}

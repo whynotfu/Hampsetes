@@ -1,0 +1,48 @@
+\doxysection{authregform.\+h}
+\hypertarget{authregform_8h_source}{}\label{authregform_8h_source}\index{/Users/sasha/polytech/Hampsetes/hampsters/Cazik/authregform.h@{/Users/sasha/polytech/Hampsetes/hampsters/Cazik/authregform.h}}
+\mbox{\hyperlink{authregform_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ AUTHREGFORM\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ AUTHREGFORM\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QDialog>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QTcpServer>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <QTcpSocket>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <QtNetwork>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <QByteArray>}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ui_1_1_auth_reg_form}{AuthRegForm}};}
+\DoxyCodeLine{00025\ \}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{class\ }AuthRegForm\ :\ \textcolor{keyword}{public}\ QDialog}
+\DoxyCodeLine{00035\ \{}
+\DoxyCodeLine{00036\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{explicit}\ AuthRegForm(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00054\ \ \ \ \ \string~AuthRegForm();}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_ToRegButton\_clicked();}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_AuthButton\_clicked();}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_RegButton\_clicked();}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00081\ \ \ \ \ Ui::AuthRegForm\ *ui;\ \ \ \ \ \ }
+\DoxyCodeLine{00082\ \ \ \ \ QTcpSocket*\ socket;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00083\ \ \ \ \ QByteArray\ Data;\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{void}\ set\_visible\_inReg(\textcolor{keywordtype}{bool});}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{void}\ clear();}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ signals:}
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordtype}{void}\ auth\_ok(}
+
+\end{DoxyCode}

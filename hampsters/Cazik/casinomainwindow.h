@@ -2,6 +2,8 @@
 #define CASINOMAINWINDOW_H
 
 #include <QMainWindow>
+#include <QMessageBox>
+
 
 namespace Ui {
 class CasinoMainWindow;
@@ -35,9 +37,30 @@ private slots:
     void on_NextGameButton_clicked();
     void on_PlayButton_clicked();
 
+    void on_Admin_page_button_clicked();
+
+    void on_pushButton_clicked();
+
 signals:
     //Сигнал, нунжый для перехода в форму со слотами
     void baraban_sig();
+
+    //Сигнал, нунжый для перехода в форму со слотами
+    void ruletka_sig();
+
+    //Сигнал, нунжый для перехода в форму c кдикером
+    void clicker_sig();
+
+    //Сигнал, нунжый для перехода в форму c костями
+    void kosti_sig();
+
+    //Сигнал, нунжый для перехода в форму c игрой больше меньше
+    void gtn_sig();
+
+    void admn_sig();
+
+    void user_sig();
+
 
 
 };

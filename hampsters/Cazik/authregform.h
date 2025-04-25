@@ -8,8 +8,6 @@
 #include <QtNetwork>
 #include <QByteArray>
 
-
-
 namespace Ui {
 class AuthRegForm;
 }
@@ -41,8 +39,9 @@ private:
     //Стирает вводимый текст
     void clear();
 signals:
-    // Сигнад, который нужен, чтобы открыть форму с меню
-    void auth_ok(QString);
+    // Сигнал, который нужен, чтобы открыть форму с меню
+    void auth_ok(QString login);
+
 };
 
 #endif // AUTHREGFORM_H

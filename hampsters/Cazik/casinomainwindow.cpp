@@ -1,6 +1,10 @@
 #include "client_functions.h"
 #include "casinomainwindow.h"
 #include "ui_casinomainwindow.h"
+#include "admin_page.h"
+#include "personal_page.h"
+
+
 
 CasinoMainWindow::CasinoMainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -24,7 +28,6 @@ CasinoMainWindow::CasinoMainWindow(QWidget *parent)
 
     QPixmap ProfileIcon(path() + "Images/IconProfile.png");
     ui->Profilelabel->setPixmap(ProfileIcon);
-
 
     //Для смены миниигры
     this->game_slot = 2;
@@ -50,8 +53,8 @@ void CasinoMainWindow::change_minigame(bool change, QPixmap image, QPixmap name)
     else{this->game_slot--;}
 
     //Делаем условие чтобы переменная для смены картинки не ушла за рамки
-    if(this->game_slot < 0){this->game_slot = 3;}
-    else if(this->game_slot > 3){this->game_slot = 0;}
+    if(this->game_slot < 0){this->game_slot = 4;}
+    else if(this->game_slot > 4){this->game_slot = 0;}
 
     //Смена картинки и название мини-игры
     if(this->game_slot==0)
@@ -74,6 +77,11 @@ void CasinoMainWindow::change_minigame(bool change, QPixmap image, QPixmap name)
      this->Name=QPixmap(path() + "Images/TextKliker.png");
     }
 
+    else if(this->game_slot==4)
+    {this->Image=QPixmap(path() + "Images/RememberNumber.png");
+        this->Name=QPixmap(path() + "Images/TextRememberNumber.png");
+    }
+
     ui->minigamelabel->setPixmap(image);
     ui->namelabel->setPixmap(name);
 }
@@ -88,10 +96,11 @@ void CasinoMainWindow::on_NextGameButton_clicked()
 //Функция перехода к окну мини-игр
 void CasinoMainWindow::on_PlayButton_clicked()
 {
-    //Выхов окна с кликером
+    //Выхов окна с угадайкой
     if(this->game_slot==0)
     {
-
+        emit gtn_sig();
+        this->close();
     }
     //Вызов окна с барабаном
     else if(this->game_slot==1)
@@ -102,12 +111,51 @@ void CasinoMainWindow::on_PlayButton_clicked()
     //Вызов окна с рулеткой
     else if(this->game_slot==2)
     {
-
+        emit ruletka_sig();
+        this->close();
     }
     //Вызов окна с костями
     else if(this->game_slot==3)
     {
-
+        emit kosti_sig();
+        this->close();
     }
+    //Вызов окна с кликером
+    else if(this->game_slot==4)
+    {
+        emit clicker_sig();
+        this->close();
+    }
+}
+
+
+// void CasinoMainWindow::on_Admin_page_button_clicked()
+// {
+//     admin_page *adminWindow = new admin_page();
+//     adminWindow->show();
+// }
+
+void CasinoMainWindow::on_Admin_page_button_clicked()
+{
+    // Находим текущего пользователя в списке
+    bool isAdmin = false;
+    for (const User& user : users) {
+        if (user.login == currentUsername && user.role == "admin") {
+            isAdmin = true;
+            break;
+        }
+    }
+
+    if (isAdmin) {
+        emit admn_sig();
+    } else {
+        QMessageBox::warning(this, "Ошибка", "Доступ запрещен. Вы не являетесь администратором.");
+    }
+}
+
+
+void CasinoMainWindow::on_pushButton_clicked()
+{
+    emit user_sig();
 }
 
