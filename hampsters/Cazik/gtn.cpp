@@ -128,10 +128,10 @@ void Gtn::on_play_button_clicked()
                 viigr = int(round((50./(100.- this->now_num)) * this->rstavka));
                 //ui->text->setText(QString::number((round((50./(100.- this->now_num)) * this->rstavka)) +50.));
             }
-            ui->text->setText("Ура... Вы выиграли... " + QString::number(viigr)+" робуксов...");
+            ui->text->setText("Ура... Вы выиграли... " + QString::number(viigr)+" робуксов... Число было..." + QString::number(num));
         }
         else{
-            ui->text->setText("Вы проиграли...Ха..ха..ха..");
+            ui->text->setText("Вы проиграли...Ха..ха..ха.. Число было..." + QString::number(num));
             robuks -= this->rstavka;
         }
         ui->count_robux->setText(QString::number(robuks));

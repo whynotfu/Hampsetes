@@ -95,7 +95,7 @@ bool reg(QString login, QString password, QString check_password)
 }
 
 QString path(){
-    return "C:/Users/nasty/Documents/hampst/Hampsetes/hampsters/Cazik/";
+    return "C:/Users/Илья/Documents/GitHub/Hampsetes/hampsters/Cazik/";
 }
 
 
