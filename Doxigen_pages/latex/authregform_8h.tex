@@ -2,7 +2,7 @@
 \hypertarget{authregform_8h}{}\label{authregform_8h}\index{/Users/sasha/polytech/Hampsetes/hampsters/Cazik/authregform.h@{/Users/sasha/polytech/Hampsetes/hampsters/Cazik/authregform.h}}
 
 
-Заголовочный файл формы авторизации и регистрации  
+Форма авторизации и регистрации пользователей  
 
 
 {\ttfamily \#include $<$QObject$>$}\newline
@@ -11,6 +11,7 @@
 {\ttfamily \#include $<$QTcp\+Socket$>$}\newline
 {\ttfamily \#include $<$Qt\+Network$>$}\newline
 {\ttfamily \#include $<$QByte\+Array$>$}\newline
+{\ttfamily \#include "{}clientapi.\+h"{}}\newline
 \doxysubsubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
@@ -24,10 +25,10 @@ namespace \mbox{\hyperlink{namespace_ui}{Ui}}
 
 
 \doxysubsection{Detailed Description}
-Заголовочный файл формы авторизации и регистрации 
+Форма авторизации и регистрации пользователей 
 
 \begin{DoxyAuthor}{Author}
-Команда разработчиков 
+Development Team 
 \end{DoxyAuthor}
 \begin{DoxyDate}{Date}
 2025 
@@ -35,4 +36,4 @@ namespace \mbox{\hyperlink{namespace_ui}{Ui}}
 \begin{DoxyVersion}{Version}
 1.\+0
 \end{DoxyVersion}
-Содержит объявление класса \doxylink{class_auth_reg_form}{Auth\+Reg\+Form}, который отвечает за аутентификацию пользователей и регистрацию новых аккаунтов. 
+Этот файл содержит объявление класса \doxylink{class_auth_reg_form}{Auth\+Reg\+Form}, который управляет процессом входа в систему и регистрации новых пользователей в казино "{}Хампстерс"{}. Форма взаимодействует с сервером через TCP-\/соединение для проверки учетных данных и создания новых аккаунтов. 

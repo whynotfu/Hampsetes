@@ -112,7 +112,7 @@ $(function(){initNavTree('classadmin__page.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
-<p>Административная панель для управления системой казино  
+<p>Административная панель для управления казино  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="admin__page_8h_source.html">admin_page.h</a>&gt;</code></p>
@@ -132,42 +132,48 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a51f3db4b240a22f830b328bda4df086d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор административной панели  <br /></td></tr>
 <tr class="separator:a51f3db4b240a22f830b328bda4df086d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af813a829215d1842522788358f4835fb" id="r_af813a829215d1842522788358f4835fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af813a829215d1842522788358f4835fb">viewStatistics</a> ()</td></tr>
-<tr class="memdesc:af813a829215d1842522788358f4835fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отображение статистики пользователей  <br /></td></tr>
+<tr class="memdesc:af813a829215d1842522788358f4835fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Просмотр статистики системы  <br /></td></tr>
 <tr class="separator:af813a829215d1842522788358f4835fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2312895ef264909783a50a63867b909" id="r_af2312895ef264909783a50a63867b909"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2312895ef264909783a50a63867b909">slot_show</a> ()</td></tr>
-<tr class="memdesc:af2312895ef264909783a50a63867b909"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот для показа административной панели  <br /></td></tr>
+<tr class="memdesc:af2312895ef264909783a50a63867b909"><td class="mdescLeft">&#160;</td><td class="mdescRight">Показать административную панель  <br /></td></tr>
 <tr class="separator:af2312895ef264909783a50a63867b909"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-slots" name="pri-slots"></a>
 Private Slots</h2></td></tr>
 <tr class="memitem:acbde778a809d83583bb5e3eaa1b95d81" id="r_acbde778a809d83583bb5e3eaa1b95d81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbde778a809d83583bb5e3eaa1b95d81">addMoneyToUser</a> ()</td></tr>
-<tr class="memdesc:acbde778a809d83583bb5e3eaa1b95d81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот для обработки нажатия кнопки "Пополнить баланс".  <br /></td></tr>
+<tr class="memdesc:acbde778a809d83583bb5e3eaa1b95d81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пополнить баланс пользователя  <br /></td></tr>
 <tr class="separator:acbde778a809d83583bb5e3eaa1b95d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ada9e709b1980b2ee4ac33147f1475604" id="r_ada9e709b1980b2ee4ac33147f1475604"><td class="memItemLeft" align="right" valign="top">Ui::admin_page *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada9e709b1980b2ee4ac33147f1475604">ui</a></td></tr>
-<tr class="memdesc:ada9e709b1980b2ee4ac33147f1475604"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на UI объект административной панели  <br /></td></tr>
+<tr class="memitem:ada9e709b1980b2ee4ac33147f1475604" id="r_ada9e709b1980b2ee4ac33147f1475604"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ui_1_1admin__page.html">Ui::admin_page</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada9e709b1980b2ee4ac33147f1475604">ui</a></td></tr>
+<tr class="memdesc:ada9e709b1980b2ee4ac33147f1475604"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пользовательский интерфейс панели  <br /></td></tr>
 <tr class="separator:ada9e709b1980b2ee4ac33147f1475604"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa68a825e458575bc28951bc156b3954" id="r_aaa68a825e458575bc28951bc156b3954"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_client_api.html">ClientApi</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa68a825e458575bc28951bc156b3954">clientApi</a></td></tr>
+<tr class="memdesc:aaa68a825e458575bc28951bc156b3954"><td class="mdescLeft">&#160;</td><td class="mdescRight">API для взаимодействия с сервером  <br /></td></tr>
+<tr class="separator:aaa68a825e458575bc28951bc156b3954"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae29a3f22b40198528c62bc74efb2f60b" id="r_ae29a3f22b40198528c62bc74efb2f60b"><td class="memItemLeft" align="right" valign="top">QTableWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae29a3f22b40198528c62bc74efb2f60b">tableWidget</a></td></tr>
-<tr class="memdesc:ae29a3f22b40198528c62bc74efb2f60b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Таблица для отображения списка пользователей и их статистики  <br /></td></tr>
+<tr class="memdesc:ae29a3f22b40198528c62bc74efb2f60b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Таблица со списком пользователей и их данными  <br /></td></tr>
 <tr class="separator:ae29a3f22b40198528c62bc74efb2f60b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34b17b2ff11f4ff8c24d5e0ac386721c" id="r_a34b17b2ff11f4ff8c24d5e0ac386721c"><td class="memItemLeft" align="right" valign="top">QLineEdit *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34b17b2ff11f4ff8c24d5e0ac386721c">user_to_send</a></td></tr>
-<tr class="memdesc:a34b17b2ff11f4ff8c24d5e0ac386721c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поле ввода имени пользователя для операций с балансом  <br /></td></tr>
+<tr class="memdesc:a34b17b2ff11f4ff8c24d5e0ac386721c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поле ввода логина пользователя для операций  <br /></td></tr>
 <tr class="separator:a34b17b2ff11f4ff8c24d5e0ac386721c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4f3b4c8630288838955c87cf0f5fe76" id="r_ab4f3b4c8630288838955c87cf0f5fe76"><td class="memItemLeft" align="right" valign="top">QLineEdit *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4f3b4c8630288838955c87cf0f5fe76">amount_to_send</a></td></tr>
-<tr class="memdesc:ab4f3b4c8630288838955c87cf0f5fe76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поле ввода суммы для пополнения баланса пользователя  <br /></td></tr>
+<tr class="memdesc:ab4f3b4c8630288838955c87cf0f5fe76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поле ввода суммы для пополнения/списания  <br /></td></tr>
 <tr class="separator:ab4f3b4c8630288838955c87cf0f5fe76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Административная панель для управления системой казино </p>
-<p>Класс <a class="el" href="classadmin__page.html" title="Административная панель для управления системой казино">admin_page</a> представляет интерфейс администратора, который позволяет:</p><ul>
-<li>Просматривать статистику всех пользователей</li>
-<li>Управлять балансами пользователей</li>
-<li>Пополнять счета игроков</li>
-<li>Мониторить активность в системе</li>
+<div class="textblock"><p>Административная панель для управления казино </p>
+<p>Класс <a class="el" href="classadmin__page.html" title="Административная панель для управления казино">admin_page</a> предоставляет интерфейс администратора для управления системой казино "Хампстерс". Функциональность включает:</p><ul>
+<li>Просмотр списка всех зарегистрированных пользователей</li>
+<li>Мониторинг балансов и игровой активности</li>
+<li>Управление балансами пользователей (пополнение/списание)</li>
+<li>Просмотр статистики игр и доходов</li>
+<li>Административные действия с аккаунтами</li>
 </ul>
-<p>Доступ к этой панели имеют только пользователи с правами администратора. Интерфейс построен на основе диалогового окна с таблицей пользователей и элементами управления для административных операций. </p>
+<p>Доступ к панели имеют только пользователи с административными правами. Все действия администратора логируются для обеспечения безопасности. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2_users_2sasha_2polytech_2_hampsetes_2hampsters_2_cazik_2managerform_8h-example.html#_a17">/Users/sasha/polytech/Hampsetes/hampsters/Cazik/managerform.h</a>.</dd>
+</dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a12e3d2f548521e74d46a94eea53676a7" name="a12e3d2f548521e74d46a94eea53676a7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a12e3d2f548521e74d46a94eea53676a7">&#9670;&#160;</a></span>admin_page()</h2>
@@ -195,11 +201,10 @@ Private Attributes</h2></td></tr>
 <p>Конструктор административной панели </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parent</td><td>Родительский виджет (по умолчанию nullptr)</td></tr>
+    <tr><td class="paramname">parent</td><td>Родительский виджет </td></tr>
   </table>
   </dd>
 </dl>
-<p>Инициализирует интерфейс админ-панели и настраивает таблицу для отображения данных пользователей. </p>
 
 </div>
 </div>
@@ -219,7 +224,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Деструктор административной панели </p>
-<p>Освобождает ресурсы, используемые админ-панелью. </p>
 
 </div>
 </div>
@@ -247,8 +251,13 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Слот для обработки нажатия кнопки "Пополнить баланс". </p>
-<p>Выполняет операцию пополнения баланса указанного пользователя на заданную сумму. Проверяет корректность введенных данных и обновляет информацию в базе данных. </p>
+<p>Пополнить баланс пользователя </p>
+<p>Обрабатывает запрос на пополнение баланса указанного пользователя:</p><ul>
+<li>Проверяет корректность введенных данных</li>
+<li>Отправляет запрос на сервер для изменения баланса</li>
+<li>Обновляет отображение данных в таблице</li>
+<li>Логирует административное действие </li>
+</ul>
 
 </div>
 </div>
@@ -267,8 +276,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Слот для показа административной панели </p>
-<p>Отображает админ-панель и обновляет данные статистики. Вызывается при переходе к админ-разделу из главного меню. </p>
+<p>Показать административную панель </p>
+<p>Отображает интерфейс админ-панели и загружает актуальные данные о пользователях и состоянии системы </p>
 
 </div>
 </div>
@@ -287,8 +296,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Отображение статистики пользователей </p>
-<p>Загружает и отображает в таблице информацию о всех зарегистрированных пользователях, включая их балансы и игровую статистику. </p>
+<p>Просмотр статистики системы </p>
+<p>Загружает и отображает общую статистику казино:</p><ul>
+<li>Количество зарегистрированных пользователей</li>
+<li>Общий оборот по играм</li>
+<li>Активность пользователей</li>
+<li>Финансовые показатели </li>
+</ul>
 
 </div>
 </div>
@@ -313,7 +327,31 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Поле ввода суммы для пополнения баланса пользователя </p>
+<p>Поле ввода суммы для пополнения/списания </p>
+
+</div>
+</div>
+<a id="aaa68a825e458575bc28951bc156b3954" name="aaa68a825e458575bc28951bc156b3954"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa68a825e458575bc28951bc156b3954">&#9670;&#160;</a></span>clientApi</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_client_api.html">ClientApi</a>* admin_page::clientApi</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>API для взаимодействия с сервером </p>
 
 </div>
 </div>
@@ -337,7 +375,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Таблица для отображения списка пользователей и их статистики </p>
+<p>Таблица со списком пользователей и их данными </p>
 
 </div>
 </div>
@@ -351,7 +389,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Ui::admin_page* admin_page::ui</td>
+          <td class="memname"><a class="el" href="class_ui_1_1admin__page.html">Ui::admin_page</a>* admin_page::ui</td>
         </tr>
       </table>
   </td>
@@ -361,7 +399,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Указатель на UI объект административной панели </p>
+<p>Пользовательский интерфейс панели </p>
 
 </div>
 </div>
@@ -385,7 +423,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Поле ввода имени пользователя для операций с балансом </p>
+<p>Поле ввода логина пользователя для операций </p>
 
 </div>
 </div>

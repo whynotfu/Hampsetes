@@ -3,39 +3,45 @@
 \mbox{\hyperlink{client__functions_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ }
-\DoxyCodeLine{00011\ }
-\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifndef\ CLIENT\_FUNCTIONS\_H}}
-\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ CLIENT\_FUNCTIONS\_H}}
-\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QString>}}
-\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QDateTime>}}
-\DoxyCodeLine{00016\ }
-\DoxyCodeLine{00018\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{client__functions_8cpp_a52a4d39079dbf5ca1f3edba4f652a572}{robuks}};}
-\DoxyCodeLine{00019\ }
-\DoxyCodeLine{00021\ \textcolor{keyword}{extern}\ QString\ \mbox{\hyperlink{client__functions_8cpp_a5acf3c401ce11768a8f3c1a2d6184743}{currentUsername}};}
-\DoxyCodeLine{00022\ }
-\DoxyCodeLine{00029\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_user}{User}}\ \{}
-\DoxyCodeLine{00030\ \ \ \ \ QString\ \mbox{\hyperlink{struct_user_a0ab5f495e1b57445d048d25b1485638d}{login}};\ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00031\ \ \ \ \ QString\ \mbox{\hyperlink{struct_user_ac887622f22a898c097d156ad964be846}{password}};\ \ \ \ \ \ \ }
-\DoxyCodeLine{00032\ \ \ \ \ QString\ \mbox{\hyperlink{struct_user_a7a706c6c735beb76e4da1dfc2a857302}{role}};\ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_user_a656f555d559d402e87d8a9698e03e2ba}{balance}};\ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_user_a7828070fef5c1ea03c80f7c4e4518b43}{total\_bets}};\ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_user_a8169ac15fb18ebc7e796d1486483bec6}{total\_wins}};\ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00036\ \ \ \ \ QDateTime\ \mbox{\hyperlink{struct_user_a84e0f48f6f74e1caf41d42d494deb09b}{last\_login}};\ \ \ }
-\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_user_a58c97bff2f5c9b64274d869fb076cd03}{is\_auth}};\ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00038\ \};}
-\DoxyCodeLine{00039\ }
-\DoxyCodeLine{00041\ \textcolor{keyword}{extern}\ QList<User>\ \mbox{\hyperlink{client__functions_8cpp_afea9bb4a30d00ed11564b4faf30e1017}{users}};}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#ifndef\ CLIENT\_FUNCTIONS\_H}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ CLIENT\_FUNCTIONS\_H}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <QDateTime>}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{comment}{//\ Глобальные\ переменные\ текущего\ пользователя}}
+\DoxyCodeLine{00019\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{client__functions_8cpp_a52a4d39079dbf5ca1f3edba4f652a572}{robuks}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{extern}\ QString\ \mbox{\hyperlink{client__functions_8cpp_a5acf3c401ce11768a8f3c1a2d6184743}{currentUsername}};\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{extern}\ QString\ \mbox{\hyperlink{client__functions_8cpp_a376b119c87dca34d21a48472fdf2916e}{currentRole}};\ \ \ \ \ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{client__functions_8cpp_aebcabe45c4584deaa9db64c4ee6d3ca5}{TotalBets}};\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{client__functions_8cpp_aea8a283aa6e4d85f974853fed0367e86}{TotalWins}};\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{extern}\ QString\ \mbox{\hyperlink{client__functions_8cpp_a88975df26b2a6c1fb7eea69cf4ef4e37}{ids}};\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_user}{User}}\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ QString\ \mbox{\hyperlink{struct_user_a0ab5f495e1b57445d048d25b1485638d}{login}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00034\ \ \ \ \ QString\ \mbox{\hyperlink{struct_user_ac887622f22a898c097d156ad964be846}{password}};\ \ \ \ \ }
+\DoxyCodeLine{00035\ \ \ \ \ QString\ \mbox{\hyperlink{struct_user_a7a706c6c735beb76e4da1dfc2a857302}{role}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_user_a656f555d559d402e87d8a9698e03e2ba}{balance}};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_user_a7828070fef5c1ea03c80f7c4e4518b43}{total\_bets}};\ \ \ \ \ \ \ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_user_a8169ac15fb18ebc7e796d1486483bec6}{total\_wins}};\ \ \ \ \ \ \ }
+\DoxyCodeLine{00039\ \ \ \ \ QDateTime\ \mbox{\hyperlink{struct_user_a84e0f48f6f74e1caf41d42d494deb09b}{last\_login}};\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_user_a58c97bff2f5c9b64274d869fb076cd03}{is\_auth}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00041\ \};}
 \DoxyCodeLine{00042\ }
-\DoxyCodeLine{00052\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{client__functions_8h_aacbd1ffa7bb4d3366374d51fdb97586f}{auth}}(QString\ login,\ QString\ password);}
-\DoxyCodeLine{00053\ }
-\DoxyCodeLine{00064\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{client__functions_8h_abaebdda0dd4bec632ee89e5e6d10edae}{reg}}(QString\ login,\ QString\ password,\ QString\ role);}
-\DoxyCodeLine{00065\ }
-\DoxyCodeLine{00073\ QString\ \mbox{\hyperlink{client__functions_8h_a1269b8bdb80f7ffbee545318e161c51f}{path}}();}
-\DoxyCodeLine{00074\ }
-\DoxyCodeLine{00082\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{client__functions_8h_a30d7d6086f6efb8157876ace8cf004dd}{slots\_rand}}();}
-\DoxyCodeLine{00083\ }
-\DoxyCodeLine{00093\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{client__functions_8h_a2bba26858e78f6743ed5ff2e8f74d23e}{shuffleArray}}(\textcolor{keywordtype}{int}*\ array,\ \textcolor{keywordtype}{int}\ size);}
-\DoxyCodeLine{00094\ }
-\DoxyCodeLine{00095\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CLIENT\_FUNCTIONS\_H}}
+\DoxyCodeLine{00043\ \textcolor{keyword}{extern}\ QList<User>\ \mbox{\hyperlink{client__functions_8cpp_afea9bb4a30d00ed11564b4faf30e1017}{users}};\ }
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00054\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{client__functions_8h_aacbd1ffa7bb4d3366374d51fdb97586f}{auth}}(QString\ login,\ QString\ password);}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00066\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{client__functions_8h_afcddacfc17c028a34d9685da167e3096}{reg}}(QString\ login,\ QString\ password,\ QString\ confirmPassword);}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00077\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{client__functions_8h_a587adb1eea109cffac2a0568a8676ac9}{toServer}}(\textcolor{keywordtype}{int}\ gameType,\ \textcolor{keywordtype}{int}\ betAmount,\ \textcolor{keywordtype}{int}\ result);}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00086\ QString\ \mbox{\hyperlink{client__functions_8h_a1269b8bdb80f7ffbee545318e161c51f}{path}}();}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00095\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{client__functions_8h_a30d7d6086f6efb8157876ace8cf004dd}{slots\_rand}}();}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00106\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{client__functions_8h_a2bba26858e78f6743ed5ff2e8f74d23e}{shuffleArray}}(\textcolor{keywordtype}{int}*\ array,\ \textcolor{keywordtype}{int}\ size);}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CLIENT\_FUNCTIONS\_H}}
 
 \end{DoxyCode}

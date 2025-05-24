@@ -8,6 +8,8 @@ var class_auth_reg_form =
     [ "on_RegButton_clicked", "class_auth_reg_form.html#a46bd353d4b06f496a8a72bf58e741219", null ],
     [ "on_ToRegButton_clicked", "class_auth_reg_form.html#aa89121d3917ed24515b199784bbf633f", null ],
     [ "set_visible_inReg", "class_auth_reg_form.html#a26ea774a557fbed481c2cd110183277c", null ],
+    [ "slot_show", "class_auth_reg_form.html#ab6b3af89e41afad8f2e9bf7d860e5aff", null ],
+    [ "clientApi", "class_auth_reg_form.html#ae93dbcd7b013e6af9b821e9b33a390d1", null ],
     [ "Data", "class_auth_reg_form.html#a20c84c896d1fab7fb3dcddb80720f7d5", null ],
     [ "socket", "class_auth_reg_form.html#abb2e0afeeee3a19e92e163e48f97b380", null ],
     [ "ui", "class_auth_reg_form.html#abc34a5cc090ed5359af9de44c551ac0a", null ]

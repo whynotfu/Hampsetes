@@ -2,7 +2,7 @@
 \hypertarget{ser__ver_2main_8cpp}{}\label{ser__ver_2main_8cpp}\index{/Users/sasha/polytech/Hampsetes/ser\_ver/main.cpp@{/Users/sasha/polytech/Hampsetes/ser\_ver/main.cpp}}
 
 
-Главный файл серверного приложения казино  
+Точка входа серверного приложения казино "{}Хампстерс"{}.  
 
 
 {\ttfamily \#include $<$QCore\+Application$>$}\newline
@@ -15,10 +15,10 @@ int \mbox{\hyperlink{ser__ver_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main
 
 
 \doxysubsection{Detailed Description}
-Главный файл серверного приложения казино 
+Точка входа серверного приложения казино "{}Хампстерс"{}. 
 
 \begin{DoxyAuthor}{Author}
-Команда разработчиков 
+Development Team 
 \end{DoxyAuthor}
 \begin{DoxyDate}{Date}
 2025 
@@ -26,7 +26,7 @@ int \mbox{\hyperlink{ser__ver_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main
 \begin{DoxyVersion}{Version}
 1.\+0
 \end{DoxyVersion}
-Содержит точку входа в серверное приложение казино "{}\+Hampsetes"{}. Сервер обрабатывает подключения клиентов и управляет игровыми сессиями. 
+Этот файл содержит функцию \doxylink{hampsters_2_cazik_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main()} для серверной части приложения казино "{}Хампстерс"{}. Инициализирует консольное Qt приложение и запускает TCP-\/сервер для обработки клиентских подключений. 
 
 \doxysubsection{Function Documentation}
 \Hypertarget{ser__ver_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\index{main.cpp@{main.cpp}!main@{main}}
@@ -49,4 +49,12 @@ int main (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char \texorpdfstr
 \begin{DoxyReturn}{Returns}
 Код завершения приложения
 \end{DoxyReturn}
-Инициализирует Qt приложение, создает экземпляр TCP сервера и запускает главный цикл обработки событий для приема подключений клиентов казино. 
+Инициализирует Qt Core приложение (без GUI), создает экземпляр \doxylink{class_my_tcp_server}{My\+Tcp\+Server} и запускает главный цикл обработки событий. Сервер начинает прослушивание порта для входящих TCP-\/соединений от клиентов казино.
+
+Приложение работает в консольном режиме и обрабатывает\+:
+\begin{DoxyItemize}
+\item Подключения клиентов
+\item Авторизацию и регистрацию пользователей
+\item Игровые операции и обновление балансов
+\item Административные команды 
+\end{DoxyItemize}

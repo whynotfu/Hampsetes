@@ -1,6 +1,20 @@
 var searchData=
 [
-  ['balance_0',['balance',['../struct_user.html#a656f555d559d402e87d8a9698e03e2ba',1,'User']]],
-  ['barabanform_1',['barabanform',['../class_manager_form.html#a270a9154f32367168c2be6ac0ca2fe0b',1,'ManagerForm']]],
-  ['block_2',['block',['../class_gtn.html#a004f51b6d66d4988eac48c6a119f7812',1,'Gtn']]]
+  ['backbutton_0',['BackButton',['../class_ui___baraban.html#a14c3e1bee1b111f29b1c9b593e0f0912',1,'Ui_Baraban::BackButton'],['../class_ui___kosti.html#a1bf9d881e52add97059e810adeeb9d48',1,'Ui_Kosti::BackButton'],['../class_ui___ruletka.html#a4cf6989def491ef1a96b9defc21dba43',1,'Ui_Ruletka::BackButton']]],
+  ['balance_1',['balance',['../struct_user.html#a656f555d559d402e87d8a9698e03e2ba',1,'User']]],
+  ['barabanform_2',['barabanform',['../class_manager_form.html#a270a9154f32367168c2be6ac0ca2fe0b',1,'ManagerForm']]],
+  ['barabanobjectlabel_3',['BarabanObjectLabel',['../class_ui___baraban.html#aa4c1ae99866b51599c65cc5adaf1992f',1,'Ui_Baraban']]],
+  ['block_4',['block',['../class_gtn.html#a004f51b6d66d4988eac48c6a119f7812',1,'Gtn']]],
+  ['button100_5',['button100',['../class_ui___gtn.html#a45472c3b0343d7ca4d2cb8a03bc49ee0',1,'Ui_Gtn']]],
+  ['button1000_6',['button1000',['../class_ui___gtn.html#a2c1dc95e04d01ecfd8c0a0c7da410b5b',1,'Ui_Gtn']]],
+  ['button500_7',['button500',['../class_ui___gtn.html#afff3216acdb5ebb02283482f18a5ac4d',1,'Ui_Gtn']]],
+  ['button_5fup_5fbalance_8',['Button_up_balance',['../class_ui__admin__page.html#aefb80508f61934e766160a39f88153b7',1,'Ui_admin_page']]],
+  ['buttonbox_9',['buttonBox',['../class_ui__admin__page.html#a8f456c83f158b331965e42661bafbb6f',1,'Ui_admin_page::buttonBox'],['../class_ui__personal__page.html#a40575120b7af9c4499d51bd9d191dece',1,'Ui_personal_page::buttonBox']]],
+  ['buttonplay_10',['ButtonPlay',['../class_ui___ruletka.html#af527b08bf42bd1a3cb6618e6e62c770c',1,'Ui_Ruletka']]],
+  ['buttonstavka100_11',['ButtonStavka100',['../class_ui___ruletka.html#a4fd6abe8dd8e9e5f3a685b32183b30cb',1,'Ui_Ruletka']]],
+  ['buttonstavka1000_12',['ButtonStavka1000',['../class_ui___ruletka.html#a64ceb8ac0475c14da396c7530d2eee38',1,'Ui_Ruletka']]],
+  ['buttonstavka500_13',['ButtonStavka500',['../class_ui___ruletka.html#abb67e9b343f82c7b486cc1e01cf94005',1,'Ui_Ruletka']]],
+  ['buttonstavkablack_14',['ButtonStavkaBlack',['../class_ui___ruletka.html#abd84dad25fbcfb67bcd7e26c105dde60',1,'Ui_Ruletka']]],
+  ['buttonstavkagreen_15',['ButtonStavkaGreen',['../class_ui___ruletka.html#ac5147d387a3006b618855bc9b4558edb',1,'Ui_Ruletka']]],
+  ['buttonstavkared_16',['ButtonStavkaRed',['../class_ui___ruletka.html#a88c3e5ca852eab232289dc9031059aaf',1,'Ui_Ruletka']]]
 ];

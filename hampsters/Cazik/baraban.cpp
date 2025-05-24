@@ -1,14 +1,3 @@
-/**
- * @file baraban.cpp
- * @brief Реализация игры в слот-машину (барабаны)
- * @author Команда разработчиков
- * @date 2025
- * @version 1.0
- * 
- * Содержит реализацию класса Baraban - классической игры в слоты
- * с тремя барабанами и различными символами.
- */
-
 #include "baraban.h"
 #include "ui_baraban.h"
 #include "client_functions.h"
@@ -16,6 +5,7 @@
 Baraban::Baraban(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::Baraban)
+    , clientApi(ClientApi::getInstance())
 {
     ui->setupUi(this);
 
@@ -78,10 +68,10 @@ void Baraban::run_slots(int size){
         this->set_item2(get_num_of_slots);
         this->set_item3(get_num_of_slots);
 
-        // Изменить под сервер!!!!!!!!!!!!!!!!!!!
         robuks += size * 5;
+        TotalWins += size * 5;
+        TotalBets += 1;
         ui->count_robux->setText(QString::number(robuks));
-        // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     }
     // Если получили 0 - то есть просрали
     else{
@@ -160,6 +150,7 @@ void Baraban::on_pushButton100_clicked()
 // Выход в меню
 void Baraban::on_BackButton_clicked()
 {
+    qDebug() << clientApi->toServer(robuks,TotalBets, TotalWins);
     emit to_main(ui->count_robux->text());
     this->close();
 }

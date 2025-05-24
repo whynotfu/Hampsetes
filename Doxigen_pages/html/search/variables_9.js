@@ -1,6 +1,30 @@
 var searchData=
 [
-  ['name_0',['Name',['../class_casino_main_window.html#acc6cd28080eef8124db7e1202ac383bf',1,'CasinoMainWindow']]],
-  ['now_5fnum_1',['now_num',['../class_gtn.html#a574309216eeb69e71d6261bbbc4a6c25',1,'Gtn']]],
-  ['num_2',['num',['../class_gtn.html#ae93c272c60fcf4f61a6ab706522698c3',1,'Gtn']]]
+  ['label_0',['label',['../class_ui__admin__page.html#a20c9923ef3a3d11f5d42639d8b4244ed',1,'Ui_admin_page::label'],['../class_ui___kliker.html#a47dab51392bbd1ca3bcf99b3753fb0a8',1,'Ui_Kliker::label'],['../class_ui__personal__page.html#a6eb2e701a500b4a4fbcb6c72efa381fe',1,'Ui_personal_page::label'],['../class_ui___ruletka.html#a34a9661a2f58f8ab9da1c1d866ec131c',1,'Ui_Ruletka::label']]],
+  ['label_5f2_1',['label_2',['../class_ui__admin__page.html#a434ff62a6fb552c44339b6f7e1b71ada',1,'Ui_admin_page::label_2'],['../class_ui__personal__page.html#a1d6c558fd8f7c70bb99412eea32fb8d9',1,'Ui_personal_page::label_2'],['../class_ui___ruletka.html#a1aa09419d99eda53d78255724b78186a',1,'Ui_Ruletka::label_2']]],
+  ['label_5f3_2',['label_3',['../class_ui__personal__page.html#ad73b72cf1c9e0ab2b2fb41f076ac357f',1,'Ui_personal_page']]],
+  ['label_5f4_3',['label_4',['../class_ui__personal__page.html#a78f52ff589832228c5bb98ebcd7c89c6',1,'Ui_personal_page']]],
+  ['label_5f5_4',['label_5',['../class_ui__personal__page.html#a421ccffe277ea6ed8c8c5fcb5584f389',1,'Ui_personal_page']]],
+  ['label_5fdice1_5',['label_dice1',['../class_ui___kosti.html#a29cde83c69653398e84b2d4750c1144a',1,'Ui_Kosti']]],
+  ['label_5fdice2_6',['label_dice2',['../class_ui___kosti.html#a2a9b91da8a2bf463b7f40505682d6728',1,'Ui_Kosti']]],
+  ['label_5fnumber_7',['label_number',['../class_ui___gtn.html#a9c901024652a1f1eac0e7145ac50a4d1',1,'Ui_Gtn']]],
+  ['label_5fresult_8',['label_result',['../class_ui___kosti.html#ab2d249be6fbbb579201ae8c174006bbd',1,'Ui_Kosti']]],
+  ['label_5frobux_9',['label_robux',['../class_ui___baraban.html#a2756842df5c9d3aecf1631894d8f75ed',1,'Ui_Baraban::label_robux'],['../class_ui___gtn.html#a9896f6513319fbc2e5eb4fe66dd0f45d',1,'Ui_Gtn::label_robux'],['../class_ui___kliker.html#a9b6c0ded02ff81b4a7ec46d942a95d8e',1,'Ui_Kliker::label_robux'],['../class_ui___kosti.html#a59913cff70d0e8cd1075ae5da38cfc9e',1,'Ui_Kosti::label_robux'],['../class_ui___ruletka.html#abc59d1b1b6c52fb1466441a5b29afd46',1,'Ui_Ruletka::label_robux']]],
+  ['label_5frobux100_10',['label_robux100',['../class_ui___kliker.html#a6ef2987a2b440311ae4914771ba700e4',1,'Ui_Kliker']]],
+  ['label_5fstavka_11',['label_stavka',['../class_ui___baraban.html#a2639d607c806a19fab48a632670397df',1,'Ui_Baraban::label_stavka'],['../class_ui___kosti.html#a35f28c21bb059f165d963c51f264012f',1,'Ui_Kosti::label_stavka']]],
+  ['label_5fstrel_12',['label_strel',['../class_ui___ruletka.html#a4843c19798d2f3e2dfc6e2c7dcd6c27c',1,'Ui_Ruletka']]],
+  ['label_5ftext_13',['label_text',['../class_ui___ruletka.html#a13782eaa6939a4269e9802118538a855',1,'Ui_Ruletka']]],
+  ['label_5ftext2_14',['label_text2',['../class_ui___ruletka.html#a62aab04229c5367d05a672a3c62bffeb',1,'Ui_Ruletka']]],
+  ['labelbalance_15',['labelBalance',['../class_ui__personal__page.html#ae2c8d96a8971bd9d7ad92abd2fdd30b1',1,'Ui_personal_page']]],
+  ['labellogin_16',['labelLogin',['../class_ui__personal__page.html#aa8df52d732426cc8661f9bb2f2517316',1,'Ui_personal_page']]],
+  ['labelperson_17',['labelperson',['../class_ui__personal__page.html#a227c0571437bde3f29943d0891deb3f0',1,'Ui_personal_page']]],
+  ['labelrole_18',['labelRole',['../class_ui__personal__page.html#a6ec733b79d131f3f8f39ac49c72e844d',1,'Ui_personal_page']]],
+  ['labeltotalbets_19',['labelTotalBets',['../class_ui__personal__page.html#a31347d6fcfca7b018bf09b5c6e89bdea',1,'Ui_personal_page']]],
+  ['labeltotalwins_20',['labelTotalWins',['../class_ui__personal__page.html#a38fed4fc81d451c7b9af8d14edb7b154',1,'Ui_personal_page']]],
+  ['last_5flogin_21',['last_login',['../struct_user.html#a84e0f48f6f74e1caf41d42d494deb09b',1,'User']]],
+  ['less_5fbutton_22',['less_button',['../class_ui___gtn.html#a1bf253bdddbd2c05a33390970a40e15b',1,'Ui_Gtn']]],
+  ['lineedit_5f2_23',['lineEdit_2',['../class_ui__admin__page.html#adb0fb65eedd7f2086ab3ba3c4dc826d6',1,'Ui_admin_page']]],
+  ['login_24',['login',['../struct_user.html#a0ab5f495e1b57445d048d25b1485638d',1,'User']]],
+  ['loginlabel_25',['LoginLabel',['../class_ui___auth_reg_form.html#ab47bfa29376945ddef79be28fba559c7',1,'Ui_AuthRegForm']]],
+  ['loginline_26',['Loginline',['../class_ui___auth_reg_form.html#a9dea69f7ae2724bb1d45d871e8328241',1,'Ui_AuthRegForm']]]
 ];

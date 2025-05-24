@@ -2,7 +2,7 @@
 \hypertarget{classadmin__page}{}\label{classadmin__page}\index{admin\_page@{admin\_page}}
 
 
-Административная панель для управления системой казино  
+Административная панель для управления казино  
 
 
 
@@ -23,39 +23,45 @@ Inheritance diagram for admin\+\_\+page\+:\begin{figure}[H]
 \mbox{\hyperlink{classadmin__page_a51f3db4b240a22f830b328bda4df086d}{\texorpdfstring{$\sim$}{\string~}admin\+\_\+page}} ()
 \begin{DoxyCompactList}\small\item\em Деструктор административной панели \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classadmin__page_af813a829215d1842522788358f4835fb}{view\+Statistics}} ()
-\begin{DoxyCompactList}\small\item\em Отображение статистики пользователей \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Просмотр статистики системы \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classadmin__page_af2312895ef264909783a50a63867b909}{slot\+\_\+show}} ()
-\begin{DoxyCompactList}\small\item\em Слот для показа административной панели \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Показать административную панель \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Private Slots}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{classadmin__page_acbde778a809d83583bb5e3eaa1b95d81}{add\+Money\+To\+User}} ()
-\begin{DoxyCompactList}\small\item\em Слот для обработки нажатия кнопки "{}Пополнить баланс"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Пополнить баланс пользователя \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-Ui\+::admin\+\_\+page \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classadmin__page_ada9e709b1980b2ee4ac33147f1475604}{ui}}
-\begin{DoxyCompactList}\small\item\em Указатель на UI объект административной панели \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ui_1_1admin__page}{Ui\+::admin\+\_\+page}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classadmin__page_ada9e709b1980b2ee4ac33147f1475604}{ui}}
+\begin{DoxyCompactList}\small\item\em Пользовательский интерфейс панели \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_client_api}{Client\+Api}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classadmin__page_aaa68a825e458575bc28951bc156b3954}{client\+Api}}
+\begin{DoxyCompactList}\small\item\em API для взаимодействия с сервером \end{DoxyCompactList}\item 
 QTable\+Widget \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classadmin__page_ae29a3f22b40198528c62bc74efb2f60b}{table\+Widget}}
-\begin{DoxyCompactList}\small\item\em Таблица для отображения списка пользователей и их статистики \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Таблица со списком пользователей и их данными \end{DoxyCompactList}\item 
 QLine\+Edit \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classadmin__page_a34b17b2ff11f4ff8c24d5e0ac386721c}{user\+\_\+to\+\_\+send}}
-\begin{DoxyCompactList}\small\item\em Поле ввода имени пользователя для операций с балансом \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Поле ввода логина пользователя для операций \end{DoxyCompactList}\item 
 QLine\+Edit \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classadmin__page_ab4f3b4c8630288838955c87cf0f5fe76}{amount\+\_\+to\+\_\+send}}
-\begin{DoxyCompactList}\small\item\em Поле ввода суммы для пополнения баланса пользователя \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Поле ввода суммы для пополнения/списания \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Административная панель для управления системой казино 
+Административная панель для управления казино 
 
-Класс \doxylink{classadmin__page}{admin\+\_\+page} представляет интерфейс администратора, который позволяет\+:
+Класс \doxylink{classadmin__page}{admin\+\_\+page} предоставляет интерфейс администратора для управления системой казино "{}Хампстерс"{}. Функциональность включает\+:
 \begin{DoxyItemize}
-\item Просматривать статистику всех пользователей
-\item Управлять балансами пользователей
-\item Пополнять счета игроков
-\item Мониторить активность в системе
+\item Просмотр списка всех зарегистрированных пользователей
+\item Мониторинг балансов и игровой активности
+\item Управление балансами пользователей (пополнение/списание)
+\item Просмотр статистики игр и доходов
+\item Административные действия с аккаунтами
 \end{DoxyItemize}
 
-Доступ к этой панели имеют только пользователи с правами администратора. Интерфейс построен на основе диалогового окна с таблицей пользователей и элементами управления для административных операций. 
+Доступ к панели имеют только пользователи с административными правами. Все действия администратора логируются для обеспечения безопасности. \begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2sasha_2polytech_2_hampsetes_2hampsters_2_cazik_2managerform_8h-example}{/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/managerform.\+h}}.\end{Desc}
+
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{classadmin__page_a12e3d2f548521e74d46a94eea53676a7}\index{admin\_page@{admin\_page}!admin\_page@{admin\_page}}
@@ -70,10 +76,10 @@ admin\+\_\+page\+::admin\+\_\+page (\begin{DoxyParamCaption}\item[{QWidget \texo
 
 
 \begin{DoxyParams}{Parameters}
-{\em parent} & Родительский виджет (по умолчанию nullptr)\\
+{\em parent} & Родительский виджет \\
 \hline
 \end{DoxyParams}
-Инициализирует интерфейс админ-\/панели и настраивает таблицу для отображения данных пользователей. \Hypertarget{classadmin__page_a51f3db4b240a22f830b328bda4df086d}\index{admin\_page@{admin\_page}!````~admin\_page@{\texorpdfstring{$\sim$}{\string~}admin\_page}}
+\Hypertarget{classadmin__page_a51f3db4b240a22f830b328bda4df086d}\index{admin\_page@{admin\_page}!````~admin\_page@{\texorpdfstring{$\sim$}{\string~}admin\_page}}
 \index{````~admin\_page@{\texorpdfstring{$\sim$}{\string~}admin\_page}!admin\_page@{admin\_page}}
 \doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}admin\_page()}{\string~admin\_page()}}
 {\footnotesize\ttfamily \label{classadmin__page_a51f3db4b240a22f830b328bda4df086d} 
@@ -83,7 +89,7 @@ admin\+\_\+page\+::\texorpdfstring{$\sim$}{\string~}admin\+\_\+page (\begin{Doxy
 
 Деструктор административной панели 
 
-Освобождает ресурсы, используемые админ-\/панелью. 
+
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{classadmin__page_acbde778a809d83583bb5e3eaa1b95d81}\index{admin\_page@{admin\_page}!addMoneyToUser@{addMoneyToUser}}
@@ -94,9 +100,15 @@ void admin\+\_\+page\+::add\+Money\+To\+User (\begin{DoxyParamCaption}{}{}\end{D
 
 
 
-Слот для обработки нажатия кнопки "{}Пополнить баланс"{}. 
+Пополнить баланс пользователя 
 
-Выполняет операцию пополнения баланса указанного пользователя на заданную сумму. Проверяет корректность введенных данных и обновляет информацию в базе данных. \Hypertarget{classadmin__page_af2312895ef264909783a50a63867b909}\index{admin\_page@{admin\_page}!slot\_show@{slot\_show}}
+Обрабатывает запрос на пополнение баланса указанного пользователя\+:
+\begin{DoxyItemize}
+\item Проверяет корректность введенных данных
+\item Отправляет запрос на сервер для изменения баланса
+\item Обновляет отображение данных в таблице
+\item Логирует административное действие 
+\end{DoxyItemize}\Hypertarget{classadmin__page_af2312895ef264909783a50a63867b909}\index{admin\_page@{admin\_page}!slot\_show@{slot\_show}}
 \index{slot\_show@{slot\_show}!admin\_page@{admin\_page}}
 \doxysubsubsection{\texorpdfstring{slot\_show()}{slot\_show()}}
 {\footnotesize\ttfamily \label{classadmin__page_af2312895ef264909783a50a63867b909} 
@@ -104,9 +116,9 @@ void admin\+\_\+page\+::slot\+\_\+show (\begin{DoxyParamCaption}{}{}\end{DoxyPar
 
 
 
-Слот для показа административной панели 
+Показать административную панель 
 
-Отображает админ-\/панель и обновляет данные статистики. Вызывается при переходе к админ-\/разделу из главного меню. \Hypertarget{classadmin__page_af813a829215d1842522788358f4835fb}\index{admin\_page@{admin\_page}!viewStatistics@{viewStatistics}}
+Отображает интерфейс админ-\/панели и загружает актуальные данные о пользователях и состоянии системы \Hypertarget{classadmin__page_af813a829215d1842522788358f4835fb}\index{admin\_page@{admin\_page}!viewStatistics@{viewStatistics}}
 \index{viewStatistics@{viewStatistics}!admin\_page@{admin\_page}}
 \doxysubsubsection{\texorpdfstring{viewStatistics()}{viewStatistics()}}
 {\footnotesize\ttfamily \label{classadmin__page_af813a829215d1842522788358f4835fb} 
@@ -114,9 +126,15 @@ void admin\+\_\+page\+::view\+Statistics (\begin{DoxyParamCaption}{}{}\end{DoxyP
 
 
 
-Отображение статистики пользователей 
+Просмотр статистики системы 
 
-Загружает и отображает в таблице информацию о всех зарегистрированных пользователях, включая их балансы и игровую статистику. 
+Загружает и отображает общую статистику казино\+:
+\begin{DoxyItemize}
+\item Количество зарегистрированных пользователей
+\item Общий оборот по играм
+\item Активность пользователей
+\item Финансовые показатели 
+\end{DoxyItemize}
 
 \doxysubsection{Member Data Documentation}
 \Hypertarget{classadmin__page_ab4f3b4c8630288838955c87cf0f5fe76}\index{admin\_page@{admin\_page}!amount\_to\_send@{amount\_to\_send}}
@@ -127,7 +145,17 @@ QLine\+Edit\texorpdfstring{$\ast$}{*} admin\+\_\+page\+::amount\+\_\+to\+\_\+sen
 
 
 
-Поле ввода суммы для пополнения баланса пользователя 
+Поле ввода суммы для пополнения/списания 
+
+\Hypertarget{classadmin__page_aaa68a825e458575bc28951bc156b3954}\index{admin\_page@{admin\_page}!clientApi@{clientApi}}
+\index{clientApi@{clientApi}!admin\_page@{admin\_page}}
+\doxysubsubsection{\texorpdfstring{clientApi}{clientApi}}
+{\footnotesize\ttfamily \label{classadmin__page_aaa68a825e458575bc28951bc156b3954} 
+\mbox{\hyperlink{class_client_api}{Client\+Api}}\texorpdfstring{$\ast$}{*} admin\+\_\+page\+::client\+Api\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+API для взаимодействия с сервером 
 
 \Hypertarget{classadmin__page_ae29a3f22b40198528c62bc74efb2f60b}\index{admin\_page@{admin\_page}!tableWidget@{tableWidget}}
 \index{tableWidget@{tableWidget}!admin\_page@{admin\_page}}
@@ -137,17 +165,17 @@ QTable\+Widget\texorpdfstring{$\ast$}{*} admin\+\_\+page\+::table\+Widget\hspace
 
 
 
-Таблица для отображения списка пользователей и их статистики 
+Таблица со списком пользователей и их данными 
 
 \Hypertarget{classadmin__page_ada9e709b1980b2ee4ac33147f1475604}\index{admin\_page@{admin\_page}!ui@{ui}}
 \index{ui@{ui}!admin\_page@{admin\_page}}
 \doxysubsubsection{\texorpdfstring{ui}{ui}}
 {\footnotesize\ttfamily \label{classadmin__page_ada9e709b1980b2ee4ac33147f1475604} 
-Ui\+::admin\+\_\+page\texorpdfstring{$\ast$}{*} admin\+\_\+page\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\hyperlink{class_ui_1_1admin__page}{Ui\+::admin\+\_\+page}}\texorpdfstring{$\ast$}{*} admin\+\_\+page\+::ui\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Указатель на UI объект административной панели 
+Пользовательский интерфейс панели 
 
 \Hypertarget{classadmin__page_a34b17b2ff11f4ff8c24d5e0ac386721c}\index{admin\_page@{admin\_page}!user\_to\_send@{user\_to\_send}}
 \index{user\_to\_send@{user\_to\_send}!admin\_page@{admin\_page}}
@@ -157,7 +185,7 @@ QLine\+Edit\texorpdfstring{$\ast$}{*} admin\+\_\+page\+::user\+\_\+to\+\_\+send\
 
 
 
-Поле ввода имени пользователя для операций с балансом 
+Поле ввода логина пользователя для операций 
 
 
 

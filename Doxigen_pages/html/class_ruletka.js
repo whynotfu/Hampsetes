@@ -12,6 +12,7 @@ var class_ruletka =
     [ "on_ButtonStavkaRed_clicked", "class_ruletka.html#a7a09f6263721723be519b1c40f24b515", null ],
     [ "slot_show", "class_ruletka.html#a8395a199ed7b64ce08121db92d44d0c6", null ],
     [ "to_main", "class_ruletka.html#aa0e1c0c8a4d4e9071726bc776cc614cb", null ],
+    [ "clientApi", "class_ruletka.html#a62b4d454a15bc27c76861dcfd9a79a6a", null ],
     [ "object_of_stavka", "class_ruletka.html#afb847c65309abf6f86eecbc92958d4a8", null ],
     [ "size_of_stavka", "class_ruletka.html#a263100492aec3d05c14048f9bb1cb0c7", null ],
     [ "ui", "class_ruletka.html#a1ceac392b43a8c27201594abe6ae28f7", null ]

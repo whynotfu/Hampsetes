@@ -2,7 +2,7 @@
 \hypertarget{mytcpserver_8h}{}\label{mytcpserver_8h}\index{/Users/sasha/polytech/Hampsetes/ser\_ver/mytcpserver.h@{/Users/sasha/polytech/Hampsetes/ser\_ver/mytcpserver.h}}
 
 
-Заголовочный файл TCP сервера казино  
+TCP-\/сервер для казино "{}Хампстерс"{}.  
 
 
 {\ttfamily \#include $<$QObject$>$}\newline
@@ -11,18 +11,20 @@
 {\ttfamily \#include $<$Qt\+Network$>$}\newline
 {\ttfamily \#include $<$QByte\+Array$>$}\newline
 {\ttfamily \#include $<$QDebug$>$}\newline
+{\ttfamily \#include $<$QVector$>$}\newline
+{\ttfamily \#include "{}databasesingleton.\+h"{}}\newline
 \doxysubsubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 class \mbox{\hyperlink{class_my_tcp_server}{My\+Tcp\+Server}}
-\begin{DoxyCompactList}\small\item\em TCP сервер для приложения казино \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em TCP-\/сервер для обработки клиентских подключений казино \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Заголовочный файл TCP сервера казино 
+TCP-\/сервер для казино "{}Хампстерс"{}. 
 
 \begin{DoxyAuthor}{Author}
-Команда разработчиков 
+Development Team 
 \end{DoxyAuthor}
 \begin{DoxyDate}{Date}
 2025 
@@ -30,4 +32,4 @@ class \mbox{\hyperlink{class_my_tcp_server}{My\+Tcp\+Server}}
 \begin{DoxyVersion}{Version}
 1.\+0
 \end{DoxyVersion}
-Содержит объявление класса \doxylink{class_my_tcp_server}{My\+Tcp\+Server} для обработки сетевых подключений клиентов к серверу казино. 
+Этот файл содержит объявление класса \doxylink{class_my_tcp_server}{My\+Tcp\+Server}, который реализует серверную часть приложения казино "{}Хампстерс"{}. Сервер обрабатывает подключения клиентов, запросы авторизации, игровые операции и административные функции через TCP-\/соединения. 

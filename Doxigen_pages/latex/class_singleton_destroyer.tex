@@ -1,0 +1,90 @@
+\doxysection{Singleton\+Destroyer Class Reference}
+\hypertarget{class_singleton_destroyer}{}\label{class_singleton_destroyer}\index{SingletonDestroyer@{SingletonDestroyer}}
+
+
+Вспомогательный класс для корректного удаления синглтона  
+
+
+
+
+{\ttfamily \#include $<$clientapi.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_singleton_destroyer_a8ac3166871f4c5411edfdb13594dee15}{\texorpdfstring{$\sim$}{\string~}\+Singleton\+Destroyer}} ()
+\begin{DoxyCompactList}\small\item\em Деструктор, освобождающий ресурсы синглтона \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_singleton_destroyer_a2b91ab39a22ffbfd14e26367644db6a2}{initialize}} (\mbox{\hyperlink{class_client_api}{Client\+Api}} \texorpdfstring{$\ast$}{*}p)
+\begin{DoxyCompactList}\small\item\em Инициализация экземпляра для последующего удаления \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_client_api}{Client\+Api}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_singleton_destroyer_a241d8363336ab8452559af712447d062}{p\+\_\+instance}}
+\begin{DoxyCompactList}\small\item\em Указатель на экземпляр синглтона \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Вспомогательный класс для корректного удаления синглтона 
+
+Класс \doxylink{class_singleton_destroyer}{Singleton\+Destroyer} обеспечивает правильное освобождение ресурсов синглтона \doxylink{class_client_api}{Client\+Api} при завершении приложения. \begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2sasha_2polytech_2_hampsetes_2hampsters_2_cazik_2clientapi_8h-example}{/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/clientapi.\+h}}.\end{Desc}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_singleton_destroyer_a8ac3166871f4c5411edfdb13594dee15}\index{SingletonDestroyer@{SingletonDestroyer}!````~SingletonDestroyer@{\texorpdfstring{$\sim$}{\string~}SingletonDestroyer}}
+\index{````~SingletonDestroyer@{\texorpdfstring{$\sim$}{\string~}SingletonDestroyer}!SingletonDestroyer@{SingletonDestroyer}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}SingletonDestroyer()}{\string~SingletonDestroyer()}}
+{\footnotesize\ttfamily \label{class_singleton_destroyer_a8ac3166871f4c5411edfdb13594dee15} 
+Singleton\+Destroyer\+::\texorpdfstring{$\sim$}{\string~}\+Singleton\+Destroyer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Деструктор, освобождающий ресурсы синглтона 
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2sasha_2polytech_2_hampsetes_2hampsters_2_cazik_2clientapi_8h-example}{/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/clientapi.\+h}}.\end{Desc}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_singleton_destroyer_a2b91ab39a22ffbfd14e26367644db6a2}\index{SingletonDestroyer@{SingletonDestroyer}!initialize@{initialize}}
+\index{initialize@{initialize}!SingletonDestroyer@{SingletonDestroyer}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily \label{class_singleton_destroyer_a2b91ab39a22ffbfd14e26367644db6a2} 
+void Singleton\+Destroyer\+::initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_client_api}{Client\+Api}} \texorpdfstring{$\ast$}{*}}]{p}{}\end{DoxyParamCaption})}
+
+
+
+Инициализация экземпляра для последующего удаления 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Указатель на экземпляр \doxylink{class_client_api}{Client\+Api} \\
+\hline
+\end{DoxyParams}
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2sasha_2polytech_2_hampsetes_2hampsters_2_cazik_2clientapi_8h-example}{/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/clientapi.\+h}}.\end{Desc}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_singleton_destroyer_a241d8363336ab8452559af712447d062}\index{SingletonDestroyer@{SingletonDestroyer}!p\_instance@{p\_instance}}
+\index{p\_instance@{p\_instance}!SingletonDestroyer@{SingletonDestroyer}}
+\doxysubsubsection{\texorpdfstring{p\_instance}{p\_instance}}
+{\footnotesize\ttfamily \label{class_singleton_destroyer_a241d8363336ab8452559af712447d062} 
+\mbox{\hyperlink{class_client_api}{Client\+Api}}\texorpdfstring{$\ast$}{*} Singleton\+Destroyer\+::p\+\_\+instance\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Указатель на экземпляр синглтона 
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2sasha_2polytech_2_hampsetes_2hampsters_2_cazik_2clientapi_8h-example}{/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/clientapi.\+h}}.\end{Desc}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/\mbox{\hyperlink{clientapi_8h}{clientapi.\+h}}\item 
+/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/\mbox{\hyperlink{clientapi_8cpp}{clientapi.\+cpp}}\end{DoxyCompactItemize}

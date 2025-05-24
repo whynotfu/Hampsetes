@@ -107,61 +107,64 @@ $(function(){initNavTree('admin__page_8h_source.html',''); initResizable(true); 
 </div><!--header-->
 <div class="contents">
 <a href="admin__page_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ADMIN_PAGE_H</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ADMIN_PAGE_H</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;QDialog&gt;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;QTableWidget&gt;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;QLineEdit&gt;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;QPushButton&gt;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="foldopen" id="foldopen00020" data-start="{" data-end="}">
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="namespace_ui.html">   20</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_ui.html">Ui</a> {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">class </span><a class="code hl_class" href="classadmin__page.html">admin_page</a>;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifndef ADMIN_PAGE_H</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#define ADMIN_PAGE_H</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;QDialog&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;QTableWidget&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;QLineEdit&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;QPushButton&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="clientapi_8h.html">clientapi.h</a>&quot;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="namespace_ui.html">   23</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_ui.html">Ui</a> {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">class </span><a class="code hl_class" href="class_ui_1_1admin__page.html">admin_page</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
 </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span></div>
-<div class="foldopen" id="foldopen00037" data-start="{" data-end="};">
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classadmin__page.html">   37</a></span><span class="keyword">class </span><a class="code hl_function" href="classadmin__page.html#a12e3d2f548521e74d46a94eea53676a7">admin_page</a> : <span class="keyword">public</span> QDialog</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    Q_OBJECT</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classadmin__page.html#a12e3d2f548521e74d46a94eea53676a7">admin_page</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <a class="code hl_function" href="classadmin__page.html#a51f3db4b240a22f830b328bda4df086d">~admin_page</a>();</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classadmin__page.html#af813a829215d1842522788358f4835fb">viewStatistics</a>();</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classadmin__page.html#af2312895ef264909783a50a63867b909">slot_show</a>();</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keyword">private</span> slots:</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classadmin__page.html#acbde778a809d83583bb5e3eaa1b95d81">addMoneyToUser</a>();</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="classadmin__page.html#ada9e709b1980b2ee4ac33147f1475604">   87</a></span>    Ui::admin_page *<a class="code hl_variable" href="classadmin__page.html#ada9e709b1980b2ee4ac33147f1475604">ui</a>;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="classadmin__page.html#ae29a3f22b40198528c62bc74efb2f60b">   90</a></span>    QTableWidget *<a class="code hl_variable" href="classadmin__page.html#ae29a3f22b40198528c62bc74efb2f60b">tableWidget</a>;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="classadmin__page.html#a34b17b2ff11f4ff8c24d5e0ac386721c">   93</a></span>    QLineEdit *<a class="code hl_variable" href="classadmin__page.html#a34b17b2ff11f4ff8c24d5e0ac386721c">user_to_send</a>;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="classadmin__page.html#ab4f3b4c8630288838955c87cf0f5fe76">   96</a></span>    QLineEdit *<a class="code hl_variable" href="classadmin__page.html#ab4f3b4c8630288838955c87cf0f5fe76">amount_to_send</a>;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>};</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span></div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="};">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classadmin__page.html">   41</a></span><span class="keyword">class </span><a class="code hl_function" href="classadmin__page.html#a12e3d2f548521e74d46a94eea53676a7">admin_page</a> : <span class="keyword">public</span> QDialog</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    Q_OBJECT</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classadmin__page.html#a12e3d2f548521e74d46a94eea53676a7">admin_page</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_function" href="classadmin__page.html#a51f3db4b240a22f830b328bda4df086d">~admin_page</a>();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classadmin__page.html#af813a829215d1842522788358f4835fb">viewStatistics</a>();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classadmin__page.html#af2312895ef264909783a50a63867b909">slot_show</a>();</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keyword">private</span> slots:</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classadmin__page.html#acbde778a809d83583bb5e3eaa1b95d81">addMoneyToUser</a>();</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="classadmin__page.html#ada9e709b1980b2ee4ac33147f1475604">   89</a></span>    <a class="code hl_class" href="class_ui_1_1admin__page.html">Ui::admin_page</a> *<a class="code hl_variable" href="classadmin__page.html#ada9e709b1980b2ee4ac33147f1475604">ui</a>;          </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="classadmin__page.html#aaa68a825e458575bc28951bc156b3954">   90</a></span>    <a class="code hl_class" href="class_client_api.html">ClientApi</a> *<a class="code hl_variable" href="classadmin__page.html#aaa68a825e458575bc28951bc156b3954">clientApi</a>;        </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="classadmin__page.html#ae29a3f22b40198528c62bc74efb2f60b">   92</a></span>    QTableWidget *<a class="code hl_variable" href="classadmin__page.html#ae29a3f22b40198528c62bc74efb2f60b">tableWidget</a>;   </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="classadmin__page.html#a34b17b2ff11f4ff8c24d5e0ac386721c">   93</a></span>    QLineEdit *<a class="code hl_variable" href="classadmin__page.html#a34b17b2ff11f4ff8c24d5e0ac386721c">user_to_send</a>;     </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="classadmin__page.html#ab4f3b4c8630288838955c87cf0f5fe76">   94</a></span>    QLineEdit *<a class="code hl_variable" href="classadmin__page.html#ab4f3b4c8630288838955c87cf0f5fe76">amount_to_send</a>;   </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>};</div>
 </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="preprocessor">#endif </span><span class="comment">// ADMIN_PAGE_H</span></div>
-<div class="ttc" id="aclassadmin__page_html"><div class="ttname"><a href="classadmin__page.html">admin_page</a></div><div class="ttdoc">Административная панель для управления системой казино</div><div class="ttdef"><b>Definition</b> admin_page.h:38</div></div>
-<div class="ttc" id="aclassadmin__page_html_a12e3d2f548521e74d46a94eea53676a7"><div class="ttname"><a href="classadmin__page.html#a12e3d2f548521e74d46a94eea53676a7">admin_page::admin_page</a></div><div class="ttdeci">admin_page(QWidget *parent=nullptr)</div><div class="ttdoc">Конструктор административной панели</div><div class="ttdef"><b>Definition</b> admin_page.cpp:20</div></div>
-<div class="ttc" id="aclassadmin__page_html_a34b17b2ff11f4ff8c24d5e0ac386721c"><div class="ttname"><a href="classadmin__page.html#a34b17b2ff11f4ff8c24d5e0ac386721c">admin_page::user_to_send</a></div><div class="ttdeci">QLineEdit * user_to_send</div><div class="ttdoc">Поле ввода имени пользователя для операций с балансом</div><div class="ttdef"><b>Definition</b> admin_page.h:93</div></div>
-<div class="ttc" id="aclassadmin__page_html_a51f3db4b240a22f830b328bda4df086d"><div class="ttname"><a href="classadmin__page.html#a51f3db4b240a22f830b328bda4df086d">admin_page::~admin_page</a></div><div class="ttdeci">~admin_page()</div><div class="ttdoc">Деструктор административной панели</div><div class="ttdef"><b>Definition</b> admin_page.cpp:42</div></div>
-<div class="ttc" id="aclassadmin__page_html_ab4f3b4c8630288838955c87cf0f5fe76"><div class="ttname"><a href="classadmin__page.html#ab4f3b4c8630288838955c87cf0f5fe76">admin_page::amount_to_send</a></div><div class="ttdeci">QLineEdit * amount_to_send</div><div class="ttdoc">Поле ввода суммы для пополнения баланса пользователя</div><div class="ttdef"><b>Definition</b> admin_page.h:96</div></div>
-<div class="ttc" id="aclassadmin__page_html_acbde778a809d83583bb5e3eaa1b95d81"><div class="ttname"><a href="classadmin__page.html#acbde778a809d83583bb5e3eaa1b95d81">admin_page::addMoneyToUser</a></div><div class="ttdeci">void addMoneyToUser()</div><div class="ttdoc">Слот для обработки нажатия кнопки &quot;Пополнить баланс&quot;.</div><div class="ttdef"><b>Definition</b> admin_page.cpp:79</div></div>
-<div class="ttc" id="aclassadmin__page_html_ada9e709b1980b2ee4ac33147f1475604"><div class="ttname"><a href="classadmin__page.html#ada9e709b1980b2ee4ac33147f1475604">admin_page::ui</a></div><div class="ttdeci">Ui::admin_page * ui</div><div class="ttdoc">Указатель на UI объект административной панели</div><div class="ttdef"><b>Definition</b> admin_page.h:87</div></div>
-<div class="ttc" id="aclassadmin__page_html_ae29a3f22b40198528c62bc74efb2f60b"><div class="ttname"><a href="classadmin__page.html#ae29a3f22b40198528c62bc74efb2f60b">admin_page::tableWidget</a></div><div class="ttdeci">QTableWidget * tableWidget</div><div class="ttdoc">Таблица для отображения списка пользователей и их статистики</div><div class="ttdef"><b>Definition</b> admin_page.h:90</div></div>
-<div class="ttc" id="aclassadmin__page_html_af2312895ef264909783a50a63867b909"><div class="ttname"><a href="classadmin__page.html#af2312895ef264909783a50a63867b909">admin_page::slot_show</a></div><div class="ttdeci">void slot_show()</div><div class="ttdoc">Слот для показа административной панели</div><div class="ttdef"><b>Definition</b> admin_page.cpp:117</div></div>
-<div class="ttc" id="aclassadmin__page_html_af813a829215d1842522788358f4835fb"><div class="ttname"><a href="classadmin__page.html#af813a829215d1842522788358f4835fb">admin_page::viewStatistics</a></div><div class="ttdeci">void viewStatistics()</div><div class="ttdoc">Отображение статистики пользователей</div><div class="ttdef"><b>Definition</b> admin_page.cpp:48</div></div>
-<div class="ttc" id="anamespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition</b> admin_page.h:20</div></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="preprocessor">#endif </span><span class="comment">// ADMIN_PAGE_H</span></div>
+<div class="ttc" id="aclass_client_api_html"><div class="ttname"><a href="class_client_api.html">ClientApi</a></div><div class="ttdef"><b>Definition</b> clientapi.h:75</div></div>
+<div class="ttc" id="aclass_ui_1_1admin__page_html"><div class="ttname"><a href="class_ui_1_1admin__page.html">Ui::admin_page</a></div><div class="ttdef"><b>Definition</b> ui_admin_page.h:157</div></div>
+<div class="ttc" id="aclassadmin__page_html_a12e3d2f548521e74d46a94eea53676a7"><div class="ttname"><a href="classadmin__page.html#a12e3d2f548521e74d46a94eea53676a7">admin_page::admin_page</a></div><div class="ttdeci">admin_page(QWidget *parent=nullptr)</div><div class="ttdoc">Конструктор административной панели</div><div class="ttdef"><b>Definition</b> admin_page.cpp:9</div></div>
+<div class="ttc" id="aclassadmin__page_html_a34b17b2ff11f4ff8c24d5e0ac386721c"><div class="ttname"><a href="classadmin__page.html#a34b17b2ff11f4ff8c24d5e0ac386721c">admin_page::user_to_send</a></div><div class="ttdeci">QLineEdit * user_to_send</div><div class="ttdoc">Поле ввода логина пользователя для операций</div><div class="ttdef"><b>Definition</b> admin_page.h:93</div></div>
+<div class="ttc" id="aclassadmin__page_html_a51f3db4b240a22f830b328bda4df086d"><div class="ttname"><a href="classadmin__page.html#a51f3db4b240a22f830b328bda4df086d">admin_page::~admin_page</a></div><div class="ttdeci">~admin_page()</div><div class="ttdoc">Деструктор административной панели</div><div class="ttdef"><b>Definition</b> admin_page.cpp:31</div></div>
+<div class="ttc" id="aclassadmin__page_html_aaa68a825e458575bc28951bc156b3954"><div class="ttname"><a href="classadmin__page.html#aaa68a825e458575bc28951bc156b3954">admin_page::clientApi</a></div><div class="ttdeci">ClientApi * clientApi</div><div class="ttdoc">API для взаимодействия с сервером</div><div class="ttdef"><b>Definition</b> admin_page.h:90</div></div>
+<div class="ttc" id="aclassadmin__page_html_ab4f3b4c8630288838955c87cf0f5fe76"><div class="ttname"><a href="classadmin__page.html#ab4f3b4c8630288838955c87cf0f5fe76">admin_page::amount_to_send</a></div><div class="ttdeci">QLineEdit * amount_to_send</div><div class="ttdoc">Поле ввода суммы для пополнения/списания</div><div class="ttdef"><b>Definition</b> admin_page.h:94</div></div>
+<div class="ttc" id="aclassadmin__page_html_acbde778a809d83583bb5e3eaa1b95d81"><div class="ttname"><a href="classadmin__page.html#acbde778a809d83583bb5e3eaa1b95d81">admin_page::addMoneyToUser</a></div><div class="ttdeci">void addMoneyToUser()</div><div class="ttdoc">Пополнить баланс пользователя</div><div class="ttdef"><b>Definition</b> admin_page.cpp:77</div></div>
+<div class="ttc" id="aclassadmin__page_html_ada9e709b1980b2ee4ac33147f1475604"><div class="ttname"><a href="classadmin__page.html#ada9e709b1980b2ee4ac33147f1475604">admin_page::ui</a></div><div class="ttdeci">Ui::admin_page * ui</div><div class="ttdoc">Пользовательский интерфейс панели</div><div class="ttdef"><b>Definition</b> admin_page.h:89</div></div>
+<div class="ttc" id="aclassadmin__page_html_ae29a3f22b40198528c62bc74efb2f60b"><div class="ttname"><a href="classadmin__page.html#ae29a3f22b40198528c62bc74efb2f60b">admin_page::tableWidget</a></div><div class="ttdeci">QTableWidget * tableWidget</div><div class="ttdoc">Таблица со списком пользователей и их данными</div><div class="ttdef"><b>Definition</b> admin_page.h:92</div></div>
+<div class="ttc" id="aclassadmin__page_html_af2312895ef264909783a50a63867b909"><div class="ttname"><a href="classadmin__page.html#af2312895ef264909783a50a63867b909">admin_page::slot_show</a></div><div class="ttdeci">void slot_show()</div><div class="ttdoc">Показать административную панель</div><div class="ttdef"><b>Definition</b> admin_page.cpp:95</div></div>
+<div class="ttc" id="aclassadmin__page_html_af813a829215d1842522788358f4835fb"><div class="ttname"><a href="classadmin__page.html#af813a829215d1842522788358f4835fb">admin_page::viewStatistics</a></div><div class="ttdeci">void viewStatistics()</div><div class="ttdoc">Просмотр статистики системы</div><div class="ttdef"><b>Definition</b> admin_page.cpp:37</div></div>
+<div class="ttc" id="aclientapi_8h_html"><div class="ttname"><a href="clientapi_8h.html">clientapi.h</a></div><div class="ttdoc">API клиента для взаимодействия с сервером казино</div></div>
+<div class="ttc" id="anamespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition</b> admin_page.h:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

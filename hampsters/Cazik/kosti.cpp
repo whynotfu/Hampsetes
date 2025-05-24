@@ -1,14 +1,3 @@
-/**
- * @file kosti.cpp
- * @brief Реализация игры в кости
- * @author Команда разработчиков
- * @date 2025
- * @version 1.0
- * 
- * Содержит реализацию класса Kosti - азартной игры в кости,
- * где игрок делает ставки и бросает две игральные кости для получения выигрыша.
- */
-
 #include "kosti.h"
 #include "ui_kosti.h"
 #include "client_functions.h"
@@ -18,9 +7,8 @@
 
 Kosti::Kosti(QWidget *parent)
     : QDialog(parent),
-    ui(new Ui::Kosti),
-    size_of_stavka(0),
-    robuks(10000) // Начальный баланс
+    clientApi(ClientApi::getInstance()),
+    ui(new Ui::Kosti)
 {
     ui->setupUi(this);
     ui->count_robux->setText(QString::number(robuks));
@@ -36,6 +24,8 @@ Kosti::Kosti(QWidget *parent)
     QPixmap MainFon(path() + "Images/MainFon.png");
     ui->MainFon->setPixmap(MainFon);
 
+    this->size_of_stavka = 0;
+
     // Подключение сигналов кнопок
     connect(ui->pushButtonPlay, &QPushButton::clicked, this, &Kosti::on_pushButtonPlay_clicked);
     connect(ui->pushButton1000, &QPushButton::clicked, this, &Kosti::on_pushButton1000_clicked);
@@ -45,6 +35,7 @@ Kosti::Kosti(QWidget *parent)
 }
 
 void Kosti::slot_show(){
+    ui->count_robux->setText(QString::number(robuks));
     this->show();
     // ui->count_robux->setText(QString::number(robuks));
 }
@@ -90,6 +81,8 @@ void Kosti::showResult(int dice1, int dice2)
     if (dice1 > dice2) {
         ui->label_result->setText("Вы выиграли! + " + QString::number(size_of_stavka * 2) + " Робуксов");
         robuks += size_of_stavka * 2;
+        TotalWins += size_of_stavka * 2;
+        TotalBets += 1;
     } else {
         ui->label_result->setText("Вы проиграли! - " + QString::number(size_of_stavka) + " Робуксов");
     }
@@ -116,6 +109,7 @@ void Kosti::on_pushButton100_clicked()
 
 void Kosti::on_BackButton_clicked()
 {
+    qDebug() << clientApi->toServer(robuks,TotalBets, TotalWins);
     emit to_main(ui->count_robux->text());
     this->close();
 }

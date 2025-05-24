@@ -22,10 +22,12 @@ var searchData=
   ['on_5fpushbutton1000_5fclicked_19',['on_pushButton1000_clicked',['../class_baraban.html#aff48d938a8e5196aabaf5d0b12143dba',1,'Baraban::on_pushButton1000_clicked()'],['../class_kosti.html#af0723442e86d4d2c42354ef08d14fbff',1,'Kosti::on_pushButton1000_clicked()']]],
   ['on_5fpushbutton100_5fclicked_20',['on_pushButton100_clicked',['../class_baraban.html#af26de4026c849846a3f8fd76f75cdb87',1,'Baraban::on_pushButton100_clicked()'],['../class_kosti.html#ac72cc9deb3ad311f98ce90bcf1867890',1,'Kosti::on_pushButton100_clicked()']]],
   ['on_5fpushbutton500_5fclicked_21',['on_pushButton500_clicked',['../class_baraban.html#a7c1c68cd69d29c005083ffe96f90d369',1,'Baraban::on_pushButton500_clicked()'],['../class_kosti.html#a7f38ef26f33c7f890e1c7ee278232f15',1,'Kosti::on_pushButton500_clicked()']]],
-  ['on_5fpushbutton_5fclicked_22',['on_pushButton_clicked',['../class_casino_main_window.html#a04c1040a5693a188b4e4e78dc9ac89fa',1,'CasinoMainWindow::on_pushButton_clicked()'],['../class_gtn.html#a23f7695ccc3f1637f47cec5e2ae4ac25',1,'Gtn::on_pushButton_clicked()'],['../class_kliker.html#a3eeafdafda93c0b4864ea2485a85a9a4',1,'Kliker::on_pushButton_clicked()']]],
-  ['on_5fpushbuttonplay_5fclicked_23',['on_pushButtonPlay_clicked',['../class_baraban.html#a57ca5374e719bd8febe6e98e893231aa',1,'Baraban::on_pushButtonPlay_clicked()'],['../class_kosti.html#ab970ed2ea123ec4540926ade454d4bd1',1,'Kosti::on_pushButtonPlay_clicked()']]],
-  ['on_5fpushbuttontap_5fclicked_24',['on_pushButtonTap_clicked',['../class_kliker.html#ad07e40fa2e93b70203a752f8d5546510',1,'Kliker']]],
-  ['on_5fregbutton_5fclicked_25',['on_RegButton_clicked',['../class_auth_reg_form.html#a46bd353d4b06f496a8a72bf58e741219',1,'AuthRegForm']]],
-  ['on_5ftoregbutton_5fclicked_26',['on_ToRegButton_clicked',['../class_auth_reg_form.html#aa89121d3917ed24515b199784bbf633f',1,'AuthRegForm']]],
-  ['operator_3d_27',['operator=',['../class_database_singleton.html#a1e20d784f0a8f9d7b3c1cbd5497e2a0a',1,'DatabaseSingleton']]]
+  ['on_5fpushbutton_5f2_5fclicked_22',['on_pushButton_2_clicked',['../class_casino_main_window.html#ad5126b359060a61f058391bdf2d365aa',1,'CasinoMainWindow']]],
+  ['on_5fpushbutton_5fclicked_23',['on_pushButton_clicked',['../class_casino_main_window.html#a04c1040a5693a188b4e4e78dc9ac89fa',1,'CasinoMainWindow::on_pushButton_clicked()'],['../class_gtn.html#a23f7695ccc3f1637f47cec5e2ae4ac25',1,'Gtn::on_pushButton_clicked()'],['../class_kliker.html#a3eeafdafda93c0b4864ea2485a85a9a4',1,'Kliker::on_pushButton_clicked()']]],
+  ['on_5fpushbuttonplay_5fclicked_24',['on_pushButtonPlay_clicked',['../class_baraban.html#a57ca5374e719bd8febe6e98e893231aa',1,'Baraban::on_pushButtonPlay_clicked()'],['../class_kosti.html#ab970ed2ea123ec4540926ade454d4bd1',1,'Kosti::on_pushButtonPlay_clicked()']]],
+  ['on_5fpushbuttontap_5fclicked_25',['on_pushButtonTap_clicked',['../class_kliker.html#ad07e40fa2e93b70203a752f8d5546510',1,'Kliker']]],
+  ['on_5fregbutton_5fclicked_26',['on_RegButton_clicked',['../class_auth_reg_form.html#a46bd353d4b06f496a8a72bf58e741219',1,'AuthRegForm']]],
+  ['on_5ftoregbutton_5fclicked_27',['on_ToRegButton_clicked',['../class_auth_reg_form.html#aa89121d3917ed24515b199784bbf633f',1,'AuthRegForm']]],
+  ['one_5fstat_28',['one_stat',['../class_client_api.html#a7fb991e8581a3c560b08aa3c390f75ad',1,'ClientApi']]],
+  ['operator_3d_29',['operator=',['../class_client_api.html#a0f29c2c92678f05575d789aab15787ab',1,'ClientApi::operator=()'],['../class_database_singleton.html#a1e20d784f0a8f9d7b3c1cbd5497e2a0a',1,'DatabaseSingleton::operator=()'],['../class_data_base_singleton.html#a4e0acee6090b021304ccd81cda418f9d',1,'DataBaseSingleton::operator=()']]]
 ];

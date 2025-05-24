@@ -1,0 +1,73 @@
+\doxysection{clientapi.\+h}
+\hypertarget{clientapi_8h_source}{}\label{clientapi_8h_source}\index{/Users/sasha/polytech/Hampsetes/hampsters/Cazik/clientapi.h@{/Users/sasha/polytech/Hampsetes/hampsters/Cazik/clientapi.h}}
+\mbox{\hyperlink{clientapi_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#ifndef\ CLIENTAPI\_H}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ CLIENTAPI\_H}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <QTcpSocket>}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <QtNetwork>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <QByteArray>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <QDebug>}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_client_api}{ClientApi}};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_singleton_destroyer}{SingletonDestroyer}}}
+\DoxyCodeLine{00033\ \{}
+\DoxyCodeLine{00034\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_client_api}{ClientApi}}\ *\ \mbox{\hyperlink{class_singleton_destroyer_a241d8363336ab8452559af712447d062}{p\_instance}};\ }
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{class_singleton_destroyer_a8ac3166871f4c5411edfdb13594dee15}{\string~SingletonDestroyer}}();}
+\DoxyCodeLine{00042\ \ \ \ \ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_singleton_destroyer_a2b91ab39a22ffbfd14e26367644db6a2}{initialize}}(\mbox{\hyperlink{class_client_api}{ClientApi}}\ *\ p);}
+\DoxyCodeLine{00048\ \};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00074\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_client_api_a7187d53fcfcd7dc015ff664e4c5c52aa}{ClientApi}}:\ \textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00075\ \{}
+\DoxyCodeLine{00076\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_client_api_a7187d53fcfcd7dc015ff664e4c5c52aa}{ClientApi}}\ *\ \mbox{\hyperlink{class_client_api_a741e51fd778efa0bdfda541c0bb3c922}{p\_instance}};\ \ \ \ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_client_api_aa93ce997b9645496c0e17460fba08432}{SingletonDestroyer}}\ \mbox{\hyperlink{class_client_api_a361b542a22d620d9369aa9e65998b099}{destroyer}};\ }
+\DoxyCodeLine{00081\ \ \ \ \ QTcpSocket\ *\ \mbox{\hyperlink{class_client_api_a7696499830113ef291169611bf43e7bc}{mTcpSocket}};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00088\ \ \ \ \ \mbox{\hyperlink{class_client_api_a7187d53fcfcd7dc015ff664e4c5c52aa}{ClientApi}}(QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00089\ \ \ \ \ }
+\DoxyCodeLine{00090\ \ \ \ \ \mbox{\hyperlink{class_client_api_a3eec76226330adcfc35de56f131f4507}{ClientApi}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_client_api_a7187d53fcfcd7dc015ff664e4c5c52aa}{ClientApi}}\&)\ =\ \textcolor{keyword}{delete};\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00091\ \ \ \ \ \mbox{\hyperlink{class_client_api_a7187d53fcfcd7dc015ff664e4c5c52aa}{ClientApi}}\&\ \mbox{\hyperlink{class_client_api_a0f29c2c92678f05575d789aab15787ab}{operator\ =\ }}(\mbox{\hyperlink{class_client_api_a7187d53fcfcd7dc015ff664e4c5c52aa}{ClientApi}}\&)\ =\ \textcolor{keyword}{delete};\ \ \ \ \ }
+\DoxyCodeLine{00092\ \ \ \ \ }
+\DoxyCodeLine{00096\ \ \ \ \ \mbox{\hyperlink{class_client_api_a441ea643212483469187fb04245f18ee}{\string~ClientApi}}();}
+\DoxyCodeLine{00097\ \ \ \ \ }
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_client_api_aa93ce997b9645496c0e17460fba08432}{SingletonDestroyer}};}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_client_api_a7187d53fcfcd7dc015ff664e4c5c52aa}{ClientApi}}*\ \mbox{\hyperlink{class_client_api_a896ca9896a39a414c680076cdccb9bd6}{getInstance}}();}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00118\ \ \ \ \ QString\ \mbox{\hyperlink{class_client_api_a964fff92940fa76359adc1ff3981b5f1}{auth}}(QString\ login,\ QString\ password);}
+\DoxyCodeLine{00119\ \ \ \ \ }
+\DoxyCodeLine{00129\ \ \ \ \ QString\ \mbox{\hyperlink{class_client_api_ad5bc5df5045f183cccb2c14b2e3e9d11}{reg}}(QString\ login,\ QString\ password,\ QString\ confirmPassword);}
+\DoxyCodeLine{00130\ \ \ \ \ }
+\DoxyCodeLine{00138\ \ \ \ \ QByteArray\ \mbox{\hyperlink{class_client_api_a16b1ddadccc2fc98a7b340ae07fb0cf8}{query\_to\_server}}(QString\ query);}
+\DoxyCodeLine{00139\ \ \ \ \ }
+\DoxyCodeLine{00147\ \ \ \ \ QString\ \mbox{\hyperlink{class_client_api_a7fb991e8581a3c560b08aa3c390f75ad}{one\_stat}}(QString\ login);}
+\DoxyCodeLine{00148\ \ \ \ \ }
+\DoxyCodeLine{00158\ \ \ \ \ QString\ \mbox{\hyperlink{class_client_api_acd00a4a99c302a2a19cf129cf609b0f0}{toServer}}(\textcolor{keywordtype}{int}\ gameType,\ \textcolor{keywordtype}{int}\ betAmount,\ \textcolor{keywordtype}{int}\ winAmount);}
+\DoxyCodeLine{00159\ \ \ \ \ }
+\DoxyCodeLine{00170\ \ \ \ \ QString\ \mbox{\hyperlink{class_client_api_a145f6c557a1099ae2684aefbf29e2c03}{adminTo}}(QString\ userLogin,\ \textcolor{keywordtype}{int}\ operation,\ \textcolor{keywordtype}{int}\ amount,\ \textcolor{keywordtype}{int}\ adminId);}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00172\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00180\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_client_api_aa7fb4a2d0febe27006d1757ae0ca1ac2}{slotServerDisconnection}}();}
+\DoxyCodeLine{00181\ \};}
+\DoxyCodeLine{00182\ }
+\DoxyCodeLine{00183\ }
+\DoxyCodeLine{00184\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CLIENTAPI\_H}}
+
+\end{DoxyCode}

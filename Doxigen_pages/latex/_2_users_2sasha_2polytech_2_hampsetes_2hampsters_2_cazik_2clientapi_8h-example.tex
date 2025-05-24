@@ -1,0 +1,97 @@
+\doxysection{/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/clientapi.\+h}
+\hypertarget{_2_users_2sasha_2polytech_2_hampsetes_2hampsters_2_cazik_2clientapi_8h-example}{}\label{_2_users_2sasha_2polytech_2_hampsetes_2hampsters_2_cazik_2clientapi_8h-example}Singleton API для сетевого взаимодействия с сервером
+
+Singleton API для сетевого взаимодействия с серверомКласс \doxylink{class_client_api}{Client\+Api} предоставляет единый интерфейс для всех сетевых операций клиента казино "{}Хампстерс"{}. Реализует паттерн Singleton для обеспечения единственного TCP-\/соединения с сервером.
+
+Функциональность включает\+:
+\begin{DoxyItemize}
+\item Авторизацию и регистрацию пользователей
+\item Отправку игровых данных и получение результатов
+\item Административные операции
+\item Получение статистики и информации о пользователях
+\item Управление соединением с сервером
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_client_api}{ClientApi}}*\ api\ =\ \mbox{\hyperlink{class_client_api_a896ca9896a39a414c680076cdccb9bd6}{ClientApi::getInstance}}();}
+\DoxyCodeLine{QString\ result\ =\ api-\/>\mbox{\hyperlink{class_client_api_a964fff92940fa76359adc1ff3981b5f1}{auth}}(\textcolor{stringliteral}{"{}user"{}},\ \textcolor{stringliteral}{"{}password"{}});}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (result\ ==\ \textcolor{stringliteral}{"{}OK"{}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{//\ Успешная\ авторизация}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCodeInclude}{0}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#ifndef\ CLIENTAPI\_H}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ CLIENTAPI\_H}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ <QTcpSocket>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ <QtNetwork>}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ <QByteArray>}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ <QDebug>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{class\ }\mbox{\hyperlink{class_client_api}{ClientApi}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{class\ }\mbox{\hyperlink{class_singleton_destroyer}{SingletonDestroyer}}}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\textcolor{keyword}{private}:}
+\DoxyCodeLine{\ \ \ \ ClientApi\ *\ \mbox{\hyperlink{class_singleton_destroyer_a241d8363336ab8452559af712447d062}{p\_instance}};\ }
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{public}:}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{class_singleton_destroyer_a8ac3166871f4c5411edfdb13594dee15}{\string~SingletonDestroyer}}();}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_singleton_destroyer_a2b91ab39a22ffbfd14e26367644db6a2}{initialize}}(ClientApi\ *\ p);}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{class\ }\mbox{\hyperlink{class_client_api}{ClientApi}}:\ \textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{private}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_client_api_a7187d53fcfcd7dc015ff664e4c5c52aa}{ClientApi}}\ *\ \mbox{\hyperlink{class_client_api_a741e51fd778efa0bdfda541c0bb3c922}{p\_instance}};\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_client_api_aa93ce997b9645496c0e17460fba08432}{SingletonDestroyer}}\ \mbox{\hyperlink{class_client_api_a361b542a22d620d9369aa9e65998b099}{destroyer}};\ }
+\DoxyCodeLine{\ \ \ \ QTcpSocket\ *\ \mbox{\hyperlink{class_client_api_a7696499830113ef291169611bf43e7bc}{mTcpSocket}};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{protected}:}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{class_client_api_a7187d53fcfcd7dc015ff664e4c5c52aa}{ClientApi}}(QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{class_client_api_a7187d53fcfcd7dc015ff664e4c5c52aa}{ClientApi}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_client_api_a7187d53fcfcd7dc015ff664e4c5c52aa}{ClientApi}}\&)\ =\ \textcolor{keyword}{delete};\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{class_client_api_a7187d53fcfcd7dc015ff664e4c5c52aa}{ClientApi}}\&\ \mbox{\hyperlink{class_client_api_a0f29c2c92678f05575d789aab15787ab}{operator\ =\ }}(\mbox{\hyperlink{class_client_api_a7187d53fcfcd7dc015ff664e4c5c52aa}{ClientApi}}\&)\ =\ \textcolor{keyword}{delete};\ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{class_client_api_a441ea643212483469187fb04245f18ee}{\string~ClientApi}}();}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_client_api_aa93ce997b9645496c0e17460fba08432}{SingletonDestroyer}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{public}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_client_api_a7187d53fcfcd7dc015ff664e4c5c52aa}{ClientApi}}*\ \mbox{\hyperlink{class_client_api_a896ca9896a39a414c680076cdccb9bd6}{getInstance}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{public}:}
+\DoxyCodeLine{\ \ \ \ QString\ \mbox{\hyperlink{class_client_api_a964fff92940fa76359adc1ff3981b5f1}{auth}}(QString\ login,\ QString\ password);}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ QString\ \mbox{\hyperlink{class_client_api_ad5bc5df5045f183cccb2c14b2e3e9d11}{reg}}(QString\ login,\ QString\ password,\ QString\ confirmPassword);}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ QByteArray\ \mbox{\hyperlink{class_client_api_a16b1ddadccc2fc98a7b340ae07fb0cf8}{query\_to\_server}}(QString\ query);}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ QString\ \mbox{\hyperlink{class_client_api_a7fb991e8581a3c560b08aa3c390f75ad}{one\_stat}}(QString\ login);}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ QString\ \mbox{\hyperlink{class_client_api_acd00a4a99c302a2a19cf129cf609b0f0}{toServer}}(\textcolor{keywordtype}{int}\ gameType,\ \textcolor{keywordtype}{int}\ betAmount,\ \textcolor{keywordtype}{int}\ winAmount);}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ QString\ \mbox{\hyperlink{class_client_api_a145f6c557a1099ae2684aefbf29e2c03}{adminTo}}(QString\ userLogin,\ \textcolor{keywordtype}{int}\ operation,\ \textcolor{keywordtype}{int}\ amount,\ \textcolor{keywordtype}{int}\ adminId);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_client_api_aa7fb4a2d0febe27006d1757ae0ca1ac2}{slotServerDisconnection}}();}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CLIENTAPI\_H}}
+
+\end{DoxyCodeInclude}
+ 

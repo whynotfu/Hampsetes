@@ -2,7 +2,7 @@
 \hypertarget{class_casino_main_window}{}\label{class_casino_main_window}\index{CasinoMainWindow@{CasinoMainWindow}}
 
 
-Главное окно казино с меню выбора игр  
+Главное окно казино с интерфейсом выбора мини-\/игр  
 
 
 
@@ -19,26 +19,28 @@ Inheritance diagram for Casino\+Main\+Window\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_casino_main_window_a488484045b1548b69e7732becb7b3226}{slot\+\_\+show}} ()
-\begin{DoxyCompactList}\small\item\em Слот для показа главного окна \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_casino_main_window_a2fd729bceb38d50b29aea585af4b0c36}{change\+\_\+minigame}} (bool direction, QPixmap image, QPixmap name)
-\begin{DoxyCompactList}\small\item\em Смена отображаемой мини-\/игры в превью \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Показать главное окно казино \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_casino_main_window_a8ef4da18a7287ea89128409e33571a43}{change\+\_\+minigame}} (bool visible, QPixmap game\+Image, QPixmap game\+Name)
+\begin{DoxyCompactList}\small\item\em Сменить отображаемую мини-\/игру в карусели \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Signals}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_casino_main_window_abeed997a965c5696f0153f342b0ea720}{baraban\+\_\+sig}} ()
-\begin{DoxyCompactList}\small\item\em Сигнал для перехода к игре в слот-\/машину \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Сигнал запуска игры "{}Слоты"{} (Барабан) \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_casino_main_window_ac55ae1ca9ca0f788a8985da9f80dc70a}{ruletka\+\_\+sig}} ()
-\begin{DoxyCompactList}\small\item\em Сигнал для перехода к игре в рулетку \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Сигнал запуска игры "{}Рулетка"{}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_casino_main_window_ac42036b76b9f3be70ff64528467a6d04}{clicker\+\_\+sig}} ()
-\begin{DoxyCompactList}\small\item\em Сигнал для перехода к игре-\/кликеру \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Сигнал запуска игры "{}Кликер"{}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_casino_main_window_aae3f8eaca5c3b9b59157cb5392b41d13}{kosti\+\_\+sig}} ()
-\begin{DoxyCompactList}\small\item\em Сигнал для перехода к игре в кости \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Сигнал запуска игры "{}Кости"{}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_casino_main_window_a5b15487f45ab6d5801b02729e1b6d630}{gtn\+\_\+sig}} ()
-\begin{DoxyCompactList}\small\item\em Сигнал для перехода к игре "{}больше-\/меньше"{}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Сигнал запуска игры "{}Угадай число"{}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_casino_main_window_a046f0778ed18a19affc1fd03a293f6bf}{admn\+\_\+sig}} ()
-\begin{DoxyCompactList}\small\item\em Сигнал для перехода к административной панели \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Сигнал перехода в админ-\/панель \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_casino_main_window_a51303f10cac5f1eb90638cb89797db4f}{user\+\_\+sig}} ()
-\begin{DoxyCompactList}\small\item\em Сигнал для перехода к пользовательской панели \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Сигнал перехода в пользовательскую панель \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_casino_main_window_a5ea5f648c094e850d486ad378a61862c}{back\+\_\+sig}} ()
+\begin{DoxyCompactList}\small\item\em Сигнал возврата к авторизации \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -50,39 +52,44 @@ void \mbox{\hyperlink{class_casino_main_window_a51303f10cac5f1eb90638cb89797db4f
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_casino_main_window_a6e3fdfc3457e1e19a2d11d1be7684b0d}{on\+\_\+\+Next\+Game\+Button\+\_\+clicked}} ()
-\begin{DoxyCompactList}\small\item\em Обработчик кнопки переключения на следующую игру \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Обработчик нажатия кнопки "{}Следующая игра"{}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_casino_main_window_a04bc55d39380f68afe21b0ad8e734b3c}{on\+\_\+\+Play\+Button\+\_\+clicked}} ()
-\begin{DoxyCompactList}\small\item\em Обработчик кнопки начала игры \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Обработчик нажатия кнопки "{}Играть"{}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_casino_main_window_a8e05f9fafdeb68bdb357f05a1e1c757f}{on\+\_\+\+Admin\+\_\+page\+\_\+button\+\_\+clicked}} ()
-\begin{DoxyCompactList}\small\item\em Обработчик кнопки перехода к админ-\/панели \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Обработчик нажатия кнопки "{}Админ-\/панель"{}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_casino_main_window_a04c1040a5693a188b4e4e78dc9ac89fa}{on\+\_\+push\+Button\+\_\+clicked}} ()
-\begin{DoxyCompactList}\small\item\em Обработчик кнопки личной страницы пользователя \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Обработчик нажатия кнопки "{}Личный кабинет"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_casino_main_window_ad5126b359060a61f058391bdf2d365aa}{on\+\_\+push\+Button\+\_\+2\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em Обработчик нажатия кнопки "{}Назад"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-Ui\+::\+Casino\+Main\+Window \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_casino_main_window_ac741e2e94305fd89ba2f162932d81293}{ui}}
-\begin{DoxyCompactList}\small\item\em Указатель на UI объект главного окна \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ui_1_1_casino_main_window}{Ui\+::\+Casino\+Main\+Window}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_casino_main_window_ac741e2e94305fd89ba2f162932d81293}{ui}}
+\begin{DoxyCompactList}\small\item\em Пользовательский интерфейс, сгенерированный Qt Designer. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_casino_main_window_a30f9d661760758c1d38e45308494f677}{game\+\_\+slot}}
-\begin{DoxyCompactList}\small\item\em Индекс текущей выбранной мини-\/игры для циклического переключения \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Индекс текущей выбранной мини-\/игры в карусели \end{DoxyCompactList}\item 
 QPixmap \mbox{\hyperlink{class_casino_main_window_a239d304fa3a012eab60343dad4c7b81b}{Image}}
-\begin{DoxyCompactList}\small\item\em Изображение текущей выбранной игры \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Изображение превью текущей игры \end{DoxyCompactList}\item 
 QPixmap \mbox{\hyperlink{class_casino_main_window_acc6cd28080eef8124db7e1202ac383bf}{Name}}
-\begin{DoxyCompactList}\small\item\em Название текущей выбранной игры \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Изображение названия текущей игры \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Главное окно казино с меню выбора игр 
+Главное окно казино с интерфейсом выбора мини-\/игр 
 
-Класс \doxylink{class_casino_main_window}{Casino\+Main\+Window} представляет центральное меню приложения казино. Предоставляет пользователю возможность\+:
+Класс \doxylink{class_casino_main_window}{Casino\+Main\+Window} представляет основное меню казино "{}Хампстерс"{}. Предоставляет пользователю возможность\+:
 \begin{DoxyItemize}
-\item Выбирать из доступных мини-\/игр
-\item Просматривать превью игр с изображениями
-\item Переходить к админ-\/панели (для администраторов)
-\item Открывать личную страницу пользователя
-\item Просматривать текущий баланс и статистику
+\item Просматривать доступные мини-\/игры с помощью карусели
+\item Запускать выбранную игру
+\item Переходить в админ-\/панель (для администраторов)
+\item Переходить в личный кабинет
+\item Возвращаться к форме авторизации
 \end{DoxyItemize}
 
-Окно служит хабом для навигации по всем разделам приложения. 
+Окно отображает визуальные превью игр и их названия, позволяя пользователю переключаться между различными развлечениями. \begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2sasha_2polytech_2_hampsetes_2hampsters_2_cazik_2managerform_8h-example}{/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/managerform.\+h}}.\end{Desc}
+
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{class_casino_main_window_af39626e04442543326e7bab06eba3536}\index{CasinoMainWindow@{CasinoMainWindow}!CasinoMainWindow@{CasinoMainWindow}}
@@ -97,10 +104,10 @@ Casino\+Main\+Window\+::\+Casino\+Main\+Window (\begin{DoxyParamCaption}\item[{Q
 
 
 \begin{DoxyParams}{Parameters}
-{\em parent} & Родительский виджет (по умолчанию nullptr)\\
+{\em parent} & Родительский виджет \\
 \hline
 \end{DoxyParams}
-Инициализирует интерфейс главного меню и настраивает начальное состояние компонентов. \Hypertarget{class_casino_main_window_ae81612d7888a5cbb8ea8f17cee9fb1fa}\index{CasinoMainWindow@{CasinoMainWindow}!````~CasinoMainWindow@{\texorpdfstring{$\sim$}{\string~}CasinoMainWindow}}
+\Hypertarget{class_casino_main_window_ae81612d7888a5cbb8ea8f17cee9fb1fa}\index{CasinoMainWindow@{CasinoMainWindow}!````~CasinoMainWindow@{\texorpdfstring{$\sim$}{\string~}CasinoMainWindow}}
 \index{````~CasinoMainWindow@{\texorpdfstring{$\sim$}{\string~}CasinoMainWindow}!CasinoMainWindow@{CasinoMainWindow}}
 \doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}CasinoMainWindow()}{\string~CasinoMainWindow()}}
 {\footnotesize\ttfamily \label{class_casino_main_window_ae81612d7888a5cbb8ea8f17cee9fb1fa} 
@@ -110,7 +117,7 @@ Casino\+Main\+Window\+::\texorpdfstring{$\sim$}{\string~}\+Casino\+Main\+Window 
 
 Деструктор главного окна казино 
 
-Освобождает ресурсы, используемые главным меню. 
+
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_casino_main_window_a046f0778ed18a19affc1fd03a293f6bf}\index{CasinoMainWindow@{CasinoMainWindow}!admn\_sig@{admn\_sig}}
@@ -121,9 +128,19 @@ void Casino\+Main\+Window\+::admn\+\_\+sig (\begin{DoxyParamCaption}{}{}\end{Dox
 
 
 
-Сигнал для перехода к административной панели 
+Сигнал перехода в админ-\/панель 
 
-\Hypertarget{class_casino_main_window_abeed997a965c5696f0153f342b0ea720}\index{CasinoMainWindow@{CasinoMainWindow}!baraban\_sig@{baraban\_sig}}
+Испускается при запросе открытия панели администратора \Hypertarget{class_casino_main_window_a5ea5f648c094e850d486ad378a61862c}\index{CasinoMainWindow@{CasinoMainWindow}!back\_sig@{back\_sig}}
+\index{back\_sig@{back\_sig}!CasinoMainWindow@{CasinoMainWindow}}
+\doxysubsubsection{\texorpdfstring{back\_sig}{back\_sig}}
+{\footnotesize\ttfamily \label{class_casino_main_window_a5ea5f648c094e850d486ad378a61862c} 
+void Casino\+Main\+Window\+::back\+\_\+sig (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Сигнал возврата к авторизации 
+
+Испускается при запросе возврата к форме входа в систему \Hypertarget{class_casino_main_window_abeed997a965c5696f0153f342b0ea720}\index{CasinoMainWindow@{CasinoMainWindow}!baraban\_sig@{baraban\_sig}}
 \index{baraban\_sig@{baraban\_sig}!CasinoMainWindow@{CasinoMainWindow}}
 \doxysubsubsection{\texorpdfstring{baraban\_sig}{baraban\_sig}}
 {\footnotesize\ttfamily \label{class_casino_main_window_abeed997a965c5696f0153f342b0ea720} 
@@ -131,28 +148,28 @@ void Casino\+Main\+Window\+::baraban\+\_\+sig (\begin{DoxyParamCaption}{}{}\end{
 
 
 
-Сигнал для перехода к игре в слот-\/машину 
+Сигнал запуска игры "{}Слоты"{} (Барабан) 
 
-\Hypertarget{class_casino_main_window_a2fd729bceb38d50b29aea585af4b0c36}\index{CasinoMainWindow@{CasinoMainWindow}!change\_minigame@{change\_minigame}}
+Испускается при выборе и запуске игры в игровые автоматы \Hypertarget{class_casino_main_window_a8ef4da18a7287ea89128409e33571a43}\index{CasinoMainWindow@{CasinoMainWindow}!change\_minigame@{change\_minigame}}
 \index{change\_minigame@{change\_minigame}!CasinoMainWindow@{CasinoMainWindow}}
 \doxysubsubsection{\texorpdfstring{change\_minigame}{change\_minigame}}
-{\footnotesize\ttfamily \label{class_casino_main_window_a2fd729bceb38d50b29aea585af4b0c36} 
-void Casino\+Main\+Window\+::change\+\_\+minigame (\begin{DoxyParamCaption}\item[{bool}]{direction}{, }\item[{QPixmap}]{image}{, }\item[{QPixmap}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+{\footnotesize\ttfamily \label{class_casino_main_window_a8ef4da18a7287ea89128409e33571a43} 
+void Casino\+Main\+Window\+::change\+\_\+minigame (\begin{DoxyParamCaption}\item[{bool}]{visible}{, }\item[{QPixmap}]{game\+Image}{, }\item[{QPixmap}]{game\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
 
 
 
-Смена отображаемой мини-\/игры в превью 
+Сменить отображаемую мини-\/игру в карусели 
 
 
 \begin{DoxyParams}{Parameters}
-{\em direction} & Направление переключения (true -\/ вперед, false -\/ назад) \\
+{\em visible} & Видимость элементов интерфейса \\
 \hline
-{\em image} & Изображение игры для отображения \\
+{\em game\+Image} & Изображение превью игры \\
 \hline
-{\em name} & Название игры для отображения\\
+{\em game\+Name} & Изображение названия игры\\
 \hline
 \end{DoxyParams}
-Обновляет превью игры в главном меню, показывая изображение и название выбранной игры. \Hypertarget{class_casino_main_window_ac42036b76b9f3be70ff64528467a6d04}\index{CasinoMainWindow@{CasinoMainWindow}!clicker\_sig@{clicker\_sig}}
+Обновляет визуальное представление выбранной игры \Hypertarget{class_casino_main_window_ac42036b76b9f3be70ff64528467a6d04}\index{CasinoMainWindow@{CasinoMainWindow}!clicker\_sig@{clicker\_sig}}
 \index{clicker\_sig@{clicker\_sig}!CasinoMainWindow@{CasinoMainWindow}}
 \doxysubsubsection{\texorpdfstring{clicker\_sig}{clicker\_sig}}
 {\footnotesize\ttfamily \label{class_casino_main_window_ac42036b76b9f3be70ff64528467a6d04} 
@@ -160,9 +177,9 @@ void Casino\+Main\+Window\+::clicker\+\_\+sig (\begin{DoxyParamCaption}{}{}\end{
 
 
 
-Сигнал для перехода к игре-\/кликеру 
+Сигнал запуска игры "{}Кликер"{}. 
 
-\Hypertarget{class_casino_main_window_a5b15487f45ab6d5801b02729e1b6d630}\index{CasinoMainWindow@{CasinoMainWindow}!gtn\_sig@{gtn\_sig}}
+Испускается при выборе и запуске кликер-\/игры для заработка робуксов \Hypertarget{class_casino_main_window_a5b15487f45ab6d5801b02729e1b6d630}\index{CasinoMainWindow@{CasinoMainWindow}!gtn\_sig@{gtn\_sig}}
 \index{gtn\_sig@{gtn\_sig}!CasinoMainWindow@{CasinoMainWindow}}
 \doxysubsubsection{\texorpdfstring{gtn\_sig}{gtn\_sig}}
 {\footnotesize\ttfamily \label{class_casino_main_window_a5b15487f45ab6d5801b02729e1b6d630} 
@@ -170,9 +187,9 @@ void Casino\+Main\+Window\+::gtn\+\_\+sig (\begin{DoxyParamCaption}{}{}\end{Doxy
 
 
 
-Сигнал для перехода к игре "{}больше-\/меньше"{}. 
+Сигнал запуска игры "{}Угадай число"{}. 
 
-\Hypertarget{class_casino_main_window_aae3f8eaca5c3b9b59157cb5392b41d13}\index{CasinoMainWindow@{CasinoMainWindow}!kosti\_sig@{kosti\_sig}}
+Испускается при выборе и запуске игры "{}больше-\/меньше"{} \Hypertarget{class_casino_main_window_aae3f8eaca5c3b9b59157cb5392b41d13}\index{CasinoMainWindow@{CasinoMainWindow}!kosti\_sig@{kosti\_sig}}
 \index{kosti\_sig@{kosti\_sig}!CasinoMainWindow@{CasinoMainWindow}}
 \doxysubsubsection{\texorpdfstring{kosti\_sig}{kosti\_sig}}
 {\footnotesize\ttfamily \label{class_casino_main_window_aae3f8eaca5c3b9b59157cb5392b41d13} 
@@ -180,9 +197,9 @@ void Casino\+Main\+Window\+::kosti\+\_\+sig (\begin{DoxyParamCaption}{}{}\end{Do
 
 
 
-Сигнал для перехода к игре в кости 
+Сигнал запуска игры "{}Кости"{}. 
 
-\Hypertarget{class_casino_main_window_a8e05f9fafdeb68bdb357f05a1e1c757f}\index{CasinoMainWindow@{CasinoMainWindow}!on\_Admin\_page\_button\_clicked@{on\_Admin\_page\_button\_clicked}}
+Испускается при выборе и запуске игры в игральные кости \Hypertarget{class_casino_main_window_a8e05f9fafdeb68bdb357f05a1e1c757f}\index{CasinoMainWindow@{CasinoMainWindow}!on\_Admin\_page\_button\_clicked@{on\_Admin\_page\_button\_clicked}}
 \index{on\_Admin\_page\_button\_clicked@{on\_Admin\_page\_button\_clicked}!CasinoMainWindow@{CasinoMainWindow}}
 \doxysubsubsection{\texorpdfstring{on\_Admin\_page\_button\_clicked}{on\_Admin\_page\_button\_clicked}}
 {\footnotesize\ttfamily \label{class_casino_main_window_a8e05f9fafdeb68bdb357f05a1e1c757f} 
@@ -190,9 +207,9 @@ void Casino\+Main\+Window\+::on\+\_\+\+Admin\+\_\+page\+\_\+button\+\_\+clicked 
 
 
 
-Обработчик кнопки перехода к админ-\/панели 
+Обработчик нажатия кнопки "{}Админ-\/панель"{}. 
 
-Открывает административную панель для управления системой (доступно только администраторам). \Hypertarget{class_casino_main_window_a6e3fdfc3457e1e19a2d11d1be7684b0d}\index{CasinoMainWindow@{CasinoMainWindow}!on\_NextGameButton\_clicked@{on\_NextGameButton\_clicked}}
+Переход в панель администратора (доступно только админам) \Hypertarget{class_casino_main_window_a6e3fdfc3457e1e19a2d11d1be7684b0d}\index{CasinoMainWindow@{CasinoMainWindow}!on\_NextGameButton\_clicked@{on\_NextGameButton\_clicked}}
 \index{on\_NextGameButton\_clicked@{on\_NextGameButton\_clicked}!CasinoMainWindow@{CasinoMainWindow}}
 \doxysubsubsection{\texorpdfstring{on\_NextGameButton\_clicked}{on\_NextGameButton\_clicked}}
 {\footnotesize\ttfamily \label{class_casino_main_window_a6e3fdfc3457e1e19a2d11d1be7684b0d} 
@@ -200,9 +217,9 @@ void Casino\+Main\+Window\+::on\+\_\+\+Next\+Game\+Button\+\_\+clicked (\begin{D
 
 
 
-Обработчик кнопки переключения на следующую игру 
+Обработчик нажатия кнопки "{}Следующая игра"{}. 
 
-Циклически переключает отображаемую игру в превью, обновляя изображения и описания. \Hypertarget{class_casino_main_window_a04bc55d39380f68afe21b0ad8e734b3c}\index{CasinoMainWindow@{CasinoMainWindow}!on\_PlayButton\_clicked@{on\_PlayButton\_clicked}}
+Переключает карусель на следующую доступную мини-\/игру \Hypertarget{class_casino_main_window_a04bc55d39380f68afe21b0ad8e734b3c}\index{CasinoMainWindow@{CasinoMainWindow}!on\_PlayButton\_clicked@{on\_PlayButton\_clicked}}
 \index{on\_PlayButton\_clicked@{on\_PlayButton\_clicked}!CasinoMainWindow@{CasinoMainWindow}}
 \doxysubsubsection{\texorpdfstring{on\_PlayButton\_clicked}{on\_PlayButton\_clicked}}
 {\footnotesize\ttfamily \label{class_casino_main_window_a04bc55d39380f68afe21b0ad8e734b3c} 
@@ -210,9 +227,19 @@ void Casino\+Main\+Window\+::on\+\_\+\+Play\+Button\+\_\+clicked (\begin{DoxyPar
 
 
 
-Обработчик кнопки начала игры 
+Обработчик нажатия кнопки "{}Играть"{}. 
 
-Запускает выбранную в данный момент мини-\/игру, генерируя соответствующий сигнал для перехода. \Hypertarget{class_casino_main_window_a04c1040a5693a188b4e4e78dc9ac89fa}\index{CasinoMainWindow@{CasinoMainWindow}!on\_pushButton\_clicked@{on\_pushButton\_clicked}}
+Запускает выбранную мини-\/игру, отправляя соответствующий сигнал \Hypertarget{class_casino_main_window_ad5126b359060a61f058391bdf2d365aa}\index{CasinoMainWindow@{CasinoMainWindow}!on\_pushButton\_2\_clicked@{on\_pushButton\_2\_clicked}}
+\index{on\_pushButton\_2\_clicked@{on\_pushButton\_2\_clicked}!CasinoMainWindow@{CasinoMainWindow}}
+\doxysubsubsection{\texorpdfstring{on\_pushButton\_2\_clicked}{on\_pushButton\_2\_clicked}}
+{\footnotesize\ttfamily \label{class_casino_main_window_ad5126b359060a61f058391bdf2d365aa} 
+void Casino\+Main\+Window\+::on\+\_\+push\+Button\+\_\+2\+\_\+clicked (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Обработчик нажатия кнопки "{}Назад"{}. 
+
+Возврат к форме авторизации/регистрации \Hypertarget{class_casino_main_window_a04c1040a5693a188b4e4e78dc9ac89fa}\index{CasinoMainWindow@{CasinoMainWindow}!on\_pushButton\_clicked@{on\_pushButton\_clicked}}
 \index{on\_pushButton\_clicked@{on\_pushButton\_clicked}!CasinoMainWindow@{CasinoMainWindow}}
 \doxysubsubsection{\texorpdfstring{on\_pushButton\_clicked}{on\_pushButton\_clicked}}
 {\footnotesize\ttfamily \label{class_casino_main_window_a04c1040a5693a188b4e4e78dc9ac89fa} 
@@ -220,9 +247,9 @@ void Casino\+Main\+Window\+::on\+\_\+push\+Button\+\_\+clicked (\begin{DoxyParam
 
 
 
-Обработчик кнопки личной страницы пользователя 
+Обработчик нажатия кнопки "{}Личный кабинет"{}. 
 
-Открывает персональную страницу пользователя со статистикой игр и настройками аккаунта. \Hypertarget{class_casino_main_window_ac55ae1ca9ca0f788a8985da9f80dc70a}\index{CasinoMainWindow@{CasinoMainWindow}!ruletka\_sig@{ruletka\_sig}}
+Переход в пользовательскую панель управления аккаунтом \Hypertarget{class_casino_main_window_ac55ae1ca9ca0f788a8985da9f80dc70a}\index{CasinoMainWindow@{CasinoMainWindow}!ruletka\_sig@{ruletka\_sig}}
 \index{ruletka\_sig@{ruletka\_sig}!CasinoMainWindow@{CasinoMainWindow}}
 \doxysubsubsection{\texorpdfstring{ruletka\_sig}{ruletka\_sig}}
 {\footnotesize\ttfamily \label{class_casino_main_window_ac55ae1ca9ca0f788a8985da9f80dc70a} 
@@ -230,9 +257,9 @@ void Casino\+Main\+Window\+::ruletka\+\_\+sig (\begin{DoxyParamCaption}{}{}\end{
 
 
 
-Сигнал для перехода к игре в рулетку 
+Сигнал запуска игры "{}Рулетка"{}. 
 
-\Hypertarget{class_casino_main_window_a488484045b1548b69e7732becb7b3226}\index{CasinoMainWindow@{CasinoMainWindow}!slot\_show@{slot\_show}}
+Испускается при выборе и запуске игры в рулетку \Hypertarget{class_casino_main_window_a488484045b1548b69e7732becb7b3226}\index{CasinoMainWindow@{CasinoMainWindow}!slot\_show@{slot\_show}}
 \index{slot\_show@{slot\_show}!CasinoMainWindow@{CasinoMainWindow}}
 \doxysubsubsection{\texorpdfstring{slot\_show}{slot\_show}}
 {\footnotesize\ttfamily \label{class_casino_main_window_a488484045b1548b69e7732becb7b3226} 
@@ -240,9 +267,9 @@ void Casino\+Main\+Window\+::slot\+\_\+show (\begin{DoxyParamCaption}{}{}\end{Do
 
 
 
-Слот для показа главного окна 
+Показать главное окно казино 
 
-Отображает главное меню казино и обновляет информацию о текущем пользователе и его балансе. \Hypertarget{class_casino_main_window_a51303f10cac5f1eb90638cb89797db4f}\index{CasinoMainWindow@{CasinoMainWindow}!user\_sig@{user\_sig}}
+Отображает окно и подготавливает интерфейс для взаимодействия \Hypertarget{class_casino_main_window_a51303f10cac5f1eb90638cb89797db4f}\index{CasinoMainWindow@{CasinoMainWindow}!user\_sig@{user\_sig}}
 \index{user\_sig@{user\_sig}!CasinoMainWindow@{CasinoMainWindow}}
 \doxysubsubsection{\texorpdfstring{user\_sig}{user\_sig}}
 {\footnotesize\ttfamily \label{class_casino_main_window_a51303f10cac5f1eb90638cb89797db4f} 
@@ -250,9 +277,9 @@ void Casino\+Main\+Window\+::user\+\_\+sig (\begin{DoxyParamCaption}{}{}\end{Dox
 
 
 
-Сигнал для перехода к пользовательской панели 
+Сигнал перехода в пользовательскую панель 
 
-
+Испускается при запросе открытия личного кабинета 
 
 \doxysubsection{Member Data Documentation}
 \Hypertarget{class_casino_main_window_a30f9d661760758c1d38e45308494f677}\index{CasinoMainWindow@{CasinoMainWindow}!game\_slot@{game\_slot}}
@@ -263,7 +290,7 @@ int Casino\+Main\+Window\+::game\+\_\+slot\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Индекс текущей выбранной мини-\/игры для циклического переключения 
+Индекс текущей выбранной мини-\/игры в карусели 
 
 \Hypertarget{class_casino_main_window_a239d304fa3a012eab60343dad4c7b81b}\index{CasinoMainWindow@{CasinoMainWindow}!Image@{Image}}
 \index{Image@{Image}!CasinoMainWindow@{CasinoMainWindow}}
@@ -273,7 +300,7 @@ QPixmap Casino\+Main\+Window\+::\+Image\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Изображение текущей выбранной игры 
+Изображение превью текущей игры 
 
 \Hypertarget{class_casino_main_window_acc6cd28080eef8124db7e1202ac383bf}\index{CasinoMainWindow@{CasinoMainWindow}!Name@{Name}}
 \index{Name@{Name}!CasinoMainWindow@{CasinoMainWindow}}
@@ -283,21 +310,22 @@ QPixmap Casino\+Main\+Window\+::\+Name\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Название текущей выбранной игры 
+Изображение названия текущей игры 
 
 \Hypertarget{class_casino_main_window_ac741e2e94305fd89ba2f162932d81293}\index{CasinoMainWindow@{CasinoMainWindow}!ui@{ui}}
 \index{ui@{ui}!CasinoMainWindow@{CasinoMainWindow}}
 \doxysubsubsection{\texorpdfstring{ui}{ui}}
 {\footnotesize\ttfamily \label{class_casino_main_window_ac741e2e94305fd89ba2f162932d81293} 
-Ui\+::\+Casino\+Main\+Window\texorpdfstring{$\ast$}{*} Casino\+Main\+Window\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\hyperlink{class_ui_1_1_casino_main_window}{Ui\+::\+Casino\+Main\+Window}}\texorpdfstring{$\ast$}{*} Casino\+Main\+Window\+::ui\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Указатель на UI объект главного окна 
+Пользовательский интерфейс, сгенерированный Qt Designer. 
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 /\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/\mbox{\hyperlink{casinomainwindow_8h}{casinomainwindow.\+h}}\item 
+/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/build/release/\mbox{\hyperlink{moc__casinomainwindow_8cpp}{moc\+\_\+casinomainwindow.\+cpp}}\item 
 /\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/\mbox{\hyperlink{casinomainwindow_8cpp}{casinomainwindow.\+cpp}}\end{DoxyCompactItemize}

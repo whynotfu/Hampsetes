@@ -1,14 +1,3 @@
-/**
- * @file ruletka.cpp
- * @brief Реализация игры в рулетку
- * @author Команда разработчиков
- * @date 2025
- * @version 1.0
- * 
- * Содержит реализацию класса Ruletka - классической азартной игры
- * в рулетку с цветными секторами и анимацией вращения.
- */
-
 #include "ruletka.h"
 #include "ui_ruletka.h"
 #include "client_functions.h"
@@ -20,6 +9,7 @@ bool rotate=false;
 Ruletka::Ruletka(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::Ruletka)
+    , clientApi(ClientApi::getInstance())
 {
     ui->setupUi(this);
 
@@ -49,7 +39,6 @@ Ruletka::Ruletka(QWidget *parent)
     this->size_of_stavka = 0;
     this->object_of_stavka = 0;
     std::srand(static_cast<unsigned int>(std::time(0)));
-
 }
 
 void Ruletka::slot_show(){
@@ -64,6 +53,7 @@ Ruletka::~Ruletka()
 
 void Ruletka::on_BackButton_clicked()
 {
+    qDebug() << clientApi->toServer(robuks,TotalBets, TotalWins);
     emit to_main();
     this->close();
 }
@@ -92,9 +82,14 @@ void Ruletka::on_ButtonPlay_clicked()
             ui->label_text->setText("Вы выиграли! ХАРОООШ! ");
             if (num == 1 or num == 2){
                 robuks += size_of_stavka*2;
+                TotalWins += size_of_stavka*2;
+                TotalBets += 1;
             }
             else if(num == 3){
                 robuks += size_of_stavka*10;
+                TotalWins += size_of_stavka*10;
+                TotalBets += 1;
+
             }
         }
         else{

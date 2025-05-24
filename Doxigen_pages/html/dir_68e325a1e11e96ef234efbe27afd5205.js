@@ -1,5 +1,6 @@
 var dir_68e325a1e11e96ef234efbe27afd5205 =
 [
+    [ "build", "dir_84bf239f26e805f697f92641747b5c89.html", "dir_84bf239f26e805f697f92641747b5c89" ],
     [ "admin_page.cpp", "admin__page_8cpp.html", null ],
     [ "admin_page.h", "admin__page_8h.html", "admin__page_8h" ],
     [ "authregform.cpp", "authregform_8cpp.html", null ],
@@ -10,6 +11,8 @@ var dir_68e325a1e11e96ef234efbe27afd5205 =
     [ "casinomainwindow.h", "casinomainwindow_8h.html", "casinomainwindow_8h" ],
     [ "client_functions.cpp", "client__functions_8cpp.html", "client__functions_8cpp" ],
     [ "client_functions.h", "client__functions_8h.html", "client__functions_8h" ],
+    [ "clientapi.cpp", "clientapi_8cpp.html", null ],
+    [ "clientapi.h", "clientapi_8h.html", "clientapi_8h" ],
     [ "gtn.cpp", "gtn_8cpp.html", null ],
     [ "gtn.h", "gtn_8h.html", "gtn_8h" ],
     [ "kliker.cpp", "kliker_8cpp.html", null ],

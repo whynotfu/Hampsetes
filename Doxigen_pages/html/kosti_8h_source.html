@@ -107,77 +107,79 @@ $(function(){initNavTree('kosti_8h_source.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 <a href="kosti_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef KOSTI_H</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define KOSTI_H</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;QDialog&gt;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;QPixmap&gt;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_ui.html">Ui</a> {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">class </span>Kosti;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span></div>
-<div class="foldopen" id="foldopen00039" data-start="{" data-end="};">
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_kosti.html">   39</a></span><span class="keyword">class </span><a class="code hl_function" href="class_kosti.html#a4d8e95d954885dd93318c55426d0a7de">Kosti</a> : <span class="keyword">public</span> QDialog</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    Q_OBJECT</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_kosti.html#a4d8e95d954885dd93318c55426d0a7de">Kosti</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_function" href="class_kosti.html#a04bac6d629a1d051b526fe91a3e24056">~Kosti</a>();</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_kosti.html#a6dc7b4364ee16224cd9588d58322e4e6">slot_show</a>();</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_kosti.html#a80b9d4d64ae7c108d049f13c448fa2fe">updateBalance</a>();</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keyword">private</span> slots:</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_kosti.html#ab970ed2ea123ec4540926ade454d4bd1">on_pushButtonPlay_clicked</a>();</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_kosti.html#af0723442e86d4d2c42354ef08d14fbff">on_pushButton1000_clicked</a>();</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_kosti.html#a7f38ef26f33c7f890e1c7ee278232f15">on_pushButton500_clicked</a>();</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    </div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_kosti.html#ac72cc9deb3ad311f98ce90bcf1867890">on_pushButton100_clicked</a>();</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_kosti.html#a3464a34daed3818f1d7e187280689aba">on_BackButton_clicked</a>();</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="class_kosti.html#a5bfe6f8a61320a98ad32ea955febe5bd">  119</a></span>    Ui::Kosti *<a class="code hl_variable" href="class_kosti.html#a5bfe6f8a61320a98ad32ea955febe5bd">ui</a>;</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    </div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="class_kosti.html#a906b33da6470251b79e6323822cdd178">  122</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_kosti.html#a906b33da6470251b79e6323822cdd178">size_of_stavka</a>;</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="class_kosti.html#ab38274edb90c0d1db41701a651f9be06">  125</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_kosti.html#ab38274edb90c0d1db41701a651f9be06">robuks</a>;</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    </div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_kosti.html#a5b32f2708520e3329adf24b7205fcc90">rollDice</a>();</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#ifndef KOSTI_H</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#define KOSTI_H</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;QDialog&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;QPixmap&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="clientapi_8h.html">clientapi.h</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_ui.html">Ui</a> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">class </span><a class="code hl_class" href="class_ui_1_1_kosti.html">Kosti</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span></div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="};">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_kosti.html">   40</a></span><span class="keyword">class </span><a class="code hl_function" href="class_kosti.html#a4d8e95d954885dd93318c55426d0a7de">Kosti</a> : <span class="keyword">public</span> QDialog</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>{</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    Q_OBJECT</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_kosti.html#a4d8e95d954885dd93318c55426d0a7de">Kosti</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_function" href="class_kosti.html#a04bac6d629a1d051b526fe91a3e24056">~Kosti</a>();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_kosti.html#a6dc7b4364ee16224cd9588d58322e4e6">slot_show</a>();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_kosti.html#a80b9d4d64ae7c108d049f13c448fa2fe">updateBalance</a>();</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">private</span> slots:</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_kosti.html#ab970ed2ea123ec4540926ade454d4bd1">on_pushButtonPlay_clicked</a>();</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_kosti.html#af0723442e86d4d2c42354ef08d14fbff">on_pushButton1000_clicked</a>();</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_kosti.html#a7f38ef26f33c7f890e1c7ee278232f15">on_pushButton500_clicked</a>();</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_kosti.html#ac72cc9deb3ad311f98ce90bcf1867890">on_pushButton100_clicked</a>();</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_kosti.html#a3464a34daed3818f1d7e187280689aba">on_BackButton_clicked</a>();</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="class_kosti.html#a3d11c7594d0d078d9150fb158af9e637">  113</a></span>    <a class="code hl_class" href="class_client_api.html">ClientApi</a> *<a class="code hl_variable" href="class_kosti.html#a3d11c7594d0d078d9150fb158af9e637">clientApi</a>;     </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="class_kosti.html#a5bfe6f8a61320a98ad32ea955febe5bd">  114</a></span>    <a class="code hl_class" href="class_ui_1_1_kosti.html">Ui::Kosti</a> *<a class="code hl_variable" href="class_kosti.html#a5bfe6f8a61320a98ad32ea955febe5bd">ui</a>;           </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="class_kosti.html#a906b33da6470251b79e6323822cdd178">  115</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_kosti.html#a906b33da6470251b79e6323822cdd178">size_of_stavka</a>;      </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_kosti.html#a5b32f2708520e3329adf24b7205fcc90">rollDice</a>();</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_kosti.html#a93838eed8fb01142b8ee1080a6c56711">updateDiceImages</a>(<span class="keywordtype">int</span> dice1, <span class="keywordtype">int</span> dice2);</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    </div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_kosti.html#a93838eed8fb01142b8ee1080a6c56711">updateDiceImages</a>(<span class="keywordtype">int</span> dice1, <span class="keywordtype">int</span> dice2);</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    </div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_kosti.html#ad560cafbaab2e5cf48acedb6f158a83d">showResult</a>(<span class="keywordtype">int</span> dice1, <span class="keywordtype">int</span> dice2);</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>signals:</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="class_kosti.html#aa16fe12965887a24b29d9f6480878260">  163</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="class_kosti.html#aa16fe12965887a24b29d9f6480878260">to_main</a>(QString username);</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>};</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_kosti.html#ad560cafbaab2e5cf48acedb6f158a83d">showResult</a>(<span class="keywordtype">int</span> dice1, <span class="keywordtype">int</span> dice2);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>signals:</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="class_kosti.html#a07416cea09e50790df61e2dcb6413861">to_main</a>(QString playerLogin);</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>};</div>
 </div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="preprocessor">#endif </span><span class="comment">// KOSTI_H</span></div>
-<div class="ttc" id="aclass_kosti_html_a04bac6d629a1d051b526fe91a3e24056"><div class="ttname"><a href="class_kosti.html#a04bac6d629a1d051b526fe91a3e24056">Kosti::~Kosti</a></div><div class="ttdeci">~Kosti()</div><div class="ttdoc">Деструктор игры в кости</div><div class="ttdef"><b>Definition</b> kosti.cpp:52</div></div>
-<div class="ttc" id="aclass_kosti_html_a3464a34daed3818f1d7e187280689aba"><div class="ttname"><a href="class_kosti.html#a3464a34daed3818f1d7e187280689aba">Kosti::on_BackButton_clicked</a></div><div class="ttdeci">void on_BackButton_clicked()</div><div class="ttdoc">Обработчик кнопки возврата в главное меню</div><div class="ttdef"><b>Definition</b> kosti.cpp:117</div></div>
-<div class="ttc" id="aclass_kosti_html_a4d8e95d954885dd93318c55426d0a7de"><div class="ttname"><a href="class_kosti.html#a4d8e95d954885dd93318c55426d0a7de">Kosti::Kosti</a></div><div class="ttdeci">Kosti(QWidget *parent=nullptr)</div><div class="ttdoc">Конструктор игры в кости</div><div class="ttdef"><b>Definition</b> kosti.cpp:19</div></div>
-<div class="ttc" id="aclass_kosti_html_a5b32f2708520e3329adf24b7205fcc90"><div class="ttname"><a href="class_kosti.html#a5b32f2708520e3329adf24b7205fcc90">Kosti::rollDice</a></div><div class="ttdeci">void rollDice()</div><div class="ttdoc">Выполнение броска костей</div><div class="ttdef"><b>Definition</b> kosti.cpp:68</div></div>
-<div class="ttc" id="aclass_kosti_html_a5bfe6f8a61320a98ad32ea955febe5bd"><div class="ttname"><a href="class_kosti.html#a5bfe6f8a61320a98ad32ea955febe5bd">Kosti::ui</a></div><div class="ttdeci">Ui::Kosti * ui</div><div class="ttdoc">Указатель на UI объект игры в кости</div><div class="ttdef"><b>Definition</b> kosti.h:119</div></div>
-<div class="ttc" id="aclass_kosti_html_a6dc7b4364ee16224cd9588d58322e4e6"><div class="ttname"><a href="class_kosti.html#a6dc7b4364ee16224cd9588d58322e4e6">Kosti::slot_show</a></div><div class="ttdeci">void slot_show()</div><div class="ttdoc">Слот для показа окна игры</div><div class="ttdef"><b>Definition</b> kosti.cpp:47</div></div>
-<div class="ttc" id="aclass_kosti_html_a7f38ef26f33c7f890e1c7ee278232f15"><div class="ttname"><a href="class_kosti.html#a7f38ef26f33c7f890e1c7ee278232f15">Kosti::on_pushButton500_clicked</a></div><div class="ttdeci">void on_pushButton500_clicked()</div><div class="ttdoc">Обработчик кнопки ставки 500 робуксов</div><div class="ttdef"><b>Definition</b> kosti.cpp:105</div></div>
-<div class="ttc" id="aclass_kosti_html_a80b9d4d64ae7c108d049f13c448fa2fe"><div class="ttname"><a href="class_kosti.html#a80b9d4d64ae7c108d049f13c448fa2fe">Kosti::updateBalance</a></div><div class="ttdeci">void updateBalance()</div><div class="ttdoc">Обновление отображения баланса игрока</div><div class="ttdef"><b>Definition</b> kosti.cpp:122</div></div>
-<div class="ttc" id="aclass_kosti_html_a906b33da6470251b79e6323822cdd178"><div class="ttname"><a href="class_kosti.html#a906b33da6470251b79e6323822cdd178">Kosti::size_of_stavka</a></div><div class="ttdeci">int size_of_stavka</div><div class="ttdoc">Размер текущей ставки игрока</div><div class="ttdef"><b>Definition</b> kosti.h:122</div></div>
-<div class="ttc" id="aclass_kosti_html_a93838eed8fb01142b8ee1080a6c56711"><div class="ttname"><a href="class_kosti.html#a93838eed8fb01142b8ee1080a6c56711">Kosti::updateDiceImages</a></div><div class="ttdeci">void updateDiceImages(int dice1, int dice2)</div><div class="ttdoc">Обновление изображений костей</div><div class="ttdef"><b>Definition</b> kosti.cpp:81</div></div>
-<div class="ttc" id="aclass_kosti_html_aa16fe12965887a24b29d9f6480878260"><div class="ttname"><a href="class_kosti.html#aa16fe12965887a24b29d9f6480878260">Kosti::to_main</a></div><div class="ttdeci">void to_main(QString username)</div><div class="ttdoc">Сигнал возврата в главное меню</div></div>
-<div class="ttc" id="aclass_kosti_html_ab38274edb90c0d1db41701a651f9be06"><div class="ttname"><a href="class_kosti.html#ab38274edb90c0d1db41701a651f9be06">Kosti::robuks</a></div><div class="ttdeci">int robuks</div><div class="ttdoc">Текущий баланс игрока в робуксах</div><div class="ttdef"><b>Definition</b> kosti.h:125</div></div>
-<div class="ttc" id="aclass_kosti_html_ab970ed2ea123ec4540926ade454d4bd1"><div class="ttname"><a href="class_kosti.html#ab970ed2ea123ec4540926ade454d4bd1">Kosti::on_pushButtonPlay_clicked</a></div><div class="ttdeci">void on_pushButtonPlay_clicked()</div><div class="ttdoc">Обработчик кнопки &quot;Играть&quot;.</div><div class="ttdef"><b>Definition</b> kosti.cpp:57</div></div>
-<div class="ttc" id="aclass_kosti_html_ac72cc9deb3ad311f98ce90bcf1867890"><div class="ttname"><a href="class_kosti.html#ac72cc9deb3ad311f98ce90bcf1867890">Kosti::on_pushButton100_clicked</a></div><div class="ttdeci">void on_pushButton100_clicked()</div><div class="ttdoc">Обработчик кнопки ставки 100 робуксов</div><div class="ttdef"><b>Definition</b> kosti.cpp:111</div></div>
-<div class="ttc" id="aclass_kosti_html_ad560cafbaab2e5cf48acedb6f158a83d"><div class="ttname"><a href="class_kosti.html#ad560cafbaab2e5cf48acedb6f158a83d">Kosti::showResult</a></div><div class="ttdeci">void showResult(int dice1, int dice2)</div><div class="ttdoc">Показ результата игры</div><div class="ttdef"><b>Definition</b> kosti.cpp:87</div></div>
-<div class="ttc" id="aclass_kosti_html_af0723442e86d4d2c42354ef08d14fbff"><div class="ttname"><a href="class_kosti.html#af0723442e86d4d2c42354ef08d14fbff">Kosti::on_pushButton1000_clicked</a></div><div class="ttdeci">void on_pushButton1000_clicked()</div><div class="ttdoc">Обработчик кнопки ставки 1000 робуксов</div><div class="ttdef"><b>Definition</b> kosti.cpp:99</div></div>
-<div class="ttc" id="anamespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition</b> admin_page.h:20</div></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="preprocessor">#endif </span><span class="comment">// KOSTI_H</span></div>
+<div class="ttc" id="aclass_client_api_html"><div class="ttname"><a href="class_client_api.html">ClientApi</a></div><div class="ttdef"><b>Definition</b> clientapi.h:75</div></div>
+<div class="ttc" id="aclass_kosti_html_a04bac6d629a1d051b526fe91a3e24056"><div class="ttname"><a href="class_kosti.html#a04bac6d629a1d051b526fe91a3e24056">Kosti::~Kosti</a></div><div class="ttdeci">~Kosti()</div><div class="ttdoc">Деструктор игры &quot;Кости&quot;.</div><div class="ttdef"><b>Definition</b> kosti.cpp:43</div></div>
+<div class="ttc" id="aclass_kosti_html_a07416cea09e50790df61e2dcb6413861"><div class="ttname"><a href="class_kosti.html#a07416cea09e50790df61e2dcb6413861">Kosti::to_main</a></div><div class="ttdeci">void to_main(QString playerLogin)</div><div class="ttdoc">Сигнал возврата в главное меню</div><div class="ttdef"><b>Definition</b> moc_kosti.cpp:175</div></div>
+<div class="ttc" id="aclass_kosti_html_a3464a34daed3818f1d7e187280689aba"><div class="ttname"><a href="class_kosti.html#a3464a34daed3818f1d7e187280689aba">Kosti::on_BackButton_clicked</a></div><div class="ttdeci">void on_BackButton_clicked()</div><div class="ttdoc">Обработчик кнопки &quot;Назад&quot;.</div><div class="ttdef"><b>Definition</b> kosti.cpp:110</div></div>
+<div class="ttc" id="aclass_kosti_html_a3d11c7594d0d078d9150fb158af9e637"><div class="ttname"><a href="class_kosti.html#a3d11c7594d0d078d9150fb158af9e637">Kosti::clientApi</a></div><div class="ttdeci">ClientApi * clientApi</div><div class="ttdoc">API для взаимодействия с сервером</div><div class="ttdef"><b>Definition</b> kosti.h:113</div></div>
+<div class="ttc" id="aclass_kosti_html_a4d8e95d954885dd93318c55426d0a7de"><div class="ttname"><a href="class_kosti.html#a4d8e95d954885dd93318c55426d0a7de">Kosti::Kosti</a></div><div class="ttdeci">Kosti(QWidget *parent=nullptr)</div><div class="ttdoc">Конструктор игры &quot;Кости&quot;.</div><div class="ttdef"><b>Definition</b> kosti.cpp:8</div></div>
+<div class="ttc" id="aclass_kosti_html_a5b32f2708520e3329adf24b7205fcc90"><div class="ttname"><a href="class_kosti.html#a5b32f2708520e3329adf24b7205fcc90">Kosti::rollDice</a></div><div class="ttdeci">void rollDice()</div><div class="ttdoc">Выполнить бросок кубиков</div><div class="ttdef"><b>Definition</b> kosti.cpp:59</div></div>
+<div class="ttc" id="aclass_kosti_html_a5bfe6f8a61320a98ad32ea955febe5bd"><div class="ttname"><a href="class_kosti.html#a5bfe6f8a61320a98ad32ea955febe5bd">Kosti::ui</a></div><div class="ttdeci">Ui::Kosti * ui</div><div class="ttdoc">Пользовательский интерфейс игры</div><div class="ttdef"><b>Definition</b> kosti.h:114</div></div>
+<div class="ttc" id="aclass_kosti_html_a6dc7b4364ee16224cd9588d58322e4e6"><div class="ttname"><a href="class_kosti.html#a6dc7b4364ee16224cd9588d58322e4e6">Kosti::slot_show</a></div><div class="ttdeci">void slot_show()</div><div class="ttdoc">Показать окно игры</div><div class="ttdef"><b>Definition</b> kosti.cpp:37</div></div>
+<div class="ttc" id="aclass_kosti_html_a7f38ef26f33c7f890e1c7ee278232f15"><div class="ttname"><a href="class_kosti.html#a7f38ef26f33c7f890e1c7ee278232f15">Kosti::on_pushButton500_clicked</a></div><div class="ttdeci">void on_pushButton500_clicked()</div><div class="ttdoc">Обработчик кнопки ставки 500 робуксов</div><div class="ttdef"><b>Definition</b> kosti.cpp:98</div></div>
+<div class="ttc" id="aclass_kosti_html_a80b9d4d64ae7c108d049f13c448fa2fe"><div class="ttname"><a href="class_kosti.html#a80b9d4d64ae7c108d049f13c448fa2fe">Kosti::updateBalance</a></div><div class="ttdeci">void updateBalance()</div><div class="ttdoc">Обновить отображение баланса</div><div class="ttdef"><b>Definition</b> kosti.cpp:116</div></div>
+<div class="ttc" id="aclass_kosti_html_a906b33da6470251b79e6323822cdd178"><div class="ttname"><a href="class_kosti.html#a906b33da6470251b79e6323822cdd178">Kosti::size_of_stavka</a></div><div class="ttdeci">int size_of_stavka</div><div class="ttdoc">Текущий размер ставки в робуксах</div><div class="ttdef"><b>Definition</b> kosti.h:115</div></div>
+<div class="ttc" id="aclass_kosti_html_a93838eed8fb01142b8ee1080a6c56711"><div class="ttname"><a href="class_kosti.html#a93838eed8fb01142b8ee1080a6c56711">Kosti::updateDiceImages</a></div><div class="ttdeci">void updateDiceImages(int dice1, int dice2)</div><div class="ttdoc">Обновить изображения кубиков</div><div class="ttdef"><b>Definition</b> kosti.cpp:72</div></div>
+<div class="ttc" id="aclass_kosti_html_ab970ed2ea123ec4540926ade454d4bd1"><div class="ttname"><a href="class_kosti.html#ab970ed2ea123ec4540926ade454d4bd1">Kosti::on_pushButtonPlay_clicked</a></div><div class="ttdeci">void on_pushButtonPlay_clicked()</div><div class="ttdoc">Обработчик кнопки &quot;Играть&quot;.</div><div class="ttdef"><b>Definition</b> kosti.cpp:48</div></div>
+<div class="ttc" id="aclass_kosti_html_ac72cc9deb3ad311f98ce90bcf1867890"><div class="ttname"><a href="class_kosti.html#ac72cc9deb3ad311f98ce90bcf1867890">Kosti::on_pushButton100_clicked</a></div><div class="ttdeci">void on_pushButton100_clicked()</div><div class="ttdoc">Обработчик кнопки ставки 100 робуксов</div><div class="ttdef"><b>Definition</b> kosti.cpp:104</div></div>
+<div class="ttc" id="aclass_kosti_html_ad560cafbaab2e5cf48acedb6f158a83d"><div class="ttname"><a href="class_kosti.html#ad560cafbaab2e5cf48acedb6f158a83d">Kosti::showResult</a></div><div class="ttdeci">void showResult(int dice1, int dice2)</div><div class="ttdoc">Показать результат броска</div><div class="ttdef"><b>Definition</b> kosti.cpp:78</div></div>
+<div class="ttc" id="aclass_kosti_html_af0723442e86d4d2c42354ef08d14fbff"><div class="ttname"><a href="class_kosti.html#af0723442e86d4d2c42354ef08d14fbff">Kosti::on_pushButton1000_clicked</a></div><div class="ttdeci">void on_pushButton1000_clicked()</div><div class="ttdoc">Обработчик кнопки ставки 1000 робуксов</div><div class="ttdef"><b>Definition</b> kosti.cpp:92</div></div>
+<div class="ttc" id="aclass_ui_1_1_kosti_html"><div class="ttname"><a href="class_ui_1_1_kosti.html">Ui::Kosti</a></div><div class="ttdef"><b>Definition</b> ui_kosti.h:151</div></div>
+<div class="ttc" id="aclientapi_8h_html"><div class="ttname"><a href="clientapi_8h.html">clientapi.h</a></div><div class="ttdoc">API клиента для взаимодействия с сервером казино</div></div>
+<div class="ttc" id="anamespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition</b> admin_page.h:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

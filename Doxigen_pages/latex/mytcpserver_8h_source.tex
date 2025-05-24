@@ -3,44 +3,44 @@
 \mbox{\hyperlink{mytcpserver_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ }
-\DoxyCodeLine{00011\ }
-\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifndef\ MYTCPSERVER\_H}}
-\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ MYTCPSERVER\_H}}
-\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QObject>}}
-\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QTcpServer>}}
-\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <QTcpSocket>}}
-\DoxyCodeLine{00017\ }
-\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <QtNetwork>}}
-\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <QByteArray>}}
-\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <QDebug>}}
-\DoxyCodeLine{00021\ }
-\DoxyCodeLine{00039\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_my_tcp_server_acf367c4695b4d160c7a2d25c2afaaec4}{MyTcpServer}}\ :\ \textcolor{keyword}{public}\ QObject}
-\DoxyCodeLine{00040\ \{}
-\DoxyCodeLine{00041\ \ \ \ \ Q\_OBJECT}
-\DoxyCodeLine{00042\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_my_tcp_server_acf367c4695b4d160c7a2d25c2afaaec4}{MyTcpServer}}(QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{00051\ \ \ \ \ }
-\DoxyCodeLine{00058\ \ \ \ \ \mbox{\hyperlink{class_my_tcp_server_ab39e651ff7c37c152215c02c225e79ef}{\string~MyTcpServer}}();}
-\DoxyCodeLine{00059\ }
-\DoxyCodeLine{00060\ \textcolor{keyword}{public}\ slots:}
-\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_my_tcp_server_a0ba7316ffe1a26c57fabde9e74b6c8dc}{slotNewConnection}}();}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#ifndef\ MYTCPSERVER\_H}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ MYTCPSERVER\_H}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <QTcpServer>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <QTcpSocket>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <QtNetwork>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <QByteArray>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <QDebug>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <QVector>}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ser__ver_2databasesingleton_8h}{databasesingleton.h}}"{}}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00045\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_my_tcp_server_acf367c4695b4d160c7a2d25c2afaaec4}{MyTcpServer}}\ :\ \textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00046\ \{}
+\DoxyCodeLine{00047\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00059\ \ \ \ \ QString\ \mbox{\hyperlink{class_my_tcp_server_aa0c742bc5c82994826a180383ba3516e}{Parsing}}(QString\ request);}
+\DoxyCodeLine{00060\ \ \ \ \ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_my_tcp_server_acf367c4695b4d160c7a2d25c2afaaec4}{MyTcpServer}}(QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
 \DoxyCodeLine{00069\ \ \ \ \ }
-\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_my_tcp_server_a3e040c49dbefd65b9a58ab662fc9f7a2}{slotClientDisconnected}}();}
-\DoxyCodeLine{00078\ \ \ \ \ }
-\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_my_tcp_server_ab4a64d2eab985d723090963f5c8a2882}{slotServerRead}}();}
-\DoxyCodeLine{00089\ }
-\DoxyCodeLine{00090\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00092\ \ \ \ \ QTcpServer\ *\ \mbox{\hyperlink{class_my_tcp_server_a7d854875e1e02887023ec9aac1a1542c}{mTcpServer}};}
+\DoxyCodeLine{00075\ \ \ \ \ \mbox{\hyperlink{class_my_tcp_server_ab39e651ff7c37c152215c02c225e79ef}{\string~MyTcpServer}}();}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_my_tcp_server_a0ba7316ffe1a26c57fabde9e74b6c8dc}{slotNewConnection}}();}
+\DoxyCodeLine{00085\ \ \ \ \ }
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_my_tcp_server_a3e040c49dbefd65b9a58ab662fc9f7a2}{slotClientDisconnected}}();}
 \DoxyCodeLine{00093\ \ \ \ \ }
-\DoxyCodeLine{00095\ \ \ \ \ QVector\ <QTcpSocket*>\ \mbox{\hyperlink{class_my_tcp_server_a642c795b672ca3de854f46c045fda5dd}{Sockets}};}
-\DoxyCodeLine{00096\ \};}
-\DoxyCodeLine{00097\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MYTCPSERVER\_H}}
-\DoxyCodeLine{00098\ }
-\DoxyCodeLine{00099\ }
-\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_my_tcp_server_ab4a64d2eab985d723090963f5c8a2882}{slotServerRead}}();}
 \DoxyCodeLine{00101\ }
-\DoxyCodeLine{00102\ }
-\DoxyCodeLine{00103\ }
-\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00102\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00103\ \ \ \ \ QByteArray\ \mbox{\hyperlink{class_my_tcp_server_a945514221aec91de898a094dda3cb5fe}{Data}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00104\ \ \ \ \ QTcpServer\ *\ \mbox{\hyperlink{class_my_tcp_server_a7d854875e1e02887023ec9aac1a1542c}{mTcpServer}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00105\ \ \ \ \ QVector\ <QTcpSocket*>\ \mbox{\hyperlink{class_my_tcp_server_a642c795b672ca3de854f46c045fda5dd}{Sockets}};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00106\ \ \ \ \ \mbox{\hyperlink{class_data_base_singleton}{DataBaseSingleton}}\ *\mbox{\hyperlink{class_my_tcp_server_a15410ea1136a0540f3efee08861518ba}{db}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00107\ \ \ \ \ QTcpSocket\ *\ \mbox{\hyperlink{class_my_tcp_server_ab55c030e6eb6cf5d1acfe6d7d2bf0ed1}{mTcpSocket}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00108\ \ \ \ \ QMap<QTcpSocket*,\ QString>\ *\ \mbox{\hyperlink{class_my_tcp_server_a8f58d3e63198ee498b1f64657d333fb8}{Socket\_Login}};\ }
+\DoxyCodeLine{00109\ \};}
+\DoxyCodeLine{00110\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MYTCPSERVER\_H}}
 
 \end{DoxyCode}

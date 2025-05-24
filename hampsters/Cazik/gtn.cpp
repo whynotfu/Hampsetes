@@ -1,14 +1,3 @@
-/**
- * @file gtn.cpp
- * @brief Реализация игры "Угадай число" (Больше-Меньше)
- * @author Команда разработчиков
- * @date 2025
- * @version 1.0
- * 
- * Содержит реализацию класса Gtn - логической мини-игры,
- * где игрок угадывает случайное число, выбирая "больше" или "меньше".
- */
-
 #include "gtn.h"
 #include "ui_gtn.h"
 #include "client_functions.h"
@@ -19,6 +8,7 @@
 Gtn::Gtn(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::Gtn)
+    , clientApi(ClientApi::getInstance())
 {
     ui->setupUi(this);
 
@@ -27,6 +17,10 @@ Gtn::Gtn(QWidget *parent)
     this->setWindowTitle("Guess the nubmer");
     this->setFixedSize(800,600);
 
+    QPixmap Strelka(path() + "Images/Strelka.png");
+    ui->StrelkaLabel->setPixmap(Strelka);
+    ui->StrelkaLabel->setGeometry(-999,-999,31,31);
+
     //картинка для фона
     QPixmap KlikerFon(path() + "Images/GamesFon.png");
     ui->Fonlabel->setPixmap(KlikerFon);
@@ -34,10 +28,6 @@ Gtn::Gtn(QWidget *parent)
     //Картинка робуксов
     QPixmap RobuxLabel(path() + "Images/Robux.png");
     ui->label_robux->setPixmap(RobuxLabel);
-
-    QPixmap Strelka(path() + "Images/Strelka.png");
-    ui->StrelkaLabel->setPixmap(Strelka);
-    ui->StrelkaLabel->setGeometry(-999,-999,31,31);
 
     QPixmap Strelka2(path() + "Images/Strelka2.png");
     ui->StrelkaLabel_2->setPixmap(Strelka2);
@@ -131,12 +121,16 @@ void Gtn::on_play_button_clicked()
         if((this->num <= this->now_num && this->zstavka == 1) || (this->num >= this->now_num && this->zstavka == 0)){
             if(this->zstavka){
                 robuks += int(round((50./(this->now_num)) * this->rstavka));
+                TotalWins += int(round((50./(this->now_num)) * this->rstavka));
+                TotalBets += 1;
                 viigr = int(round((50./(this->now_num)) * this->rstavka));
                 //ui->text->setText(QString::number((round((50./(100.- this->now_num)) * this->rstavka)) +50.));
             }
             else{
                 robuks += int(round((50./(100.- this->now_num)) * this->rstavka));
                 viigr = int(round((50./(100.- this->now_num)) * this->rstavka));
+                TotalWins += int(round((50./(this->now_num)) * this->rstavka));
+                TotalBets += 1;
                 //ui->text->setText(QString::number((round((50./(100.- this->now_num)) * this->rstavka)) +50.));
             }
             ui->text->setText("Ура... Вы выиграли... " + QString::number(viigr)+" робуксов...");
@@ -153,6 +147,7 @@ void Gtn::on_play_button_clicked()
 
 void Gtn::on_pushButton_clicked()
 {
+    qDebug() << clientApi->toServer(robuks,TotalBets, TotalWins);
     emit to_main();
     this->close();
 }

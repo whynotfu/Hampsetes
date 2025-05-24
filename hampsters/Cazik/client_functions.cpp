@@ -1,10 +1,14 @@
 #include "client_functions.h"
 #include <ctime>
-
+#include "clientapi.h"
 #include <QTableWidgetItem>
 
 int robuks;
 QString currentUsername;
+QString currentRole;
+int TotalBets;
+int TotalWins;
+QString ids;
 
 // Заполняем пользователей
 QList<User> users = {
@@ -40,62 +44,9 @@ QList<User> users = {
     }
 };
 
-int auth(QString login, QString password)
-{
-    // Проходим по всем пользователям в глобальном списке
-    for (int i = 0; i < users.size(); ++i) {
-        if (users[i].login == login && users[i].password == password) {
-            // Проверяем роль пользователя
-            if (users[i].role == "admin") {
-                return 2; // Успешный вход администратора
-            } else {
-                return 1; // Успешный вход обычного пользователя
-            }
-        }
-    }
-
-    // Если пользователь не найден или данные неверны
-    return 3; // Неудачный вход
-}
-
-bool reg(QString login, QString password, QString check_password)
-{
-    // Проверяем, что поля не пустые
-    if (login.isEmpty() || password.isEmpty() || check_password.isEmpty()) {
-        return false;
-    }
-
-    // Проверяем совпадение паролей
-    if (password != check_password) {
-        return false;
-    }
-
-    // Проверяем уникальность логина
-    for (const User& user : users) {
-        if (user.login == login) {
-            return false;
-        }
-    }
-
-    // Создаем нового пользователя
-    User newUser;
-    newUser.login = login;
-    newUser.password = password;
-    newUser.role = "user";         // Новый пользователь всегда имеет роль "user"
-    newUser.balance = 0;           // Начальный баланс равен 0
-    newUser.total_bets = 0;        // Нет ставок
-    newUser.total_wins = 0;        // Нет выигрышей
-    newUser.last_login = QDateTime::currentDateTime(); // Текущее время
-    newUser.is_auth = false;       // Пользователь еще не авторизован
-
-    // Добавляем нового пользователя в список
-    users.append(newUser);
-
-    return true; // Регистрация успешна
-}
 
 QString path(){
-    return "C:/Users/nasty/Documents/hampst/Hampsetes/hampsters/Cazik/";
+    return "C:/Users/golik/OneDrive/Desktop/GotoviKazik/";
 }
 
 

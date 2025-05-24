@@ -112,7 +112,7 @@ $(function(){initNavTree('class_my_tcp_server.html',''); initResizable(true); })
 </div><!--header-->
 <div class="contents">
 
-<p>TCP сервер для приложения казино  
+<p>TCP-сервер для обработки клиентских подключений казино  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="mytcpserver_8h_source.html">mytcpserver.h</a>&gt;</code></p>
@@ -126,44 +126,65 @@ Inheritance diagram for MyTcpServer:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-slots" name="pub-slots"></a>
 Public Slots</h2></td></tr>
 <tr class="memitem:a0ba7316ffe1a26c57fabde9e74b6c8dc" id="r_a0ba7316ffe1a26c57fabde9e74b6c8dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ba7316ffe1a26c57fabde9e74b6c8dc">slotNewConnection</a> ()</td></tr>
-<tr class="memdesc:a0ba7316ffe1a26c57fabde9e74b6c8dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот обработки новых подключений  <br /></td></tr>
+<tr class="memdesc:a0ba7316ffe1a26c57fabde9e74b6c8dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработчик новых подключений клиентов  <br /></td></tr>
 <tr class="separator:a0ba7316ffe1a26c57fabde9e74b6c8dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e040c49dbefd65b9a58ab662fc9f7a2" id="r_a3e040c49dbefd65b9a58ab662fc9f7a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e040c49dbefd65b9a58ab662fc9f7a2">slotClientDisconnected</a> ()</td></tr>
-<tr class="memdesc:a3e040c49dbefd65b9a58ab662fc9f7a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот обработки отключения клиента  <br /></td></tr>
+<tr class="memdesc:a3e040c49dbefd65b9a58ab662fc9f7a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработчик отключения клиентов  <br /></td></tr>
 <tr class="separator:a3e040c49dbefd65b9a58ab662fc9f7a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4a64d2eab985d723090963f5c8a2882" id="r_ab4a64d2eab985d723090963f5c8a2882"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4a64d2eab985d723090963f5c8a2882">slotServerRead</a> ()</td></tr>
-<tr class="memdesc:ab4a64d2eab985d723090963f5c8a2882"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот чтения данных от клиента  <br /></td></tr>
+<tr class="memdesc:ab4a64d2eab985d723090963f5c8a2882"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработчик входящих данных от клиентов  <br /></td></tr>
 <tr class="separator:ab4a64d2eab985d723090963f5c8a2882"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:aa0c742bc5c82994826a180383ba3516e" id="r_aa0c742bc5c82994826a180383ba3516e"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0c742bc5c82994826a180383ba3516e">Parsing</a> (QString request)</td></tr>
+<tr class="memdesc:aa0c742bc5c82994826a180383ba3516e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг и обработка клиентских запросов  <br /></td></tr>
+<tr class="separator:aa0c742bc5c82994826a180383ba3516e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf367c4695b4d160c7a2d25c2afaaec4" id="r_acf367c4695b4d160c7a2d25c2afaaec4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf367c4695b4d160c7a2d25c2afaaec4">MyTcpServer</a> (QObject *parent=nullptr)</td></tr>
-<tr class="memdesc:acf367c4695b4d160c7a2d25c2afaaec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор TCP сервера  <br /></td></tr>
+<tr class="memdesc:acf367c4695b4d160c7a2d25c2afaaec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор TCP-сервера  <br /></td></tr>
 <tr class="separator:acf367c4695b4d160c7a2d25c2afaaec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab39e651ff7c37c152215c02c225e79ef" id="r_ab39e651ff7c37c152215c02c225e79ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab39e651ff7c37c152215c02c225e79ef">~MyTcpServer</a> ()</td></tr>
-<tr class="memdesc:ab39e651ff7c37c152215c02c225e79ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор TCP сервера  <br /></td></tr>
+<tr class="memdesc:ab39e651ff7c37c152215c02c225e79ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор TCP-сервера  <br /></td></tr>
 <tr class="separator:ab39e651ff7c37c152215c02c225e79ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a945514221aec91de898a094dda3cb5fe" id="r_a945514221aec91de898a094dda3cb5fe"><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a945514221aec91de898a094dda3cb5fe">Data</a></td></tr>
+<tr class="memdesc:a945514221aec91de898a094dda3cb5fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Буфер для хранения входящих данных  <br /></td></tr>
+<tr class="separator:a945514221aec91de898a094dda3cb5fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d854875e1e02887023ec9aac1a1542c" id="r_a7d854875e1e02887023ec9aac1a1542c"><td class="memItemLeft" align="right" valign="top">QTcpServer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d854875e1e02887023ec9aac1a1542c">mTcpServer</a></td></tr>
-<tr class="memdesc:a7d854875e1e02887023ec9aac1a1542c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Основной TCP сервер для прослушивания подключений  <br /></td></tr>
+<tr class="memdesc:a7d854875e1e02887023ec9aac1a1542c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Основной TCP-сервер для прослушивания порта  <br /></td></tr>
 <tr class="separator:a7d854875e1e02887023ec9aac1a1542c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a642c795b672ca3de854f46c045fda5dd" id="r_a642c795b672ca3de854f46c045fda5dd"><td class="memItemLeft" align="right" valign="top">QVector&lt; QTcpSocket * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a642c795b672ca3de854f46c045fda5dd">Sockets</a></td></tr>
-<tr class="memdesc:a642c795b672ca3de854f46c045fda5dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вектор активных сокетов клиентов  <br /></td></tr>
+<tr class="memdesc:a642c795b672ca3de854f46c045fda5dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список всех активных клиентских соединений  <br /></td></tr>
 <tr class="separator:a642c795b672ca3de854f46c045fda5dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15410ea1136a0540f3efee08861518ba" id="r_a15410ea1136a0540f3efee08861518ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data_base_singleton.html">DataBaseSingleton</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15410ea1136a0540f3efee08861518ba">db</a></td></tr>
+<tr class="memdesc:a15410ea1136a0540f3efee08861518ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Экземпляр синглтона базы данных  <br /></td></tr>
+<tr class="separator:a15410ea1136a0540f3efee08861518ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab55c030e6eb6cf5d1acfe6d7d2bf0ed1" id="r_ab55c030e6eb6cf5d1acfe6d7d2bf0ed1"><td class="memItemLeft" align="right" valign="top">QTcpSocket *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab55c030e6eb6cf5d1acfe6d7d2bf0ed1">mTcpSocket</a></td></tr>
+<tr class="memdesc:ab55c030e6eb6cf5d1acfe6d7d2bf0ed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущий обрабатываемый сокет клиента  <br /></td></tr>
+<tr class="separator:ab55c030e6eb6cf5d1acfe6d7d2bf0ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f58d3e63198ee498b1f64657d333fb8" id="r_a8f58d3e63198ee498b1f64657d333fb8"><td class="memItemLeft" align="right" valign="top">QMap&lt; QTcpSocket *, QString &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f58d3e63198ee498b1f64657d333fb8">Socket_Login</a></td></tr>
+<tr class="memdesc:a8f58d3e63198ee498b1f64657d333fb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Мапинг сокетов на логины авторизованных пользователей  <br /></td></tr>
+<tr class="separator:a8f58d3e63198ee498b1f64657d333fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>TCP сервер для приложения казино </p>
-<p>Класс <a class="el" href="class_my_tcp_server.html" title="TCP сервер для приложения казино">MyTcpServer</a> реализует многопользовательский TCP сервер, который обрабатывает подключения клиентов казино и управляет сетевой коммуникацией.</p>
-<p>Функциональность:</p><ul>
-<li>Прием новых подключений клиентов</li>
-<li>Обработка запросов авторизации и регистрации</li>
-<li>Управление игровыми сессиями</li>
-<li>Синхронизация данных между клиентами</li>
-<li>Обработка отключений клиентов</li>
+<div class="textblock"><p>TCP-сервер для обработки клиентских подключений казино </p>
+<p>Класс <a class="el" href="class_my_tcp_server.html" title="TCP-сервер для обработки клиентских подключений казино">MyTcpServer</a> реализует серверную логику казино "Хампстерс". Основные функции:</p><ul>
+<li>Обработка множественных TCP-подключений клиентов</li>
+<li>Парсинг и маршрутизация клиентских запросов</li>
+<li>Взаимодействие с базой данных через <a class="el" href="class_data_base_singleton.html" title="Серверный синглтон для управления базой данных казино">DataBaseSingleton</a></li>
+<li>Управление сессиями пользователей</li>
+<li>Обработка игровых операций и административных команд</li>
 </ul>
-<p>Поддерживает одновременное подключение множества клиентов через векторное хранение сокетов. </p>
+<p>Сервер поддерживает следующие типы запросов:</p><ul>
+<li>AUTH: авторизация пользователей</li>
+<li>REG: регистрация новых пользователей</li>
+<li>GAME: игровые операции и обновление балансов</li>
+<li>ADMIN: административные функции</li>
+<li>STATS: получение статистики пользователей</li>
+</ul>
+<p>Протокол связи основан на текстовых командах, передаваемых через TCP. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="acf367c4695b4d160c7a2d25c2afaaec4" name="acf367c4695b4d160c7a2d25c2afaaec4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acf367c4695b4d160c7a2d25c2afaaec4">&#9670;&#160;</a></span>MyTcpServer()</h2>
@@ -188,14 +209,14 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Конструктор TCP сервера </p>
+<p>Конструктор TCP-сервера </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parent</td><td>Родительский объект (по умолчанию nullptr)</td></tr>
+    <tr><td class="paramname">parent</td><td>Родительский объект Qt</td></tr>
   </table>
   </dd>
 </dl>
-<p>Инициализирует сервер, создает слушающий сокет и настраивает обработчики событий подключения. </p>
+<p>Инициализирует сервер, создает экземпляр базы данных и настраивает прослушивание порта для входящих соединений. </p>
 
 </div>
 </div>
@@ -214,12 +235,39 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Деструктор TCP сервера </p>
-<p>Корректно завершает работу сервера, закрывает все активные соединения и освобождает ресурсы. </p>
+<p>Деструктор TCP-сервера </p>
+<p>Закрывает все активные соединения и освобождает ресурсы </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa0c742bc5c82994826a180383ba3516e" name="aa0c742bc5c82994826a180383ba3516e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0c742bc5c82994826a180383ba3516e">&#9670;&#160;</a></span>Parsing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString MyTcpServer::Parsing </td>
+          <td>(</td>
+          <td class="paramtype">QString</td>          <td class="paramname"><span class="paramname"><em>request</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Парсинг и обработка клиентских запросов </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td>Строка запроса от клиента </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Ответ сервера для отправки клиенту</dd></dl>
+<p>Центральный метод обработки всех типов запросов от клиентов. Анализирует команду и вызывает соответствующие методы базы данных для выполнения операций. </p>
+
+</div>
+</div>
 <a id="a3e040c49dbefd65b9a58ab662fc9f7a2" name="a3e040c49dbefd65b9a58ab662fc9f7a2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3e040c49dbefd65b9a58ab662fc9f7a2">&#9670;&#160;</a></span>slotClientDisconnected</h2>
 
@@ -243,8 +291,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Слот обработки отключения клиента </p>
-<p>Вызывается при отключении клиента от сервера. Удаляет сокет из списка активных соединений и освобождает связанные ресурсы. </p>
+<p>Обработчик отключения клиентов </p>
+<p>Вызывается при разрыве соединения с клиентом. Удаляет сокет из списка активных соединений и очищает связанные данные. </p>
 
 </div>
 </div>
@@ -271,8 +319,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Слот обработки новых подключений </p>
-<p>Вызывается при поступлении нового подключения от клиента. Создает новый сокет для клиента и добавляет его в список активных соединений. </p>
+<p>Обработчик новых подключений клиентов </p>
+<p>Вызывается при поступлении нового TCP-подключения. Создает новый сокет для клиента и добавляет его в список активных соединений. </p>
 
 </div>
 </div>
@@ -299,17 +347,60 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Слот чтения данных от клиента </p>
-<p>Обрабатывает входящие сообщения от клиентов:</p><ul>
-<li>Запросы авторизации/регистрации</li>
-<li>Игровые команды и ставки</li>
-<li>Запросы статистики</li>
-<li>Административные команды </li>
-</ul>
+<p>Обработчик входящих данных от клиентов </p>
+<p>Вызывается при получении данных от любого из подключенных клиентов. Читает данные, парсит запрос и отправляет ответ обратно клиенту. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a945514221aec91de898a094dda3cb5fe" name="a945514221aec91de898a094dda3cb5fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a945514221aec91de898a094dda3cb5fe">&#9670;&#160;</a></span>Data</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QByteArray MyTcpServer::Data</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Буфер для хранения входящих данных </p>
+
+</div>
+</div>
+<a id="a15410ea1136a0540f3efee08861518ba" name="a15410ea1136a0540f3efee08861518ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15410ea1136a0540f3efee08861518ba">&#9670;&#160;</a></span>db</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data_base_singleton.html">DataBaseSingleton</a>* MyTcpServer::db</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Экземпляр синглтона базы данных </p>
+
+</div>
+</div>
 <a id="a7d854875e1e02887023ec9aac1a1542c" name="a7d854875e1e02887023ec9aac1a1542c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7d854875e1e02887023ec9aac1a1542c">&#9670;&#160;</a></span>mTcpServer</h2>
 
@@ -330,7 +421,55 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Основной TCP сервер для прослушивания подключений </p>
+<p>Основной TCP-сервер для прослушивания порта </p>
+
+</div>
+</div>
+<a id="ab55c030e6eb6cf5d1acfe6d7d2bf0ed1" name="ab55c030e6eb6cf5d1acfe6d7d2bf0ed1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab55c030e6eb6cf5d1acfe6d7d2bf0ed1">&#9670;&#160;</a></span>mTcpSocket</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTcpSocket* MyTcpServer::mTcpSocket</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Текущий обрабатываемый сокет клиента </p>
+
+</div>
+</div>
+<a id="a8f58d3e63198ee498b1f64657d333fb8" name="a8f58d3e63198ee498b1f64657d333fb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f58d3e63198ee498b1f64657d333fb8">&#9670;&#160;</a></span>Socket_Login</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QMap&lt;QTcpSocket*, QString&gt;* MyTcpServer::Socket_Login</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Мапинг сокетов на логины авторизованных пользователей </p>
 
 </div>
 </div>
@@ -354,7 +493,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Вектор активных сокетов клиентов </p>
+<p>Список всех активных клиентских соединений </p>
 
 </div>
 </div>

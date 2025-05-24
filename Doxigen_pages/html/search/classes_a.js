@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['user_0',['User',['../struct_user.html',1,'']]]
+  ['singletondestroyer_0',['SingletonDestroyer',['../class_singleton_destroyer.html',1,'']]]
 ];

@@ -107,67 +107,78 @@ $(function(){initNavTree('authregform_8h_source.html',''); initResizable(true); 
 </div><!--header-->
 <div class="contents">
 <a href="authregform_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef AUTHREGFORM_H</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define AUTHREGFORM_H</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;QObject&gt;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;QDialog&gt;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;QTcpServer&gt;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;QTcpSocket&gt;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;QtNetwork&gt;</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;QByteArray&gt;</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_ui.html">Ui</a> {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">class </span>AuthRegForm;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span></div>
-<div class="foldopen" id="foldopen00039" data-start="{" data-end="};">
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_auth_reg_form.html">   39</a></span><span class="keyword">class </span><a class="code hl_function" href="class_auth_reg_form.html#a7ec2ba2a7980453c629e141a90602e68">AuthRegForm</a> : <span class="keyword">public</span> QDialog</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    Q_OBJECT</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_auth_reg_form.html#a7ec2ba2a7980453c629e141a90602e68">AuthRegForm</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifndef AUTHREGFORM_H</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#define AUTHREGFORM_H</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;QDialog&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;QTcpServer&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;QTcpSocket&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;QtNetwork&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;QByteArray&gt;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;<a class="code" href="clientapi_8h.html">clientapi.h</a>&quot;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_ui.html">Ui</a> {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">class </span><a class="code hl_class" href="class_ui_1_1_auth_reg_form.html">AuthRegForm</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span></div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="};">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_auth_reg_form.html">   43</a></span><span class="keyword">class </span><a class="code hl_function" href="class_auth_reg_form.html#a7ec2ba2a7980453c629e141a90602e68">AuthRegForm</a> : <span class="keyword">public</span> QDialog</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>{</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    Q_OBJECT</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_auth_reg_form.html#a7ec2ba2a7980453c629e141a90602e68">AuthRegForm</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_function" href="class_auth_reg_form.html#a8b95ad00c5d29338f850a0f179b12078">~AuthRegForm</a>();</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">private</span> slots:</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_auth_reg_form.html#aa89121d3917ed24515b199784bbf633f">on_ToRegButton_clicked</a>();</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_auth_reg_form.html#aaa3c14893171f0fb1e40223c67600bbd">on_AuthButton_clicked</a>();</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_auth_reg_form.html#a46bd353d4b06f496a8a72bf58e741219">on_RegButton_clicked</a>();</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="class_auth_reg_form.html#abc34a5cc090ed5359af9de44c551ac0a">   87</a></span>    Ui::AuthRegForm *<a class="code hl_variable" href="class_auth_reg_form.html#abc34a5cc090ed5359af9de44c551ac0a">ui</a>;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="class_auth_reg_form.html#abb2e0afeeee3a19e92e163e48f97b380">   90</a></span>    QTcpSocket* <a class="code hl_variable" href="class_auth_reg_form.html#abb2e0afeeee3a19e92e163e48f97b380">socket</a>;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="class_auth_reg_form.html#a20c84c896d1fab7fb3dcddb80720f7d5">   93</a></span>    QByteArray <a class="code hl_variable" href="class_auth_reg_form.html#a20c84c896d1fab7fb3dcddb80720f7d5">Data</a>;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_auth_reg_form.html#a26ea774a557fbed481c2cd110183277c">set_visible_inReg</a>(<span class="keywordtype">bool</span> visible);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_auth_reg_form.html#ab6b3af89e41afad8f2e9bf7d860e5aff">slot_show</a>();</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keyword">private</span> slots:</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_auth_reg_form.html#aa89121d3917ed24515b199784bbf633f">on_ToRegButton_clicked</a>();</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_auth_reg_form.html#aaa3c14893171f0fb1e40223c67600bbd">on_AuthButton_clicked</a>();</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_auth_reg_form.html#a46bd353d4b06f496a8a72bf58e741219">on_RegButton_clicked</a>();</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="class_auth_reg_form.html#abc34a5cc090ed5359af9de44c551ac0a">   97</a></span>    <a class="code hl_class" href="class_ui_1_1_auth_reg_form.html">Ui::AuthRegForm</a> *<a class="code hl_variable" href="class_auth_reg_form.html#abc34a5cc090ed5359af9de44c551ac0a">ui</a>; </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="class_auth_reg_form.html#abb2e0afeeee3a19e92e163e48f97b380">   99</a></span>    QTcpSocket* <a class="code hl_variable" href="class_auth_reg_form.html#abb2e0afeeee3a19e92e163e48f97b380">socket</a>;  </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="class_auth_reg_form.html#a20c84c896d1fab7fb3dcddb80720f7d5">  100</a></span>    QByteArray <a class="code hl_variable" href="class_auth_reg_form.html#a20c84c896d1fab7fb3dcddb80720f7d5">Data</a>;     </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="class_auth_reg_form.html#ae93dbcd7b013e6af9b821e9b33a390d1">  102</a></span>    <a class="code hl_class" href="class_client_api.html">ClientApi</a> *<a class="code hl_variable" href="class_auth_reg_form.html#ae93dbcd7b013e6af9b821e9b33a390d1">clientApi</a>; </div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_auth_reg_form.html#ad352ff103aa3c3d18d71e79e9772e8c1">clear</a>();</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>signals:</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="class_auth_reg_form.html#a387dea8a6b94a1cfbc66edf4d152fc7f">  120</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="class_auth_reg_form.html#a387dea8a6b94a1cfbc66edf4d152fc7f">auth_ok</a>(QString login);</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>};</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_auth_reg_form.html#a26ea774a557fbed481c2cd110183277c">set_visible_inReg</a>(<span class="keywordtype">bool</span> visible);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_auth_reg_form.html#ad352ff103aa3c3d18d71e79e9772e8c1">clear</a>();</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>signals:</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="class_auth_reg_form.html#a387dea8a6b94a1cfbc66edf4d152fc7f">auth_ok</a>(QString login);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>};</div>
 </div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="preprocessor">#endif </span><span class="comment">// AUTHREGFORM_H</span></div>
-<div class="ttc" id="aclass_auth_reg_form_html_a20c84c896d1fab7fb3dcddb80720f7d5"><div class="ttname"><a href="class_auth_reg_form.html#a20c84c896d1fab7fb3dcddb80720f7d5">AuthRegForm::Data</a></div><div class="ttdeci">QByteArray Data</div><div class="ttdoc">Буфер для хранения сетевых данных</div><div class="ttdef"><b>Definition</b> authregform.h:93</div></div>
-<div class="ttc" id="aclass_auth_reg_form_html_a26ea774a557fbed481c2cd110183277c"><div class="ttname"><a href="class_auth_reg_form.html#a26ea774a557fbed481c2cd110183277c">AuthRegForm::set_visible_inReg</a></div><div class="ttdeci">void set_visible_inReg(bool visible)</div><div class="ttdoc">Управление видимостью элементов в режиме регистрации</div><div class="ttdef"><b>Definition</b> authregform.cpp:49</div></div>
-<div class="ttc" id="aclass_auth_reg_form_html_a387dea8a6b94a1cfbc66edf4d152fc7f"><div class="ttname"><a href="class_auth_reg_form.html#a387dea8a6b94a1cfbc66edf4d152fc7f">AuthRegForm::auth_ok</a></div><div class="ttdeci">void auth_ok(QString login)</div><div class="ttdoc">Сигнал успешной авторизации</div></div>
-<div class="ttc" id="aclass_auth_reg_form_html_a46bd353d4b06f496a8a72bf58e741219"><div class="ttname"><a href="class_auth_reg_form.html#a46bd353d4b06f496a8a72bf58e741219">AuthRegForm::on_RegButton_clicked</a></div><div class="ttdeci">void on_RegButton_clicked()</div><div class="ttdoc">Обработчик нажатия кнопки регистрации</div><div class="ttdef"><b>Definition</b> authregform.cpp:100</div></div>
-<div class="ttc" id="aclass_auth_reg_form_html_a7ec2ba2a7980453c629e141a90602e68"><div class="ttname"><a href="class_auth_reg_form.html#a7ec2ba2a7980453c629e141a90602e68">AuthRegForm::AuthRegForm</a></div><div class="ttdeci">AuthRegForm(QWidget *parent=nullptr)</div><div class="ttdoc">Конструктор формы авторизации</div><div class="ttdef"><b>Definition</b> authregform.cpp:19</div></div>
-<div class="ttc" id="aclass_auth_reg_form_html_a8b95ad00c5d29338f850a0f179b12078"><div class="ttname"><a href="class_auth_reg_form.html#a8b95ad00c5d29338f850a0f179b12078">AuthRegForm::~AuthRegForm</a></div><div class="ttdeci">~AuthRegForm()</div><div class="ttdoc">Деструктор формы авторизации</div><div class="ttdef"><b>Definition</b> authregform.cpp:43</div></div>
-<div class="ttc" id="aclass_auth_reg_form_html_aa89121d3917ed24515b199784bbf633f"><div class="ttname"><a href="class_auth_reg_form.html#aa89121d3917ed24515b199784bbf633f">AuthRegForm::on_ToRegButton_clicked</a></div><div class="ttdeci">void on_ToRegButton_clicked()</div><div class="ttdoc">Обработчик нажатия кнопки перехода к регистрации</div><div class="ttdef"><b>Definition</b> authregform.cpp:59</div></div>
-<div class="ttc" id="aclass_auth_reg_form_html_aaa3c14893171f0fb1e40223c67600bbd"><div class="ttname"><a href="class_auth_reg_form.html#aaa3c14893171f0fb1e40223c67600bbd">AuthRegForm::on_AuthButton_clicked</a></div><div class="ttdeci">void on_AuthButton_clicked()</div><div class="ttdoc">Обработчик нажатия кнопки авторизации</div><div class="ttdef"><b>Definition</b> authregform.cpp:65</div></div>
-<div class="ttc" id="aclass_auth_reg_form_html_abb2e0afeeee3a19e92e163e48f97b380"><div class="ttname"><a href="class_auth_reg_form.html#abb2e0afeeee3a19e92e163e48f97b380">AuthRegForm::socket</a></div><div class="ttdeci">QTcpSocket * socket</div><div class="ttdoc">TCP сокет для сетевого взаимодействия с сервером</div><div class="ttdef"><b>Definition</b> authregform.h:90</div></div>
-<div class="ttc" id="aclass_auth_reg_form_html_abc34a5cc090ed5359af9de44c551ac0a"><div class="ttname"><a href="class_auth_reg_form.html#abc34a5cc090ed5359af9de44c551ac0a">AuthRegForm::ui</a></div><div class="ttdeci">Ui::AuthRegForm * ui</div><div class="ttdoc">Указатель на UI объект формы</div><div class="ttdef"><b>Definition</b> authregform.h:87</div></div>
-<div class="ttc" id="aclass_auth_reg_form_html_ad352ff103aa3c3d18d71e79e9772e8c1"><div class="ttname"><a href="class_auth_reg_form.html#ad352ff103aa3c3d18d71e79e9772e8c1">AuthRegForm::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Очистка полей ввода формы</div><div class="ttdef"><b>Definition</b> authregform.cpp:117</div></div>
-<div class="ttc" id="anamespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition</b> admin_page.h:20</div></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="preprocessor">#endif </span><span class="comment">// AUTHREGFORM_H</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="ttc" id="aclass_auth_reg_form_html_a20c84c896d1fab7fb3dcddb80720f7d5"><div class="ttname"><a href="class_auth_reg_form.html#a20c84c896d1fab7fb3dcddb80720f7d5">AuthRegForm::Data</a></div><div class="ttdeci">QByteArray Data</div><div class="ttdoc">Буфер для хранения данных сетевого обмена</div><div class="ttdef"><b>Definition</b> authregform.h:100</div></div>
+<div class="ttc" id="aclass_auth_reg_form_html_a26ea774a557fbed481c2cd110183277c"><div class="ttname"><a href="class_auth_reg_form.html#a26ea774a557fbed481c2cd110183277c">AuthRegForm::set_visible_inReg</a></div><div class="ttdeci">void set_visible_inReg(bool visible)</div><div class="ttdoc">Управление видимостью элементов при переключении режимов</div><div class="ttdef"><b>Definition</b> authregform.cpp:41</div></div>
+<div class="ttc" id="aclass_auth_reg_form_html_a387dea8a6b94a1cfbc66edf4d152fc7f"><div class="ttname"><a href="class_auth_reg_form.html#a387dea8a6b94a1cfbc66edf4d152fc7f">AuthRegForm::auth_ok</a></div><div class="ttdeci">void auth_ok(QString login)</div><div class="ttdoc">Сигнал успешной авторизации</div><div class="ttdef"><b>Definition</b> moc_authregform.cpp:164</div></div>
+<div class="ttc" id="aclass_auth_reg_form_html_a46bd353d4b06f496a8a72bf58e741219"><div class="ttname"><a href="class_auth_reg_form.html#a46bd353d4b06f496a8a72bf58e741219">AuthRegForm::on_RegButton_clicked</a></div><div class="ttdeci">void on_RegButton_clicked()</div><div class="ttdoc">Обработчик кнопки &quot;Зарегистрироваться&quot;.</div><div class="ttdef"><b>Definition</b> authregform.cpp:87</div></div>
+<div class="ttc" id="aclass_auth_reg_form_html_a7ec2ba2a7980453c629e141a90602e68"><div class="ttname"><a href="class_auth_reg_form.html#a7ec2ba2a7980453c629e141a90602e68">AuthRegForm::AuthRegForm</a></div><div class="ttdeci">AuthRegForm(QWidget *parent=nullptr)</div><div class="ttdoc">Конструктор формы авторизации</div><div class="ttdef"><b>Definition</b> authregform.cpp:9</div></div>
+<div class="ttc" id="aclass_auth_reg_form_html_a8b95ad00c5d29338f850a0f179b12078"><div class="ttname"><a href="class_auth_reg_form.html#a8b95ad00c5d29338f850a0f179b12078">AuthRegForm::~AuthRegForm</a></div><div class="ttdeci">~AuthRegForm()</div><div class="ttdoc">Деструктор формы авторизации</div><div class="ttdef"><b>Definition</b> authregform.cpp:35</div></div>
+<div class="ttc" id="aclass_auth_reg_form_html_aa89121d3917ed24515b199784bbf633f"><div class="ttname"><a href="class_auth_reg_form.html#aa89121d3917ed24515b199784bbf633f">AuthRegForm::on_ToRegButton_clicked</a></div><div class="ttdeci">void on_ToRegButton_clicked()</div><div class="ttdoc">Обработчик переключения в режим регистрации</div><div class="ttdef"><b>Definition</b> authregform.cpp:51</div></div>
+<div class="ttc" id="aclass_auth_reg_form_html_aaa3c14893171f0fb1e40223c67600bbd"><div class="ttname"><a href="class_auth_reg_form.html#aaa3c14893171f0fb1e40223c67600bbd">AuthRegForm::on_AuthButton_clicked</a></div><div class="ttdeci">void on_AuthButton_clicked()</div><div class="ttdoc">Обработчик кнопки &quot;Войти&quot;.</div><div class="ttdef"><b>Definition</b> authregform.cpp:57</div></div>
+<div class="ttc" id="aclass_auth_reg_form_html_ab6b3af89e41afad8f2e9bf7d860e5aff"><div class="ttname"><a href="class_auth_reg_form.html#ab6b3af89e41afad8f2e9bf7d860e5aff">AuthRegForm::slot_show</a></div><div class="ttdeci">void slot_show()</div><div class="ttdoc">Показать форму авторизации</div><div class="ttdef"><b>Definition</b> authregform.cpp:116</div></div>
+<div class="ttc" id="aclass_auth_reg_form_html_abb2e0afeeee3a19e92e163e48f97b380"><div class="ttname"><a href="class_auth_reg_form.html#abb2e0afeeee3a19e92e163e48f97b380">AuthRegForm::socket</a></div><div class="ttdeci">QTcpSocket * socket</div><div class="ttdoc">TCP-сокет для связи с сервером</div><div class="ttdef"><b>Definition</b> authregform.h:99</div></div>
+<div class="ttc" id="aclass_auth_reg_form_html_abc34a5cc090ed5359af9de44c551ac0a"><div class="ttname"><a href="class_auth_reg_form.html#abc34a5cc090ed5359af9de44c551ac0a">AuthRegForm::ui</a></div><div class="ttdeci">Ui::AuthRegForm * ui</div><div class="ttdoc">Пользовательский интерфейс формы</div><div class="ttdef"><b>Definition</b> authregform.h:97</div></div>
+<div class="ttc" id="aclass_auth_reg_form_html_ad352ff103aa3c3d18d71e79e9772e8c1"><div class="ttname"><a href="class_auth_reg_form.html#ad352ff103aa3c3d18d71e79e9772e8c1">AuthRegForm::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Очистить все поля ввода</div><div class="ttdef"><b>Definition</b> authregform.cpp:109</div></div>
+<div class="ttc" id="aclass_auth_reg_form_html_ae93dbcd7b013e6af9b821e9b33a390d1"><div class="ttname"><a href="class_auth_reg_form.html#ae93dbcd7b013e6af9b821e9b33a390d1">AuthRegForm::clientApi</a></div><div class="ttdeci">ClientApi * clientApi</div><div class="ttdoc">API клиента для взаимодействия с сервером</div><div class="ttdef"><b>Definition</b> authregform.h:102</div></div>
+<div class="ttc" id="aclass_client_api_html"><div class="ttname"><a href="class_client_api.html">ClientApi</a></div><div class="ttdef"><b>Definition</b> clientapi.h:75</div></div>
+<div class="ttc" id="aclass_ui_1_1_auth_reg_form_html"><div class="ttname"><a href="class_ui_1_1_auth_reg_form.html">Ui::AuthRegForm</a></div><div class="ttdef"><b>Definition</b> ui_authregform.h:133</div></div>
+<div class="ttc" id="aclientapi_8h_html"><div class="ttname"><a href="clientapi_8h.html">clientapi.h</a></div><div class="ttdoc">API клиента для взаимодействия с сервером казино</div></div>
+<div class="ttc" id="anamespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition</b> admin_page.h:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

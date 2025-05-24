@@ -107,53 +107,60 @@ $(function(){initNavTree('kliker_8h_source.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 <a href="kliker_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef KLIKER_H</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define KLIKER_H</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;QDialog&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifndef KLIKER_H</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#define KLIKER_H</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_ui.html">Ui</a> {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">class </span>Kliker;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>}</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span></div>
-<div class="foldopen" id="foldopen00036" data-start="{" data-end="};">
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_kliker.html">   36</a></span><span class="keyword">class </span><a class="code hl_function" href="class_kliker.html#a3aea14f7fe789bb3b04f7e7e7446b6cd">Kliker</a> : <span class="keyword">public</span> QDialog</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>{</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    Q_OBJECT</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_kliker.html#a3aea14f7fe789bb3b04f7e7e7446b6cd">Kliker</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_function" href="class_kliker.html#a082b381823a288538e26e88af952609e">~Kliker</a>();</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_kliker.html#a19571d76c769d48df79c6cd50b12dbaa">slot_show</a>();</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">private</span> slots:</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_kliker.html#a3eeafdafda93c0b4864ea2485a85a9a4">on_pushButton_clicked</a>();</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_kliker.html#ad07e40fa2e93b70203a752f8d5546510">on_pushButtonTap_clicked</a>();</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;QDialog&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="clientapi_8h.html">clientapi.h</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_ui.html">Ui</a> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">class </span><a class="code hl_class" href="class_ui_1_1_kliker.html">Kliker</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span></div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="};">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_kliker.html">   37</a></span><span class="keyword">class </span><a class="code hl_function" href="class_kliker.html#a3aea14f7fe789bb3b04f7e7e7446b6cd">Kliker</a> : <span class="keyword">public</span> QDialog</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    Q_OBJECT</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_kliker.html#a3aea14f7fe789bb3b04f7e7e7446b6cd">Kliker</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <a class="code hl_function" href="class_kliker.html#a082b381823a288538e26e88af952609e">~Kliker</a>();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_kliker.html#a19571d76c769d48df79c6cd50b12dbaa">slot_show</a>();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">private</span> slots:</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_kliker.html#a3eeafdafda93c0b4864ea2485a85a9a4">on_pushButton_clicked</a>();</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_kliker.html#ad07e40fa2e93b70203a752f8d5546510">on_pushButtonTap_clicked</a>();</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="class_kliker.html#a44b382be8b734351d3a116cce546bae8">   81</a></span>    <a class="code hl_class" href="class_ui_1_1_kliker.html">Ui::Kliker</a> *<a class="code hl_variable" href="class_kliker.html#a44b382be8b734351d3a116cce546bae8">ui</a>;          </div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="class_kliker.html#a44b382be8b734351d3a116cce546bae8">   85</a></span>    Ui::Kliker *<a class="code hl_variable" href="class_kliker.html#a44b382be8b734351d3a116cce546bae8">ui</a>;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="class_kliker.html#a7fe15100c9a2ae4e2682a4dc252a52b6">   88</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_kliker.html#a7fe15100c9a2ae4e2682a4dc252a52b6">Robux100</a>;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>signals:</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="class_kliker.html#a0acd53fdbe4cc12cb6f516356656f369">   97</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="class_kliker.html#a0acd53fdbe4cc12cb6f516356656f369">to_main</a>();</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>};</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="class_kliker.html#a7fe15100c9a2ae4e2682a4dc252a52b6">   83</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_kliker.html#a7fe15100c9a2ae4e2682a4dc252a52b6">Robux100</a>;            </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="class_kliker.html#a6a78d87cb4d58702465f2a6763d66e11">   85</a></span>    <a class="code hl_class" href="class_client_api.html">ClientApi</a> *<a class="code hl_variable" href="class_kliker.html#a6a78d87cb4d58702465f2a6763d66e11">clientApi</a>;    </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>signals:</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="class_kliker.html#a0acd53fdbe4cc12cb6f516356656f369">to_main</a>();</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>};</div>
 </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="preprocessor">#endif </span><span class="comment">// KLIKER_H</span></div>
-<div class="ttc" id="aclass_kliker_html_a082b381823a288538e26e88af952609e"><div class="ttname"><a href="class_kliker.html#a082b381823a288538e26e88af952609e">Kliker::~Kliker</a></div><div class="ttdeci">~Kliker()</div><div class="ttdoc">Деструктор игры-кликера</div><div class="ttdef"><b>Definition</b> kliker.cpp:41</div></div>
-<div class="ttc" id="aclass_kliker_html_a0acd53fdbe4cc12cb6f516356656f369"><div class="ttname"><a href="class_kliker.html#a0acd53fdbe4cc12cb6f516356656f369">Kliker::to_main</a></div><div class="ttdeci">void to_main()</div><div class="ttdoc">Сигнал возврата в главное меню</div></div>
-<div class="ttc" id="aclass_kliker_html_a19571d76c769d48df79c6cd50b12dbaa"><div class="ttname"><a href="class_kliker.html#a19571d76c769d48df79c6cd50b12dbaa">Kliker::slot_show</a></div><div class="ttdeci">void slot_show()</div><div class="ttdoc">Слот для показа окна кликера</div><div class="ttdef"><b>Definition</b> kliker.cpp:46</div></div>
-<div class="ttc" id="aclass_kliker_html_a3aea14f7fe789bb3b04f7e7e7446b6cd"><div class="ttname"><a href="class_kliker.html#a3aea14f7fe789bb3b04f7e7e7446b6cd">Kliker::Kliker</a></div><div class="ttdeci">Kliker(QWidget *parent=nullptr)</div><div class="ttdoc">Конструктор игры-кликера</div><div class="ttdef"><b>Definition</b> kliker.cpp:16</div></div>
-<div class="ttc" id="aclass_kliker_html_a3eeafdafda93c0b4864ea2485a85a9a4"><div class="ttname"><a href="class_kliker.html#a3eeafdafda93c0b4864ea2485a85a9a4">Kliker::on_pushButton_clicked</a></div><div class="ttdeci">void on_pushButton_clicked()</div><div class="ttdoc">Обработчик кнопки возврата в главное меню</div><div class="ttdef"><b>Definition</b> kliker.cpp:51</div></div>
-<div class="ttc" id="aclass_kliker_html_a44b382be8b734351d3a116cce546bae8"><div class="ttname"><a href="class_kliker.html#a44b382be8b734351d3a116cce546bae8">Kliker::ui</a></div><div class="ttdeci">Ui::Kliker * ui</div><div class="ttdoc">Указатель на UI объект кликера</div><div class="ttdef"><b>Definition</b> kliker.h:85</div></div>
-<div class="ttc" id="aclass_kliker_html_a7fe15100c9a2ae4e2682a4dc252a52b6"><div class="ttname"><a href="class_kliker.html#a7fe15100c9a2ae4e2682a4dc252a52b6">Kliker::Robux100</a></div><div class="ttdeci">int Robux100</div><div class="ttdoc">Счетчик заработанных робуксов за текущую сессию кликера</div><div class="ttdef"><b>Definition</b> kliker.h:88</div></div>
-<div class="ttc" id="aclass_kliker_html_ad07e40fa2e93b70203a752f8d5546510"><div class="ttname"><a href="class_kliker.html#ad07e40fa2e93b70203a752f8d5546510">Kliker::on_pushButtonTap_clicked</a></div><div class="ttdeci">void on_pushButtonTap_clicked()</div><div class="ttdoc">Обработчик кнопки клика для заработка</div><div class="ttdef"><b>Definition</b> kliker.cpp:58</div></div>
-<div class="ttc" id="anamespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition</b> admin_page.h:20</div></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="preprocessor">#endif </span><span class="comment">// KLIKER_H</span></div>
+<div class="ttc" id="aclass_client_api_html"><div class="ttname"><a href="class_client_api.html">ClientApi</a></div><div class="ttdef"><b>Definition</b> clientapi.h:75</div></div>
+<div class="ttc" id="aclass_kliker_html_a082b381823a288538e26e88af952609e"><div class="ttname"><a href="class_kliker.html#a082b381823a288538e26e88af952609e">Kliker::~Kliker</a></div><div class="ttdeci">~Kliker()</div><div class="ttdoc">Деструктор игры &quot;Кликер&quot;.</div><div class="ttdef"><b>Definition</b> kliker.cpp:32</div></div>
+<div class="ttc" id="aclass_kliker_html_a0acd53fdbe4cc12cb6f516356656f369"><div class="ttname"><a href="class_kliker.html#a0acd53fdbe4cc12cb6f516356656f369">Kliker::to_main</a></div><div class="ttdeci">void to_main()</div><div class="ttdoc">Сигнал возврата в главное меню</div><div class="ttdef"><b>Definition</b> moc_kliker.cpp:156</div></div>
+<div class="ttc" id="aclass_kliker_html_a19571d76c769d48df79c6cd50b12dbaa"><div class="ttname"><a href="class_kliker.html#a19571d76c769d48df79c6cd50b12dbaa">Kliker::slot_show</a></div><div class="ttdeci">void slot_show()</div><div class="ttdoc">Показать окно игры</div><div class="ttdef"><b>Definition</b> kliker.cpp:37</div></div>
+<div class="ttc" id="aclass_kliker_html_a3aea14f7fe789bb3b04f7e7e7446b6cd"><div class="ttname"><a href="class_kliker.html#a3aea14f7fe789bb3b04f7e7e7446b6cd">Kliker::Kliker</a></div><div class="ttdeci">Kliker(QWidget *parent=nullptr)</div><div class="ttdoc">Конструктор игры &quot;Кликер&quot;.</div><div class="ttdef"><b>Definition</b> kliker.cpp:5</div></div>
+<div class="ttc" id="aclass_kliker_html_a3eeafdafda93c0b4864ea2485a85a9a4"><div class="ttname"><a href="class_kliker.html#a3eeafdafda93c0b4864ea2485a85a9a4">Kliker::on_pushButton_clicked</a></div><div class="ttdeci">void on_pushButton_clicked()</div><div class="ttdoc">Обработчик кнопки &quot;Назад&quot;.</div><div class="ttdef"><b>Definition</b> kliker.cpp:42</div></div>
+<div class="ttc" id="aclass_kliker_html_a44b382be8b734351d3a116cce546bae8"><div class="ttname"><a href="class_kliker.html#a44b382be8b734351d3a116cce546bae8">Kliker::ui</a></div><div class="ttdeci">Ui::Kliker * ui</div><div class="ttdoc">Пользовательский интерфейс игры</div><div class="ttdef"><b>Definition</b> kliker.h:81</div></div>
+<div class="ttc" id="aclass_kliker_html_a6a78d87cb4d58702465f2a6763d66e11"><div class="ttname"><a href="class_kliker.html#a6a78d87cb4d58702465f2a6763d66e11">Kliker::clientApi</a></div><div class="ttdeci">ClientApi * clientApi</div><div class="ttdoc">API для взаимодействия с сервером</div><div class="ttdef"><b>Definition</b> kliker.h:85</div></div>
+<div class="ttc" id="aclass_kliker_html_a7fe15100c9a2ae4e2682a4dc252a52b6"><div class="ttname"><a href="class_kliker.html#a7fe15100c9a2ae4e2682a4dc252a52b6">Kliker::Robux100</a></div><div class="ttdeci">int Robux100</div><div class="ttdoc">Счетчик заработанных робуксов за сессию</div><div class="ttdef"><b>Definition</b> kliker.h:83</div></div>
+<div class="ttc" id="aclass_kliker_html_ad07e40fa2e93b70203a752f8d5546510"><div class="ttname"><a href="class_kliker.html#ad07e40fa2e93b70203a752f8d5546510">Kliker::on_pushButtonTap_clicked</a></div><div class="ttdeci">void on_pushButtonTap_clicked()</div><div class="ttdoc">Обработчик кнопки заработка робуксов</div><div class="ttdef"><b>Definition</b> kliker.cpp:50</div></div>
+<div class="ttc" id="aclass_ui_1_1_kliker_html"><div class="ttname"><a href="class_ui_1_1_kliker.html">Ui::Kliker</a></div><div class="ttdef"><b>Definition</b> ui_kliker.h:103</div></div>
+<div class="ttc" id="aclientapi_8h_html"><div class="ttname"><a href="clientapi_8h.html">clientapi.h</a></div><div class="ttdoc">API клиента для взаимодействия с сервером казино</div></div>
+<div class="ttc" id="anamespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition</b> admin_page.h:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

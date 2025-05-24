@@ -1,0 +1,359 @@
+\doxysection{Client\+Api Class Reference}
+\hypertarget{class_client_api}{}\label{class_client_api}\index{ClientApi@{ClientApi}}
+
+
+{\ttfamily \#include $<$clientapi.\+h$>$}
+
+Inheritance diagram for Client\+Api\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_client_api}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_client_api_aa7fb4a2d0febe27006d1757ae0ca1ac2}{slot\+Server\+Disconnection}} ()
+\begin{DoxyCompactList}\small\item\em Обработчик отключения от сервера \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+QString \mbox{\hyperlink{class_client_api_a964fff92940fa76359adc1ff3981b5f1}{auth}} (QString login, QString password)
+\begin{DoxyCompactList}\small\item\em Авторизация пользователя на сервере \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_client_api_ad5bc5df5045f183cccb2c14b2e3e9d11}{reg}} (QString login, QString password, QString confirm\+Password)
+\begin{DoxyCompactList}\small\item\em Регистрация нового пользователя \end{DoxyCompactList}\item 
+QByte\+Array \mbox{\hyperlink{class_client_api_a16b1ddadccc2fc98a7b340ae07fb0cf8}{query\+\_\+to\+\_\+server}} (QString query)
+\begin{DoxyCompactList}\small\item\em Отправка произвольного запроса на сервер \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_client_api_a7fb991e8581a3c560b08aa3c390f75ad}{one\+\_\+stat}} (QString login)
+\begin{DoxyCompactList}\small\item\em Получение статистики одного пользователя \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_client_api_acd00a4a99c302a2a19cf129cf609b0f0}{to\+Server}} (int game\+Type, int bet\+Amount, int win\+Amount)
+\begin{DoxyCompactList}\small\item\em Отправка результатов игры на сервер \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_client_api_a145f6c557a1099ae2684aefbf29e2c03}{admin\+To}} (QString user\+Login, int operation, int amount, int admin\+Id)
+\begin{DoxyCompactList}\small\item\em Административная операция управления балансом \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_client_api}{Client\+Api}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_client_api_a896ca9896a39a414c680076cdccb9bd6}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Получить единственный экземпляр \doxylink{class_client_api}{Client\+Api}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_client_api_a7187d53fcfcd7dc015ff664e4c5c52aa}{Client\+Api}} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Приватный конструктор для реализации паттерна Singleton. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_client_api_a3eec76226330adcfc35de56f131f4507}{Client\+Api}} (const \mbox{\hyperlink{class_client_api}{Client\+Api}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Запрет копирования \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_client_api}{Client\+Api}} \& \mbox{\hyperlink{class_client_api_a0f29c2c92678f05575d789aab15787ab}{operator=}} (\mbox{\hyperlink{class_client_api}{Client\+Api}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Запрет присваивания \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_client_api_a441ea643212483469187fb04245f18ee}{\texorpdfstring{$\sim$}{\string~}\+Client\+Api}} ()
+\begin{DoxyCompactList}\small\item\em Приватный деструктор \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QTcp\+Socket \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_client_api_a7696499830113ef291169611bf43e7bc}{m\+Tcp\+Socket}}
+\begin{DoxyCompactList}\small\item\em TCP-\/сокет для связи с сервером \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_client_api}{Client\+Api}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_client_api_a741e51fd778efa0bdfda541c0bb3c922}{p\+\_\+instance}} = nullptr
+\begin{DoxyCompactList}\small\item\em Единственный экземпляр класса \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_singleton_destroyer}{Singleton\+Destroyer}} \mbox{\hyperlink{class_client_api_a361b542a22d620d9369aa9e65998b099}{destroyer}}
+\begin{DoxyCompactList}\small\item\em Объект для корректного удаления синглтона \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_client_api_aa93ce997b9645496c0e17460fba08432}{Singleton\+Destroyer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2sasha_2polytech_2_hampsetes_2hampsters_2_cazik_2clientapi_8h-example}{/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/clientapi.\+h}}, and \mbox{\hyperlink{_2_users_2sasha_2polytech_2_hampsetes_2hampsters_2_cazik_2managerform_8h-example}{/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/managerform.\+h}}.\end{Desc}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_client_api_a7187d53fcfcd7dc015ff664e4c5c52aa}\index{ClientApi@{ClientApi}!ClientApi@{ClientApi}}
+\index{ClientApi@{ClientApi}!ClientApi@{ClientApi}}
+\doxysubsubsection{\texorpdfstring{ClientApi()}{ClientApi()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_client_api_a7187d53fcfcd7dc015ff664e4c5c52aa} 
+Client\+Api\+::\+Client\+Api (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Приватный конструктор для реализации паттерна Singleton. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Родительский объект Qt \\
+\hline
+\end{DoxyParams}
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2sasha_2polytech_2_hampsetes_2hampsters_2_cazik_2clientapi_8h-example}{/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/clientapi.\+h}}.\end{Desc}
+\Hypertarget{class_client_api_a3eec76226330adcfc35de56f131f4507}\index{ClientApi@{ClientApi}!ClientApi@{ClientApi}}
+\index{ClientApi@{ClientApi}!ClientApi@{ClientApi}}
+\doxysubsubsection{\texorpdfstring{ClientApi()}{ClientApi()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_client_api_a3eec76226330adcfc35de56f131f4507} 
+Client\+Api\+::\+Client\+Api (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_client_api}{Client\+Api}} \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [delete]}}
+
+
+
+Запрет копирования 
+
+\Hypertarget{class_client_api_a441ea643212483469187fb04245f18ee}\index{ClientApi@{ClientApi}!````~ClientApi@{\texorpdfstring{$\sim$}{\string~}ClientApi}}
+\index{````~ClientApi@{\texorpdfstring{$\sim$}{\string~}ClientApi}!ClientApi@{ClientApi}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ClientApi()}{\string~ClientApi()}}
+{\footnotesize\ttfamily \label{class_client_api_a441ea643212483469187fb04245f18ee} 
+Client\+Api\+::\texorpdfstring{$\sim$}{\string~}\+Client\+Api (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Приватный деструктор 
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2sasha_2polytech_2_hampsetes_2hampsters_2_cazik_2clientapi_8h-example}{/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/clientapi.\+h}}.\end{Desc}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_client_api_a145f6c557a1099ae2684aefbf29e2c03}\index{ClientApi@{ClientApi}!adminTo@{adminTo}}
+\index{adminTo@{adminTo}!ClientApi@{ClientApi}}
+\doxysubsubsection{\texorpdfstring{adminTo()}{adminTo()}}
+{\footnotesize\ttfamily \label{class_client_api_a145f6c557a1099ae2684aefbf29e2c03} 
+QString Client\+Api\+::admin\+To (\begin{DoxyParamCaption}\item[{QString}]{user\+Login}{, }\item[{int}]{operation}{, }\item[{int}]{amount}{, }\item[{int}]{admin\+Id}{}\end{DoxyParamCaption})}
+
+
+
+Административная операция управления балансом 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Login} & Логин пользователя для операции \\
+\hline
+{\em operation} & Тип операции (1-\/пополнение, 2-\/списание) \\
+\hline
+{\em amount} & Сумма операции \\
+\hline
+{\em admin\+Id} & ID администратора \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Результат операции
+\end{DoxyReturn}
+Позволяет администратору изменять баланс пользователей \begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2sasha_2polytech_2_hampsetes_2hampsters_2_cazik_2clientapi_8h-example}{/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/clientapi.\+h}}.\end{Desc}
+\Hypertarget{class_client_api_a964fff92940fa76359adc1ff3981b5f1}\index{ClientApi@{ClientApi}!auth@{auth}}
+\index{auth@{auth}!ClientApi@{ClientApi}}
+\doxysubsubsection{\texorpdfstring{auth()}{auth()}}
+{\footnotesize\ttfamily \label{class_client_api_a964fff92940fa76359adc1ff3981b5f1} 
+QString Client\+Api\+::auth (\begin{DoxyParamCaption}\item[{QString}]{login}{, }\item[{QString}]{password}{}\end{DoxyParamCaption})}
+
+
+
+Авторизация пользователя на сервере 
+
+
+\begin{DoxyParams}{Parameters}
+{\em login} & Логин пользователя \\
+\hline
+{\em password} & Пароль пользователя \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Результат авторизации ("{}\+OK"{}, "{}\+WRONG\+\_\+\+PASS"{}, "{}\+NO\+\_\+\+USER"{}, "{}\+ERROR"{})
+\end{DoxyReturn}
+Отправляет запрос авторизации на сервер и возвращает результат \begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2sasha_2polytech_2_hampsetes_2hampsters_2_cazik_2clientapi_8h-example}{/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/clientapi.\+h}}.\end{Desc}
+\Hypertarget{class_client_api_a896ca9896a39a414c680076cdccb9bd6}\index{ClientApi@{ClientApi}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!ClientApi@{ClientApi}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \label{class_client_api_a896ca9896a39a414c680076cdccb9bd6} 
+\mbox{\hyperlink{class_client_api}{Client\+Api}} \texorpdfstring{$\ast$}{*} Client\+Api\+::get\+Instance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Получить единственный экземпляр \doxylink{class_client_api}{Client\+Api}. 
+
+\begin{DoxyReturn}{Returns}
+Указатель на экземпляр \doxylink{class_client_api}{Client\+Api}
+\end{DoxyReturn}
+Создает экземпляр при первом вызове или возвращает существующий \begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2sasha_2polytech_2_hampsetes_2hampsters_2_cazik_2clientapi_8h-example}{/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/clientapi.\+h}}.\end{Desc}
+\Hypertarget{class_client_api_a7fb991e8581a3c560b08aa3c390f75ad}\index{ClientApi@{ClientApi}!one\_stat@{one\_stat}}
+\index{one\_stat@{one\_stat}!ClientApi@{ClientApi}}
+\doxysubsubsection{\texorpdfstring{one\_stat()}{one\_stat()}}
+{\footnotesize\ttfamily \label{class_client_api_a7fb991e8581a3c560b08aa3c390f75ad} 
+QString Client\+Api\+::one\+\_\+stat (\begin{DoxyParamCaption}\item[{QString}]{login}{}\end{DoxyParamCaption})}
+
+
+
+Получение статистики одного пользователя 
+
+
+\begin{DoxyParams}{Parameters}
+{\em login} & Логин пользователя \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Строка со статистикой пользователя
+\end{DoxyReturn}
+Запрашивает детальную статистику указанного пользователя \begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2sasha_2polytech_2_hampsetes_2hampsters_2_cazik_2clientapi_8h-example}{/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/clientapi.\+h}}.\end{Desc}
+\Hypertarget{class_client_api_a0f29c2c92678f05575d789aab15787ab}\index{ClientApi@{ClientApi}!operator=@{operator=}}
+\index{operator=@{operator=}!ClientApi@{ClientApi}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{class_client_api_a0f29c2c92678f05575d789aab15787ab} 
+\mbox{\hyperlink{class_client_api}{Client\+Api}} \& Client\+Api\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_client_api}{Client\+Api}} \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [delete]}}
+
+
+
+Запрет присваивания 
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2sasha_2polytech_2_hampsetes_2hampsters_2_cazik_2clientapi_8h-example}{/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/clientapi.\+h}}.\end{Desc}
+\Hypertarget{class_client_api_a16b1ddadccc2fc98a7b340ae07fb0cf8}\index{ClientApi@{ClientApi}!query\_to\_server@{query\_to\_server}}
+\index{query\_to\_server@{query\_to\_server}!ClientApi@{ClientApi}}
+\doxysubsubsection{\texorpdfstring{query\_to\_server()}{query\_to\_server()}}
+{\footnotesize\ttfamily \label{class_client_api_a16b1ddadccc2fc98a7b340ae07fb0cf8} 
+QByte\+Array Client\+Api\+::query\+\_\+to\+\_\+server (\begin{DoxyParamCaption}\item[{QString}]{query}{}\end{DoxyParamCaption})}
+
+
+
+Отправка произвольного запроса на сервер 
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & Строка запроса \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ответ сервера в виде массива байт
+\end{DoxyReturn}
+Универсальный метод для отправки любых запросов на сервер \begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2sasha_2polytech_2_hampsetes_2hampsters_2_cazik_2clientapi_8h-example}{/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/clientapi.\+h}}.\end{Desc}
+\Hypertarget{class_client_api_ad5bc5df5045f183cccb2c14b2e3e9d11}\index{ClientApi@{ClientApi}!reg@{reg}}
+\index{reg@{reg}!ClientApi@{ClientApi}}
+\doxysubsubsection{\texorpdfstring{reg()}{reg()}}
+{\footnotesize\ttfamily \label{class_client_api_ad5bc5df5045f183cccb2c14b2e3e9d11} 
+QString Client\+Api\+::reg (\begin{DoxyParamCaption}\item[{QString}]{login}{, }\item[{QString}]{password}{, }\item[{QString}]{confirm\+Password}{}\end{DoxyParamCaption})}
+
+
+
+Регистрация нового пользователя 
+
+
+\begin{DoxyParams}{Parameters}
+{\em login} & Логин нового пользователя \\
+\hline
+{\em password} & Пароль \\
+\hline
+{\em confirm\+Password} & Подтверждение пароля \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Результат регистрации ("{}\+OK"{}, "{}\+USER\+\_\+\+EXISTS"{}, "{}\+PASS\+\_\+\+MISMATCH"{}, "{}\+ERROR"{})
+\end{DoxyReturn}
+Создает новый аккаунт пользователя на сервере \begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2sasha_2polytech_2_hampsetes_2hampsters_2_cazik_2clientapi_8h-example}{/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/clientapi.\+h}}.\end{Desc}
+\Hypertarget{class_client_api_aa7fb4a2d0febe27006d1757ae0ca1ac2}\index{ClientApi@{ClientApi}!slotServerDisconnection@{slotServerDisconnection}}
+\index{slotServerDisconnection@{slotServerDisconnection}!ClientApi@{ClientApi}}
+\doxysubsubsection{\texorpdfstring{slotServerDisconnection}{slotServerDisconnection}}
+{\footnotesize\ttfamily \label{class_client_api_aa7fb4a2d0febe27006d1757ae0ca1ac2} 
+void Client\+Api\+::slot\+Server\+Disconnection (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Обработчик отключения от сервера 
+
+Вызывается при потере соединения с сервером. Выполняет необходимые действия для восстановления соединения или уведомления пользователя о проблеме. \begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2sasha_2polytech_2_hampsetes_2hampsters_2_cazik_2clientapi_8h-example}{/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/clientapi.\+h}}.\end{Desc}
+\Hypertarget{class_client_api_acd00a4a99c302a2a19cf129cf609b0f0}\index{ClientApi@{ClientApi}!toServer@{toServer}}
+\index{toServer@{toServer}!ClientApi@{ClientApi}}
+\doxysubsubsection{\texorpdfstring{toServer()}{toServer()}}
+{\footnotesize\ttfamily \label{class_client_api_acd00a4a99c302a2a19cf129cf609b0f0} 
+QString Client\+Api\+::to\+Server (\begin{DoxyParamCaption}\item[{int}]{game\+Type}{, }\item[{int}]{bet\+Amount}{, }\item[{int}]{win\+Amount}{}\end{DoxyParamCaption})}
+
+
+
+Отправка результатов игры на сервер 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Type} & Тип игры (1-\/слоты, 2-\/рулетка, 3-\/кости, 4-\/кликер, 5-\/угадай число) \\
+\hline
+{\em bet\+Amount} & Размер ставки \\
+\hline
+{\em win\+Amount} & Размер выигрыша (может быть отрицательным при проигрыше) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Результат операции и обновленный баланс
+\end{DoxyReturn}
+Обновляет баланс игрока и статистику на основе результатов игры \begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2sasha_2polytech_2_hampsetes_2hampsters_2_cazik_2clientapi_8h-example}{/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/clientapi.\+h}}.\end{Desc}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_client_api_aa93ce997b9645496c0e17460fba08432}\index{ClientApi@{ClientApi}!SingletonDestroyer@{SingletonDestroyer}}
+\index{SingletonDestroyer@{SingletonDestroyer}!ClientApi@{ClientApi}}
+\doxysubsubsection{\texorpdfstring{SingletonDestroyer}{SingletonDestroyer}}
+{\footnotesize\ttfamily \label{class_client_api_aa93ce997b9645496c0e17460fba08432} 
+friend class \mbox{\hyperlink{class_singleton_destroyer}{Singleton\+Destroyer}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_client_api_a361b542a22d620d9369aa9e65998b099}\index{ClientApi@{ClientApi}!destroyer@{destroyer}}
+\index{destroyer@{destroyer}!ClientApi@{ClientApi}}
+\doxysubsubsection{\texorpdfstring{destroyer}{destroyer}}
+{\footnotesize\ttfamily \label{class_client_api_a361b542a22d620d9369aa9e65998b099} 
+\mbox{\hyperlink{class_singleton_destroyer}{Singleton\+Destroyer}} Client\+Api\+::destroyer\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Объект для корректного удаления синглтона 
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2sasha_2polytech_2_hampsetes_2hampsters_2_cazik_2clientapi_8h-example}{/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/clientapi.\+h}}.\end{Desc}
+\Hypertarget{class_client_api_a7696499830113ef291169611bf43e7bc}\index{ClientApi@{ClientApi}!mTcpSocket@{mTcpSocket}}
+\index{mTcpSocket@{mTcpSocket}!ClientApi@{ClientApi}}
+\doxysubsubsection{\texorpdfstring{mTcpSocket}{mTcpSocket}}
+{\footnotesize\ttfamily \label{class_client_api_a7696499830113ef291169611bf43e7bc} 
+QTcp\+Socket\texorpdfstring{$\ast$}{*} Client\+Api\+::m\+Tcp\+Socket\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+TCP-\/сокет для связи с сервером 
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2sasha_2polytech_2_hampsetes_2hampsters_2_cazik_2clientapi_8h-example}{/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/clientapi.\+h}}.\end{Desc}
+\Hypertarget{class_client_api_a741e51fd778efa0bdfda541c0bb3c922}\index{ClientApi@{ClientApi}!p\_instance@{p\_instance}}
+\index{p\_instance@{p\_instance}!ClientApi@{ClientApi}}
+\doxysubsubsection{\texorpdfstring{p\_instance}{p\_instance}}
+{\footnotesize\ttfamily \label{class_client_api_a741e51fd778efa0bdfda541c0bb3c922} 
+\mbox{\hyperlink{class_client_api}{Client\+Api}} \texorpdfstring{$\ast$}{*} Client\+Api\+::p\+\_\+instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Единственный экземпляр класса 
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2sasha_2polytech_2_hampsetes_2hampsters_2_cazik_2clientapi_8h-example}{/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/clientapi.\+h}}.\end{Desc}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/\mbox{\hyperlink{clientapi_8h}{clientapi.\+h}}\item 
+/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/\mbox{\hyperlink{clientapi_8cpp}{clientapi.\+cpp}}\end{DoxyCompactItemize}

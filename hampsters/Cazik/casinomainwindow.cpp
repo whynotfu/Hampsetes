@@ -1,8 +1,6 @@
 #include "client_functions.h"
 #include "casinomainwindow.h"
 #include "ui_casinomainwindow.h"
-#include "admin_page.h"
-#include "personal_page.h"
 
 
 
@@ -14,6 +12,7 @@ CasinoMainWindow::CasinoMainWindow(QWidget *parent)
     // Для смены миниигры
     ui->setupUi(this);
 
+    QPixmap Vlast(path() + "Images/Vlast.png");
     //настройки окна: иконка, название формы, фиксированный размер
     this->setWindowIcon(QIcon(path() + "Images/icon.png"));
     this->setWindowTitle("Menu");
@@ -27,7 +26,15 @@ CasinoMainWindow::CasinoMainWindow(QWidget *parent)
     ui->ShapkaLabel->setPixmap(Shapka);\
 
     QPixmap ProfileIcon(path() + "Images/IconProfile.png");
+    QPixmap ProfileIcon2(path() + "Images/Icon2.png");
     ui->Profilelabel->setPixmap(ProfileIcon);
+
+    if (currentRole != "user"){
+        ui->Vlast_label->setPixmap(Vlast);
+        ui->Profilelabel->setPixmap(ProfileIcon2);
+    } else{
+        ui->Admin_page_button->setVisible(1);
+        }
 
     //Для смены миниигры
     this->game_slot = 2;
@@ -84,6 +91,9 @@ void CasinoMainWindow::change_minigame(bool change, QPixmap image, QPixmap name)
 
     ui->minigamelabel->setPixmap(image);
     ui->namelabel->setPixmap(name);
+
+    QPixmap Vlasts(path() + "Images/VlastInv.png");
+    ui->Vlast_label->setPixmap(Vlasts);
 }
 
 //функция для прокручивания вперед выбора минигры
@@ -137,16 +147,7 @@ void CasinoMainWindow::on_PlayButton_clicked()
 
 void CasinoMainWindow::on_Admin_page_button_clicked()
 {
-    // Находим текущего пользователя в списке
-    bool isAdmin = false;
-    for (const User& user : users) {
-        if (user.login == currentUsername && user.role == "admin") {
-            isAdmin = true;
-            break;
-        }
-    }
-
-    if (isAdmin) {
+    if (currentRole == "admin") {
         emit admn_sig();
     } else {
         QMessageBox::warning(this, "Ошибка", "Доступ запрещен. Вы не являетесь администратором.");
@@ -157,5 +158,13 @@ void CasinoMainWindow::on_Admin_page_button_clicked()
 void CasinoMainWindow::on_pushButton_clicked()
 {
     emit user_sig();
+}
+
+
+void CasinoMainWindow::on_pushButton_2_clicked()
+{
+    currentRole = "user";
+    emit back_sig();
+    this->close();
 }
 

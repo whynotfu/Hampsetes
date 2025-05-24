@@ -26,46 +26,54 @@ void \mbox{\hyperlink{class_auth_reg_form_a387dea8a6b94a1cfbc66edf4d152fc7f}{aut
 \mbox{\hyperlink{class_auth_reg_form_a7ec2ba2a7980453c629e141a90602e68}{Auth\+Reg\+Form}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
 \begin{DoxyCompactList}\small\item\em Конструктор формы авторизации \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_auth_reg_form_a8b95ad00c5d29338f850a0f179b12078}{\texorpdfstring{$\sim$}{\string~}\+Auth\+Reg\+Form}} ()
-\begin{DoxyCompactList}\small\item\em Деструктор формы авторизации \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Деструктор формы авторизации \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_auth_reg_form_ab6b3af89e41afad8f2e9bf7d860e5aff}{slot\+\_\+show}} ()
+\begin{DoxyCompactList}\small\item\em Показать форму авторизации \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Private Slots}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_auth_reg_form_aa89121d3917ed24515b199784bbf633f}{on\+\_\+\+To\+Reg\+Button\+\_\+clicked}} ()
-\begin{DoxyCompactList}\small\item\em Обработчик нажатия кнопки перехода к регистрации \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Обработчик переключения в режим регистрации \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_auth_reg_form_aaa3c14893171f0fb1e40223c67600bbd}{on\+\_\+\+Auth\+Button\+\_\+clicked}} ()
-\begin{DoxyCompactList}\small\item\em Обработчик нажатия кнопки авторизации \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Обработчик кнопки "{}Войти"{}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_auth_reg_form_a46bd353d4b06f496a8a72bf58e741219}{on\+\_\+\+Reg\+Button\+\_\+clicked}} ()
-\begin{DoxyCompactList}\small\item\em Обработчик нажатия кнопки регистрации \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Обработчик кнопки "{}Зарегистрироваться"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_auth_reg_form_a26ea774a557fbed481c2cd110183277c}{set\+\_\+visible\+\_\+in\+Reg}} (bool visible)
-\begin{DoxyCompactList}\small\item\em Управление видимостью элементов в режиме регистрации \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Управление видимостью элементов при переключении режимов \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_auth_reg_form_ad352ff103aa3c3d18d71e79e9772e8c1}{clear}} ()
-\begin{DoxyCompactList}\small\item\em Очистка полей ввода формы \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Очистить все поля ввода \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-Ui\+::\+Auth\+Reg\+Form \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_auth_reg_form_abc34a5cc090ed5359af9de44c551ac0a}{ui}}
-\begin{DoxyCompactList}\small\item\em Указатель на UI объект формы \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ui_1_1_auth_reg_form}{Ui\+::\+Auth\+Reg\+Form}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_auth_reg_form_abc34a5cc090ed5359af9de44c551ac0a}{ui}}
+\begin{DoxyCompactList}\small\item\em Пользовательский интерфейс формы \end{DoxyCompactList}\item 
 QTcp\+Socket \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_auth_reg_form_abb2e0afeeee3a19e92e163e48f97b380}{socket}}
-\begin{DoxyCompactList}\small\item\em TCP сокет для сетевого взаимодействия с сервером \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em TCP-\/сокет для связи с сервером \end{DoxyCompactList}\item 
 QByte\+Array \mbox{\hyperlink{class_auth_reg_form_a20c84c896d1fab7fb3dcddb80720f7d5}{Data}}
-\begin{DoxyCompactList}\small\item\em Буфер для хранения сетевых данных \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Буфер для хранения данных сетевого обмена \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_client_api}{Client\+Api}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_auth_reg_form_ae93dbcd7b013e6af9b821e9b33a390d1}{client\+Api}}
+\begin{DoxyCompactList}\small\item\em API клиента для взаимодействия с сервером \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Форма авторизации и регистрации пользователей 
 
-Класс \doxylink{class_auth_reg_form}{Auth\+Reg\+Form} представляет диалоговое окно для входа в систему и регистрации новых пользователей. Поддерживает\+:
+Класс \doxylink{class_auth_reg_form}{Auth\+Reg\+Form} предоставляет интерфейс для входа в систему и регистрации новых пользователей. Форма поддерживает\+:
 \begin{DoxyItemize}
 \item Авторизацию существующих пользователей
 \item Регистрацию новых аккаунтов
-\item Переключение между режимами авторизации и регистрации
-\item Сетевое взаимодействие с сервером (если необходимо)
+\item Переключение между режимами входа и регистрации
+\item Сетевое взаимодействие с сервером через TCP
+\item Валидацию введенных данных
 \end{DoxyItemize}
 
-Форма является точкой входа в приложение и первым экраном, который видит пользователь при запуске. 
+После успешной авторизации пользователь получает доступ к основному меню казино и всем его функциям. \begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2sasha_2polytech_2_hampsetes_2hampsters_2_cazik_2managerform_8h-example}{/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/managerform.\+h}}.\end{Desc}
+
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{class_auth_reg_form_a7ec2ba2a7980453c629e141a90602e68}\index{AuthRegForm@{AuthRegForm}!AuthRegForm@{AuthRegForm}}
@@ -80,10 +88,10 @@ Auth\+Reg\+Form\+::\+Auth\+Reg\+Form (\begin{DoxyParamCaption}\item[{QWidget \te
 
 
 \begin{DoxyParams}{Parameters}
-{\em parent} & Родительский виджет (по умолчанию nullptr)\\
+{\em parent} & Родительский виджет \\
 \hline
 \end{DoxyParams}
-Инициализирует интерфейс формы и настраивает начальное состояние. \Hypertarget{class_auth_reg_form_a8b95ad00c5d29338f850a0f179b12078}\index{AuthRegForm@{AuthRegForm}!````~AuthRegForm@{\texorpdfstring{$\sim$}{\string~}AuthRegForm}}
+\Hypertarget{class_auth_reg_form_a8b95ad00c5d29338f850a0f179b12078}\index{AuthRegForm@{AuthRegForm}!````~AuthRegForm@{\texorpdfstring{$\sim$}{\string~}AuthRegForm}}
 \index{````~AuthRegForm@{\texorpdfstring{$\sim$}{\string~}AuthRegForm}!AuthRegForm@{AuthRegForm}}
 \doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}AuthRegForm()}{\string~AuthRegForm()}}
 {\footnotesize\ttfamily \label{class_auth_reg_form_a8b95ad00c5d29338f850a0f179b12078} 
@@ -93,7 +101,7 @@ Auth\+Reg\+Form\+::\texorpdfstring{$\sim$}{\string~}\+Auth\+Reg\+Form (\begin{Do
 
 Деструктор формы авторизации 
 
-Освобождает ресурсы и закрывает сетевые соединения. 
+
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_auth_reg_form_a387dea8a6b94a1cfbc66edf4d152fc7f}\index{AuthRegForm@{AuthRegForm}!auth\_ok@{auth\_ok}}
@@ -111,7 +119,7 @@ void Auth\+Reg\+Form\+::auth\+\_\+ok (\begin{DoxyParamCaption}\item[{QString}]{l
 {\em login} & Логин авторизованного пользователя\\
 \hline
 \end{DoxyParams}
-Испускается при успешном входе в систему и используется для перехода к главному меню приложения. \Hypertarget{class_auth_reg_form_ad352ff103aa3c3d18d71e79e9772e8c1}\index{AuthRegForm@{AuthRegForm}!clear@{clear}}
+Испускается после успешного входа в систему. Передает логин пользователя для дальнейшего использования в основном меню и играх. \Hypertarget{class_auth_reg_form_ad352ff103aa3c3d18d71e79e9772e8c1}\index{AuthRegForm@{AuthRegForm}!clear@{clear}}
 \index{clear@{clear}!AuthRegForm@{AuthRegForm}}
 \doxysubsubsection{\texorpdfstring{clear()}{clear()}}
 {\footnotesize\ttfamily \label{class_auth_reg_form_ad352ff103aa3c3d18d71e79e9772e8c1} 
@@ -119,9 +127,9 @@ void Auth\+Reg\+Form\+::clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption
 
 
 
-Очистка полей ввода формы 
+Очистить все поля ввода 
 
-Стирает весь введенный пользователем текст в полях логина и пароля. Используется для сброса формы после неудачных попыток входа. \Hypertarget{class_auth_reg_form_aaa3c14893171f0fb1e40223c67600bbd}\index{AuthRegForm@{AuthRegForm}!on\_AuthButton\_clicked@{on\_AuthButton\_clicked}}
+Удаляет весь введенный пользователем текст из полей логина, пароля и подтверждения пароля \Hypertarget{class_auth_reg_form_aaa3c14893171f0fb1e40223c67600bbd}\index{AuthRegForm@{AuthRegForm}!on\_AuthButton\_clicked@{on\_AuthButton\_clicked}}
 \index{on\_AuthButton\_clicked@{on\_AuthButton\_clicked}!AuthRegForm@{AuthRegForm}}
 \doxysubsubsection{\texorpdfstring{on\_AuthButton\_clicked}{on\_AuthButton\_clicked}}
 {\footnotesize\ttfamily \label{class_auth_reg_form_aaa3c14893171f0fb1e40223c67600bbd} 
@@ -129,9 +137,14 @@ void Auth\+Reg\+Form\+::on\+\_\+\+Auth\+Button\+\_\+clicked (\begin{DoxyParamCap
 
 
 
-Обработчик нажатия кнопки авторизации 
+Обработчик кнопки "{}Войти"{}. 
 
-Выполняет процедуру входа в систему с введенными учетными данными. Проверяет корректность логина и пароля, и при успехе генерирует сигнал auth\+\_\+ok для перехода к главному меню. \Hypertarget{class_auth_reg_form_a46bd353d4b06f496a8a72bf58e741219}\index{AuthRegForm@{AuthRegForm}!on\_RegButton\_clicked@{on\_RegButton\_clicked}}
+Выполняет авторизацию пользователя\+:
+\begin{DoxyItemize}
+\item Проверяет заполненность полей логина и пароля
+\item Отправляет запрос на сервер для проверки учетных данных
+\item При успехе открывает главное меню казино 
+\end{DoxyItemize}\Hypertarget{class_auth_reg_form_a46bd353d4b06f496a8a72bf58e741219}\index{AuthRegForm@{AuthRegForm}!on\_RegButton\_clicked@{on\_RegButton\_clicked}}
 \index{on\_RegButton\_clicked@{on\_RegButton\_clicked}!AuthRegForm@{AuthRegForm}}
 \doxysubsubsection{\texorpdfstring{on\_RegButton\_clicked}{on\_RegButton\_clicked}}
 {\footnotesize\ttfamily \label{class_auth_reg_form_a46bd353d4b06f496a8a72bf58e741219} 
@@ -139,9 +152,14 @@ void Auth\+Reg\+Form\+::on\+\_\+\+Reg\+Button\+\_\+clicked (\begin{DoxyParamCapt
 
 
 
-Обработчик нажатия кнопки регистрации 
+Обработчик кнопки "{}Зарегистрироваться"{}. 
 
-Выполняет регистрацию нового пользователя в системе. Проверяет уникальность логина и создает новый аккаунт при успехе. \Hypertarget{class_auth_reg_form_aa89121d3917ed24515b199784bbf633f}\index{AuthRegForm@{AuthRegForm}!on\_ToRegButton\_clicked@{on\_ToRegButton\_clicked}}
+Выполняет регистрацию нового пользователя\+:
+\begin{DoxyItemize}
+\item Проверяет корректность введенных данных
+\item Отправляет запрос на создание аккаунта
+\item При успехе автоматически авторизует пользователя 
+\end{DoxyItemize}\Hypertarget{class_auth_reg_form_aa89121d3917ed24515b199784bbf633f}\index{AuthRegForm@{AuthRegForm}!on\_ToRegButton\_clicked@{on\_ToRegButton\_clicked}}
 \index{on\_ToRegButton\_clicked@{on\_ToRegButton\_clicked}!AuthRegForm@{AuthRegForm}}
 \doxysubsubsection{\texorpdfstring{on\_ToRegButton\_clicked}{on\_ToRegButton\_clicked}}
 {\footnotesize\ttfamily \label{class_auth_reg_form_aa89121d3917ed24515b199784bbf633f} 
@@ -149,9 +167,9 @@ void Auth\+Reg\+Form\+::on\+\_\+\+To\+Reg\+Button\+\_\+clicked (\begin{DoxyParam
 
 
 
-Обработчик нажатия кнопки перехода к регистрации 
+Обработчик переключения в режим регистрации 
 
-Переключает интерфейс в режим регистрации нового пользователя. Изменяет видимость элементов формы для ввода данных регистрации. \Hypertarget{class_auth_reg_form_a26ea774a557fbed481c2cd110183277c}\index{AuthRegForm@{AuthRegForm}!set\_visible\_inReg@{set\_visible\_inReg}}
+Изменяет интерфейс формы для отображения полей регистрации вместо полей авторизации \Hypertarget{class_auth_reg_form_a26ea774a557fbed481c2cd110183277c}\index{AuthRegForm@{AuthRegForm}!set\_visible\_inReg@{set\_visible\_inReg}}
 \index{set\_visible\_inReg@{set\_visible\_inReg}!AuthRegForm@{AuthRegForm}}
 \doxysubsubsection{\texorpdfstring{set\_visible\_inReg()}{set\_visible\_inReg()}}
 {\footnotesize\ttfamily \label{class_auth_reg_form_a26ea774a557fbed481c2cd110183277c} 
@@ -159,16 +177,36 @@ void Auth\+Reg\+Form\+::set\+\_\+visible\+\_\+in\+Reg (\begin{DoxyParamCaption}\
 
 
 
-Управление видимостью элементов в режиме регистрации 
+Управление видимостью элементов при переключении режимов 
 
 
 \begin{DoxyParams}{Parameters}
-{\em visible} & true для показа элементов регистрации, false для скрытия\\
+{\em visible} & Показать (true) или скрыть (false) элементы регистрации\\
 \hline
 \end{DoxyParams}
-Изменяет видимость полей и кнопок в зависимости от текущего режима (авторизация или регистрация). 
+Изменяет видимость кнопок и текстовых полей в зависимости от выбранного режима (авторизация или регистрация) \Hypertarget{class_auth_reg_form_ab6b3af89e41afad8f2e9bf7d860e5aff}\index{AuthRegForm@{AuthRegForm}!slot\_show@{slot\_show}}
+\index{slot\_show@{slot\_show}!AuthRegForm@{AuthRegForm}}
+\doxysubsubsection{\texorpdfstring{slot\_show()}{slot\_show()}}
+{\footnotesize\ttfamily \label{class_auth_reg_form_ab6b3af89e41afad8f2e9bf7d860e5aff} 
+void Auth\+Reg\+Form\+::slot\+\_\+show (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Показать форму авторизации 
+
+Отображает диалог авторизации и подготавливает интерфейс для ввода учетных данных пользователем 
 
 \doxysubsection{Member Data Documentation}
+\Hypertarget{class_auth_reg_form_ae93dbcd7b013e6af9b821e9b33a390d1}\index{AuthRegForm@{AuthRegForm}!clientApi@{clientApi}}
+\index{clientApi@{clientApi}!AuthRegForm@{AuthRegForm}}
+\doxysubsubsection{\texorpdfstring{clientApi}{clientApi}}
+{\footnotesize\ttfamily \label{class_auth_reg_form_ae93dbcd7b013e6af9b821e9b33a390d1} 
+\mbox{\hyperlink{class_client_api}{Client\+Api}}\texorpdfstring{$\ast$}{*} Auth\+Reg\+Form\+::client\+Api\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+API клиента для взаимодействия с сервером 
+
 \Hypertarget{class_auth_reg_form_a20c84c896d1fab7fb3dcddb80720f7d5}\index{AuthRegForm@{AuthRegForm}!Data@{Data}}
 \index{Data@{Data}!AuthRegForm@{AuthRegForm}}
 \doxysubsubsection{\texorpdfstring{Data}{Data}}
@@ -177,7 +215,7 @@ QByte\+Array Auth\+Reg\+Form\+::\+Data\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Буфер для хранения сетевых данных 
+Буфер для хранения данных сетевого обмена 
 
 \Hypertarget{class_auth_reg_form_abb2e0afeeee3a19e92e163e48f97b380}\index{AuthRegForm@{AuthRegForm}!socket@{socket}}
 \index{socket@{socket}!AuthRegForm@{AuthRegForm}}
@@ -187,21 +225,22 @@ QTcp\+Socket\texorpdfstring{$\ast$}{*} Auth\+Reg\+Form\+::socket\hspace{0.3cm}{\
 
 
 
-TCP сокет для сетевого взаимодействия с сервером 
+TCP-\/сокет для связи с сервером 
 
 \Hypertarget{class_auth_reg_form_abc34a5cc090ed5359af9de44c551ac0a}\index{AuthRegForm@{AuthRegForm}!ui@{ui}}
 \index{ui@{ui}!AuthRegForm@{AuthRegForm}}
 \doxysubsubsection{\texorpdfstring{ui}{ui}}
 {\footnotesize\ttfamily \label{class_auth_reg_form_abc34a5cc090ed5359af9de44c551ac0a} 
-Ui\+::\+Auth\+Reg\+Form\texorpdfstring{$\ast$}{*} Auth\+Reg\+Form\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\hyperlink{class_ui_1_1_auth_reg_form}{Ui\+::\+Auth\+Reg\+Form}}\texorpdfstring{$\ast$}{*} Auth\+Reg\+Form\+::ui\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Указатель на UI объект формы 
+Пользовательский интерфейс формы 
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 /\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/\mbox{\hyperlink{authregform_8h}{authregform.\+h}}\item 
-/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/\mbox{\hyperlink{authregform_8cpp}{authregform.\+cpp}}\end{DoxyCompactItemize}
+/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/\mbox{\hyperlink{authregform_8cpp}{authregform.\+cpp}}\item 
+/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/build/release/\mbox{\hyperlink{moc__authregform_8cpp}{moc\+\_\+authregform.\+cpp}}\end{DoxyCompactItemize}

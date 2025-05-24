@@ -1,12 +1,14 @@
 var searchData=
 [
-  ['data_0',['Data',['../class_auth_reg_form.html#a20c84c896d1fab7fb3dcddb80720f7d5',1,'AuthRegForm']]],
-  ['databasename_1',['DataBaseName',['../databasesingleton_8h.html#a8c3cf55ae3286ec2b755afadbb240d3c',1,'databasesingleton.h']]],
-  ['databasesingleton_2',['DatabaseSingleton',['../class_database_singleton.html',1,'DatabaseSingleton'],['../class_database_singleton.html#a9162627fc7a3bfac857649a427aaf2e4',1,'DatabaseSingleton::DatabaseSingleton()'],['../class_database_singleton.html#a4144bc06af454c7d1acad452d9c71b96',1,'DatabaseSingleton::DatabaseSingleton(const DatabaseSingleton &amp;)=delete']]],
-  ['databasesingleton_2ecpp_3',['databasesingleton.cpp',['../databasesingleton_8cpp.html',1,'']]],
-  ['databasesingleton_2eh_4',['databasesingleton.h',['../databasesingleton_8h.html',1,'']]],
-  ['databasesingletondestroyer_5',['DatabaseSingletonDestroyer',['../class_database_singleton_destroyer.html',1,'DatabaseSingletonDestroyer'],['../class_database_singleton.html#aaa3b2396193cfa6fbd129a5e21b98e35',1,'DatabaseSingleton::DatabaseSingletonDestroyer']]],
-  ['db_6',['db',['../class_database_singleton.html#a614cca9b7d33e72fe60de5ac76312732',1,'DatabaseSingleton']]],
-  ['destroyer_7',['destroyer',['../class_database_singleton.html#ae3cd0967fa32ffa43164aaf48e21cb70',1,'DatabaseSingleton']]],
-  ['displayuserstatistics_8',['displayUserStatistics',['../classpersonal__page.html#a9806e85f52aace942170d161fdff92a5',1,'personal_page']]]
+  ['data_0',['Data',['../class_auth_reg_form.html#a20c84c896d1fab7fb3dcddb80720f7d5',1,'AuthRegForm::Data'],['../class_my_tcp_server.html#a945514221aec91de898a094dda3cb5fe',1,'MyTcpServer::Data']]],
+  ['databasename_1',['DataBaseName',['../hampsters_2_d_b__singleton_2databasesingleton_8h.html#a8c3cf55ae3286ec2b755afadbb240d3c',1,'databasesingleton.h']]],
+  ['databasesingleton_2',['DataBaseSingleton',['../class_data_base_singleton.html',1,'DataBaseSingleton'],['../class_data_base_singleton.html#aa289e69de3195fef9593052246b9b1b0',1,'DataBaseSingleton::DataBaseSingleton()'],['../class_data_base_singleton.html#abe02a9a0f33a2664ba969d20d777d4d9',1,'DataBaseSingleton::DataBaseSingleton(const DataBaseSingleton &amp;)=delete']]],
+  ['databasesingleton_3',['DatabaseSingleton',['../class_database_singleton.html',1,'DatabaseSingleton'],['../class_database_singleton.html#a9162627fc7a3bfac857649a427aaf2e4',1,'DatabaseSingleton::DatabaseSingleton()'],['../class_database_singleton.html#a4144bc06af454c7d1acad452d9c71b96',1,'DatabaseSingleton::DatabaseSingleton(const DatabaseSingleton &amp;)=delete']]],
+  ['databasesingleton_2ecpp_4',['databasesingleton.cpp',['../hampsters_2_d_b__singleton_2databasesingleton_8cpp.html',1,'(Global Namespace)'],['../ser__ver_2databasesingleton_8cpp.html',1,'(Global Namespace)']]],
+  ['databasesingleton_2eh_5',['databasesingleton.h',['../hampsters_2_d_b__singleton_2databasesingleton_8h.html',1,'(Global Namespace)'],['../ser__ver_2databasesingleton_8h.html',1,'(Global Namespace)']]],
+  ['databasesingletondestroyer_6',['DataBaseSingletonDestroyer',['../class_data_base_singleton_destroyer.html',1,'DataBaseSingletonDestroyer'],['../class_data_base_singleton.html#a83154d5b787806cf1d1ae50c7e89256d',1,'DataBaseSingleton::DataBaseSingletonDestroyer()']]],
+  ['databasesingletondestroyer_7',['DatabaseSingletonDestroyer',['../class_database_singleton_destroyer.html',1,'DatabaseSingletonDestroyer'],['../class_database_singleton.html#aaa3b2396193cfa6fbd129a5e21b98e35',1,'DatabaseSingleton::DatabaseSingletonDestroyer']]],
+  ['db_8',['db',['../class_database_singleton.html#a614cca9b7d33e72fe60de5ac76312732',1,'DatabaseSingleton::db'],['../class_data_base_singleton.html#a929da7bbfe9e068b4c3bc5a095e6156a',1,'DataBaseSingleton::db'],['../class_my_tcp_server.html#a15410ea1136a0540f3efee08861518ba',1,'MyTcpServer::db']]],
+  ['destroyer_9',['destroyer',['../class_client_api.html#a361b542a22d620d9369aa9e65998b099',1,'ClientApi::destroyer'],['../class_database_singleton.html#ae3cd0967fa32ffa43164aaf48e21cb70',1,'DatabaseSingleton::destroyer'],['../class_data_base_singleton.html#a3b2b79b228429bb87ef11ff0cc0f886f',1,'DataBaseSingleton::destroyer']]],
+  ['displayuserstatistics_10',['displayUserStatistics',['../classpersonal__page.html#a52b8c4d95911dfd2f1a774f4cea6cb19',1,'personal_page']]]
 ];

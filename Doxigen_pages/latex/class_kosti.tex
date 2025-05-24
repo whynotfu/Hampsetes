@@ -2,7 +2,7 @@
 \hypertarget{class_kosti}{}\label{class_kosti}\index{Kosti@{Kosti}}
 
 
-Класс игры в кости  
+Игра "{}Кости"{} -\/ бросок двух игральных кубиков  
 
 
 
@@ -18,19 +18,19 @@ Inheritance diagram for Kosti\+:\begin{figure}[H]
 \doxysubsubsection*{Signals}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_kosti_aa16fe12965887a24b29d9f6480878260}{to\+\_\+main}} (QString username)
+void \mbox{\hyperlink{class_kosti_a07416cea09e50790df61e2dcb6413861}{to\+\_\+main}} (QString player\+Login)
 \begin{DoxyCompactList}\small\item\em Сигнал возврата в главное меню \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_kosti_a4d8e95d954885dd93318c55426d0a7de}{Kosti}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
-\begin{DoxyCompactList}\small\item\em Конструктор игры в кости \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Конструктор игры "{}Кости"{}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_kosti_a04bac6d629a1d051b526fe91a3e24056}{\texorpdfstring{$\sim$}{\string~}\+Kosti}} ()
-\begin{DoxyCompactList}\small\item\em Деструктор игры в кости \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Деструктор игры "{}Кости"{}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_kosti_a6dc7b4364ee16224cd9588d58322e4e6}{slot\+\_\+show}} ()
-\begin{DoxyCompactList}\small\item\em Слот для показа окна игры \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Показать окно игры \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_kosti_a80b9d4d64ae7c108d049f13c448fa2fe}{update\+Balance}} ()
-\begin{DoxyCompactList}\small\item\em Обновление отображения баланса игрока \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Обновить отображение баланса \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Private Slots}
 \begin{DoxyCompactItemize}
 \item 
@@ -43,46 +43,48 @@ void \mbox{\hyperlink{class_kosti_a7f38ef26f33c7f890e1c7ee278232f15}{on\+\_\+pus
 void \mbox{\hyperlink{class_kosti_ac72cc9deb3ad311f98ce90bcf1867890}{on\+\_\+push\+Button100\+\_\+clicked}} ()
 \begin{DoxyCompactList}\small\item\em Обработчик кнопки ставки 100 робуксов \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_kosti_a3464a34daed3818f1d7e187280689aba}{on\+\_\+\+Back\+Button\+\_\+clicked}} ()
-\begin{DoxyCompactList}\small\item\em Обработчик кнопки возврата в главное меню \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Обработчик кнопки "{}Назад"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_kosti_a5b32f2708520e3329adf24b7205fcc90}{roll\+Dice}} ()
-\begin{DoxyCompactList}\small\item\em Выполнение броска костей \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Выполнить бросок кубиков \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_kosti_a93838eed8fb01142b8ee1080a6c56711}{update\+Dice\+Images}} (int dice1, int dice2)
-\begin{DoxyCompactList}\small\item\em Обновление изображений костей \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Обновить изображения кубиков \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_kosti_ad560cafbaab2e5cf48acedb6f158a83d}{show\+Result}} (int dice1, int dice2)
-\begin{DoxyCompactList}\small\item\em Показ результата игры \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Показать результат броска \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-Ui\+::\+Kosti \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_kosti_a5bfe6f8a61320a98ad32ea955febe5bd}{ui}}
-\begin{DoxyCompactList}\small\item\em Указатель на UI объект игры в кости \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_client_api}{Client\+Api}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_kosti_a3d11c7594d0d078d9150fb158af9e637}{client\+Api}}
+\begin{DoxyCompactList}\small\item\em API для взаимодействия с сервером \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ui_1_1_kosti}{Ui\+::\+Kosti}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_kosti_a5bfe6f8a61320a98ad32ea955febe5bd}{ui}}
+\begin{DoxyCompactList}\small\item\em Пользовательский интерфейс игры \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_kosti_a906b33da6470251b79e6323822cdd178}{size\+\_\+of\+\_\+stavka}}
-\begin{DoxyCompactList}\small\item\em Размер текущей ставки игрока \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{class_kosti_ab38274edb90c0d1db41701a651f9be06}{robuks}}
-\begin{DoxyCompactList}\small\item\em Текущий баланс игрока в робуксах \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Текущий размер ставки в робуксах \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Класс игры в кости 
+Игра "{}Кости"{} -\/ бросок двух игральных кубиков 
 
-Класс \doxylink{class_kosti}{Kosti} реализует азартную игру в кости, где игрок делает ставку и бросает две игральные кости для получения выигрыша.
+Класс \doxylink{class_kosti}{Kosti} реализует азартную игру с двумя шестигранными кубиками. Игровая механика включает\+:
+\begin{DoxyItemize}
+\item Бросок двух кубиков с визуализацией результата
+\item Систему ставок (100, 500, 1000 робуксов)
+\item Расчет выигрышей на основе суммы очков
+\item Анимацию броска кубиков
+\end{DoxyItemize}
 
 Правила игры\+:
 \begin{DoxyItemize}
-\item Игрок выбирает размер ставки (100, 500 или 1000 робуксов)
-\item Бросается две игральные кости
-\item Выигрыш зависит от суммы очков на костях\+:
-\begin{DoxyItemize}
-\item Сумма 7 или 11 -\/ выигрыш удваивается
-\item Дубль (одинаковые числа) -\/ выигрыш утраивается
-\item Другие комбинации -\/ ставка теряется
-\end{DoxyItemize}
-\item Анимация показывает изображения костей с выпавшими значениями
-\end{DoxyItemize}
+\item Игрок выбирает размер ставки
+\item При нажатии "{}Играть"{} бросаются два кубика
+\item Выигрыш зависит от суммы очков\+: 7 и 11 -\/ джекпот, дубли -\/ повышенная выплата
+\item Обычные комбинации дают стандартную выплату 
+\end{DoxyItemize}\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2sasha_2polytech_2_hampsetes_2hampsters_2_cazik_2managerform_8h-example}{/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/managerform.\+h}}.\end{Desc}
 
-Игра основана на удаче и предлагает хорошие коэффициенты выплат. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{class_kosti_a4d8e95d954885dd93318c55426d0a7de}\index{Kosti@{Kosti}!Kosti@{Kosti}}
@@ -93,14 +95,14 @@ Kosti\+::\+Kosti (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}
 
 
 
-Конструктор игры в кости 
+Конструктор игры "{}Кости"{}. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em parent} & Родительский виджет (по умолчанию nullptr)\\
+{\em parent} & Родительский виджет \\
 \hline
 \end{DoxyParams}
-Инициализирует интерфейс игры и загружает изображения костей. \Hypertarget{class_kosti_a04bac6d629a1d051b526fe91a3e24056}\index{Kosti@{Kosti}!````~Kosti@{\texorpdfstring{$\sim$}{\string~}Kosti}}
+\Hypertarget{class_kosti_a04bac6d629a1d051b526fe91a3e24056}\index{Kosti@{Kosti}!````~Kosti@{\texorpdfstring{$\sim$}{\string~}Kosti}}
 \index{````~Kosti@{\texorpdfstring{$\sim$}{\string~}Kosti}!Kosti@{Kosti}}
 \doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Kosti()}{\string~Kosti()}}
 {\footnotesize\ttfamily \label{class_kosti_a04bac6d629a1d051b526fe91a3e24056} 
@@ -108,9 +110,9 @@ Kosti\+::\texorpdfstring{$\sim$}{\string~}\+Kosti (\begin{DoxyParamCaption}{}{}\
 
 
 
-Деструктор игры в кости 
+Деструктор игры "{}Кости"{}. 
 
-Освобождает ресурсы, используемые игрой в кости. 
+
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_kosti_a3464a34daed3818f1d7e187280689aba}\index{Kosti@{Kosti}!on\_BackButton\_clicked@{on\_BackButton\_clicked}}
@@ -121,9 +123,9 @@ void Kosti\+::on\+\_\+\+Back\+Button\+\_\+clicked (\begin{DoxyParamCaption}{}{}\
 
 
 
-Обработчик кнопки возврата в главное меню 
+Обработчик кнопки "{}Назад"{}. 
 
-Закрывает окно игры в кости и возвращает игрока в главное меню казино. \Hypertarget{class_kosti_af0723442e86d4d2c42354ef08d14fbff}\index{Kosti@{Kosti}!on\_pushButton1000\_clicked@{on\_pushButton1000\_clicked}}
+Возвращает игрока в главное меню казино \Hypertarget{class_kosti_af0723442e86d4d2c42354ef08d14fbff}\index{Kosti@{Kosti}!on\_pushButton1000\_clicked@{on\_pushButton1000\_clicked}}
 \index{on\_pushButton1000\_clicked@{on\_pushButton1000\_clicked}!Kosti@{Kosti}}
 \doxysubsubsection{\texorpdfstring{on\_pushButton1000\_clicked}{on\_pushButton1000\_clicked}}
 {\footnotesize\ttfamily \label{class_kosti_af0723442e86d4d2c42354ef08d14fbff} 
@@ -133,7 +135,7 @@ void Kosti\+::on\+\_\+push\+Button1000\+\_\+clicked (\begin{DoxyParamCaption}{}{
 
 Обработчик кнопки ставки 1000 робуксов 
 
-Устанавливает размер ставки в 1000 робуксов. Проверяет достаточность средств на балансе игрока. \Hypertarget{class_kosti_ac72cc9deb3ad311f98ce90bcf1867890}\index{Kosti@{Kosti}!on\_pushButton100\_clicked@{on\_pushButton100\_clicked}}
+Устанавливает размер ставки в 1000 робуксов \Hypertarget{class_kosti_ac72cc9deb3ad311f98ce90bcf1867890}\index{Kosti@{Kosti}!on\_pushButton100\_clicked@{on\_pushButton100\_clicked}}
 \index{on\_pushButton100\_clicked@{on\_pushButton100\_clicked}!Kosti@{Kosti}}
 \doxysubsubsection{\texorpdfstring{on\_pushButton100\_clicked}{on\_pushButton100\_clicked}}
 {\footnotesize\ttfamily \label{class_kosti_ac72cc9deb3ad311f98ce90bcf1867890} 
@@ -143,7 +145,7 @@ void Kosti\+::on\+\_\+push\+Button100\+\_\+clicked (\begin{DoxyParamCaption}{}{}
 
 Обработчик кнопки ставки 100 робуксов 
 
-Устанавливает размер ставки в 100 робуксов. Проверяет достаточность средств на балансе игрока. \Hypertarget{class_kosti_a7f38ef26f33c7f890e1c7ee278232f15}\index{Kosti@{Kosti}!on\_pushButton500\_clicked@{on\_pushButton500\_clicked}}
+Устанавливает размер ставки в 100 робуксов \Hypertarget{class_kosti_a7f38ef26f33c7f890e1c7ee278232f15}\index{Kosti@{Kosti}!on\_pushButton500\_clicked@{on\_pushButton500\_clicked}}
 \index{on\_pushButton500\_clicked@{on\_pushButton500\_clicked}!Kosti@{Kosti}}
 \doxysubsubsection{\texorpdfstring{on\_pushButton500\_clicked}{on\_pushButton500\_clicked}}
 {\footnotesize\ttfamily \label{class_kosti_a7f38ef26f33c7f890e1c7ee278232f15} 
@@ -153,7 +155,7 @@ void Kosti\+::on\+\_\+push\+Button500\+\_\+clicked (\begin{DoxyParamCaption}{}{}
 
 Обработчик кнопки ставки 500 робуксов 
 
-Устанавливает размер ставки в 500 робуксов. Проверяет достаточность средств на балансе игрока. \Hypertarget{class_kosti_ab970ed2ea123ec4540926ade454d4bd1}\index{Kosti@{Kosti}!on\_pushButtonPlay\_clicked@{on\_pushButtonPlay\_clicked}}
+Устанавливает размер ставки в 500 робуксов \Hypertarget{class_kosti_ab970ed2ea123ec4540926ade454d4bd1}\index{Kosti@{Kosti}!on\_pushButtonPlay\_clicked@{on\_pushButtonPlay\_clicked}}
 \index{on\_pushButtonPlay\_clicked@{on\_pushButtonPlay\_clicked}!Kosti@{Kosti}}
 \doxysubsubsection{\texorpdfstring{on\_pushButtonPlay\_clicked}{on\_pushButtonPlay\_clicked}}
 {\footnotesize\ttfamily \label{class_kosti_ab970ed2ea123ec4540926ade454d4bd1} 
@@ -163,7 +165,13 @@ void Kosti\+::on\+\_\+push\+Button\+Play\+\_\+clicked (\begin{DoxyParamCaption}{
 
 Обработчик кнопки "{}Играть"{}. 
 
-Запускает процесс броска костей\+: выполняет анимацию, рассчитывает результат и обновляет баланс игрока в зависимости от выпавшей комбинации. \Hypertarget{class_kosti_a5b32f2708520e3329adf24b7205fcc90}\index{Kosti@{Kosti}!rollDice@{rollDice}}
+Запускает игровой процесс\+:
+\begin{DoxyItemize}
+\item Проверяет достаточность средств для ставки
+\item Выполняет бросок кубиков
+\item Вычисляет результат и выигрыш
+\item Обновляет баланс игрока 
+\end{DoxyItemize}\Hypertarget{class_kosti_a5b32f2708520e3329adf24b7205fcc90}\index{Kosti@{Kosti}!rollDice@{rollDice}}
 \index{rollDice@{rollDice}!Kosti@{Kosti}}
 \doxysubsubsection{\texorpdfstring{rollDice()}{rollDice()}}
 {\footnotesize\ttfamily \label{class_kosti_a5b32f2708520e3329adf24b7205fcc90} 
@@ -171,9 +179,9 @@ void Kosti\+::roll\+Dice (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hs
 
 
 
-Выполнение броска костей 
+Выполнить бросок кубиков 
 
-Генерирует случайные значения для двух игральных костей и запускает анимацию отображения результата. \Hypertarget{class_kosti_ad560cafbaab2e5cf48acedb6f158a83d}\index{Kosti@{Kosti}!showResult@{showResult}}
+Генерирует случайные значения для двух кубиков, обновляет их визуальное представление и вычисляет результат \Hypertarget{class_kosti_ad560cafbaab2e5cf48acedb6f158a83d}\index{Kosti@{Kosti}!showResult@{showResult}}
 \index{showResult@{showResult}!Kosti@{Kosti}}
 \doxysubsubsection{\texorpdfstring{showResult()}{showResult()}}
 {\footnotesize\ttfamily \label{class_kosti_ad560cafbaab2e5cf48acedb6f158a83d} 
@@ -181,16 +189,16 @@ void Kosti\+::show\+Result (\begin{DoxyParamCaption}\item[{int}]{dice1}{, }\item
 
 
 
-Показ результата игры 
+Показать результат броска 
 
 
 \begin{DoxyParams}{Parameters}
-{\em dice1} & Значение первой кости \\
+{\em dice1} & Значение первого кубика \\
 \hline
-{\em dice2} & Значение второй кости\\
+{\em dice2} & Значение второго кубика\\
 \hline
 \end{DoxyParams}
-Рассчитывает выигрыш или проигрыш на основе выпавших значений, обновляет баланс игрока и показывает результат на экране. \Hypertarget{class_kosti_a6dc7b4364ee16224cd9588d58322e4e6}\index{Kosti@{Kosti}!slot\_show@{slot\_show}}
+Отображает результат игры, вычисляет выигрыш и показывает соответствующее сообщение игроку \Hypertarget{class_kosti_a6dc7b4364ee16224cd9588d58322e4e6}\index{Kosti@{Kosti}!slot\_show@{slot\_show}}
 \index{slot\_show@{slot\_show}!Kosti@{Kosti}}
 \doxysubsubsection{\texorpdfstring{slot\_show()}{slot\_show()}}
 {\footnotesize\ttfamily \label{class_kosti_a6dc7b4364ee16224cd9588d58322e4e6} 
@@ -198,13 +206,13 @@ void Kosti\+::slot\+\_\+show (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}
 
 
 
-Слот для показа окна игры 
+Показать окно игры 
 
-Отображает интерфейс игры в кости и обновляет информацию о текущем балансе игрока. \Hypertarget{class_kosti_aa16fe12965887a24b29d9f6480878260}\index{Kosti@{Kosti}!to\_main@{to\_main}}
+Отображает интерфейс игры и подготавливает начальное состояние кубиков и элементов управления \Hypertarget{class_kosti_a07416cea09e50790df61e2dcb6413861}\index{Kosti@{Kosti}!to\_main@{to\_main}}
 \index{to\_main@{to\_main}!Kosti@{Kosti}}
 \doxysubsubsection{\texorpdfstring{to\_main}{to\_main}}
-{\footnotesize\ttfamily \label{class_kosti_aa16fe12965887a24b29d9f6480878260} 
-void Kosti\+::to\+\_\+main (\begin{DoxyParamCaption}\item[{QString}]{username}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+{\footnotesize\ttfamily \label{class_kosti_a07416cea09e50790df61e2dcb6413861} 
+void Kosti\+::to\+\_\+main (\begin{DoxyParamCaption}\item[{QString}]{player\+Login}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
 
 
 
@@ -212,10 +220,10 @@ void Kosti\+::to\+\_\+main (\begin{DoxyParamCaption}\item[{QString}]{username}{}
 
 
 \begin{DoxyParams}{Parameters}
-{\em username} & Имя текущего пользователя\\
+{\em player\+Login} & Логин игрока для обновления данных\\
 \hline
 \end{DoxyParams}
-Испускается при нажатии кнопки возврата для перехода к главному меню казино с передачей имени пользователя. \Hypertarget{class_kosti_a80b9d4d64ae7c108d049f13c448fa2fe}\index{Kosti@{Kosti}!updateBalance@{updateBalance}}
+Испускается при завершении игровой сессии и возврате в основное меню казино \Hypertarget{class_kosti_a80b9d4d64ae7c108d049f13c448fa2fe}\index{Kosti@{Kosti}!updateBalance@{updateBalance}}
 \index{updateBalance@{updateBalance}!Kosti@{Kosti}}
 \doxysubsubsection{\texorpdfstring{updateBalance()}{updateBalance()}}
 {\footnotesize\ttfamily \label{class_kosti_a80b9d4d64ae7c108d049f13c448fa2fe} 
@@ -223,9 +231,9 @@ void Kosti\+::update\+Balance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption
 
 
 
-Обновление отображения баланса игрока 
+Обновить отображение баланса 
 
-Обновляет информацию о текущем количестве робуксов на интерфейсе игры после выигрышей или проигрышей. \Hypertarget{class_kosti_a93838eed8fb01142b8ee1080a6c56711}\index{Kosti@{Kosti}!updateDiceImages@{updateDiceImages}}
+Запрашивает актуальный баланс с сервера и обновляет его отображение в интерфейсе \Hypertarget{class_kosti_a93838eed8fb01142b8ee1080a6c56711}\index{Kosti@{Kosti}!updateDiceImages@{updateDiceImages}}
 \index{updateDiceImages@{updateDiceImages}!Kosti@{Kosti}}
 \doxysubsubsection{\texorpdfstring{updateDiceImages()}{updateDiceImages()}}
 {\footnotesize\ttfamily \label{class_kosti_a93838eed8fb01142b8ee1080a6c56711} 
@@ -233,27 +241,27 @@ void Kosti\+::update\+Dice\+Images (\begin{DoxyParamCaption}\item[{int}]{dice1}{
 
 
 
-Обновление изображений костей 
+Обновить изображения кубиков 
 
 
 \begin{DoxyParams}{Parameters}
-{\em dice1} & Значение первой кости (1-\/6) \\
+{\em dice1} & Значение первого кубика (1-\/6) \\
 \hline
-{\em dice2} & Значение второй кости (1-\/6)\\
+{\em dice2} & Значение второго кубика (1-\/6)\\
 \hline
 \end{DoxyParams}
-Отображает на интерфейсе изображения костей с соответствующими выпавшими значениями. 
+Устанавливает соответствующие изображения кубиков в зависимости от выпавших значений 
 
 \doxysubsection{Member Data Documentation}
-\Hypertarget{class_kosti_ab38274edb90c0d1db41701a651f9be06}\index{Kosti@{Kosti}!robuks@{robuks}}
-\index{robuks@{robuks}!Kosti@{Kosti}}
-\doxysubsubsection{\texorpdfstring{robuks}{robuks}}
-{\footnotesize\ttfamily \label{class_kosti_ab38274edb90c0d1db41701a651f9be06} 
-int Kosti\+::robuks\hspace{0.3cm}{\ttfamily [private]}}
+\Hypertarget{class_kosti_a3d11c7594d0d078d9150fb158af9e637}\index{Kosti@{Kosti}!clientApi@{clientApi}}
+\index{clientApi@{clientApi}!Kosti@{Kosti}}
+\doxysubsubsection{\texorpdfstring{clientApi}{clientApi}}
+{\footnotesize\ttfamily \label{class_kosti_a3d11c7594d0d078d9150fb158af9e637} 
+\mbox{\hyperlink{class_client_api}{Client\+Api}}\texorpdfstring{$\ast$}{*} Kosti\+::client\+Api\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Текущий баланс игрока в робуксах 
+API для взаимодействия с сервером 
 
 \Hypertarget{class_kosti_a906b33da6470251b79e6323822cdd178}\index{Kosti@{Kosti}!size\_of\_stavka@{size\_of\_stavka}}
 \index{size\_of\_stavka@{size\_of\_stavka}!Kosti@{Kosti}}
@@ -263,21 +271,22 @@ int Kosti\+::size\+\_\+of\+\_\+stavka\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Размер текущей ставки игрока 
+Текущий размер ставки в робуксах 
 
 \Hypertarget{class_kosti_a5bfe6f8a61320a98ad32ea955febe5bd}\index{Kosti@{Kosti}!ui@{ui}}
 \index{ui@{ui}!Kosti@{Kosti}}
 \doxysubsubsection{\texorpdfstring{ui}{ui}}
 {\footnotesize\ttfamily \label{class_kosti_a5bfe6f8a61320a98ad32ea955febe5bd} 
-Ui\+::\+Kosti\texorpdfstring{$\ast$}{*} Kosti\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\hyperlink{class_ui_1_1_kosti}{Ui\+::\+Kosti}}\texorpdfstring{$\ast$}{*} Kosti\+::ui\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Указатель на UI объект игры в кости 
+Пользовательский интерфейс игры 
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 /\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/\mbox{\hyperlink{kosti_8h}{kosti.\+h}}\item 
+/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/build/release/\mbox{\hyperlink{moc__kosti_8cpp}{moc\+\_\+kosti.\+cpp}}\item 
 /\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/\mbox{\hyperlink{kosti_8cpp}{kosti.\+cpp}}\end{DoxyCompactItemize}

@@ -5,6 +5,7 @@ var class_manager_form =
     [ "adminPanel", "class_manager_form.html#a54fc36f0f77175e6354e5456eecba67e", null ],
     [ "barabanform", "class_manager_form.html#a270a9154f32367168c2be6ac0ca2fe0b", null ],
     [ "clicker", "class_manager_form.html#a01a67d81b85bf34ecfd43711fca223f7", null ],
+    [ "clientApi", "class_manager_form.html#a51524ea739965304135ad4ee4d388a05", null ],
     [ "current_auth", "class_manager_form.html#ad683126ecc8eb2c2032f9cad692800fe", null ],
     [ "gtn", "class_manager_form.html#a972e1684a1f2788f93417beb766c7fa3", null ],
     [ "kosti", "class_manager_form.html#acd4b9432b8ac556c04a3d7ca8192e9c1", null ],

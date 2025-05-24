@@ -1,14 +1,10 @@
 var searchData=
 [
-  ['set_5fitem1_0',['set_item1',['../class_baraban.html#a8ffa632905103a314ebe90c594ffd8a8',1,'Baraban']]],
-  ['set_5fitem2_1',['set_item2',['../class_baraban.html#aad58bde03f06afec57c84bff327fe99a',1,'Baraban']]],
-  ['set_5fitem3_2',['set_item3',['../class_baraban.html#a27912a6f6bd52efd118e609507e98c9a',1,'Baraban']]],
-  ['set_5fvisible_5finreg_3',['set_visible_inReg',['../class_auth_reg_form.html#a26ea774a557fbed481c2cd110183277c',1,'AuthRegForm']]],
-  ['showresult_4',['showResult',['../class_kosti.html#ad560cafbaab2e5cf48acedb6f158a83d',1,'Kosti']]],
-  ['shufflearray_5',['shuffleArray',['../client__functions_8cpp.html#a406e5450879c8a56256c1fd82e910f61',1,'shuffleArray(int *arr, int size):&#160;client_functions.cpp'],['../client__functions_8h.html#a2bba26858e78f6743ed5ff2e8f74d23e',1,'shuffleArray(int *array, int size):&#160;client_functions.cpp']]],
-  ['slot_5fshow_6',['slot_show',['../classadmin__page.html#af2312895ef264909783a50a63867b909',1,'admin_page::slot_show()'],['../class_baraban.html#a6159b2fef808a49d7dead6a4efa411bf',1,'Baraban::slot_show()'],['../class_casino_main_window.html#a488484045b1548b69e7732becb7b3226',1,'CasinoMainWindow::slot_show()'],['../class_gtn.html#a27f9ad83c8ab6cff15d33fedceab79ce',1,'Gtn::slot_show()'],['../class_kliker.html#a19571d76c769d48df79c6cd50b12dbaa',1,'Kliker::slot_show()'],['../class_kosti.html#a6dc7b4364ee16224cd9588d58322e4e6',1,'Kosti::slot_show()'],['../classpersonal__page.html#a2b06e244bdb6f7e647385d2b0d3d065d',1,'personal_page::slot_show()'],['../class_ruletka.html#a8395a199ed7b64ce08121db92d44d0c6',1,'Ruletka::slot_show()']]],
-  ['slotclientdisconnected_7',['slotClientDisconnected',['../class_my_tcp_server.html#a3e040c49dbefd65b9a58ab662fc9f7a2',1,'MyTcpServer']]],
-  ['slotnewconnection_8',['slotNewConnection',['../class_my_tcp_server.html#a0ba7316ffe1a26c57fabde9e74b6c8dc',1,'MyTcpServer']]],
-  ['slots_5frand_9',['slots_rand',['../client__functions_8cpp.html#a30d7d6086f6efb8157876ace8cf004dd',1,'slots_rand():&#160;client_functions.cpp'],['../client__functions_8h.html#a30d7d6086f6efb8157876ace8cf004dd',1,'slots_rand():&#160;client_functions.cpp']]],
-  ['slotserverread_10',['slotServerRead',['../class_my_tcp_server.html#ab4a64d2eab985d723090963f5c8a2882',1,'MyTcpServer']]]
+  ['reg_0',['reg',['../class_client_api.html#ad5bc5df5045f183cccb2c14b2e3e9d11',1,'ClientApi::reg()'],['../class_data_base_singleton.html#aba1df3037211248456611f318b288b77',1,'DataBaseSingleton::reg()'],['../client__functions_8h.html#afcddacfc17c028a34d9685da167e3096',1,'reg():&#160;client_functions.h']]],
+  ['registration_1',['Registration',['../class_database_singleton.html#a4d60ebaffa8ed72dacc453cedea18f04',1,'DatabaseSingleton']]],
+  ['retranslateui_2',['retranslateUi',['../class_ui__admin__page.html#ac42a69a612f90a876385e694848e4d6a',1,'Ui_admin_page::retranslateUi()'],['../class_ui___auth_reg_form.html#ada40d495e6c2f4a6147c30f0236bb747',1,'Ui_AuthRegForm::retranslateUi()'],['../class_ui___baraban.html#ac694c2c7423f99439cc2cfa2ffe6f967',1,'Ui_Baraban::retranslateUi()'],['../class_ui___casino_main_window.html#a496f5c889ee6b9db786513a18a2049e0',1,'Ui_CasinoMainWindow::retranslateUi()'],['../class_ui___gtn.html#acfdcaa8374a79695fe7fa1b6a802c204',1,'Ui_Gtn::retranslateUi()'],['../class_ui___kliker.html#a1ed82843c3c93c5342eaa33001218ef1',1,'Ui_Kliker::retranslateUi()'],['../class_ui___kosti.html#a993f79890f0d62dc2771d9f44636f3e6',1,'Ui_Kosti::retranslateUi()'],['../class_ui__personal__page.html#a3db58c2c75a6d78b2d1a012eb6947da6',1,'Ui_personal_page::retranslateUi()'],['../class_ui___ruletka.html#a098e289ea6ffbdc9a9cba89dc64eb226',1,'Ui_Ruletka::retranslateUi()']]],
+  ['rolldice_3',['rollDice',['../class_kosti.html#a5b32f2708520e3329adf24b7205fcc90',1,'Kosti']]],
+  ['ruletka_4',['Ruletka',['../class_ruletka.html#a9310c1a5eb9e5412fcedbd7d9a99fc6c',1,'Ruletka']]],
+  ['ruletka_5fsig_5',['ruletka_sig',['../class_casino_main_window.html#ac55ae1ca9ca0f788a8985da9f80dc70a',1,'CasinoMainWindow']]],
+  ['run_5fslots_6',['run_slots',['../class_baraban.html#afcfb49f31233ad5ad9864e12c3f90ca7',1,'Baraban']]]
 ];

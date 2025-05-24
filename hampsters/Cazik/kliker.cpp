@@ -1,14 +1,3 @@
-/**
- * @file kliker.cpp
- * @brief Реализация игры-кликера для заработка робуксов
- * @author Команда разработчиков
- * @date 2025
- * @version 1.0
- * 
- * Содержит реализацию класса Kliker - простой игры-кликера,
- * где игрок может заработать робуксы многократным нажатием на кнопку.
- */
-
 #include "kliker.h"
 #include "ui_kliker.h"
 #include "client_functions.h"
@@ -16,6 +5,7 @@
 Kliker::Kliker(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::Kliker)
+    , clientApi(ClientApi::getInstance())
 {
     ui->setupUi(this);
 
@@ -36,6 +26,7 @@ Kliker::Kliker(QWidget *parent)
     ui->label_robux->setPixmap(RobuxLabel);
 
     this->Robux100 = 0;
+
 }
 
 Kliker::~Kliker()
@@ -50,6 +41,7 @@ void Kliker::slot_show(){
 
 void Kliker::on_pushButton_clicked()
 {
+    qDebug() << clientApi->toServer(robuks,TotalBets, TotalWins);
     emit to_main();
     this->close();
 }

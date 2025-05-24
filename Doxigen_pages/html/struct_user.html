@@ -110,7 +110,7 @@ $(function(){initNavTree('struct_user.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
-<p>Структура данных пользователя  
+<p>Структура данных пользователя казино  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="client__functions_8h_source.html">client_functions.h</a>&gt;</code></p>
@@ -121,30 +121,30 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a0ab5f495e1b57445d048d25b1485638d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Логин пользователя (уникальный идентификатор)  <br /></td></tr>
 <tr class="separator:a0ab5f495e1b57445d048d25b1485638d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac887622f22a898c097d156ad964be846" id="r_ac887622f22a898c097d156ad964be846"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac887622f22a898c097d156ad964be846">password</a></td></tr>
-<tr class="memdesc:ac887622f22a898c097d156ad964be846"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пароль пользователя (хранится в зашифрованном виде)  <br /></td></tr>
+<tr class="memdesc:ac887622f22a898c097d156ad964be846"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пароль пользователя (хешированный)  <br /></td></tr>
 <tr class="separator:ac887622f22a898c097d156ad964be846"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a706c6c735beb76e4da1dfc2a857302" id="r_a7a706c6c735beb76e4da1dfc2a857302"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a706c6c735beb76e4da1dfc2a857302">role</a></td></tr>
-<tr class="memdesc:a7a706c6c735beb76e4da1dfc2a857302"><td class="mdescLeft">&#160;</td><td class="mdescRight">Роль пользователя ("user" или "admin")  <br /></td></tr>
+<tr class="memdesc:a7a706c6c735beb76e4da1dfc2a857302"><td class="mdescLeft">&#160;</td><td class="mdescRight">Роль пользователя ("user" - обычный игрок, "admin" - администратор)  <br /></td></tr>
 <tr class="separator:a7a706c6c735beb76e4da1dfc2a857302"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a656f555d559d402e87d8a9698e03e2ba" id="r_a656f555d559d402e87d8a9698e03e2ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a656f555d559d402e87d8a9698e03e2ba">balance</a></td></tr>
-<tr class="memdesc:a656f555d559d402e87d8a9698e03e2ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущий баланс пользователя в robux.  <br /></td></tr>
+<tr class="memdesc:a656f555d559d402e87d8a9698e03e2ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущий баланс пользователя в робуксах  <br /></td></tr>
 <tr class="separator:a656f555d559d402e87d8a9698e03e2ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7828070fef5c1ea03c80f7c4e4518b43" id="r_a7828070fef5c1ea03c80f7c4e4518b43"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7828070fef5c1ea03c80f7c4e4518b43">total_bets</a></td></tr>
-<tr class="memdesc:a7828070fef5c1ea03c80f7c4e4518b43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Общее количество сделанных ставок  <br /></td></tr>
+<tr class="memdesc:a7828070fef5c1ea03c80f7c4e4518b43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Общее количество сделанных ставок за все время  <br /></td></tr>
 <tr class="separator:a7828070fef5c1ea03c80f7c4e4518b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8169ac15fb18ebc7e796d1486483bec6" id="r_a8169ac15fb18ebc7e796d1486483bec6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8169ac15fb18ebc7e796d1486483bec6">total_wins</a></td></tr>
 <tr class="memdesc:a8169ac15fb18ebc7e796d1486483bec6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Общая сумма выигрышей за все время  <br /></td></tr>
 <tr class="separator:a8169ac15fb18ebc7e796d1486483bec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84e0f48f6f74e1caf41d42d494deb09b" id="r_a84e0f48f6f74e1caf41d42d494deb09b"><td class="memItemLeft" align="right" valign="top">QDateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84e0f48f6f74e1caf41d42d494deb09b">last_login</a></td></tr>
-<tr class="memdesc:a84e0f48f6f74e1caf41d42d494deb09b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Время последней авторизации пользователя  <br /></td></tr>
+<tr class="memdesc:a84e0f48f6f74e1caf41d42d494deb09b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Время последней авторизации в системе  <br /></td></tr>
 <tr class="separator:a84e0f48f6f74e1caf41d42d494deb09b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58c97bff2f5c9b64274d869fb076cd03" id="r_a58c97bff2f5c9b64274d869fb076cd03"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58c97bff2f5c9b64274d869fb076cd03">is_auth</a></td></tr>
 <tr class="memdesc:a58c97bff2f5c9b64274d869fb076cd03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг текущего состояния авторизации  <br /></td></tr>
 <tr class="separator:a58c97bff2f5c9b64274d869fb076cd03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Структура данных пользователя </p>
-<p>Содержит всю необходимую информацию о пользователе системы, включая учетные данные, баланс и статистику игр. </p>
+<div class="textblock"><p>Структура данных пользователя казино </p>
+<p>Структура <a class="el" href="struct_user.html" title="Структура данных пользователя казино">User</a> содержит полную информацию о зарегистрированном пользователе системы казино "Хампстерс". </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a656f555d559d402e87d8a9698e03e2ba" name="a656f555d559d402e87d8a9698e03e2ba"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a656f555d559d402e87d8a9698e03e2ba">&#9670;&#160;</a></span>balance</h2>
@@ -158,7 +158,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Текущий баланс пользователя в robux. </p>
+<p>Текущий баланс пользователя в робуксах </p>
 
 </div>
 </div>
@@ -190,7 +190,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Время последней авторизации пользователя </p>
+<p>Время последней авторизации в системе </p>
 
 </div>
 </div>
@@ -222,7 +222,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Пароль пользователя (хранится в зашифрованном виде) </p>
+<p>Пароль пользователя (хешированный) </p>
 
 </div>
 </div>
@@ -238,7 +238,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Роль пользователя ("user" или "admin") </p>
+<p>Роль пользователя ("user" - обычный игрок, "admin" - администратор) </p>
 
 </div>
 </div>
@@ -254,7 +254,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Общее количество сделанных ставок </p>
+<p>Общее количество сделанных ставок за все время </p>
 
 </div>
 </div>

@@ -1,14 +1,3 @@
-/**
- * @file admin_page.cpp
- * @brief Реализация административной панели казино
- * @author Команда разработчиков
- * @date 2025
- * @version 1.0
- * 
- * Содержит реализацию класса admin_page для управления пользователями,
- * просмотра статистики и администрирования системы казино.
- */
-
 #include "admin_page.h"
 #include "ui_admin_page.h"
 #include <QTableWidgetItem>
@@ -20,6 +9,7 @@
 admin_page::admin_page(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::admin_page)
+    , clientApi(ClientApi::getInstance())
 {
     ui->setupUi(this);
 
@@ -36,7 +26,6 @@ admin_page::admin_page(QWidget *parent)
     connect(ui->Button_up_balance, &QPushButton::clicked, this, &admin_page::addMoneyToUser);
 
     // Загружаем статистику (из глобальных данных)
-    viewStatistics();
 }
 
 admin_page::~admin_page()
@@ -49,29 +38,38 @@ void admin_page::viewStatistics()
 {
     // Очищаем таблицу
     ui->tableWidget->clearContents();
-    ui->tableWidget->setRowCount(users.size());
+    ui->tableWidget->setRowCount(ids.toInt());
 
     // Устанавливаем заголовки столбцов
-    QStringList headers = {"Логин", "Роль", "Баланс", "Общее кол-во ставок", "Сумма выигрышей", "Последняя авторизация"};
+    QStringList headers = {"Логин", "Пароль", "Роль","баланс" ,"Общее кол-во ставок", "Сумма выигрышей"};
     ui->tableWidget->setHorizontalHeaderLabels(headers);
 
     // Заполняем таблицу данными из глобальных переменных
-    for (int i = 0; i < users.size(); ++i) {
-        const User& user = users[i];
+    for (int i = 0; i < ids.toInt(); ++i) {
+        QString get = clientApi->one_stat(QString::number(i + 1));
+        qDebug() << get;
+        if (get.split(" ")[0] == "UserData+"){
+        QString login = get.split(" ")[1];
+        QString pass = get.split(" ")[2];
+        QString role = get.split(" ")[3];
+        QString balance = get.split(" ")[4];
+        QString bets = get.split(" ")[5];
+        QString wins = get.split(" ")[6];
 
-        QTableWidgetItem *loginItem = new QTableWidgetItem(user.login);
-        QTableWidgetItem *roleItem = new QTableWidgetItem(user.role);
-        QTableWidgetItem *balanceItem = new QTableWidgetItem(QString::number(user.balance));
-        QTableWidgetItem *betsItem = new QTableWidgetItem(QString::number(user.total_bets));
-        QTableWidgetItem *winsItem = new QTableWidgetItem(QString::number(user.total_wins));
-        QTableWidgetItem *lastLoginItem = new QTableWidgetItem(user.last_login.toString("yyyy-MM-dd hh:mm:ss"));
+        QTableWidgetItem *loginItem = new QTableWidgetItem(login);
+        QTableWidgetItem *passItem = new QTableWidgetItem(pass);
+        QTableWidgetItem *roleItem = new QTableWidgetItem(role);
+        QTableWidgetItem *balanceItem = new QTableWidgetItem(QString::number(balance.toInt()));
+        QTableWidgetItem *betsItem = new QTableWidgetItem(QString::number(bets.toInt()));
+        QTableWidgetItem *winsItem = new QTableWidgetItem(QString::number(wins.toInt()));
 
         ui->tableWidget->setItem(i, 0, loginItem);
-        ui->tableWidget->setItem(i, 1, roleItem);
-        ui->tableWidget->setItem(i, 2, balanceItem);
-        ui->tableWidget->setItem(i, 3, betsItem);
-        ui->tableWidget->setItem(i, 4, winsItem);
-        ui->tableWidget->setItem(i, 5, lastLoginItem);
+        ui->tableWidget->setItem(i, 1, passItem);
+        ui->tableWidget->setItem(i, 2, roleItem);
+        ui->tableWidget->setItem(i, 3, balanceItem);
+        ui->tableWidget->setItem(i, 4, betsItem);
+        ui->tableWidget->setItem(i, 5, winsItem);
+        }
     }
 }
 
@@ -90,30 +88,11 @@ void admin_page::addMoneyToUser()
         return;
     }
 
-    // Находим пользователя в глобальном списке
-    int index = -1;
-    for (int i = 0; i < users.size(); ++i) {
-        if (users[i].login == username) {
-            index = i;
-            break;
-        }
-    }
-
-    if (index != -1) {
-        // Обновляем баланс пользователя в глобальной переменной
-        users[index].balance += amount;
-        robuks += amount; // ВРЕМЕННО
-
-        // Обновляем таблицу
-        QTableWidgetItem *balanceItem = ui->tableWidget->item(index, 2);
-        balanceItem->setText(QString::number(users[index].balance));
-
-        qDebug() << "Added" << amount << "to user:" << username;
-    } else {
-        qDebug() << "User not found!";
-    }
+    clientApi->adminTo(username ,amount, TotalBets, TotalWins);
+    this->close();
 }
 
 void admin_page::slot_show(){
+    viewStatistics();
     this->show();
 }

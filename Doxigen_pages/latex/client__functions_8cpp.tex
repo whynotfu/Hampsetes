@@ -2,53 +2,38 @@
 \hypertarget{client__functions_8cpp}{}\label{client__functions_8cpp}\index{/Users/sasha/polytech/Hampsetes/hampsters/Cazik/client\_functions.cpp@{/Users/sasha/polytech/Hampsetes/hampsters/Cazik/client\_functions.cpp}}
 {\ttfamily \#include "{}client\+\_\+functions.\+h"{}}\newline
 {\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include "{}clientapi.\+h"{}}\newline
 {\ttfamily \#include $<$QTable\+Widget\+Item$>$}\newline
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-int \mbox{\hyperlink{client__functions_8cpp_aacbd1ffa7bb4d3366374d51fdb97586f}{auth}} (QString login, QString password)
-\begin{DoxyCompactList}\small\item\em Функция аутентификации пользователя \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{client__functions_8cpp_ab6dbcfbf234ee53e068d8ca7450a7fe1}{reg}} (QString login, QString password, QString check\+\_\+password)
-\begin{DoxyCompactList}\small\item\em Функция регистрации нового пользователя \end{DoxyCompactList}\item 
 QString \mbox{\hyperlink{client__functions_8cpp_a1269b8bdb80f7ffbee545318e161c51f}{path}} ()
-\begin{DoxyCompactList}\small\item\em Получение пути к рабочей директории приложения \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Получить путь к ресурсам приложения \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{client__functions_8cpp_a30d7d6086f6efb8157876ace8cf004dd}{slots\+\_\+rand}} ()
-\begin{DoxyCompactList}\small\item\em Генератор случайных чисел для слот-\/машины \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Генератор случайных чисел для слотов \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{client__functions_8cpp_a406e5450879c8a56256c1fd82e910f61}{shuffle\+Array}} (int \texorpdfstring{$\ast$}{*}arr, int size)
-\begin{DoxyCompactList}\small\item\em Перемешивание массива целых чисел \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Перемешивание массива случайным образом \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
 int \mbox{\hyperlink{client__functions_8cpp_a52a4d39079dbf5ca1f3edba4f652a572}{robuks}}
-\begin{DoxyCompactList}\small\item\em Баланс текущего пользователя в robux. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Баланс текущего авторизованного пользователя в робуксах \end{DoxyCompactList}\item 
 QString \mbox{\hyperlink{client__functions_8cpp_a5acf3c401ce11768a8f3c1a2d6184743}{current\+Username}}
 \begin{DoxyCompactList}\small\item\em Логин текущего авторизованного пользователя \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{client__functions_8cpp_a376b119c87dca34d21a48472fdf2916e}{current\+Role}}
+\begin{DoxyCompactList}\small\item\em Роль пользователя ("{}user"{} или "{}admin"{}) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{client__functions_8cpp_aebcabe45c4584deaa9db64c4ee6d3ca5}{Total\+Bets}}
+\begin{DoxyCompactList}\small\item\em Общее количество ставок текущего пользователя \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{client__functions_8cpp_aea8a283aa6e4d85f974853fed0367e86}{Total\+Wins}}
+\begin{DoxyCompactList}\small\item\em Общая сумма выигрышей текущего пользователя \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{client__functions_8cpp_a88975df26b2a6c1fb7eea69cf4ef4e37}{ids}}
+\begin{DoxyCompactList}\small\item\em Идентификатор текущей сессии пользователя \end{DoxyCompactList}\item 
 QList$<$ \mbox{\hyperlink{struct_user}{User}} $>$ \mbox{\hyperlink{client__functions_8cpp_afea9bb4a30d00ed11564b4faf30e1017}{users}}
 \begin{DoxyCompactList}\small\item\em Глобальный список всех пользователей системы \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{client__functions_8cpp_aacbd1ffa7bb4d3366374d51fdb97586f}\index{client\_functions.cpp@{client\_functions.cpp}!auth@{auth}}
-\index{auth@{auth}!client\_functions.cpp@{client\_functions.cpp}}
-\doxysubsubsection{\texorpdfstring{auth()}{auth()}}
-{\footnotesize\ttfamily \label{client__functions_8cpp_aacbd1ffa7bb4d3366374d51fdb97586f} 
-int auth (\begin{DoxyParamCaption}\item[{QString}]{login}{, }\item[{QString}]{password}{}\end{DoxyParamCaption})}
-
-
-
-Функция аутентификации пользователя 
-
-
-\begin{DoxyParams}{Parameters}
-{\em login} & Логин пользователя \\
-\hline
-{\em password} & Пароль пользователя \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-Результат аутентификации\+: 0 -\/ успех, 1 -\/ ошибка логина, 2 -\/ ошибка пароля
-\end{DoxyReturn}
-Проверяет учетные данные пользователя в базе данных или списке пользователей. При успешной аутентификации устанавливает глобальные переменные текущего пользователя. \Hypertarget{client__functions_8cpp_a1269b8bdb80f7ffbee545318e161c51f}\index{client\_functions.cpp@{client\_functions.cpp}!path@{path}}
+\Hypertarget{client__functions_8cpp_a1269b8bdb80f7ffbee545318e161c51f}\index{client\_functions.cpp@{client\_functions.cpp}!path@{path}}
 \index{path@{path}!client\_functions.cpp@{client\_functions.cpp}}
 \doxysubsubsection{\texorpdfstring{path()}{path()}}
 {\footnotesize\ttfamily \label{client__functions_8cpp_a1269b8bdb80f7ffbee545318e161c51f} 
@@ -56,34 +41,12 @@ QString path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 
-Получение пути к рабочей директории приложения 
+Получить путь к ресурсам приложения 
 
 \begin{DoxyReturn}{Returns}
-Строка с путем к директории приложения
+Строка с путем к директории ресурсов
 \end{DoxyReturn}
-Возвращает путь к директории, где хранятся файлы приложения, включая базу данных и ресурсы. \Hypertarget{client__functions_8cpp_ab6dbcfbf234ee53e068d8ca7450a7fe1}\index{client\_functions.cpp@{client\_functions.cpp}!reg@{reg}}
-\index{reg@{reg}!client\_functions.cpp@{client\_functions.cpp}}
-\doxysubsubsection{\texorpdfstring{reg()}{reg()}}
-{\footnotesize\ttfamily \label{client__functions_8cpp_ab6dbcfbf234ee53e068d8ca7450a7fe1} 
-bool reg (\begin{DoxyParamCaption}\item[{QString}]{login}{, }\item[{QString}]{password}{, }\item[{QString}]{role}{}\end{DoxyParamCaption})}
-
-
-
-Функция регистрации нового пользователя 
-
-
-\begin{DoxyParams}{Parameters}
-{\em login} & Логин нового пользователя \\
-\hline
-{\em password} & Пароль нового пользователя \\
-\hline
-{\em role} & Роль пользователя ("{}user"{} или "{}admin"{}) \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-true если регистрация прошла успешно, false если пользователь уже существует
-\end{DoxyReturn}
-Создает нового пользователя в системе с указанными учетными данными. Проверяет уникальность логина перед созданием. \Hypertarget{client__functions_8cpp_a406e5450879c8a56256c1fd82e910f61}\index{client\_functions.cpp@{client\_functions.cpp}!shuffleArray@{shuffleArray}}
+Возвращает корректный путь к изображениям и другим ресурсам приложения в зависимости от платформы. \Hypertarget{client__functions_8cpp_a406e5450879c8a56256c1fd82e910f61}\index{client\_functions.cpp@{client\_functions.cpp}!shuffleArray@{shuffleArray}}
 \index{shuffleArray@{shuffleArray}!client\_functions.cpp@{client\_functions.cpp}}
 \doxysubsubsection{\texorpdfstring{shuffleArray()}{shuffleArray()}}
 {\footnotesize\ttfamily \label{client__functions_8cpp_a406e5450879c8a56256c1fd82e910f61} 
@@ -91,7 +54,7 @@ void shuffle\+Array (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{
 
 
 
-Перемешивание массива целых чисел 
+Перемешивание массива случайным образом 
 
 
 \begin{DoxyParams}{Parameters}
@@ -100,7 +63,7 @@ void shuffle\+Array (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{
 {\em size} & Размер массива\\
 \hline
 \end{DoxyParams}
-Реализует алгоритм перемешивания Фишера-\/Йетса для случайного изменения порядка элементов массива. Используется для вывода случайных изображений при проигрыше в играх. \Hypertarget{client__functions_8cpp_a30d7d6086f6efb8157876ace8cf004dd}\index{client\_functions.cpp@{client\_functions.cpp}!slots\_rand@{slots\_rand}}
+Использует алгоритм Фишера-\/Йетса для случайного перемешивания элементов массива. Применяется для рандомизации отображения картинок при проигрышных комбинациях. \Hypertarget{client__functions_8cpp_a30d7d6086f6efb8157876ace8cf004dd}\index{client\_functions.cpp@{client\_functions.cpp}!slots\_rand@{slots\_rand}}
 \index{slots\_rand@{slots\_rand}!client\_functions.cpp@{client\_functions.cpp}}
 \doxysubsubsection{\texorpdfstring{slots\_rand()}{slots\_rand()}}
 {\footnotesize\ttfamily \label{client__functions_8cpp_a30d7d6086f6efb8157876ace8cf004dd} 
@@ -108,14 +71,24 @@ int slots\+\_\+rand (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 
-Генератор случайных чисел для слот-\/машины 
+Генератор случайных чисел для слотов 
 
 \begin{DoxyReturn}{Returns}
-Случайное число от 1 до 3 включительно
+Случайное число для определения символа на барабане
 \end{DoxyReturn}
-Специализированная функция генерации случайных чисел для игры в слоты. Использует равномерное распределение для честной игры. 
+Генерирует случайное число в диапазоне символов игровых автоматов с учетом вероятностей выпадения различных символов. 
 
 \doxysubsection{Variable Documentation}
+\Hypertarget{client__functions_8cpp_a376b119c87dca34d21a48472fdf2916e}\index{client\_functions.cpp@{client\_functions.cpp}!currentRole@{currentRole}}
+\index{currentRole@{currentRole}!client\_functions.cpp@{client\_functions.cpp}}
+\doxysubsubsection{\texorpdfstring{currentRole}{currentRole}}
+{\footnotesize\ttfamily \label{client__functions_8cpp_a376b119c87dca34d21a48472fdf2916e} 
+QString current\+Role}
+
+
+
+Роль пользователя ("{}user"{} или "{}admin"{}) 
+
 \Hypertarget{client__functions_8cpp_a5acf3c401ce11768a8f3c1a2d6184743}\index{client\_functions.cpp@{client\_functions.cpp}!currentUsername@{currentUsername}}
 \index{currentUsername@{currentUsername}!client\_functions.cpp@{client\_functions.cpp}}
 \doxysubsubsection{\texorpdfstring{currentUsername}{currentUsername}}
@@ -126,6 +99,16 @@ QString current\+Username}
 
 Логин текущего авторизованного пользователя 
 
+\Hypertarget{client__functions_8cpp_a88975df26b2a6c1fb7eea69cf4ef4e37}\index{client\_functions.cpp@{client\_functions.cpp}!ids@{ids}}
+\index{ids@{ids}!client\_functions.cpp@{client\_functions.cpp}}
+\doxysubsubsection{\texorpdfstring{ids}{ids}}
+{\footnotesize\ttfamily \label{client__functions_8cpp_a88975df26b2a6c1fb7eea69cf4ef4e37} 
+QString ids}
+
+
+
+Идентификатор текущей сессии пользователя 
+
 \Hypertarget{client__functions_8cpp_a52a4d39079dbf5ca1f3edba4f652a572}\index{client\_functions.cpp@{client\_functions.cpp}!robuks@{robuks}}
 \index{robuks@{robuks}!client\_functions.cpp@{client\_functions.cpp}}
 \doxysubsubsection{\texorpdfstring{robuks}{robuks}}
@@ -134,7 +117,27 @@ int robuks}
 
 
 
-Баланс текущего пользователя в robux. 
+Баланс текущего авторизованного пользователя в робуксах 
+
+\Hypertarget{client__functions_8cpp_aebcabe45c4584deaa9db64c4ee6d3ca5}\index{client\_functions.cpp@{client\_functions.cpp}!TotalBets@{TotalBets}}
+\index{TotalBets@{TotalBets}!client\_functions.cpp@{client\_functions.cpp}}
+\doxysubsubsection{\texorpdfstring{TotalBets}{TotalBets}}
+{\footnotesize\ttfamily \label{client__functions_8cpp_aebcabe45c4584deaa9db64c4ee6d3ca5} 
+int Total\+Bets}
+
+
+
+Общее количество ставок текущего пользователя 
+
+\Hypertarget{client__functions_8cpp_aea8a283aa6e4d85f974853fed0367e86}\index{client\_functions.cpp@{client\_functions.cpp}!TotalWins@{TotalWins}}
+\index{TotalWins@{TotalWins}!client\_functions.cpp@{client\_functions.cpp}}
+\doxysubsubsection{\texorpdfstring{TotalWins}{TotalWins}}
+{\footnotesize\ttfamily \label{client__functions_8cpp_aea8a283aa6e4d85f974853fed0367e86} 
+int Total\+Wins}
+
+
+
+Общая сумма выигрышей текущего пользователя 
 
 \Hypertarget{client__functions_8cpp_afea9bb4a30d00ed11564b4faf30e1017}\index{client\_functions.cpp@{client\_functions.cpp}!users@{users}}
 \index{users@{users}!client\_functions.cpp@{client\_functions.cpp}}

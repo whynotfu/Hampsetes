@@ -1,24 +1,16 @@
-/**
- * @file authregform.cpp
- * @brief Реализация формы авторизации и регистрации
- * @author Команда разработчиков
- * @date 2025
- * @version 1.0
- * 
- * Содержит реализацию класса AuthRegForm для аутентификации пользователей
- * и регистрации новых аккаунтов в системе казино.
- */
-
 #include "authregform.h"
 #include "ui_authregform.h"
 #include "client_functions.h"
 #include <QPixmap>
 #include <QIcon>
 #include <QMessageBox>
+#include "clientapi.h"
 
 AuthRegForm::AuthRegForm(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::AuthRegForm)
+    , clientApi(ClientApi::getInstance())
+
 {
     ui->setupUi(this);
 
@@ -67,32 +59,27 @@ void AuthRegForm::on_AuthButton_clicked()
     QString login = ui->Loginline->text();
     QString password = ui->Passwordline->text();
 
-    int result = auth(login, password);
+   QString result = clientApi->auth(login, password);
 
-    switch (result) {
-    case 1: // Успешный вход обычного пользователя
-        QMessageBox::information(this, "Успех", "Вы вошли как обычный пользователь.");
-        emit auth_ok(login); // Передаем сигнал о успешной авторизации
-        currentUsername = login; // Сохраняем логин текущего пользователя
-        this->close();       // Закрываем форму
-        break;
+    if (result == "auth+"){ // Успешный вход обычного пользователя
+       if (currentRole == "user"){
+            QMessageBox::information(this, "Успех", "Вы вошли как обычный пользователь.");
+       }
+       else{
+            QMessageBox::information(this, "Здравствуйте.", "Добро пожаловать, мой господин!");
+       }
+       emit auth_ok(login); // Передаем сигнал о успешной авторизации
+       currentUsername = login; // Сохраняем логин текущего пользователя
+       this->close();       // Закрываем форму
 
-    case 2: // Успешный вход администратора
-        QMessageBox::information(this, "Успех", "Вы вошли как администратор.");
-        emit auth_ok(login); // Передаем сигнал о успешной авторизации
-        currentUsername = login; // Сохраняем логин текущего пользователя
-        this->close();       // Закрываем форму
-        break;
-
-    case 3: // Неудачная авторизация
-        QMessageBox::warning(this, "Ошибка", "Неверный логин или пароль.");
-        clear(); // Очищаем поля ввода
-        break;
-
-    default:
+    }
+    else if (result == "auth-"){
+        QMessageBox::critical(this, "Ошибка", "Неверный логин или пароль.");
+        clear();
+    }
+    else{
         QMessageBox::critical(this, "Ошибка", "Неизвестная ошибка авторизации.");
-        clear(); // Очищаем поля ввода
-        break;
+        clear();
     }
 }
 
@@ -103,13 +90,18 @@ void AuthRegForm::on_RegButton_clicked()
     QString password = ui->Passwordline->text();
     QString repeatPassword = ui->Repeatline->text();
 
-    if (reg(login, password, repeatPassword)) {
+    QString get = clientApi->reg(login, password, repeatPassword);
+    qDebug() << get.split(" ")[0];
+    if (get == "reg+") {
         QMessageBox::information(this, "Успех", "Регистрация прошла успешно.");
-        emit auth_ok(login); // Передаем сигнал о успешной регистрации
-        this->close();       // Закрываем форму
-    } else {
+        set_visible_inReg(!ui->RepeatLabel->isVisible());
+    }
+    else if (get.split(" ")[0] == "reg-"){
+        QMessageBox::warning(this, "Ошибка", "Пароль " + password + " занят пользователем " + get.split(" ")[1]);
+    }
+    else {
         QMessageBox::warning(this, "Ошибка", "Ошибка регистрации.");
-        clear(); // Очищаем поля ввода
+    clear();
     }
 }
 
@@ -119,4 +111,8 @@ void AuthRegForm::clear()
     ui->Loginline->setText("");
     ui->Passwordline->setText("");
     ui->Repeatline->setText("");
+}
+
+void AuthRegForm::slot_show(){
+    this->show();
 }

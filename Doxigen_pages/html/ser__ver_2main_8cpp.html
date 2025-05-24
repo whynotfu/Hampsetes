@@ -109,7 +109,7 @@ $(function(){initNavTree('ser__ver_2main_8cpp.html',''); initResizable(true); })
 </div><!--header-->
 <div class="contents">
 
-<p>Главный файл серверного приложения казино  
+<p>Точка входа серверного приложения казино "Хампстерс".  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;QCoreApplication&gt;</code><br />
 <code>#include &quot;<a class="el" href="mytcpserver_8h_source.html">mytcpserver.h</a>&quot;</code><br />
@@ -121,11 +121,11 @@ Functions</h2></td></tr>
 <tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Главный файл серверного приложения казино </p>
-<dl class="section author"><dt>Author</dt><dd>Команда разработчиков </dd></dl>
+<div class="textblock"><p>Точка входа серверного приложения казино "Хампстерс". </p>
+<dl class="section author"><dt>Author</dt><dd>Development Team </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2025 </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0</dd></dl>
-<p>Содержит точку входа в серверное приложение казино "Hampsetes". Сервер обрабатывает подключения клиентов и управляет игровыми сессиями. </p>
+<p>Этот файл содержит функцию <a class="el" href="hampsters_2_cazik_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Главная функция клиентского приложения">main()</a> для серверной части приложения казино "Хампстерс". Инициализирует консольное Qt приложение и запускает TCP-сервер для обработки клиентских подключений. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a0ddf1224851353fc92bfbff6f499fa97" name="a0ddf1224851353fc92bfbff6f499fa97"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0ddf1224851353fc92bfbff6f499fa97">&#9670;&#160;</a></span>main()</h2>
@@ -155,7 +155,13 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Код завершения приложения</dd></dl>
-<p>Инициализирует Qt приложение, создает экземпляр TCP сервера и запускает главный цикл обработки событий для приема подключений клиентов казино. </p>
+<p>Инициализирует Qt Core приложение (без GUI), создает экземпляр <a class="el" href="class_my_tcp_server.html" title="TCP-сервер для обработки клиентских подключений казино">MyTcpServer</a> и запускает главный цикл обработки событий. Сервер начинает прослушивание порта для входящих TCP-соединений от клиентов казино.</p>
+<p>Приложение работает в консольном режиме и обрабатывает:</p><ul>
+<li>Подключения клиентов</li>
+<li>Авторизацию и регистрацию пользователей</li>
+<li>Игровые операции и обновление балансов</li>
+<li>Административные команды </li>
+</ul>
 
 </div>
 </div>

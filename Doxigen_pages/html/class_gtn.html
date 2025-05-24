@@ -114,7 +114,7 @@ $(function(){initNavTree('class_gtn.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
-<p>Класс игры "Угадай число" (Больше-Меньше)  
+<p>Игра "Угадай число" в формате "больше-меньше".  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="gtn_8h_source.html">gtn.h</a>&gt;</code></p>
@@ -140,13 +140,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac459fe27c425e9e0ed5f5f2e5f137f6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор игры "Угадай число".  <br /></td></tr>
 <tr class="separator:ac459fe27c425e9e0ed5f5f2e5f137f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27f9ad83c8ab6cff15d33fedceab79ce" id="r_a27f9ad83c8ab6cff15d33fedceab79ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27f9ad83c8ab6cff15d33fedceab79ce">slot_show</a> ()</td></tr>
-<tr class="memdesc:a27f9ad83c8ab6cff15d33fedceab79ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот для показа окна игры  <br /></td></tr>
+<tr class="memdesc:a27f9ad83c8ab6cff15d33fedceab79ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Показать окно игры  <br /></td></tr>
 <tr class="separator:a27f9ad83c8ab6cff15d33fedceab79ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-slots" name="pri-slots"></a>
 Private Slots</h2></td></tr>
 <tr class="memitem:a3a848e1ba39d6b4f96159037eebaca29" id="r_a3a848e1ba39d6b4f96159037eebaca29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a848e1ba39d6b4f96159037eebaca29">on_new_number_clicked</a> ()</td></tr>
-<tr class="memdesc:a3a848e1ba39d6b4f96159037eebaca29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработчик кнопки генерации нового числа  <br /></td></tr>
+<tr class="memdesc:a3a848e1ba39d6b4f96159037eebaca29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработчик кнопки "Новое число".  <br /></td></tr>
 <tr class="separator:a3a848e1ba39d6b4f96159037eebaca29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1edb8ea2609d5b73cd717cca26b460c" id="r_ae1edb8ea2609d5b73cd717cca26b460c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1edb8ea2609d5b73cd717cca26b460c">on_button100_clicked</a> ()</td></tr>
 <tr class="memdesc:ae1edb8ea2609d5b73cd717cca26b460c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработчик кнопки ставки 100 робуксов  <br /></td></tr>
@@ -167,7 +167,7 @@ Private Slots</h2></td></tr>
 <tr class="memdesc:a91d587a89352e7577caa76b841b53ae6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработчик кнопки "Играть".  <br /></td></tr>
 <tr class="separator:a91d587a89352e7577caa76b841b53ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23f7695ccc3f1637f47cec5e2ae4ac25" id="r_a23f7695ccc3f1637f47cec5e2ae4ac25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23f7695ccc3f1637f47cec5e2ae4ac25">on_pushButton_clicked</a> ()</td></tr>
-<tr class="memdesc:a23f7695ccc3f1637f47cec5e2ae4ac25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработчик кнопки возврата в главное меню  <br /></td></tr>
+<tr class="memdesc:a23f7695ccc3f1637f47cec5e2ae4ac25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработчик кнопки "Назад".  <br /></td></tr>
 <tr class="separator:a23f7695ccc3f1637f47cec5e2ae4ac25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
@@ -178,36 +178,46 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a6972a8971972e17143803361899aad21" id="r_a6972a8971972e17143803361899aad21"><td class="memItemLeft" align="right" valign="top">Ui::Gtn *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6972a8971972e17143803361899aad21">ui</a></td></tr>
-<tr class="memdesc:a6972a8971972e17143803361899aad21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на UI объект игры  <br /></td></tr>
+<tr class="memitem:a6972a8971972e17143803361899aad21" id="r_a6972a8971972e17143803361899aad21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ui_1_1_gtn.html">Ui::Gtn</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6972a8971972e17143803361899aad21">ui</a></td></tr>
+<tr class="memdesc:a6972a8971972e17143803361899aad21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пользовательский интерфейс игры  <br /></td></tr>
 <tr class="separator:a6972a8971972e17143803361899aad21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae93c272c60fcf4f61a6ab706522698c3" id="r_ae93c272c60fcf4f61a6ab706522698c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae93c272c60fcf4f61a6ab706522698c3">num</a></td></tr>
-<tr class="memdesc:ae93c272c60fcf4f61a6ab706522698c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загаданное число (от 1 до 100)  <br /></td></tr>
+<tr class="memdesc:ae93c272c60fcf4f61a6ab706522698c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загаданное число для угадывания  <br /></td></tr>
 <tr class="separator:ae93c272c60fcf4f61a6ab706522698c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a574309216eeb69e71d6261bbbc4a6c25" id="r_a574309216eeb69e71d6261bbbc4a6c25"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a574309216eeb69e71d6261bbbc4a6c25">now_num</a></td></tr>
-<tr class="memdesc:a574309216eeb69e71d6261bbbc4a6c25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущее отображаемое число для сравнения  <br /></td></tr>
+<tr class="memdesc:a574309216eeb69e71d6261bbbc4a6c25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущее отображаемое число в процессе игры  <br /></td></tr>
 <tr class="separator:a574309216eeb69e71d6261bbbc4a6c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a004f51b6d66d4988eac48c6a119f7812" id="r_a004f51b6d66d4988eac48c6a119f7812"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a004f51b6d66d4988eac48c6a119f7812">block</a></td></tr>
-<tr class="memdesc:a004f51b6d66d4988eac48c6a119f7812"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг блокировки интерфейса во время игры  <br /></td></tr>
+<tr class="memdesc:a004f51b6d66d4988eac48c6a119f7812"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг блокировки кнопок во время анимации  <br /></td></tr>
 <tr class="separator:a004f51b6d66d4988eac48c6a119f7812"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af71bb03b6397a36f5788d6ca5b0d5b04" id="r_af71bb03b6397a36f5788d6ca5b0d5b04"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af71bb03b6397a36f5788d6ca5b0d5b04">rstavka</a></td></tr>
-<tr class="memdesc:af71bb03b6397a36f5788d6ca5b0d5b04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Размер текущей ставки игрока  <br /></td></tr>
+<tr class="memdesc:af71bb03b6397a36f5788d6ca5b0d5b04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Размер текущей ставки  <br /></td></tr>
 <tr class="separator:af71bb03b6397a36f5788d6ca5b0d5b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d468bf9ce1b1ee1284549b234ca787e" id="r_a5d468bf9ce1b1ee1284549b234ca787e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d468bf9ce1b1ee1284549b234ca787e">zstavka</a></td></tr>
-<tr class="memdesc:a5d468bf9ce1b1ee1284549b234ca787e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Общая сумма ставок за сессию  <br /></td></tr>
+<tr class="memdesc:a5d468bf9ce1b1ee1284549b234ca787e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Накопленный выигрыш в текущем раунде  <br /></td></tr>
 <tr class="separator:a5d468bf9ce1b1ee1284549b234ca787e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab24ca566e38545b596c0ef39b372c577" id="r_ab24ca566e38545b596c0ef39b372c577"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_client_api.html">ClientApi</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab24ca566e38545b596c0ef39b372c577">clientApi</a></td></tr>
+<tr class="memdesc:ab24ca566e38545b596c0ef39b372c577"><td class="mdescLeft">&#160;</td><td class="mdescRight">API для взаимодействия с сервером  <br /></td></tr>
+<tr class="separator:ab24ca566e38545b596c0ef39b372c577"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Класс игры "Угадай число" (Больше-Меньше) </p>
-<p>Класс <a class="el" href="class_gtn.html" title="Класс игры &quot;Угадай число&quot; (Больше-Меньше)">Gtn</a> реализует логическую мини-игру, где игрок должен угадать случайное число, выбирая "больше" или "меньше" от текущего числа.</p>
-<p>Правила игры:</p><ul>
-<li>Генерируется случайное число от 1 до 100</li>
-<li>Игрок делает ставку (100, 500 или 1000 робуксов)</li>
-<li>Игрок видит начальное число и выбирает "больше" или "меньше"</li>
-<li>При правильном угадывании игрок удваивает ставку</li>
-<li>При неправильном угадывании игрок теряет ставку</li>
+<div class="textblock"><p>Игра "Угадай число" в формате "больше-меньше". </p>
+<p>Класс <a class="el" href="class_gtn.html" title="Игра &quot;Угадай число&quot; в формате &quot;больше-меньше&quot;.">Gtn</a> реализует интерактивную игру на угадывание случайного числа. Игровая механика включает:</p><ul>
+<li>Генерацию случайного числа в определенном диапазоне</li>
+<li>Систему ставок (100, 500, 1000 робуксов)</li>
+<li>Пошаговое угадывание с подсказками "больше/меньше"</li>
+<li>Увеличение коэффициента выигрыша с каждым правильным шагом</li>
+<li>Возможность остановиться и забрать выигрыш</li>
 </ul>
-<p>Игра основана на элементе удачи и интуиции игрока. </p>
+<p>Правила игры:</p><ul>
+<li>Игрок выбирает размер ставки</li>
+<li>Система генерирует случайное число</li>
+<li>Игрок пытается угадать, выбирая "больше" или "меньше"</li>
+<li>За каждый правильный шаг коэффициент выигрыша увеличивается</li>
+<li>Игрок может остановиться в любой момент и забрать накопленный выигрыш </li>
+</ul>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2_users_2sasha_2polytech_2_hampsetes_2hampsters_2_cazik_2managerform_8h-example.html#_a15">/Users/sasha/polytech/Hampsetes/hampsters/Cazik/managerform.h</a>.</dd>
+</dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a35ef6ce0d6627149bcd4b742ac8b62a8" name="a35ef6ce0d6627149bcd4b742ac8b62a8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a35ef6ce0d6627149bcd4b742ac8b62a8">&#9670;&#160;</a></span>Gtn()</h2>
@@ -235,11 +245,10 @@ Private Attributes</h2></td></tr>
 <p>Конструктор игры "Угадай число". </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parent</td><td>Родительский виджет (по умолчанию nullptr)</td></tr>
+    <tr><td class="paramname">parent</td><td>Родительский виджет </td></tr>
   </table>
   </dd>
 </dl>
-<p>Инициализирует интерфейс игры и устанавливает начальные значения. </p>
 
 </div>
 </div>
@@ -259,7 +268,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Деструктор игры "Угадай число". </p>
-<p>Освобождает ресурсы, используемые игрой. </p>
 
 </div>
 </div>
@@ -288,8 +296,8 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Генерация нового случайного числа </p>
-<dl class="section return"><dt>Returns</dt><dd>Случайное число от 1 до 100</dd></dl>
-<p>Создает новое случайное число для игровой сессии. </p>
+<dl class="section return"><dt>Returns</dt><dd>Новое случайное число в заданном диапазоне</dd></dl>
+<p>Создает новое число для угадывания в пределах игрового диапазона </p>
 
 </div>
 </div>
@@ -317,7 +325,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Обработчик кнопки ставки 1000 робуксов </p>
-<p>Устанавливает размер ставки в 1000 робуксов для текущей игры. Проверяет достаточность средств на балансе игрока. </p>
+<p>Устанавливает размер ставки в 1000 робуксов </p>
 
 </div>
 </div>
@@ -345,7 +353,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Обработчик кнопки ставки 100 робуксов </p>
-<p>Устанавливает размер ставки в 100 робуксов для текущей игры. Проверяет достаточность средств на балансе игрока. </p>
+<p>Устанавливает размер ставки в 100 робуксов </p>
 
 </div>
 </div>
@@ -373,7 +381,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Обработчик кнопки ставки 500 робуксов </p>
-<p>Устанавливает размер ставки в 500 робуксов для текущей игры. Проверяет достаточность средств на балансе игрока. </p>
+<p>Устанавливает размер ставки в 500 робуксов </p>
 
 </div>
 </div>
@@ -401,7 +409,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Обработчик кнопки "Больше". </p>
-<p>Регистрирует выбор игрока "больше" и готовит игру к проверке результата при нажатии кнопки "Играть". </p>
+<p>Игрок делает предположение, что загаданное число больше текущего </p>
 
 </div>
 </div>
@@ -429,7 +437,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Обработчик кнопки "Меньше". </p>
-<p>Регистрирует выбор игрока "меньше" и готовит игру к проверке результата при нажатии кнопки "Играть". </p>
+<p>Игрок делает предположение, что загаданное число меньше текущего </p>
 
 </div>
 </div>
@@ -456,8 +464,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Обработчик кнопки генерации нового числа </p>
-<p>Генерирует новое случайное число для игры и обновляет интерфейс для начала новой попытки. </p>
+<p>Обработчик кнопки "Новое число". </p>
+<p>Генерирует новое случайное число и начинает новый раунд игры </p>
 
 </div>
 </div>
@@ -485,7 +493,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Обработчик кнопки "Играть". </p>
-<p>Выполняет основную логику игры: сравнивает загаданное число с выбором игрока, определяет победителя и начисляет/списывает робуксы в зависимости от результата. </p>
+<p>Начинает новый раунд игры с выбранной ставкой </p>
 
 </div>
 </div>
@@ -512,8 +520,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Обработчик кнопки возврата в главное меню </p>
-<p>Закрывает окно игры и возвращает игрока в главное меню казино. </p>
+<p>Обработчик кнопки "Назад". </p>
+<p>Возвращает игрока в главное меню казино </p>
 
 </div>
 </div>
@@ -532,8 +540,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Слот для показа окна игры </p>
-<p>Отображает интерфейс игры и сбрасывает состояние для начала новой игровой сессии. </p>
+<p>Показать окно игры </p>
+<p>Отображает интерфейс игры и подготавливает начальное состояние для нового раунда угадывания </p>
 
 </div>
 </div>
@@ -561,7 +569,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Сигнал возврата в главное меню </p>
-<p>Испускается при нажатии кнопки возврата для перехода к главному меню казино. </p>
+<p>Испускается при завершении игровой сессии и возврате в основное меню казино </p>
 
 </div>
 </div>
@@ -586,7 +594,31 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Флаг блокировки интерфейса во время игры </p>
+<p>Флаг блокировки кнопок во время анимации </p>
+
+</div>
+</div>
+<a id="ab24ca566e38545b596c0ef39b372c577" name="ab24ca566e38545b596c0ef39b372c577"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab24ca566e38545b596c0ef39b372c577">&#9670;&#160;</a></span>clientApi</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_client_api.html">ClientApi</a>* Gtn::clientApi</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>API для взаимодействия с сервером </p>
 
 </div>
 </div>
@@ -610,7 +642,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Текущее отображаемое число для сравнения </p>
+<p>Текущее отображаемое число в процессе игры </p>
 
 </div>
 </div>
@@ -634,7 +666,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Загаданное число (от 1 до 100) </p>
+<p>Загаданное число для угадывания </p>
 
 </div>
 </div>
@@ -658,7 +690,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Размер текущей ставки игрока </p>
+<p>Размер текущей ставки </p>
 
 </div>
 </div>
@@ -672,7 +704,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Ui::Gtn* Gtn::ui</td>
+          <td class="memname"><a class="el" href="class_ui_1_1_gtn.html">Ui::Gtn</a>* Gtn::ui</td>
         </tr>
       </table>
   </td>
@@ -682,7 +714,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Указатель на UI объект игры </p>
+<p>Пользовательский интерфейс игры </p>
 
 </div>
 </div>
@@ -706,12 +738,13 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Общая сумма ставок за сессию </p>
+<p>Накопленный выигрыш в текущем раунде </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/Users/sasha/polytech/Hampsetes/hampsters/Cazik/<a class="el" href="gtn_8h_source.html">gtn.h</a></li>
+<li>/Users/sasha/polytech/Hampsetes/hampsters/Cazik/build/release/<a class="el" href="moc__gtn_8cpp.html">moc_gtn.cpp</a></li>
 <li>/Users/sasha/polytech/Hampsetes/hampsters/Cazik/<a class="el" href="gtn_8cpp.html">gtn.cpp</a></li>
 </ul>
 </div><!-- contents -->

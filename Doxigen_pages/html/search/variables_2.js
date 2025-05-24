@@ -1,7 +1,11 @@
 var searchData=
 [
-  ['clicker_0',['clicker',['../class_manager_form.html#a01a67d81b85bf34ecfd43711fca223f7',1,'ManagerForm']]],
-  ['couner_1',['couner',['../ruletka_8cpp.html#aa0c6f38a48c68c2123c639c3390c2212',1,'ruletka.cpp']]],
-  ['current_5fauth_2',['current_auth',['../class_manager_form.html#ad683126ecc8eb2c2032f9cad692800fe',1,'ManagerForm']]],
-  ['currentusername_3',['currentUsername',['../client__functions_8cpp.html#a5acf3c401ce11768a8f3c1a2d6184743',1,'currentUsername:&#160;client_functions.cpp'],['../client__functions_8h.html#a5acf3c401ce11768a8f3c1a2d6184743',1,'currentUsername:&#160;client_functions.cpp']]]
+  ['centralwidget_0',['centralwidget',['../class_ui___casino_main_window.html#a2d848fc535683f2e67259238a5ebcae7',1,'Ui_CasinoMainWindow']]],
+  ['clicker_1',['clicker',['../class_manager_form.html#a01a67d81b85bf34ecfd43711fca223f7',1,'ManagerForm']]],
+  ['clientapi_2',['clientApi',['../classadmin__page.html#aaa68a825e458575bc28951bc156b3954',1,'admin_page::clientApi'],['../class_auth_reg_form.html#ae93dbcd7b013e6af9b821e9b33a390d1',1,'AuthRegForm::clientApi'],['../class_baraban.html#a7f5172351c2c5c171889aff337d4e23c',1,'Baraban::clientApi'],['../class_gtn.html#ab24ca566e38545b596c0ef39b372c577',1,'Gtn::clientApi'],['../class_kliker.html#a6a78d87cb4d58702465f2a6763d66e11',1,'Kliker::clientApi'],['../class_kosti.html#a3d11c7594d0d078d9150fb158af9e637',1,'Kosti::clientApi'],['../class_manager_form.html#a51524ea739965304135ad4ee4d388a05',1,'ManagerForm::clientApi'],['../class_ruletka.html#a62b4d454a15bc27c76861dcfd9a79a6a',1,'Ruletka::clientApi']]],
+  ['couner_3',['couner',['../ruletka_8cpp.html#aa0c6f38a48c68c2123c639c3390c2212',1,'ruletka.cpp']]],
+  ['count_5frobux_4',['count_robux',['../class_ui___baraban.html#a39062de977765263198ba8563e356aa4',1,'Ui_Baraban::count_robux'],['../class_ui___gtn.html#acbe5414b6004f6491eb84fe5b8c2c0c1',1,'Ui_Gtn::count_robux'],['../class_ui___kliker.html#a2a97c4ab761391cdb2662e81d56de173',1,'Ui_Kliker::count_robux'],['../class_ui___kosti.html#ac229e94f1ff26b4c8b411bea28d5a0c0',1,'Ui_Kosti::count_robux'],['../class_ui___ruletka.html#a00ce7d7eb58baa9642aecada79b330f3',1,'Ui_Ruletka::count_robux']]],
+  ['current_5fauth_5',['current_auth',['../class_manager_form.html#ad683126ecc8eb2c2032f9cad692800fe',1,'ManagerForm']]],
+  ['currentrole_6',['currentRole',['../client__functions_8cpp.html#a376b119c87dca34d21a48472fdf2916e',1,'currentRole:&#160;client_functions.cpp'],['../client__functions_8h.html#a376b119c87dca34d21a48472fdf2916e',1,'currentRole:&#160;client_functions.cpp']]],
+  ['currentusername_7',['currentUsername',['../client__functions_8cpp.html#a5acf3c401ce11768a8f3c1a2d6184743',1,'currentUsername:&#160;client_functions.cpp'],['../client__functions_8h.html#a5acf3c401ce11768a8f3c1a2d6184743',1,'currentUsername:&#160;client_functions.cpp']]]
 ];

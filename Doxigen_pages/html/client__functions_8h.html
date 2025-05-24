@@ -111,7 +111,7 @@ $(function(){initNavTree('client__functions_8h.html',''); initResizable(true); }
 </div><!--header-->
 <div class="contents">
 
-<p>Заголовочный файл с глобальными функциями и структурами данных  
+<p>Вспомогательные функции и структуры клиентской части  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;QString&gt;</code><br />
 <code>#include &lt;QDateTime&gt;</code><br />
@@ -121,45 +121,60 @@ $(function(){initNavTree('client__functions_8h.html',''); initResizable(true); }
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_user.html">User</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура данных пользователя  <a href="struct_user.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура данных пользователя казино  <a href="struct_user.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aacbd1ffa7bb4d3366374d51fdb97586f" id="r_aacbd1ffa7bb4d3366374d51fdb97586f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aacbd1ffa7bb4d3366374d51fdb97586f">auth</a> (QString login, QString password)</td></tr>
-<tr class="memdesc:aacbd1ffa7bb4d3366374d51fdb97586f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция аутентификации пользователя  <br /></td></tr>
+<tr class="memdesc:aacbd1ffa7bb4d3366374d51fdb97586f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Авторизация пользователя в системе  <br /></td></tr>
 <tr class="separator:aacbd1ffa7bb4d3366374d51fdb97586f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abaebdda0dd4bec632ee89e5e6d10edae" id="r_abaebdda0dd4bec632ee89e5e6d10edae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abaebdda0dd4bec632ee89e5e6d10edae">reg</a> (QString login, QString password, QString role)</td></tr>
-<tr class="memdesc:abaebdda0dd4bec632ee89e5e6d10edae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция регистрации нового пользователя  <br /></td></tr>
-<tr class="separator:abaebdda0dd4bec632ee89e5e6d10edae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcddacfc17c028a34d9685da167e3096" id="r_afcddacfc17c028a34d9685da167e3096"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcddacfc17c028a34d9685da167e3096">reg</a> (QString login, QString password, QString confirmPassword)</td></tr>
+<tr class="memdesc:afcddacfc17c028a34d9685da167e3096"><td class="mdescLeft">&#160;</td><td class="mdescRight">Регистрация нового пользователя  <br /></td></tr>
+<tr class="separator:afcddacfc17c028a34d9685da167e3096"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a587adb1eea109cffac2a0568a8676ac9" id="r_a587adb1eea109cffac2a0568a8676ac9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a587adb1eea109cffac2a0568a8676ac9">toServer</a> (int gameType, int betAmount, int result)</td></tr>
+<tr class="memdesc:a587adb1eea109cffac2a0568a8676ac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отправка игровых данных на сервер  <br /></td></tr>
+<tr class="separator:a587adb1eea109cffac2a0568a8676ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1269b8bdb80f7ffbee545318e161c51f" id="r_a1269b8bdb80f7ffbee545318e161c51f"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1269b8bdb80f7ffbee545318e161c51f">path</a> ()</td></tr>
-<tr class="memdesc:a1269b8bdb80f7ffbee545318e161c51f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение пути к рабочей директории приложения  <br /></td></tr>
+<tr class="memdesc:a1269b8bdb80f7ffbee545318e161c51f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить путь к ресурсам приложения  <br /></td></tr>
 <tr class="separator:a1269b8bdb80f7ffbee545318e161c51f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30d7d6086f6efb8157876ace8cf004dd" id="r_a30d7d6086f6efb8157876ace8cf004dd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30d7d6086f6efb8157876ace8cf004dd">slots_rand</a> ()</td></tr>
-<tr class="memdesc:a30d7d6086f6efb8157876ace8cf004dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Генератор случайных чисел для слот-машины  <br /></td></tr>
+<tr class="memdesc:a30d7d6086f6efb8157876ace8cf004dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Генератор случайных чисел для слотов  <br /></td></tr>
 <tr class="separator:a30d7d6086f6efb8157876ace8cf004dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bba26858e78f6743ed5ff2e8f74d23e" id="r_a2bba26858e78f6743ed5ff2e8f74d23e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2bba26858e78f6743ed5ff2e8f74d23e">shuffleArray</a> (int *array, int size)</td></tr>
-<tr class="memdesc:a2bba26858e78f6743ed5ff2e8f74d23e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перемешивание массива целых чисел  <br /></td></tr>
+<tr class="memdesc:a2bba26858e78f6743ed5ff2e8f74d23e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перемешивание массива случайным образом  <br /></td></tr>
 <tr class="separator:a2bba26858e78f6743ed5ff2e8f74d23e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a52a4d39079dbf5ca1f3edba4f652a572" id="r_a52a4d39079dbf5ca1f3edba4f652a572"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52a4d39079dbf5ca1f3edba4f652a572">robuks</a></td></tr>
-<tr class="memdesc:a52a4d39079dbf5ca1f3edba4f652a572"><td class="mdescLeft">&#160;</td><td class="mdescRight">Баланс текущего пользователя в robux.  <br /></td></tr>
+<tr class="memdesc:a52a4d39079dbf5ca1f3edba4f652a572"><td class="mdescLeft">&#160;</td><td class="mdescRight">Баланс текущего авторизованного пользователя в робуксах  <br /></td></tr>
 <tr class="separator:a52a4d39079dbf5ca1f3edba4f652a572"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5acf3c401ce11768a8f3c1a2d6184743" id="r_a5acf3c401ce11768a8f3c1a2d6184743"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5acf3c401ce11768a8f3c1a2d6184743">currentUsername</a></td></tr>
 <tr class="memdesc:a5acf3c401ce11768a8f3c1a2d6184743"><td class="mdescLeft">&#160;</td><td class="mdescRight">Логин текущего авторизованного пользователя  <br /></td></tr>
 <tr class="separator:a5acf3c401ce11768a8f3c1a2d6184743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a376b119c87dca34d21a48472fdf2916e" id="r_a376b119c87dca34d21a48472fdf2916e"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a376b119c87dca34d21a48472fdf2916e">currentRole</a></td></tr>
+<tr class="memdesc:a376b119c87dca34d21a48472fdf2916e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Роль пользователя ("user" или "admin")  <br /></td></tr>
+<tr class="separator:a376b119c87dca34d21a48472fdf2916e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebcabe45c4584deaa9db64c4ee6d3ca5" id="r_aebcabe45c4584deaa9db64c4ee6d3ca5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aebcabe45c4584deaa9db64c4ee6d3ca5">TotalBets</a></td></tr>
+<tr class="memdesc:aebcabe45c4584deaa9db64c4ee6d3ca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Общее количество ставок текущего пользователя  <br /></td></tr>
+<tr class="separator:aebcabe45c4584deaa9db64c4ee6d3ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea8a283aa6e4d85f974853fed0367e86" id="r_aea8a283aa6e4d85f974853fed0367e86"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea8a283aa6e4d85f974853fed0367e86">TotalWins</a></td></tr>
+<tr class="memdesc:aea8a283aa6e4d85f974853fed0367e86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Общая сумма выигрышей текущего пользователя  <br /></td></tr>
+<tr class="separator:aea8a283aa6e4d85f974853fed0367e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88975df26b2a6c1fb7eea69cf4ef4e37" id="r_a88975df26b2a6c1fb7eea69cf4ef4e37"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88975df26b2a6c1fb7eea69cf4ef4e37">ids</a></td></tr>
+<tr class="memdesc:a88975df26b2a6c1fb7eea69cf4ef4e37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Идентификатор текущей сессии пользователя  <br /></td></tr>
+<tr class="separator:a88975df26b2a6c1fb7eea69cf4ef4e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afea9bb4a30d00ed11564b4faf30e1017" id="r_afea9bb4a30d00ed11564b4faf30e1017"><td class="memItemLeft" align="right" valign="top">QList&lt; <a class="el" href="struct_user.html">User</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afea9bb4a30d00ed11564b4faf30e1017">users</a></td></tr>
 <tr class="memdesc:afea9bb4a30d00ed11564b4faf30e1017"><td class="mdescLeft">&#160;</td><td class="mdescRight">Глобальный список всех пользователей системы  <br /></td></tr>
 <tr class="separator:afea9bb4a30d00ed11564b4faf30e1017"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Заголовочный файл с глобальными функциями и структурами данных </p>
-<dl class="section author"><dt>Author</dt><dd>Команда разработчиков </dd></dl>
+<div class="textblock"><p>Вспомогательные функции и структуры клиентской части </p>
+<dl class="section author"><dt>Author</dt><dd>Development Team </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2025 </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0</dd></dl>
-<p>Содержит основные функции для работы с пользователями, аутентификацией, генерацией случайных чисел и вспомогательные утилиты для игр казино. </p>
+<p>Этот файл содержит объявления вспомогательных функций, глобальных переменных и структур данных, используемых в клиентской части приложения казино "Хампстерс". Включает функции авторизации, игровой логики и управления пользовательскими данными. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="aacbd1ffa7bb4d3366374d51fdb97586f" name="aacbd1ffa7bb4d3366374d51fdb97586f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aacbd1ffa7bb4d3366374d51fdb97586f">&#9670;&#160;</a></span>auth()</h2>
@@ -180,7 +195,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Функция аутентификации пользователя </p>
+<p>Авторизация пользователя в системе </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">login</td><td>Логин пользователя </td></tr>
@@ -188,8 +203,8 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Результат аутентификации: 0 - успех, 1 - ошибка логина, 2 - ошибка пароля</dd></dl>
-<p>Проверяет учетные данные пользователя в базе данных или списке пользователей. При успешной аутентификации устанавливает глобальные переменные текущего пользователя. </p>
+<dl class="section return"><dt>Returns</dt><dd>Код результата авторизации (0 - успех, другие - ошибки)</dd></dl>
+<p>Выполняет проверку учетных данных пользователя и устанавливает глобальные переменные текущей сессии при успешной авторизации. </p>
 
 </div>
 </div>
@@ -208,14 +223,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Получение пути к рабочей директории приложения </p>
-<dl class="section return"><dt>Returns</dt><dd>Строка с путем к директории приложения</dd></dl>
-<p>Возвращает путь к директории, где хранятся файлы приложения, включая базу данных и ресурсы. </p>
+<p>Получить путь к ресурсам приложения </p>
+<dl class="section return"><dt>Returns</dt><dd>Строка с путем к директории ресурсов</dd></dl>
+<p>Возвращает корректный путь к изображениям и другим ресурсам приложения в зависимости от платформы. </p>
 
 </div>
 </div>
-<a id="abaebdda0dd4bec632ee89e5e6d10edae" name="abaebdda0dd4bec632ee89e5e6d10edae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abaebdda0dd4bec632ee89e5e6d10edae">&#9670;&#160;</a></span>reg()</h2>
+<a id="afcddacfc17c028a34d9685da167e3096" name="afcddacfc17c028a34d9685da167e3096"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcddacfc17c028a34d9685da167e3096">&#9670;&#160;</a></span>reg()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -233,22 +248,22 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">QString</td>          <td class="paramname"><span class="paramname"><em>role</em></span>&#160;)</td>
+          <td class="paramtype">QString</td>          <td class="paramname"><span class="paramname"><em>confirmPassword</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Функция регистрации нового пользователя </p>
+<p>Регистрация нового пользователя </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">login</td><td>Логин нового пользователя </td></tr>
     <tr><td class="paramname">password</td><td>Пароль нового пользователя </td></tr>
-    <tr><td class="paramname">role</td><td>Роль пользователя ("user" или "admin") </td></tr>
+    <tr><td class="paramname">confirmPassword</td><td>Подтверждение пароля </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true если регистрация прошла успешно, false если пользователь уже существует</dd></dl>
-<p>Создает нового пользователя в системе с указанными учетными данными. Проверяет уникальность логина перед созданием. </p>
+<dl class="section return"><dt>Returns</dt><dd>true при успешной регистрации, false при ошибке</dd></dl>
+<p>Создает новый аккаунт пользователя с начальным балансом и добавляет его в систему. </p>
 
 </div>
 </div>
@@ -271,7 +286,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Перемешивание массива целых чисел </p>
+<p>Перемешивание массива случайным образом </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">array</td><td>Указатель на массив для перемешивания </td></tr>
@@ -279,7 +294,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>Реализует алгоритм перемешивания Фишера-Йетса для случайного изменения порядка элементов массива. Используется для вывода случайных изображений при проигрыше в играх. </p>
+<p>Использует алгоритм Фишера-Йетса для случайного перемешивания элементов массива. Применяется для рандомизации отображения картинок при проигрышных комбинациях. </p>
 
 </div>
 </div>
@@ -298,13 +313,74 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Генератор случайных чисел для слот-машины </p>
-<dl class="section return"><dt>Returns</dt><dd>Случайное число от 1 до 3 включительно</dd></dl>
-<p>Специализированная функция генерации случайных чисел для игры в слоты. Использует равномерное распределение для честной игры. </p>
+<p>Генератор случайных чисел для слотов </p>
+<dl class="section return"><dt>Returns</dt><dd>Случайное число для определения символа на барабане</dd></dl>
+<p>Генерирует случайное число в диапазоне символов игровых автоматов с учетом вероятностей выпадения различных символов. </p>
+
+</div>
+</div>
+<a id="a587adb1eea109cffac2a0568a8676ac9" name="a587adb1eea109cffac2a0568a8676ac9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a587adb1eea109cffac2a0568a8676ac9">&#9670;&#160;</a></span>toServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void toServer </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>gameType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>betAmount</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>result</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Отправка игровых данных на сервер </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gameType</td><td>Тип игры (идентификатор) </td></tr>
+    <tr><td class="paramname">betAmount</td><td>Размер ставки </td></tr>
+    <tr><td class="paramname">result</td><td>Результат игры</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Отправляет информацию о проведенной игре на сервер для обновления баланса и статистики игрока. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a376b119c87dca34d21a48472fdf2916e" name="a376b119c87dca34d21a48472fdf2916e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a376b119c87dca34d21a48472fdf2916e">&#9670;&#160;</a></span>currentRole</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString currentRole</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Роль пользователя ("user" или "admin") </p>
+
+</div>
+</div>
 <a id="a5acf3c401ce11768a8f3c1a2d6184743" name="a5acf3c401ce11768a8f3c1a2d6184743"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5acf3c401ce11768a8f3c1a2d6184743">&#9670;&#160;</a></span>currentUsername</h2>
 
@@ -329,6 +405,30 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a88975df26b2a6c1fb7eea69cf4ef4e37" name="a88975df26b2a6c1fb7eea69cf4ef4e37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88975df26b2a6c1fb7eea69cf4ef4e37">&#9670;&#160;</a></span>ids</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString ids</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Идентификатор текущей сессии пользователя </p>
+
+</div>
+</div>
 <a id="a52a4d39079dbf5ca1f3edba4f652a572" name="a52a4d39079dbf5ca1f3edba4f652a572"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a52a4d39079dbf5ca1f3edba4f652a572">&#9670;&#160;</a></span>robuks</h2>
 
@@ -349,7 +449,55 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Баланс текущего пользователя в robux. </p>
+<p>Баланс текущего авторизованного пользователя в робуксах </p>
+
+</div>
+</div>
+<a id="aebcabe45c4584deaa9db64c4ee6d3ca5" name="aebcabe45c4584deaa9db64c4ee6d3ca5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebcabe45c4584deaa9db64c4ee6d3ca5">&#9670;&#160;</a></span>TotalBets</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TotalBets</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Общее количество ставок текущего пользователя </p>
+
+</div>
+</div>
+<a id="aea8a283aa6e4d85f974853fed0367e86" name="aea8a283aa6e4d85f974853fed0367e86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea8a283aa6e4d85f974853fed0367e86">&#9670;&#160;</a></span>TotalWins</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TotalWins</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Общая сумма выигрышей текущего пользователя </p>
 
 </div>
 </div>

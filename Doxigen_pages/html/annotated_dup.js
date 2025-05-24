@@ -1,13 +1,38 @@
 var annotated_dup =
 [
     [ "QT_WARNING_DISABLE_DEPRECATED", "namespace_q_t___w_a_r_n_i_n_g___d_i_s_a_b_l_e___d_e_p_r_e_c_a_t_e_d.html", [
-      [ "qt_meta_tag_ZN11MyTcpServerE_t", "struct_q_t___w_a_r_n_i_n_g___d_i_s_a_b_l_e___d_e_p_r_e_c_a_t_e_d_1_1qt__meta__tag___z_n11_my_tcp_server_e__t.html", null ]
+      [ "qt_meta_tag_ZN10admin_pageE_t", "struct_q_t___w_a_r_n_i_n_g___d_i_s_a_b_l_e___d_e_p_r_e_c_a_t_e_d_1_1qt__meta__tag___z_n10admin__page_e__t.html", null ],
+      [ "qt_meta_tag_ZN11AuthRegFormE_t", "struct_q_t___w_a_r_n_i_n_g___d_i_s_a_b_l_e___d_e_p_r_e_c_a_t_e_d_1_1qt__meta__tag___z_n11_auth_reg_form_e__t.html", null ],
+      [ "qt_meta_tag_ZN11ManagerFormE_t", "struct_q_t___w_a_r_n_i_n_g___d_i_s_a_b_l_e___d_e_p_r_e_c_a_t_e_d_1_1qt__meta__tag___z_n11_manager_form_e__t.html", null ],
+      [ "qt_meta_tag_ZN11MyTcpServerE_t", "struct_q_t___w_a_r_n_i_n_g___d_i_s_a_b_l_e___d_e_p_r_e_c_a_t_e_d_1_1qt__meta__tag___z_n11_my_tcp_server_e__t.html", null ],
+      [ "qt_meta_tag_ZN13personal_pageE_t", "struct_q_t___w_a_r_n_i_n_g___d_i_s_a_b_l_e___d_e_p_r_e_c_a_t_e_d_1_1qt__meta__tag___z_n13personal__page_e__t.html", null ],
+      [ "qt_meta_tag_ZN16CasinoMainWindowE_t", "struct_q_t___w_a_r_n_i_n_g___d_i_s_a_b_l_e___d_e_p_r_e_c_a_t_e_d_1_1qt__meta__tag___z_n16_casino_main_window_e__t.html", null ],
+      [ "qt_meta_tag_ZN3GtnE_t", "struct_q_t___w_a_r_n_i_n_g___d_i_s_a_b_l_e___d_e_p_r_e_c_a_t_e_d_1_1qt__meta__tag___z_n3_gtn_e__t.html", null ],
+      [ "qt_meta_tag_ZN5KostiE_t", "struct_q_t___w_a_r_n_i_n_g___d_i_s_a_b_l_e___d_e_p_r_e_c_a_t_e_d_1_1qt__meta__tag___z_n5_kosti_e__t.html", null ],
+      [ "qt_meta_tag_ZN6KlikerE_t", "struct_q_t___w_a_r_n_i_n_g___d_i_s_a_b_l_e___d_e_p_r_e_c_a_t_e_d_1_1qt__meta__tag___z_n6_kliker_e__t.html", null ],
+      [ "qt_meta_tag_ZN7BarabanE_t", "struct_q_t___w_a_r_n_i_n_g___d_i_s_a_b_l_e___d_e_p_r_e_c_a_t_e_d_1_1qt__meta__tag___z_n7_baraban_e__t.html", null ],
+      [ "qt_meta_tag_ZN7RuletkaE_t", "struct_q_t___w_a_r_n_i_n_g___d_i_s_a_b_l_e___d_e_p_r_e_c_a_t_e_d_1_1qt__meta__tag___z_n7_ruletka_e__t.html", null ],
+      [ "qt_meta_tag_ZN9ClientApiE_t", "struct_q_t___w_a_r_n_i_n_g___d_i_s_a_b_l_e___d_e_p_r_e_c_a_t_e_d_1_1qt__meta__tag___z_n9_client_api_e__t.html", null ]
+    ] ],
+    [ "Ui", "namespace_ui.html", [
+      [ "admin_page", "class_ui_1_1admin__page.html", null ],
+      [ "AuthRegForm", "class_ui_1_1_auth_reg_form.html", null ],
+      [ "Baraban", "class_ui_1_1_baraban.html", null ],
+      [ "CasinoMainWindow", "class_ui_1_1_casino_main_window.html", null ],
+      [ "Gtn", "class_ui_1_1_gtn.html", null ],
+      [ "Kliker", "class_ui_1_1_kliker.html", null ],
+      [ "Kosti", "class_ui_1_1_kosti.html", null ],
+      [ "personal_page", "class_ui_1_1personal__page.html", null ],
+      [ "Ruletka", "class_ui_1_1_ruletka.html", null ]
     ] ],
     [ "admin_page", "classadmin__page.html", "classadmin__page" ],
     [ "AuthRegForm", "class_auth_reg_form.html", "class_auth_reg_form" ],
     [ "Baraban", "class_baraban.html", "class_baraban" ],
     [ "CasinoMainWindow", "class_casino_main_window.html", "class_casino_main_window" ],
+    [ "ClientApi", "class_client_api.html", "class_client_api" ],
+    [ "DataBaseSingleton", "class_data_base_singleton.html", "class_data_base_singleton" ],
     [ "DatabaseSingleton", "class_database_singleton.html", "class_database_singleton" ],
+    [ "DataBaseSingletonDestroyer", "class_data_base_singleton_destroyer.html", "class_data_base_singleton_destroyer" ],
     [ "DatabaseSingletonDestroyer", "class_database_singleton_destroyer.html", "class_database_singleton_destroyer" ],
     [ "Gtn", "class_gtn.html", "class_gtn" ],
     [ "Kliker", "class_kliker.html", "class_kliker" ],
@@ -16,5 +41,15 @@ var annotated_dup =
     [ "MyTcpServer", "class_my_tcp_server.html", "class_my_tcp_server" ],
     [ "personal_page", "classpersonal__page.html", "classpersonal__page" ],
     [ "Ruletka", "class_ruletka.html", "class_ruletka" ],
+    [ "SingletonDestroyer", "class_singleton_destroyer.html", "class_singleton_destroyer" ],
+    [ "Ui_admin_page", "class_ui__admin__page.html", "class_ui__admin__page" ],
+    [ "Ui_AuthRegForm", "class_ui___auth_reg_form.html", "class_ui___auth_reg_form" ],
+    [ "Ui_Baraban", "class_ui___baraban.html", "class_ui___baraban" ],
+    [ "Ui_CasinoMainWindow", "class_ui___casino_main_window.html", "class_ui___casino_main_window" ],
+    [ "Ui_Gtn", "class_ui___gtn.html", "class_ui___gtn" ],
+    [ "Ui_Kliker", "class_ui___kliker.html", "class_ui___kliker" ],
+    [ "Ui_Kosti", "class_ui___kosti.html", "class_ui___kosti" ],
+    [ "Ui_personal_page", "class_ui__personal__page.html", "class_ui__personal__page" ],
+    [ "Ui_Ruletka", "class_ui___ruletka.html", "class_ui___ruletka" ],
     [ "User", "struct_user.html", "struct_user" ]
 ];

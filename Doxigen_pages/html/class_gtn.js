@@ -14,6 +14,7 @@ var class_gtn =
     [ "slot_show", "class_gtn.html#a27f9ad83c8ab6cff15d33fedceab79ce", null ],
     [ "to_main", "class_gtn.html#ac800de96811d9ac0d13463758e37b63c", null ],
     [ "block", "class_gtn.html#a004f51b6d66d4988eac48c6a119f7812", null ],
+    [ "clientApi", "class_gtn.html#ab24ca566e38545b596c0ef39b372c577", null ],
     [ "now_num", "class_gtn.html#a574309216eeb69e71d6261bbbc4a6c25", null ],
     [ "num", "class_gtn.html#ae93c272c60fcf4f61a6ab706522698c3", null ],
     [ "rstavka", "class_gtn.html#af71bb03b6397a36f5788d6ca5b0d5b04", null ],

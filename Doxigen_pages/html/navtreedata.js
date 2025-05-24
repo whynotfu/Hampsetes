@@ -33,7 +33,7 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
+        [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ],
         [ "Related Symbols", "functions_rela.html", null ]
@@ -47,16 +47,20 @@ var NAVTREE =
         [ "Variables", "globals_vars.html", null ],
         [ "Macros", "globals_defs.html", "globals_defs" ]
       ] ]
-    ] ]
+    ] ],
+    [ "Examples", "examples.html", "examples" ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"admin__page_8cpp.html",
-"globals_s.html",
-"moc__predefs_8h.html#a72e3c30a05bd2bb63d76550e451a438e",
-"moc__predefs_8h_source.html"
+"_2_users_2sasha_2polytech_2_hampsetes_2hampsters_2_cazik_2clientapi_8h-example.html",
+"class_ui___auth_reg_form.html#a5e5d9f0abaeb3463a48cddbdbf18f608",
+"hampsters_2_cazik_2build_2release_2moc__predefs_8h.html#a01763e0801406de2e88b94f4ad1298de",
+"hampsters_2_cazik_2build_2release_2moc__predefs_8h.html#a7e0518c0e5573e3c636ce77ae39f7c58",
+"moc__baraban_8cpp.html#ad83b2306f94b5b9e5625794fc238c8a0",
+"ser__ver_2build_2_desktop___qt__6__8__2___min_g_w__64__bit-_debug_2debug_2moc__predefs_8h.html#a6a0b73b50b59fa18dbcea5b6dee0899f",
+"ser__ver_2build_2_desktop___qt__6__8__2___min_g_w__64__bit-_debug_2debug_2moc__predefs_8h.html#af6547beba0a34ed6bd6453f1220a97ca"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

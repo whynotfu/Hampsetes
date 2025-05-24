@@ -2,7 +2,7 @@
 \hypertarget{hampsters_2_cazik_2main_8cpp}{}\label{hampsters_2_cazik_2main_8cpp}\index{/Users/sasha/polytech/Hampsetes/hampsters/Cazik/main.cpp@{/Users/sasha/polytech/Hampsetes/hampsters/Cazik/main.cpp}}
 
 
-Главный файл приложения казино "{}\+Hampsetes"{}.  
+Точка входа клиентского приложения казино "{}Хампстерс"{}.  
 
 
 {\ttfamily \#include "{}managerform.\+h"{}}\newline
@@ -14,14 +14,14 @@
 \begin{DoxyCompactItemize}
 \item 
 int \mbox{\hyperlink{hampsters_2_cazik_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
-\begin{DoxyCompactList}\small\item\em Главная функция приложения \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Главная функция клиентского приложения \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Главный файл приложения казино "{}\+Hampsetes"{}. 
+Точка входа клиентского приложения казино "{}Хампстерс"{}. 
 
 \begin{DoxyAuthor}{Author}
-Команда разработчиков 
+Development Team 
 \end{DoxyAuthor}
 \begin{DoxyDate}{Date}
 2025 
@@ -29,7 +29,7 @@ int \mbox{\hyperlink{hampsters_2_cazik_2main_8cpp_a0ddf1224851353fc92bfbff6f499f
 \begin{DoxyVersion}{Version}
 1.\+0
 \end{DoxyVersion}
-Этот файл содержит точку входа в приложение казино. Приложение представляет собой игровую платформу с различными мини-\/играми\+: слоты, рулетка, кости, кликер и игра "{}больше-\/меньше"{}. 
+Этот файл содержит функцию \doxylink{hampsters_2_cazik_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main()} для клиентской части приложения казино "{}Хампстерс"{}. Инициализирует Qt приложение и запускает менеджер форм для управления пользовательским интерфейсом. 
 
 \doxysubsection{Function Documentation}
 \Hypertarget{hampsters_2_cazik_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\index{main.cpp@{main.cpp}!main@{main}}
@@ -40,7 +40,7 @@ int main (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char \texorpdfstr
 
 
 
-Главная функция приложения 
+Главная функция клиентского приложения 
 
 
 \begin{DoxyParams}{Parameters}
@@ -52,4 +52,6 @@ int main (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char \texorpdfstr
 \begin{DoxyReturn}{Returns}
 Код завершения приложения
 \end{DoxyReturn}
-Инициализирует Qt приложение, создает главный менеджер форм, устанавливает начальный баланс игрока и запускает главный цикл событий. 
+Инициализирует Qt приложение, создает экземпляр \doxylink{class_manager_form}{Manager\+Form} и запускает главный цикл обработки событий. \doxylink{class_manager_form}{Manager\+Form} координирует все окна и формы приложения казино.
+
+Устанавливает начальный баланс пользователя в 1000 робуксов для демонстрационных целей. 

@@ -1,6 +1,6 @@
 \doxysection{ui\+\_\+ruletka.\+h}
-\hypertarget{ui__ruletka_8h_source}{}\label{ui__ruletka_8h_source}\index{/Users/sasha/polytech/Hampsetes/hampsters/Cazik/build/Desktop\_Qt\_6\_8\_2\_MinGW\_64\_bit-\/Release/ui\_ruletka.h@{/Users/sasha/polytech/Hampsetes/hampsters/Cazik/build/Desktop\_Qt\_6\_8\_2\_MinGW\_64\_bit-\/Release/ui\_ruletka.h}}
-
+\hypertarget{ui__ruletka_8h_source}{}\label{ui__ruletka_8h_source}\index{/Users/sasha/polytech/Hampsetes/hampsters/Cazik/build/ui\_ruletka.h@{/Users/sasha/polytech/Hampsetes/hampsters/Cazik/build/ui\_ruletka.h}}
+\mbox{\hyperlink{ui__ruletka_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{comment}{/********************************************************************************}}
 \DoxyCodeLine{00002\ \textcolor{comment}{**\ Form\ generated\ from\ reading\ UI\ file\ 'ruletka.ui'}}
@@ -17,42 +17,168 @@
 \DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QtWidgets/QApplication>}}
 \DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QtWidgets/QDialog>}}
 \DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QtWidgets/QLabel>}}
-\DoxyCodeLine{00016\ }
-\DoxyCodeLine{00017\ QT\_BEGIN\_NAMESPACE}
-\DoxyCodeLine{00018\ }
-\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ui___ruletka}{Ui\_Ruletka}}}
-\DoxyCodeLine{00020\ \{}
-\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00022\ \ \ \ \ QLabel\ *Fonlabel;}
-\DoxyCodeLine{00023\ }
-\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ setupUi(QDialog\ *\mbox{\hyperlink{class_ruletka}{Ruletka}})}
-\DoxyCodeLine{00025\ \ \ \ \ \{}
-\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_ruletka}{Ruletka}}-\/>objectName().isEmpty())}
-\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ruletka}{Ruletka}}-\/>setObjectName(\textcolor{stringliteral}{"{}Ruletka"{}});}
-\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ruletka}{Ruletka}}-\/>resize(800,\ 600);}
-\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ Fonlabel\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ruletka}{Ruletka}});}
-\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ Fonlabel-\/>setObjectName(\textcolor{stringliteral}{"{}Fonlabel"{}});}
-\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ Fonlabel-\/>setGeometry(QRect(-\/10,\ -\/10,\ 821,\ 621));}
-\DoxyCodeLine{00032\ }
-\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ retranslateUi(\mbox{\hyperlink{class_ruletka}{Ruletka}});}
-\DoxyCodeLine{00034\ }
-\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ QMetaObject::connectSlotsByName(\mbox{\hyperlink{class_ruletka}{Ruletka}});}
-\DoxyCodeLine{00036\ \ \ \ \ \}\ \textcolor{comment}{//\ setupUi}}
-\DoxyCodeLine{00037\ }
-\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ retranslateUi(QDialog\ *\mbox{\hyperlink{class_ruletka}{Ruletka}})}
-\DoxyCodeLine{00039\ \ \ \ \ \{}
-\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ruletka}{Ruletka}}-\/>setWindowTitle(QCoreApplication::translate(\textcolor{stringliteral}{"{}Ruletka"{}},\ \textcolor{stringliteral}{"{}Dialog"{}},\ \textcolor{keyword}{nullptr}));}
-\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ Fonlabel-\/>setText(QString());}
-\DoxyCodeLine{00042\ \ \ \ \ \}\ \textcolor{comment}{//\ retranslateUi}}
-\DoxyCodeLine{00043\ }
-\DoxyCodeLine{00044\ \};}
-\DoxyCodeLine{00045\ }
-\DoxyCodeLine{00046\ \textcolor{keyword}{namespace\ }Ui\ \{}
-\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ui_1_1_ruletka}{Ruletka}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_ui___ruletka}{Ui\_Ruletka}}\ \{\};}
-\DoxyCodeLine{00048\ \}\ \textcolor{comment}{//\ namespace\ Ui}}
-\DoxyCodeLine{00049\ }
-\DoxyCodeLine{00050\ QT\_END\_NAMESPACE}
-\DoxyCodeLine{00051\ }
-\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ UI\_RULETKA\_H}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <QtWidgets/QPushButton>}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ui___ruletka}{Ui\_Ruletka}}}
+\DoxyCodeLine{00021\ \{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___ruletka_a5bdef535f4535b1c65723d2adc222f17}{Fonlabel}};}
+\DoxyCodeLine{00024\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___ruletka_a3131d30b7e76a8cf0bfca4c7b8800fd3}{RuletkaObjectLabell}};}
+\DoxyCodeLine{00025\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___ruletka_abc59d1b1b6c52fb1466441a5b29afd46}{label\_robux}};}
+\DoxyCodeLine{00026\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___ruletka_a00ce7d7eb58baa9642aecada79b330f3}{count\_robux}};}
+\DoxyCodeLine{00027\ \ \ \ \ QPushButton\ *\mbox{\hyperlink{class_ui___ruletka_a4cf6989def491ef1a96b9defc21dba43}{BackButton}};}
+\DoxyCodeLine{00028\ \ \ \ \ QPushButton\ *\mbox{\hyperlink{class_ui___ruletka_af527b08bf42bd1a3cb6618e6e62c770c}{ButtonPlay}};}
+\DoxyCodeLine{00029\ \ \ \ \ QPushButton\ *\mbox{\hyperlink{class_ui___ruletka_a64ceb8ac0475c14da396c7530d2eee38}{ButtonStavka1000}};}
+\DoxyCodeLine{00030\ \ \ \ \ QPushButton\ *\mbox{\hyperlink{class_ui___ruletka_abb67e9b343f82c7b486cc1e01cf94005}{ButtonStavka500}};}
+\DoxyCodeLine{00031\ \ \ \ \ QPushButton\ *\mbox{\hyperlink{class_ui___ruletka_a4fd6abe8dd8e9e5f3a685b32183b30cb}{ButtonStavka100}};}
+\DoxyCodeLine{00032\ \ \ \ \ QPushButton\ *\mbox{\hyperlink{class_ui___ruletka_a88c3e5ca852eab232289dc9031059aaf}{ButtonStavkaRed}};}
+\DoxyCodeLine{00033\ \ \ \ \ QPushButton\ *\mbox{\hyperlink{class_ui___ruletka_abd84dad25fbcfb67bcd7e26c105dde60}{ButtonStavkaBlack}};}
+\DoxyCodeLine{00034\ \ \ \ \ QPushButton\ *\mbox{\hyperlink{class_ui___ruletka_ac5147d387a3006b618855bc9b4558edb}{ButtonStavkaGreen}};}
+\DoxyCodeLine{00035\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___ruletka_a34a9661a2f58f8ab9da1c1d866ec131c}{label}};}
+\DoxyCodeLine{00036\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___ruletka_a1aa09419d99eda53d78255724b78186a}{label\_2}};}
+\DoxyCodeLine{00037\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___ruletka_a13782eaa6939a4269e9802118538a855}{label\_text}};}
+\DoxyCodeLine{00038\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___ruletka_a62aab04229c5367d05a672a3c62bffeb}{label\_text2}};}
+\DoxyCodeLine{00039\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___ruletka_a4843c19798d2f3e2dfc6e2c7dcd6c27c}{label\_strel}};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_ui___ruletka_a308a7081bd23fb6de9232e38f0dab97b}{setupUi}}(QDialog\ *\mbox{\hyperlink{class_ruletka}{Ruletka}})}
+\DoxyCodeLine{00042\ \ \ \ \ \{}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_ruletka}{Ruletka}}-\/>objectName().isEmpty())}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ruletka}{Ruletka}}-\/>setObjectName(\textcolor{stringliteral}{"{}Ruletka"{}});}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ruletka}{Ruletka}}-\/>resize(800,\ 600);}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a5bdef535f4535b1c65723d2adc222f17}{Fonlabel}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ruletka}{Ruletka}});}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a5bdef535f4535b1c65723d2adc222f17}{Fonlabel}}-\/>setObjectName(\textcolor{stringliteral}{"{}Fonlabel"{}});}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a5bdef535f4535b1c65723d2adc222f17}{Fonlabel}}-\/>setGeometry(QRect(-\/10,\ -\/10,\ 821,\ 621));}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a3131d30b7e76a8cf0bfca4c7b8800fd3}{RuletkaObjectLabell}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ruletka}{Ruletka}});}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a3131d30b7e76a8cf0bfca4c7b8800fd3}{RuletkaObjectLabell}}-\/>setObjectName(\textcolor{stringliteral}{"{}RuletkaObjectLabell"{}});}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a3131d30b7e76a8cf0bfca4c7b8800fd3}{RuletkaObjectLabell}}-\/>setGeometry(QRect(235,\ 100,\ 330,\ 330));}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_abc59d1b1b6c52fb1466441a5b29afd46}{label\_robux}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ruletka}{Ruletka}});}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_abc59d1b1b6c52fb1466441a5b29afd46}{label\_robux}}-\/>setObjectName(\textcolor{stringliteral}{"{}label\_robux"{}});}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_abc59d1b1b6c52fb1466441a5b29afd46}{label\_robux}}-\/>setGeometry(QRect(750,\ 10,\ 41,\ 41));}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a00ce7d7eb58baa9642aecada79b330f3}{count\_robux}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ruletka}{Ruletka}});}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a00ce7d7eb58baa9642aecada79b330f3}{count\_robux}}-\/>setObjectName(\textcolor{stringliteral}{"{}count\_robux"{}});}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a00ce7d7eb58baa9642aecada79b330f3}{count\_robux}}-\/>setGeometry(QRect(340,\ 10,\ 401,\ 41));}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ QFont\ font;}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ font.setFamilies(\{QString::fromUtf8(\textcolor{stringliteral}{"{}Calibri"{}})\});}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ font.setPointSize(20);}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ font.setBold(\textcolor{keyword}{true});}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a00ce7d7eb58baa9642aecada79b330f3}{count\_robux}}-\/>setFont(font);}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a00ce7d7eb58baa9642aecada79b330f3}{count\_robux}}-\/>setLayoutDirection(Qt::LayoutDirection::RightToLeft);}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a00ce7d7eb58baa9642aecada79b330f3}{count\_robux}}-\/>setAlignment(Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter);}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a4cf6989def491ef1a96b9defc21dba43}{BackButton}}\ =\ \textcolor{keyword}{new}\ QPushButton(\mbox{\hyperlink{class_ruletka}{Ruletka}});}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a4cf6989def491ef1a96b9defc21dba43}{BackButton}}-\/>setObjectName(\textcolor{stringliteral}{"{}BackButton"{}});}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a4cf6989def491ef1a96b9defc21dba43}{BackButton}}-\/>setGeometry(QRect(10,\ 10,\ 51,\ 31));}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ QFont\ font1;}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ font1.setFamilies(\{QString::fromUtf8(\textcolor{stringliteral}{"{}Calibri"{}})\});}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ font1.setPointSize(26);}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ font1.setBold(\textcolor{keyword}{true});}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a4cf6989def491ef1a96b9defc21dba43}{BackButton}}-\/>setFont(font1);}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_af527b08bf42bd1a3cb6618e6e62c770c}{ButtonPlay}}\ =\ \textcolor{keyword}{new}\ QPushButton(\mbox{\hyperlink{class_ruletka}{Ruletka}});}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_af527b08bf42bd1a3cb6618e6e62c770c}{ButtonPlay}}-\/>setObjectName(\textcolor{stringliteral}{"{}ButtonPlay"{}});}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_af527b08bf42bd1a3cb6618e6e62c770c}{ButtonPlay}}-\/>setGeometry(QRect(510,\ 490,\ 71,\ 31));}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ QFont\ font2;}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ font2.setFamilies(\{QString::fromUtf8(\textcolor{stringliteral}{"{}Calibri"{}})\});}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ font2.setPointSize(14);}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ font2.setBold(\textcolor{keyword}{false});}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_af527b08bf42bd1a3cb6618e6e62c770c}{ButtonPlay}}-\/>setFont(font2);}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a64ceb8ac0475c14da396c7530d2eee38}{ButtonStavka1000}}\ =\ \textcolor{keyword}{new}\ QPushButton(\mbox{\hyperlink{class_ruletka}{Ruletka}});}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a64ceb8ac0475c14da396c7530d2eee38}{ButtonStavka1000}}-\/>setObjectName(\textcolor{stringliteral}{"{}ButtonStavka1000"{}});}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a64ceb8ac0475c14da396c7530d2eee38}{ButtonStavka1000}}-\/>setGeometry(QRect(430,\ 490,\ 71,\ 31));}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ QFont\ font3;}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ font3.setFamilies(\{QString::fromUtf8(\textcolor{stringliteral}{"{}Calibri"{}})\});}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ font3.setPointSize(12);}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ font3.setBold(\textcolor{keyword}{false});}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a64ceb8ac0475c14da396c7530d2eee38}{ButtonStavka1000}}-\/>setFont(font3);}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_abb67e9b343f82c7b486cc1e01cf94005}{ButtonStavka500}}\ =\ \textcolor{keyword}{new}\ QPushButton(\mbox{\hyperlink{class_ruletka}{Ruletka}});}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_abb67e9b343f82c7b486cc1e01cf94005}{ButtonStavka500}}-\/>setObjectName(\textcolor{stringliteral}{"{}ButtonStavka500"{}});}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_abb67e9b343f82c7b486cc1e01cf94005}{ButtonStavka500}}-\/>setGeometry(QRect(350,\ 490,\ 71,\ 31));}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_abb67e9b343f82c7b486cc1e01cf94005}{ButtonStavka500}}-\/>setFont(font3);}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a4fd6abe8dd8e9e5f3a685b32183b30cb}{ButtonStavka100}}\ =\ \textcolor{keyword}{new}\ QPushButton(\mbox{\hyperlink{class_ruletka}{Ruletka}});}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a4fd6abe8dd8e9e5f3a685b32183b30cb}{ButtonStavka100}}-\/>setObjectName(\textcolor{stringliteral}{"{}ButtonStavka100"{}});}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a4fd6abe8dd8e9e5f3a685b32183b30cb}{ButtonStavka100}}-\/>setGeometry(QRect(270,\ 490,\ 71,\ 31));}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a4fd6abe8dd8e9e5f3a685b32183b30cb}{ButtonStavka100}}-\/>setFont(font3);}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a88c3e5ca852eab232289dc9031059aaf}{ButtonStavkaRed}}\ =\ \textcolor{keyword}{new}\ QPushButton(\mbox{\hyperlink{class_ruletka}{Ruletka}});}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a88c3e5ca852eab232289dc9031059aaf}{ButtonStavkaRed}}-\/>setObjectName(\textcolor{stringliteral}{"{}ButtonStavkaRed"{}});}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a88c3e5ca852eab232289dc9031059aaf}{ButtonStavkaRed}}-\/>setGeometry(QRect(270,\ 530,\ 71,\ 31));}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ QFont\ font4;}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ font4.setFamilies(\{QString::fromUtf8(\textcolor{stringliteral}{"{}Calibri"{}})\});}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ font4.setPointSize(12);}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ font4.setBold(\textcolor{keyword}{true});}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a88c3e5ca852eab232289dc9031059aaf}{ButtonStavkaRed}}-\/>setFont(font4);}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_abd84dad25fbcfb67bcd7e26c105dde60}{ButtonStavkaBlack}}\ =\ \textcolor{keyword}{new}\ QPushButton(\mbox{\hyperlink{class_ruletka}{Ruletka}});}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_abd84dad25fbcfb67bcd7e26c105dde60}{ButtonStavkaBlack}}-\/>setObjectName(\textcolor{stringliteral}{"{}ButtonStavkaBlack"{}});}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_abd84dad25fbcfb67bcd7e26c105dde60}{ButtonStavkaBlack}}-\/>setGeometry(QRect(350,\ 530,\ 71,\ 31));}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_abd84dad25fbcfb67bcd7e26c105dde60}{ButtonStavkaBlack}}-\/>setFont(font4);}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_ac5147d387a3006b618855bc9b4558edb}{ButtonStavkaGreen}}\ =\ \textcolor{keyword}{new}\ QPushButton(\mbox{\hyperlink{class_ruletka}{Ruletka}});}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_ac5147d387a3006b618855bc9b4558edb}{ButtonStavkaGreen}}-\/>setObjectName(\textcolor{stringliteral}{"{}ButtonStavkaGreen"{}});}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_ac5147d387a3006b618855bc9b4558edb}{ButtonStavkaGreen}}-\/>setGeometry(QRect(430,\ 530,\ 71,\ 31));}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_ac5147d387a3006b618855bc9b4558edb}{ButtonStavkaGreen}}-\/>setFont(font4);}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a34a9661a2f58f8ab9da1c1d866ec131c}{label}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ruletka}{Ruletka}});}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a34a9661a2f58f8ab9da1c1d866ec131c}{label}}-\/>setObjectName(\textcolor{stringliteral}{"{}label"{}});}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a34a9661a2f58f8ab9da1c1d866ec131c}{label}}-\/>setGeometry(QRect(160,\ 490,\ 111,\ 20));}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a34a9661a2f58f8ab9da1c1d866ec131c}{label}}-\/>setFont(font4);}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a1aa09419d99eda53d78255724b78186a}{label\_2}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ruletka}{Ruletka}});}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a1aa09419d99eda53d78255724b78186a}{label\_2}}-\/>setObjectName(\textcolor{stringliteral}{"{}label\_2"{}});}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a1aa09419d99eda53d78255724b78186a}{label\_2}}-\/>setGeometry(QRect(160,\ 530,\ 111,\ 20));}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a1aa09419d99eda53d78255724b78186a}{label\_2}}-\/>setFont(font4);}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a13782eaa6939a4269e9802118538a855}{label\_text}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ruletka}{Ruletka}});}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a13782eaa6939a4269e9802118538a855}{label\_text}}-\/>setObjectName(\textcolor{stringliteral}{"{}label\_text"{}});}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a13782eaa6939a4269e9802118538a855}{label\_text}}-\/>setGeometry(QRect(240,\ 50,\ 321,\ 41));}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ QFont\ font5;}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ font5.setFamilies(\{QString::fromUtf8(\textcolor{stringliteral}{"{}Calibri"{}})\});}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ font5.setPointSize(16);}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ font5.setBold(\textcolor{keyword}{false});}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a13782eaa6939a4269e9802118538a855}{label\_text}}-\/>setFont(font5);}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a62aab04229c5367d05a672a3c62bffeb}{label\_text2}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ruletka}{Ruletka}});}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a62aab04229c5367d05a672a3c62bffeb}{label\_text2}}-\/>setObjectName(\textcolor{stringliteral}{"{}label\_text2"{}});}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a62aab04229c5367d05a672a3c62bffeb}{label\_text2}}-\/>setGeometry(QRect(310,\ 220,\ 181,\ 81));}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ QFont\ font6;}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ font6.setFamilies(\{QString::fromUtf8(\textcolor{stringliteral}{"{}Calibri"{}})\});}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ font6.setPointSize(16);}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ font6.setBold(\textcolor{keyword}{true});}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a62aab04229c5367d05a672a3c62bffeb}{label\_text2}}-\/>setFont(font6);}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a62aab04229c5367d05a672a3c62bffeb}{label\_text2}}-\/>setLayoutDirection(Qt::LayoutDirection::LeftToRight);}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a62aab04229c5367d05a672a3c62bffeb}{label\_text2}}-\/>setAlignment(Qt::AlignmentFlag::AlignCenter);}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a4843c19798d2f3e2dfc6e2c7dcd6c27c}{label\_strel}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ruletka}{Ruletka}});}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a4843c19798d2f3e2dfc6e2c7dcd6c27c}{label\_strel}}-\/>setObjectName(\textcolor{stringliteral}{"{}label\_strel"{}});}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a4843c19798d2f3e2dfc6e2c7dcd6c27c}{label\_strel}}-\/>setGeometry(QRect(383,\ 130,\ 31,\ 31));}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a098e289ea6ffbdc9a9cba89dc64eb226}{retranslateUi}}(\mbox{\hyperlink{class_ruletka}{Ruletka}});}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ QMetaObject::connectSlotsByName(\mbox{\hyperlink{class_ruletka}{Ruletka}});}
+\DoxyCodeLine{00146\ \ \ \ \ \}\ \textcolor{comment}{//\ setupUi}}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00148\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_ui___ruletka_a098e289ea6ffbdc9a9cba89dc64eb226}{retranslateUi}}(QDialog\ *\mbox{\hyperlink{class_ruletka}{Ruletka}})}
+\DoxyCodeLine{00149\ \ \ \ \ \{}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ruletka}{Ruletka}}-\/>setWindowTitle(QCoreApplication::translate(\textcolor{stringliteral}{"{}Ruletka"{}},\ \textcolor{stringliteral}{"{}Dialog"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a5bdef535f4535b1c65723d2adc222f17}{Fonlabel}}-\/>setText(QString());}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a3131d30b7e76a8cf0bfca4c7b8800fd3}{RuletkaObjectLabell}}-\/>setText(QString());}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_abc59d1b1b6c52fb1466441a5b29afd46}{label\_robux}}-\/>setText(QString());}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a00ce7d7eb58baa9642aecada79b330f3}{count\_robux}}-\/>setText(QString());}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a4cf6989def491ef1a96b9defc21dba43}{BackButton}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}Ruletka"{}},\ \textcolor{stringliteral}{"{}<-\/"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_af527b08bf42bd1a3cb6618e6e62c770c}{ButtonPlay}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}Ruletka"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)320\(\backslash\)230\(\backslash\)320\(\backslash\)263\(\backslash\)321\(\backslash\)200\(\backslash\)320\(\backslash\)260\(\backslash\)321\(\backslash\)202\(\backslash\)321\(\backslash\)214"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a64ceb8ac0475c14da396c7530d2eee38}{ButtonStavka1000}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}Ruletka"{}},\ \textcolor{stringliteral}{"{}1000"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_abb67e9b343f82c7b486cc1e01cf94005}{ButtonStavka500}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}Ruletka"{}},\ \textcolor{stringliteral}{"{}500"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a4fd6abe8dd8e9e5f3a685b32183b30cb}{ButtonStavka100}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}Ruletka"{}},\ \textcolor{stringliteral}{"{}100"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a88c3e5ca852eab232289dc9031059aaf}{ButtonStavkaRed}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}Ruletka"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)320\(\backslash\)232\(\backslash\)321\(\backslash\)200\(\backslash\)320\(\backslash\)260\(\backslash\)321\(\backslash\)201\(\backslash\)320\(\backslash\)275\(\backslash\)320\(\backslash\)276\(\backslash\)320\(\backslash\)265"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_abd84dad25fbcfb67bcd7e26c105dde60}{ButtonStavkaBlack}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}Ruletka"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)320\(\backslash\)247\(\backslash\)320\(\backslash\)265\(\backslash\)321\(\backslash\)200\(\backslash\)320\(\backslash\)275\(\backslash\)320\(\backslash\)276\(\backslash\)320\(\backslash\)265"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_ac5147d387a3006b618855bc9b4558edb}{ButtonStavkaGreen}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}Ruletka"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)320\(\backslash\)227\(\backslash\)320\(\backslash\)265\(\backslash\)320\(\backslash\)273\(\backslash\)320\(\backslash\)265\(\backslash\)320\(\backslash\)275\(\backslash\)320\(\backslash\)276\(\backslash\)320\(\backslash\)265"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a34a9661a2f58f8ab9da1c1d866ec131c}{label}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}Ruletka"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)320\(\backslash\)241\(\backslash\)321\(\backslash\)203\(\backslash\)320\(\backslash\)274\(\backslash\)320\(\backslash\)274\(\backslash\)320\(\backslash\)260\ \(\backslash\)321\(\backslash\)201\(\backslash\)321\(\backslash\)202\(\backslash\)320\(\backslash\)260\(\backslash\)320\(\backslash\)262\(\backslash\)320\(\backslash\)272\(\backslash\)320\(\backslash\)270"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a1aa09419d99eda53d78255724b78186a}{label\_2}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}Ruletka"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)320\(\backslash\)236\(\backslash\)320\(\backslash\)261\(\backslash\)321\(\backslash\)212\(\backslash\)320\(\backslash\)265\(\backslash\)320\(\backslash\)272\(\backslash\)321\(\backslash\)202\ \(\backslash\)321\(\backslash\)201\(\backslash\)321\(\backslash\)202\(\backslash\)320\(\backslash\)260\(\backslash\)320\(\backslash\)262\(\backslash\)320\(\backslash\)272\(\backslash\)320\(\backslash\)270"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a13782eaa6939a4269e9802118538a855}{label\_text}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}Ruletka"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)320\(\backslash\)241\(\backslash\)321\(\backslash\)202\(\backslash\)320\(\backslash\)260\(\backslash\)320\(\backslash\)262\(\backslash\)320\(\backslash\)272\(\backslash\)320\(\backslash\)260:\ 0"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a62aab04229c5367d05a672a3c62bffeb}{label\_text2}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}Ruletka"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)320\(\backslash\)241\(\backslash\)320\(\backslash\)264\(\backslash\)320\(\backslash\)265\(\backslash\)320\(\backslash\)273\(\backslash\)320\(\backslash\)260\(\backslash\)320\(\backslash\)271\(\backslash\)321\(\backslash\)202\(\backslash\)320\(\backslash\)265\ \(\backslash\)321\(\backslash\)201\(\backslash\)321\(\backslash\)202\(\backslash\)320\(\backslash\)260\(\backslash\)320\(\backslash\)262\(\backslash\)320\(\backslash\)272\(\backslash\)321\(\backslash\)203"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___ruletka_a4843c19798d2f3e2dfc6e2c7dcd6c27c}{label\_strel}}-\/>setText(QString());}
+\DoxyCodeLine{00168\ \ \ \ \ \}\ \textcolor{comment}{//\ retranslateUi}}
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00170\ \};}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00172\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ui}{Ui}}\ \{}
+\DoxyCodeLine{00173\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ui_1_1_ruletka}{Ruletka}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_ui___ruletka}{Ui\_Ruletka}}\ \{\};}
+\DoxyCodeLine{00174\ \}\ \textcolor{comment}{//\ namespace\ Ui}}
+\DoxyCodeLine{00175\ }
+\DoxyCodeLine{00176\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00177\ }
+\DoxyCodeLine{00178\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ UI\_RULETKA\_H}}
 
 \end{DoxyCode}
