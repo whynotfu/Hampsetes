@@ -2,35 +2,35 @@
 #include "ui_baraban.h"
 #include "client_functions.h"
 
-
 Baraban::Baraban(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::Baraban)
 {
     ui->setupUi(this);
 
-    // Настраиваем само коно
+    ui->count_robux->setText(QString::number(robuks));
+    // Настраиваем само окно
     this->setWindowIcon(QIcon(path() + "Images/icon.png"));
     this->setWindowTitle("Baraban");
     this->setFixedSize(800,600);
 
     //Делаем картиночки из текста
+    //картинка для фона
     QPixmap BarabanFon(path() + "Images/GamesFon.png");
     ui->Fonlabel->setPixmap(BarabanFon);
 
+    //картинка самого барабана со слотами
     QPixmap BarabanObj(path() + "Images/BarabanObject.png");
     ui->BarabanObjectLabel->setPixmap(BarabanObj);
 
+    //Картинка робуксов
     QPixmap RobuxLabel(path() + "Images/Robux.png");
     ui->label_robux->setPixmap(RobuxLabel);
 
+    //Текст для ставок
     ui->label_stavka->setText("Ставка: 0");
 
     this->size_of_stavka = 0;
-
-    //Получаем робуксы
-    this->get_robux();
-    ui->count_robux->setText(QString::number(this->robux));
 }
 
 Baraban::~Baraban()
@@ -40,25 +40,20 @@ Baraban::~Baraban()
 
 void Baraban::slot_show(){
     this->show();
+    ui->count_robux->setText(QString::number(robuks));
 }
 
 void Baraban::on_pushButtonPlay_clicked()
 {
     // Функция рандома для слотов
-    if (this->size_of_stavka && this->robux >= this->size_of_stavka){
+    if (this->size_of_stavka && robuks >= this->size_of_stavka){
         // Вот это надо переделать под сервер!!!!!!!!!!
-        this->robux -= this->size_of_stavka;
-        ui->count_robux->setText(QString::number(this->robux));
+        robuks -= this->size_of_stavka;
+        ui->count_robux->setText(QString::number(robuks));
         // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         this->run_slots(this->size_of_stavka);
     }
 }
-
-//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! - Переделать под сервер
-void Baraban::get_robux(){
-    this->robux = 1000;
-}
-//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 void Baraban::run_slots(int size){
     //Берем у сервера информацию он крутке слотов
@@ -73,8 +68,8 @@ void Baraban::run_slots(int size){
         this->set_item3(get_num_of_slots);
 
         // Изменить под сервер!!!!!!!!!!!!!!!!!!!
-        this->robux += size * 2;
-        ui->count_robux->setText(QString::number(this->robux));
+        robuks += size * 5;
+        ui->count_robux->setText(QString::number(robuks));
         // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     }
     // Если получили 0 - то есть просрали

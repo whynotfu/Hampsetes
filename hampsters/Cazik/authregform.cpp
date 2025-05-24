@@ -3,6 +3,7 @@
 #include "client_functions.h"
 #include <QPixmap>
 #include <QIcon>
+#include <QMessageBox>
 
 AuthRegForm::AuthRegForm(QWidget *parent)
     : QDialog(parent)
@@ -10,25 +11,22 @@ AuthRegForm::AuthRegForm(QWidget *parent)
 {
     ui->setupUi(this);
 
-    //Работа с окном
+    // Настройка окна
     this->setWindowIcon(QIcon(path() + "Images/icon.png"));
     this->setWindowTitle("Mega Casino");
-    this->setFixedSize(400,300);
+    this->setFixedSize(400, 300);
 
     set_visible_inReg(false);
 
-    //Фон в логине
+    // Фон в логине
     QPixmap FonReg(path() + "Images/FonCasinoReg.png");
     ui->FonLabel->setPixmap(FonReg);
 
-    //Картинка с названием в логине
+    // Картинка с названием в логине
     QPixmap NameReg(path() + "Images/Casic.png");
     ui->NameLabel->setPixmap(NameReg);
 
     socket = new QTcpSocket(this);
-
-
-
 }
 
 AuthRegForm::~AuthRegForm()
@@ -36,8 +34,7 @@ AuthRegForm::~AuthRegForm()
     delete ui;
 }
 
-//Смена с регистрации на логин и наоборот (смотря что занести в функцию)
-// change = false, то это окно логина, change = true - окно регистрации
+// Смена между окнами регистрации и авторизации
 void AuthRegForm::set_visible_inReg(bool change)
 {
     ui->RepeatLabel->setVisible(change);
@@ -45,7 +42,7 @@ void AuthRegForm::set_visible_inReg(bool change)
     ui->RegButton->setVisible(change);
 
     ui->AuthButton->setVisible(!change);
-    ui->ToRegButton->setText(change?"to Auth":"to Reg");
+    ui->ToRegButton->setText(change ? "to Auth" : "to Reg");
 }
 
 void AuthRegForm::on_ToRegButton_clicked()
@@ -53,38 +50,62 @@ void AuthRegForm::on_ToRegButton_clicked()
     set_visible_inReg(!ui->RepeatLabel->isVisible());
 }
 
-//Сам логин (ну когда на кнопку нажали)
+// Логика авторизации
 void AuthRegForm::on_AuthButton_clicked()
 {
-    if(auth(ui->Loginline->text(), ui->Passwordline->text())){
+    QString login = ui->Loginline->text();
+    QString password = ui->Passwordline->text();
 
-        socket->connectToHost("192.168.55.106",33333);
-        QString p = "Удали доту пж";
-        socket -> write(p.toUtf8());
+    int result = auth(login, password);
 
-        emit auth_ok(ui->Loginline->text());////// !!!!!!!!!!!!!
-        this->close();
+    switch (result) {
+    case 1: // Успешный вход обычного пользователя
+        QMessageBox::information(this, "Успех", "Вы вошли как обычный пользователь.");
+        emit auth_ok(login); // Передаем сигнал о успешной авторизации
+        currentUsername = login; // Сохраняем логин текущего пользователя
+        this->close();       // Закрываем форму
+        break;
+
+    case 2: // Успешный вход администратора
+        QMessageBox::information(this, "Успех", "Вы вошли как администратор.");
+        emit auth_ok(login); // Передаем сигнал о успешной авторизации
+        currentUsername = login; // Сохраняем логин текущего пользователя
+        this->close();       // Закрываем форму
+        break;
+
+    case 3: // Неудачная авторизация
+        QMessageBox::warning(this, "Ошибка", "Неверный логин или пароль.");
+        clear(); // Очищаем поля ввода
+        break;
+
+    default:
+        QMessageBox::critical(this, "Ошибка", "Неизвестная ошибка авторизации.");
+        clear(); // Очищаем поля ввода
+        break;
     }
-    else{clear();}
 }
 
-//Сама регистрация (ну когда на кнопку нажали)
+// Логика регистрации
 void AuthRegForm::on_RegButton_clicked()
 {
-    if(reg( ui->Loginline->text(), ui->Passwordline->text(), ui->Repeatline->text()))
-    {
-        emit auth_ok(ui->Loginline->text());
-        this->close();
+    QString login = ui->Loginline->text();
+    QString password = ui->Passwordline->text();
+    QString repeatPassword = ui->Repeatline->text();
+
+    if (reg(login, password, repeatPassword)) {
+        QMessageBox::information(this, "Успех", "Регистрация прошла успешно.");
+        emit auth_ok(login); // Передаем сигнал о успешной регистрации
+        this->close();       // Закрываем форму
+    } else {
+        QMessageBox::warning(this, "Ошибка", "Ошибка регистрации.");
+        clear(); // Очищаем поля ввода
     }
-    else{clear();}
 }
 
-//Функция, отчищающая поля ввода
+// Очистка полей ввода
 void AuthRegForm::clear()
 {
     ui->Loginline->setText("");
     ui->Passwordline->setText("");
     ui->Repeatline->setText("");
 }
-
-
