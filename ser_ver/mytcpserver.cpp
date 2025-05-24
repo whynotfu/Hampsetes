@@ -1,3 +1,14 @@
+/**
+ * @file mytcpserver.cpp
+ * @brief Реализация TCP сервера казино
+ * @author Команда разработчиков
+ * @date 2025
+ * @version 1.0
+ * 
+ * Содержит реализацию класса MyTcpServer для обработки
+ * сетевых подключений и коммуникации с клиентами казино.
+ */
+
 #include "mytcpserver.h"
 #include <QDebug>
 #include <QCoreApplication>

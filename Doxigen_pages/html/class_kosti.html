@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Hampsetes: Kosti Class Reference</title>
+<title>Hampsetes Casino: Kosti Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,8 +32,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Hampsetes
+   <div id="projectname">Hampsetes Casino<span id="projectnumber">&#160;1.0</span>
    </div>
+   <div id="projectbrief">Qt-based Casino Application with Multiple Mini-Games</div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -103,13 +104,17 @@ $(function(){initNavTree('class_kosti.html',''); initResizable(true); });
 
 <div class="header">
   <div class="summary">
+<a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-slots">Private Slots</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_kosti-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Kosti Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс <a class="el" href="class_kosti.html" title="Класс Kosti.">Kosti</a>.  
+<p>Класс игры в кости  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="kosti_8h_source.html">kosti.h</a>&gt;</code></p>
@@ -120,18 +125,84 @@ Inheritance diagram for Kosti:</div>
   <img src="class_kosti.png" alt=""/>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:aa16fe12965887a24b29d9f6480878260" id="r_aa16fe12965887a24b29d9f6480878260"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa16fe12965887a24b29d9f6480878260">to_main</a> (QString username)</td></tr>
+<tr class="memdesc:aa16fe12965887a24b29d9f6480878260"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сигнал возврата в главное меню  <br /></td></tr>
+<tr class="separator:aa16fe12965887a24b29d9f6480878260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4d8e95d954885dd93318c55426d0a7de" id="r_a4d8e95d954885dd93318c55426d0a7de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d8e95d954885dd93318c55426d0a7de">Kosti</a> (QWidget *parent=nullptr)</td></tr>
-<tr class="memdesc:a4d8e95d954885dd93318c55426d0a7de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса <a class="el" href="class_kosti.html" title="Класс Kosti.">Kosti</a>.  <br /></td></tr>
+<tr class="memdesc:a4d8e95d954885dd93318c55426d0a7de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор игры в кости  <br /></td></tr>
 <tr class="separator:a4d8e95d954885dd93318c55426d0a7de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04bac6d629a1d051b526fe91a3e24056" id="r_a04bac6d629a1d051b526fe91a3e24056"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04bac6d629a1d051b526fe91a3e24056">~Kosti</a> ()</td></tr>
-<tr class="memdesc:a04bac6d629a1d051b526fe91a3e24056"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор класса <a class="el" href="class_kosti.html" title="Класс Kosti.">Kosti</a>.  <br /></td></tr>
+<tr class="memdesc:a04bac6d629a1d051b526fe91a3e24056"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор игры в кости  <br /></td></tr>
 <tr class="separator:a04bac6d629a1d051b526fe91a3e24056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dc7b4364ee16224cd9588d58322e4e6" id="r_a6dc7b4364ee16224cd9588d58322e4e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6dc7b4364ee16224cd9588d58322e4e6">slot_show</a> ()</td></tr>
+<tr class="memdesc:a6dc7b4364ee16224cd9588d58322e4e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот для показа окна игры  <br /></td></tr>
+<tr class="separator:a6dc7b4364ee16224cd9588d58322e4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80b9d4d64ae7c108d049f13c448fa2fe" id="r_a80b9d4d64ae7c108d049f13c448fa2fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80b9d4d64ae7c108d049f13c448fa2fe">updateBalance</a> ()</td></tr>
+<tr class="memdesc:a80b9d4d64ae7c108d049f13c448fa2fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновление отображения баланса игрока  <br /></td></tr>
+<tr class="separator:a80b9d4d64ae7c108d049f13c448fa2fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-slots" name="pri-slots"></a>
+Private Slots</h2></td></tr>
+<tr class="memitem:ab970ed2ea123ec4540926ade454d4bd1" id="r_ab970ed2ea123ec4540926ade454d4bd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab970ed2ea123ec4540926ade454d4bd1">on_pushButtonPlay_clicked</a> ()</td></tr>
+<tr class="memdesc:ab970ed2ea123ec4540926ade454d4bd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработчик кнопки "Играть".  <br /></td></tr>
+<tr class="separator:ab970ed2ea123ec4540926ade454d4bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0723442e86d4d2c42354ef08d14fbff" id="r_af0723442e86d4d2c42354ef08d14fbff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0723442e86d4d2c42354ef08d14fbff">on_pushButton1000_clicked</a> ()</td></tr>
+<tr class="memdesc:af0723442e86d4d2c42354ef08d14fbff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработчик кнопки ставки 1000 робуксов  <br /></td></tr>
+<tr class="separator:af0723442e86d4d2c42354ef08d14fbff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f38ef26f33c7f890e1c7ee278232f15" id="r_a7f38ef26f33c7f890e1c7ee278232f15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f38ef26f33c7f890e1c7ee278232f15">on_pushButton500_clicked</a> ()</td></tr>
+<tr class="memdesc:a7f38ef26f33c7f890e1c7ee278232f15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработчик кнопки ставки 500 робуксов  <br /></td></tr>
+<tr class="separator:a7f38ef26f33c7f890e1c7ee278232f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac72cc9deb3ad311f98ce90bcf1867890" id="r_ac72cc9deb3ad311f98ce90bcf1867890"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac72cc9deb3ad311f98ce90bcf1867890">on_pushButton100_clicked</a> ()</td></tr>
+<tr class="memdesc:ac72cc9deb3ad311f98ce90bcf1867890"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработчик кнопки ставки 100 робуксов  <br /></td></tr>
+<tr class="separator:ac72cc9deb3ad311f98ce90bcf1867890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3464a34daed3818f1d7e187280689aba" id="r_a3464a34daed3818f1d7e187280689aba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3464a34daed3818f1d7e187280689aba">on_BackButton_clicked</a> ()</td></tr>
+<tr class="memdesc:a3464a34daed3818f1d7e187280689aba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработчик кнопки возврата в главное меню  <br /></td></tr>
+<tr class="separator:a3464a34daed3818f1d7e187280689aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a5b32f2708520e3329adf24b7205fcc90" id="r_a5b32f2708520e3329adf24b7205fcc90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b32f2708520e3329adf24b7205fcc90">rollDice</a> ()</td></tr>
+<tr class="memdesc:a5b32f2708520e3329adf24b7205fcc90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выполнение броска костей  <br /></td></tr>
+<tr class="separator:a5b32f2708520e3329adf24b7205fcc90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93838eed8fb01142b8ee1080a6c56711" id="r_a93838eed8fb01142b8ee1080a6c56711"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93838eed8fb01142b8ee1080a6c56711">updateDiceImages</a> (int dice1, int dice2)</td></tr>
+<tr class="memdesc:a93838eed8fb01142b8ee1080a6c56711"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновление изображений костей  <br /></td></tr>
+<tr class="separator:a93838eed8fb01142b8ee1080a6c56711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad560cafbaab2e5cf48acedb6f158a83d" id="r_ad560cafbaab2e5cf48acedb6f158a83d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad560cafbaab2e5cf48acedb6f158a83d">showResult</a> (int dice1, int dice2)</td></tr>
+<tr class="memdesc:ad560cafbaab2e5cf48acedb6f158a83d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Показ результата игры  <br /></td></tr>
+<tr class="separator:ad560cafbaab2e5cf48acedb6f158a83d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a5bfe6f8a61320a98ad32ea955febe5bd" id="r_a5bfe6f8a61320a98ad32ea955febe5bd"><td class="memItemLeft" align="right" valign="top">Ui::Kosti *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5bfe6f8a61320a98ad32ea955febe5bd">ui</a></td></tr>
+<tr class="memdesc:a5bfe6f8a61320a98ad32ea955febe5bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на UI объект игры в кости  <br /></td></tr>
+<tr class="separator:a5bfe6f8a61320a98ad32ea955febe5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a906b33da6470251b79e6323822cdd178" id="r_a906b33da6470251b79e6323822cdd178"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a906b33da6470251b79e6323822cdd178">size_of_stavka</a></td></tr>
+<tr class="memdesc:a906b33da6470251b79e6323822cdd178"><td class="mdescLeft">&#160;</td><td class="mdescRight">Размер текущей ставки игрока  <br /></td></tr>
+<tr class="separator:a906b33da6470251b79e6323822cdd178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab38274edb90c0d1db41701a651f9be06" id="r_ab38274edb90c0d1db41701a651f9be06"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab38274edb90c0d1db41701a651f9be06">robuks</a></td></tr>
+<tr class="memdesc:ab38274edb90c0d1db41701a651f9be06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущий баланс игрока в робуксах  <br /></td></tr>
+<tr class="separator:ab38274edb90c0d1db41701a651f9be06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Класс <a class="el" href="class_kosti.html" title="Класс Kosti.">Kosti</a>. </p>
-<p>Класс <a class="el" href="class_kosti.html" title="Класс Kosti.">Kosti</a> представляет окно игры "Kosti", наследуемое от QDialog. Он отвечает за инициализацию и отображение интерфейса игры. </p>
+<div class="textblock"><p>Класс игры в кости </p>
+<p>Класс <a class="el" href="class_kosti.html" title="Класс игры в кости">Kosti</a> реализует азартную игру в кости, где игрок делает ставку и бросает две игральные кости для получения выигрыша.</p>
+<p>Правила игры:</p><ul>
+<li>Игрок выбирает размер ставки (100, 500 или 1000 робуксов)</li>
+<li>Бросается две игральные кости</li>
+<li>Выигрыш зависит от суммы очков на костях:<ul>
+<li>Сумма 7 или 11 - выигрыш удваивается</li>
+<li>Дубль (одинаковые числа) - выигрыш утраивается</li>
+<li>Другие комбинации - ставка теряется</li>
+</ul>
+</li>
+<li>Анимация показывает изображения костей с выпавшими значениями</li>
+</ul>
+<p>Игра основана на удаче и предлагает хорошие коэффициенты выплат. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4d8e95d954885dd93318c55426d0a7de" name="a4d8e95d954885dd93318c55426d0a7de"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4d8e95d954885dd93318c55426d0a7de">&#9670;&#160;</a></span>Kosti()</h2>
@@ -156,21 +227,14 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Конструктор класса <a class="el" href="class_kosti.html" title="Класс Kosti.">Kosti</a>. </p>
-<p>Инициализирует окно игры "Kosti", устанавливая родительский виджет (при наличии) и настраивая элементы пользовательского интерфейса.</p>
+<p>Конструктор игры в кости </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parent</td><td>Родительский виджет (по умолчанию <code>nullptr</code>).</td></tr>
+    <tr><td class="paramname">parent</td><td>Родительский виджет (по умолчанию nullptr)</td></tr>
   </table>
   </dd>
 </dl>
-<p>Инициализирует окно игры "Kosti", устанавливая все необходимые элементы интерфейса, такие как иконка, заголовок окна и фиксированный размер. Для установки иконки используется функция <code><a class="el" href="client__functions_8cpp.html#a1269b8bdb80f7ffbee545318e161c51f" title="Возвращает путь к ресурсам.">path()</a></code>, которая возвращает путь к ресурсам.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">parent</td><td>Родительский виджет (по умолчанию <code>nullptr</code>). </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Инициализирует интерфейс игры и загружает изображения костей. </p>
 
 </div>
 </div>
@@ -189,8 +253,402 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Деструктор класса <a class="el" href="class_kosti.html" title="Класс Kosti.">Kosti</a>. </p>
-<p>Освобождает ресурсы, связанные с пользовательским интерфейсом. </p>
+<p>Деструктор игры в кости </p>
+<p>Освобождает ресурсы, используемые игрой в кости. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3464a34daed3818f1d7e187280689aba" name="a3464a34daed3818f1d7e187280689aba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3464a34daed3818f1d7e187280689aba">&#9670;&#160;</a></span>on_BackButton_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Kosti::on_BackButton_clicked </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обработчик кнопки возврата в главное меню </p>
+<p>Закрывает окно игры в кости и возвращает игрока в главное меню казино. </p>
+
+</div>
+</div>
+<a id="af0723442e86d4d2c42354ef08d14fbff" name="af0723442e86d4d2c42354ef08d14fbff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0723442e86d4d2c42354ef08d14fbff">&#9670;&#160;</a></span>on_pushButton1000_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Kosti::on_pushButton1000_clicked </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обработчик кнопки ставки 1000 робуксов </p>
+<p>Устанавливает размер ставки в 1000 робуксов. Проверяет достаточность средств на балансе игрока. </p>
+
+</div>
+</div>
+<a id="ac72cc9deb3ad311f98ce90bcf1867890" name="ac72cc9deb3ad311f98ce90bcf1867890"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac72cc9deb3ad311f98ce90bcf1867890">&#9670;&#160;</a></span>on_pushButton100_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Kosti::on_pushButton100_clicked </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обработчик кнопки ставки 100 робуксов </p>
+<p>Устанавливает размер ставки в 100 робуксов. Проверяет достаточность средств на балансе игрока. </p>
+
+</div>
+</div>
+<a id="a7f38ef26f33c7f890e1c7ee278232f15" name="a7f38ef26f33c7f890e1c7ee278232f15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f38ef26f33c7f890e1c7ee278232f15">&#9670;&#160;</a></span>on_pushButton500_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Kosti::on_pushButton500_clicked </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обработчик кнопки ставки 500 робуксов </p>
+<p>Устанавливает размер ставки в 500 робуксов. Проверяет достаточность средств на балансе игрока. </p>
+
+</div>
+</div>
+<a id="ab970ed2ea123ec4540926ade454d4bd1" name="ab970ed2ea123ec4540926ade454d4bd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab970ed2ea123ec4540926ade454d4bd1">&#9670;&#160;</a></span>on_pushButtonPlay_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Kosti::on_pushButtonPlay_clicked </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обработчик кнопки "Играть". </p>
+<p>Запускает процесс броска костей: выполняет анимацию, рассчитывает результат и обновляет баланс игрока в зависимости от выпавшей комбинации. </p>
+
+</div>
+</div>
+<a id="a5b32f2708520e3329adf24b7205fcc90" name="a5b32f2708520e3329adf24b7205fcc90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b32f2708520e3329adf24b7205fcc90">&#9670;&#160;</a></span>rollDice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Kosti::rollDice </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Выполнение броска костей </p>
+<p>Генерирует случайные значения для двух игральных костей и запускает анимацию отображения результата. </p>
+
+</div>
+</div>
+<a id="ad560cafbaab2e5cf48acedb6f158a83d" name="ad560cafbaab2e5cf48acedb6f158a83d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad560cafbaab2e5cf48acedb6f158a83d">&#9670;&#160;</a></span>showResult()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Kosti::showResult </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>dice1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>dice2</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Показ результата игры </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dice1</td><td>Значение первой кости </td></tr>
+    <tr><td class="paramname">dice2</td><td>Значение второй кости</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Рассчитывает выигрыш или проигрыш на основе выпавших значений, обновляет баланс игрока и показывает результат на экране. </p>
+
+</div>
+</div>
+<a id="a6dc7b4364ee16224cd9588d58322e4e6" name="a6dc7b4364ee16224cd9588d58322e4e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dc7b4364ee16224cd9588d58322e4e6">&#9670;&#160;</a></span>slot_show()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Kosti::slot_show </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Слот для показа окна игры </p>
+<p>Отображает интерфейс игры в кости и обновляет информацию о текущем балансе игрока. </p>
+
+</div>
+</div>
+<a id="aa16fe12965887a24b29d9f6480878260" name="aa16fe12965887a24b29d9f6480878260"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa16fe12965887a24b29d9f6480878260">&#9670;&#160;</a></span>to_main</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Kosti::to_main </td>
+          <td>(</td>
+          <td class="paramtype">QString</td>          <td class="paramname"><span class="paramname"><em>username</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel signal">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сигнал возврата в главное меню </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">username</td><td>Имя текущего пользователя</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Испускается при нажатии кнопки возврата для перехода к главному меню казино с передачей имени пользователя. </p>
+
+</div>
+</div>
+<a id="a80b9d4d64ae7c108d049f13c448fa2fe" name="a80b9d4d64ae7c108d049f13c448fa2fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80b9d4d64ae7c108d049f13c448fa2fe">&#9670;&#160;</a></span>updateBalance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Kosti::updateBalance </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обновление отображения баланса игрока </p>
+<p>Обновляет информацию о текущем количестве робуксов на интерфейсе игры после выигрышей или проигрышей. </p>
+
+</div>
+</div>
+<a id="a93838eed8fb01142b8ee1080a6c56711" name="a93838eed8fb01142b8ee1080a6c56711"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93838eed8fb01142b8ee1080a6c56711">&#9670;&#160;</a></span>updateDiceImages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Kosti::updateDiceImages </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>dice1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>dice2</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обновление изображений костей </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dice1</td><td>Значение первой кости (1-6) </td></tr>
+    <tr><td class="paramname">dice2</td><td>Значение второй кости (1-6)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Отображает на интерфейсе изображения костей с соответствующими выпавшими значениями. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab38274edb90c0d1db41701a651f9be06" name="ab38274edb90c0d1db41701a651f9be06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab38274edb90c0d1db41701a651f9be06">&#9670;&#160;</a></span>robuks</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Kosti::robuks</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Текущий баланс игрока в робуксах </p>
+
+</div>
+</div>
+<a id="a906b33da6470251b79e6323822cdd178" name="a906b33da6470251b79e6323822cdd178"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a906b33da6470251b79e6323822cdd178">&#9670;&#160;</a></span>size_of_stavka</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Kosti::size_of_stavka</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Размер текущей ставки игрока </p>
+
+</div>
+</div>
+<a id="a5bfe6f8a61320a98ad32ea955febe5bd" name="a5bfe6f8a61320a98ad32ea955febe5bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bfe6f8a61320a98ad32ea955febe5bd">&#9670;&#160;</a></span>ui</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ui::Kosti* Kosti::ui</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Указатель на UI объект игры в кости </p>
 
 </div>
 </div>

@@ -1,3 +1,14 @@
+/**
+ * @file authregform.cpp
+ * @brief Реализация формы авторизации и регистрации
+ * @author Команда разработчиков
+ * @date 2025
+ * @version 1.0
+ * 
+ * Содержит реализацию класса AuthRegForm для аутентификации пользователей
+ * и регистрации новых аккаунтов в системе казино.
+ */
+
 #include "authregform.h"
 #include "ui_authregform.h"
 #include "client_functions.h"

@@ -1,3 +1,14 @@
+/**
+ * @file baraban.cpp
+ * @brief Реализация игры в слот-машину (барабаны)
+ * @author Команда разработчиков
+ * @date 2025
+ * @version 1.0
+ * 
+ * Содержит реализацию класса Baraban - классической игры в слоты
+ * с тремя барабанами и различными символами.
+ */
+
 #include "baraban.h"
 #include "ui_baraban.h"
 #include "client_functions.h"

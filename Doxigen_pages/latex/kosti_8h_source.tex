@@ -2,29 +2,58 @@
 \hypertarget{kosti_8h_source}{}\label{kosti_8h_source}\index{/Users/sasha/polytech/Hampsetes/hampsters/Cazik/kosti.h@{/Users/sasha/polytech/Hampsetes/hampsters/Cazik/kosti.h}}
 \mbox{\hyperlink{kosti_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ KOSTI\_H}}
-\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ KOSTI\_H}}
-\DoxyCodeLine{00003\ }
-\DoxyCodeLine{00010\ }
-\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <QDialog>}}
-\DoxyCodeLine{00012\ }
-\DoxyCodeLine{00013\ \textcolor{keyword}{namespace\ }Ui\ \{}
-\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ui_1_1_kosti}{Kosti}};}
-\DoxyCodeLine{00018\ \}}
-\DoxyCodeLine{00019\ }
-\DoxyCodeLine{00026\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_kosti_a4d8e95d954885dd93318c55426d0a7de}{Kosti}}\ :\ \textcolor{keyword}{public}\ QDialog}
-\DoxyCodeLine{00027\ \{}
-\DoxyCodeLine{00028\ \ \ \ \ Q\_OBJECT}
-\DoxyCodeLine{00029\ }
-\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_kosti_a4d8e95d954885dd93318c55426d0a7de}{Kosti}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{00040\ }
-\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_kosti_a04bac6d629a1d051b526fe91a3e24056}{\string~Kosti}}();}
-\DoxyCodeLine{00047\ }
-\DoxyCodeLine{00048\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{class_ui_1_1_kosti}{Ui::Kosti}}\ *ui;\ }
-\DoxyCodeLine{00050\ \};}
-\DoxyCodeLine{00051\ }
-\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ KOSTI\_H}}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifndef\ KOSTI\_H}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ KOSTI\_H}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QDialog>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <QPixmap>}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ui}{Ui}}\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }Kosti;}
+\DoxyCodeLine{00020\ \}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_kosti_a4d8e95d954885dd93318c55426d0a7de}{Kosti}}\ :\ \textcolor{keyword}{public}\ QDialog}
+\DoxyCodeLine{00040\ \{}
+\DoxyCodeLine{00041\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_kosti_a4d8e95d954885dd93318c55426d0a7de}{Kosti}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00051\ \ \ \ \ }
+\DoxyCodeLine{00057\ \ \ \ \ \mbox{\hyperlink{class_kosti_a04bac6d629a1d051b526fe91a3e24056}{\string~Kosti}}();}
+\DoxyCodeLine{00058\ \ \ \ \ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_kosti_a6dc7b4364ee16224cd9588d58322e4e6}{slot\_show}}();}
+\DoxyCodeLine{00066\ \ \ \ \ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_kosti_a80b9d4d64ae7c108d049f13c448fa2fe}{updateBalance}}();}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_kosti_ab970ed2ea123ec4540926ade454d4bd1}{on\_pushButtonPlay\_clicked}}();}
+\DoxyCodeLine{00084\ \ \ \ \ }
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_kosti_af0723442e86d4d2c42354ef08d14fbff}{on\_pushButton1000\_clicked}}();}
+\DoxyCodeLine{00092\ \ \ \ \ }
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_kosti_a7f38ef26f33c7f890e1c7ee278232f15}{on\_pushButton500\_clicked}}();}
+\DoxyCodeLine{00100\ \ \ \ \ }
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_kosti_ac72cc9deb3ad311f98ce90bcf1867890}{on\_pushButton100\_clicked}}();}
+\DoxyCodeLine{00108\ \ \ \ \ }
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_kosti_a3464a34daed3818f1d7e187280689aba}{on\_BackButton\_clicked}}();}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00117\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00119\ \ \ \ \ Ui::Kosti\ *\mbox{\hyperlink{class_kosti_a5bfe6f8a61320a98ad32ea955febe5bd}{ui}};}
+\DoxyCodeLine{00120\ \ \ \ \ }
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_kosti_a906b33da6470251b79e6323822cdd178}{size\_of\_stavka}};}
+\DoxyCodeLine{00123\ \ \ \ \ }
+\DoxyCodeLine{00125\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_kosti_ab38274edb90c0d1db41701a651f9be06}{robuks}};}
+\DoxyCodeLine{00126\ \ \ \ \ }
+\DoxyCodeLine{00133\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_kosti_a5b32f2708520e3329adf24b7205fcc90}{rollDice}}();}
+\DoxyCodeLine{00134\ \ \ \ \ }
+\DoxyCodeLine{00143\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_kosti_a93838eed8fb01142b8ee1080a6c56711}{updateDiceImages}}(\textcolor{keywordtype}{int}\ dice1,\ \textcolor{keywordtype}{int}\ dice2);}
+\DoxyCodeLine{00144\ \ \ \ \ }
+\DoxyCodeLine{00153\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_kosti_ad560cafbaab2e5cf48acedb6f158a83d}{showResult}}(\textcolor{keywordtype}{int}\ dice1,\ \textcolor{keywordtype}{int}\ dice2);}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00155\ signals:}
+\DoxyCodeLine{00163\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_kosti_aa16fe12965887a24b29d9f6480878260}{to\_main}}(QString\ username);}
+\DoxyCodeLine{00164\ \};}
+\DoxyCodeLine{00165\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ KOSTI\_H}}
 
 \end{DoxyCode}

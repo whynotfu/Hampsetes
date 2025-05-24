@@ -1,0 +1,368 @@
+\doxysection{Database\+Singleton Class Reference}
+\hypertarget{class_database_singleton}{}\label{class_database_singleton}\index{DatabaseSingleton@{DatabaseSingleton}}
+
+
+Синглтон для управления базой данных казино  
+
+
+
+
+{\ttfamily \#include $<$databasesingleton.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+QString \mbox{\hyperlink{class_database_singleton_aa6d52238b8ac3c41304a6d5df2c80ab0}{auth}} (QString login, QString password)
+\begin{DoxyCompactList}\small\item\em Авторизация пользователя в системе \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_database_singleton_a4d60ebaffa8ed72dacc453cedea18f04}{Registration}} (const QString \&login, const QString \&password)
+\begin{DoxyCompactList}\small\item\em Регистрация нового пользователя \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_database_singleton_a7f7458ff15a286f6516ca5e3323d08c6}{My\+Stats}} (int socket\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Получение личной статистики пользователя \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_database_singleton_a0848339d8d7525d8694cb948353076d6}{is\+User\+Admin}} (int socket\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Проверка прав администратора \end{DoxyCompactList}\item 
+QList$<$ QString $>$ \mbox{\hyperlink{class_database_singleton_a12f296513cf6a2d47bc35e9bcc52b845}{All\+Stats}} (int socket\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Получение статистики всех пользователей (только для админов) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_database_singleton_ad864c63831fdcc59109908797dbd41ee}{add\+Win}} (int socket\+\_\+id, double win\+Amount)
+\begin{DoxyCompactList}\small\item\em Добавление выигрыша к балансу пользователя \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_database_singleton_ab2e3520c90c6685f79c7233d87e42418}{get\+Balance}} (int socket\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Получение текущего баланса пользователя \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_database_singleton}{Database\+Singleton}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_database_singleton_af68374209d720df201e96564a7fa798d}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Получение единственного экземпляра синглтона \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_database_singleton_a9162627fc7a3bfac857649a427aaf2e4}{Database\+Singleton}} ()
+\begin{DoxyCompactList}\small\item\em Приватный конструктор синглтона \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_database_singleton_a4144bc06af454c7d1acad452d9c71b96}{Database\+Singleton}} (const \mbox{\hyperlink{class_database_singleton}{Database\+Singleton}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Запрет копирования объекта синглтона \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_database_singleton}{Database\+Singleton}} \& \mbox{\hyperlink{class_database_singleton_a1e20d784f0a8f9d7b3c1cbd5497e2a0a}{operator=}} (\mbox{\hyperlink{class_database_singleton}{Database\+Singleton}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Запрет присваивания объектов синглтона \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_database_singleton_a73c69471929858e65225b6aa27bc4a33}{\texorpdfstring{$\sim$}{\string~}\+Database\+Singleton}} ()
+\begin{DoxyCompactList}\small\item\em Деструктор синглтона \end{DoxyCompactList}\item 
+QString\+List \mbox{\hyperlink{class_database_singleton_aaa0b7a9310c7d1f02622f934549e8218}{getquery}} (QSql\+Query \&query)
+\begin{DoxyCompactList}\small\item\em Вспомогательный метод выполнения SQL-\/запросов \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_database_singleton_a3577221d1b807fe9f6608e0550fa74a2}{is\+User\+Authenticated}} (int user\+Id)
+\begin{DoxyCompactList}\small\item\em Проверка аутентификации пользователя \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QSql\+Database \mbox{\hyperlink{class_database_singleton_a614cca9b7d33e72fe60de5ac76312732}{db}}
+\begin{DoxyCompactList}\small\item\em Объект соединения с базой данных SQLite. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_database_singleton}{Database\+Singleton}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_database_singleton_ac7c1db43f4bf20f42d9ed54cece16ca0}{p\+\_\+instance}}
+\begin{DoxyCompactList}\small\item\em Статический указатель на единственный экземпляр класса \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_database_singleton_destroyer}{Database\+Singleton\+Destroyer}} \mbox{\hyperlink{class_database_singleton_ae3cd0967fa32ffa43164aaf48e21cb70}{destroyer}}
+\begin{DoxyCompactList}\small\item\em Статический объект-\/деструктор для автоматической очистки ресурсов \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_database_singleton_aaa3b2396193cfa6fbd129a5e21b98e35}{Database\+Singleton\+Destroyer}}
+\begin{DoxyCompactList}\small\item\em Дружественный класс для доступа к деструктору \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Синглтон для управления базой данных казино 
+
+Класс \doxylink{class_database_singleton}{Database\+Singleton} реализует паттерн Singleton для обеспечения единственного экземпляра подключения к базе данных в течение всего времени работы приложения.
+
+Функциональность\+:
+\begin{DoxyItemize}
+\item Авторизация и регистрация пользователей
+\item Управление балансами игроков
+\item Получение статистики пользователей
+\item Проверка прав доступа (admin/user)
+\item Ведение истории игр и выигрышей
+\end{DoxyItemize}
+
+Паттерн Singleton гарантирует\+:
+\begin{DoxyItemize}
+\item Единственное подключение к БД
+\item Централизованное управление данными
+\item Эффективное использование ресурсов 
+\end{DoxyItemize}
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_database_singleton_a9162627fc7a3bfac857649a427aaf2e4}\index{DatabaseSingleton@{DatabaseSingleton}!DatabaseSingleton@{DatabaseSingleton}}
+\index{DatabaseSingleton@{DatabaseSingleton}!DatabaseSingleton@{DatabaseSingleton}}
+\doxysubsubsection{\texorpdfstring{DatabaseSingleton()}{DatabaseSingleton()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_database_singleton_a9162627fc7a3bfac857649a427aaf2e4} 
+Database\+Singleton\+::\+Database\+Singleton (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Приватный конструктор синглтона 
+
+Инициализирует подключение к базе данных SQLite. Приватный доступ предотвращает прямое создание объектов. \Hypertarget{class_database_singleton_a4144bc06af454c7d1acad452d9c71b96}\index{DatabaseSingleton@{DatabaseSingleton}!DatabaseSingleton@{DatabaseSingleton}}
+\index{DatabaseSingleton@{DatabaseSingleton}!DatabaseSingleton@{DatabaseSingleton}}
+\doxysubsubsection{\texorpdfstring{DatabaseSingleton()}{DatabaseSingleton()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_database_singleton_a4144bc06af454c7d1acad452d9c71b96} 
+Database\+Singleton\+::\+Database\+Singleton (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_database_singleton}{Database\+Singleton}} \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [delete]}}
+
+
+
+Запрет копирования объекта синглтона 
+
+\Hypertarget{class_database_singleton_a73c69471929858e65225b6aa27bc4a33}\index{DatabaseSingleton@{DatabaseSingleton}!````~DatabaseSingleton@{\texorpdfstring{$\sim$}{\string~}DatabaseSingleton}}
+\index{````~DatabaseSingleton@{\texorpdfstring{$\sim$}{\string~}DatabaseSingleton}!DatabaseSingleton@{DatabaseSingleton}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}DatabaseSingleton()}{\string~DatabaseSingleton()}}
+{\footnotesize\ttfamily \label{class_database_singleton_a73c69471929858e65225b6aa27bc4a33} 
+Database\+Singleton\+::\texorpdfstring{$\sim$}{\string~}\+Database\+Singleton (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Деструктор синглтона 
+
+Закрывает соединение с базой данных при завершении работы. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_database_singleton_ad864c63831fdcc59109908797dbd41ee}\index{DatabaseSingleton@{DatabaseSingleton}!addWin@{addWin}}
+\index{addWin@{addWin}!DatabaseSingleton@{DatabaseSingleton}}
+\doxysubsubsection{\texorpdfstring{addWin()}{addWin()}}
+{\footnotesize\ttfamily \label{class_database_singleton_ad864c63831fdcc59109908797dbd41ee} 
+bool Database\+Singleton\+::add\+Win (\begin{DoxyParamCaption}\item[{int}]{socket\+\_\+id}{, }\item[{double}]{win\+Amount}{}\end{DoxyParamCaption})}
+
+
+
+Добавление выигрыша к балансу пользователя 
+
+
+\begin{DoxyParams}{Parameters}
+{\em socket\+\_\+id} & ID пользователя \\
+\hline
+{\em win\+Amount} & Размер выигрыша \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true при успешном обновлении, false при ошибке
+\end{DoxyReturn}
+Увеличивает баланс пользователя на указанную сумму и обновляет счетчик выигрышей. \Hypertarget{class_database_singleton_a12f296513cf6a2d47bc35e9bcc52b845}\index{DatabaseSingleton@{DatabaseSingleton}!AllStats@{AllStats}}
+\index{AllStats@{AllStats}!DatabaseSingleton@{DatabaseSingleton}}
+\doxysubsubsection{\texorpdfstring{AllStats()}{AllStats()}}
+{\footnotesize\ttfamily \label{class_database_singleton_a12f296513cf6a2d47bc35e9bcc52b845} 
+QList$<$ QString $>$ Database\+Singleton\+::\+All\+Stats (\begin{DoxyParamCaption}\item[{int}]{socket\+\_\+id}{ = {\ttfamily NULL}}\end{DoxyParamCaption})}
+
+
+
+Получение статистики всех пользователей (только для админов) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em socket\+\_\+id} & ID администратора, запрашивающего данные \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Список строк со статистикой всех пользователей
+\end{DoxyReturn}
+Возвращает полную статистику по всем зарегистрированным пользователям. Доступно только администраторам. \Hypertarget{class_database_singleton_aa6d52238b8ac3c41304a6d5df2c80ab0}\index{DatabaseSingleton@{DatabaseSingleton}!auth@{auth}}
+\index{auth@{auth}!DatabaseSingleton@{DatabaseSingleton}}
+\doxysubsubsection{\texorpdfstring{auth()}{auth()}}
+{\footnotesize\ttfamily \label{class_database_singleton_aa6d52238b8ac3c41304a6d5df2c80ab0} 
+QString Database\+Singleton\+::auth (\begin{DoxyParamCaption}\item[{QString}]{login}{, }\item[{QString}]{password}{}\end{DoxyParamCaption})}
+
+
+
+Авторизация пользователя в системе 
+
+
+\begin{DoxyParams}{Parameters}
+{\em login} & Логин пользователя \\
+\hline
+{\em password} & Пароль пользователя \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Строка с результатом авторизации и данными пользователя
+\end{DoxyReturn}
+Проверяет учетные данные в базе и возвращает информацию о пользователе включая роль и ID при успешной авторизации. \Hypertarget{class_database_singleton_ab2e3520c90c6685f79c7233d87e42418}\index{DatabaseSingleton@{DatabaseSingleton}!getBalance@{getBalance}}
+\index{getBalance@{getBalance}!DatabaseSingleton@{DatabaseSingleton}}
+\doxysubsubsection{\texorpdfstring{getBalance()}{getBalance()}}
+{\footnotesize\ttfamily \label{class_database_singleton_ab2e3520c90c6685f79c7233d87e42418} 
+double Database\+Singleton\+::get\+Balance (\begin{DoxyParamCaption}\item[{int}]{socket\+\_\+id}{}\end{DoxyParamCaption})}
+
+
+
+Получение текущего баланса пользователя 
+
+
+\begin{DoxyParams}{Parameters}
+{\em socket\+\_\+id} & ID пользователя \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Текущий баланс пользователя или -\/1 при ошибке
+\end{DoxyReturn}
+Возвращает актуальный баланс указанного пользователя из базы данных. \Hypertarget{class_database_singleton_af68374209d720df201e96564a7fa798d}\index{DatabaseSingleton@{DatabaseSingleton}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!DatabaseSingleton@{DatabaseSingleton}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \label{class_database_singleton_af68374209d720df201e96564a7fa798d} 
+\mbox{\hyperlink{class_database_singleton}{Database\+Singleton}} \texorpdfstring{$\ast$}{*} Database\+Singleton\+::get\+Instance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Получение единственного экземпляра синглтона 
+
+\begin{DoxyReturn}{Returns}
+Указатель на экземпляр \doxylink{class_database_singleton}{Database\+Singleton}
+\end{DoxyReturn}
+Единственный способ получить доступ к объекту базы данных. При первом вызове создает экземпляр, в последующих возвращает существующий. \Hypertarget{class_database_singleton_aaa0b7a9310c7d1f02622f934549e8218}\index{DatabaseSingleton@{DatabaseSingleton}!getquery@{getquery}}
+\index{getquery@{getquery}!DatabaseSingleton@{DatabaseSingleton}}
+\doxysubsubsection{\texorpdfstring{getquery()}{getquery()}}
+{\footnotesize\ttfamily \label{class_database_singleton_aaa0b7a9310c7d1f02622f934549e8218} 
+QString\+List Database\+Singleton\+::getquery (\begin{DoxyParamCaption}\item[{QSql\+Query \&}]{query}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Вспомогательный метод выполнения SQL-\/запросов 
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & Объект SQL-\/запроса для выполнения \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Список строк с результатами запроса
+\end{DoxyReturn}
+Выполняет переданный запрос и преобразует результат в удобный для обработки формат. \Hypertarget{class_database_singleton_a0848339d8d7525d8694cb948353076d6}\index{DatabaseSingleton@{DatabaseSingleton}!isUserAdmin@{isUserAdmin}}
+\index{isUserAdmin@{isUserAdmin}!DatabaseSingleton@{DatabaseSingleton}}
+\doxysubsubsection{\texorpdfstring{isUserAdmin()}{isUserAdmin()}}
+{\footnotesize\ttfamily \label{class_database_singleton_a0848339d8d7525d8694cb948353076d6} 
+bool Database\+Singleton\+::is\+User\+Admin (\begin{DoxyParamCaption}\item[{int}]{socket\+\_\+id}{}\end{DoxyParamCaption})}
+
+
+
+Проверка прав администратора 
+
+
+\begin{DoxyParams}{Parameters}
+{\em socket\+\_\+id} & ID пользователя \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true если пользователь администратор, false в противном случае
+\end{DoxyReturn}
+Проверяет роль пользователя в базе данных. \Hypertarget{class_database_singleton_a3577221d1b807fe9f6608e0550fa74a2}\index{DatabaseSingleton@{DatabaseSingleton}!isUserAuthenticated@{isUserAuthenticated}}
+\index{isUserAuthenticated@{isUserAuthenticated}!DatabaseSingleton@{DatabaseSingleton}}
+\doxysubsubsection{\texorpdfstring{isUserAuthenticated()}{isUserAuthenticated()}}
+{\footnotesize\ttfamily \label{class_database_singleton_a3577221d1b807fe9f6608e0550fa74a2} 
+bool Database\+Singleton\+::is\+User\+Authenticated (\begin{DoxyParamCaption}\item[{int}]{user\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка аутентификации пользователя 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & ID пользователя для проверки \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true если пользователь аутентифицирован, false в противном случае
+\end{DoxyReturn}
+Проверяет флаг Is\+Auth в базе данных для указанного пользователя. \Hypertarget{class_database_singleton_a7f7458ff15a286f6516ca5e3323d08c6}\index{DatabaseSingleton@{DatabaseSingleton}!MyStats@{MyStats}}
+\index{MyStats@{MyStats}!DatabaseSingleton@{DatabaseSingleton}}
+\doxysubsubsection{\texorpdfstring{MyStats()}{MyStats()}}
+{\footnotesize\ttfamily \label{class_database_singleton_a7f7458ff15a286f6516ca5e3323d08c6} 
+QString Database\+Singleton\+::\+My\+Stats (\begin{DoxyParamCaption}\item[{int}]{socket\+\_\+id}{}\end{DoxyParamCaption})}
+
+
+
+Получение личной статистики пользователя 
+
+
+\begin{DoxyParams}{Parameters}
+{\em socket\+\_\+id} & ID пользователя \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Строка со статистикой пользователя
+\end{DoxyReturn}
+Возвращает персональную статистику\+: логин, баланс, количество ставок и выигрышей. \Hypertarget{class_database_singleton_a1e20d784f0a8f9d7b3c1cbd5497e2a0a}\index{DatabaseSingleton@{DatabaseSingleton}!operator=@{operator=}}
+\index{operator=@{operator=}!DatabaseSingleton@{DatabaseSingleton}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{class_database_singleton_a1e20d784f0a8f9d7b3c1cbd5497e2a0a} 
+\mbox{\hyperlink{class_database_singleton}{Database\+Singleton}} \& Database\+Singleton\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_database_singleton}{Database\+Singleton}} \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [delete]}}
+
+
+
+Запрет присваивания объектов синглтона 
+
+\Hypertarget{class_database_singleton_a4d60ebaffa8ed72dacc453cedea18f04}\index{DatabaseSingleton@{DatabaseSingleton}!Registration@{Registration}}
+\index{Registration@{Registration}!DatabaseSingleton@{DatabaseSingleton}}
+\doxysubsubsection{\texorpdfstring{Registration()}{Registration()}}
+{\footnotesize\ttfamily \label{class_database_singleton_a4d60ebaffa8ed72dacc453cedea18f04} 
+QString Database\+Singleton\+::\+Registration (\begin{DoxyParamCaption}\item[{const QString \&}]{login}{, }\item[{const QString \&}]{password}{}\end{DoxyParamCaption})}
+
+
+
+Регистрация нового пользователя 
+
+
+\begin{DoxyParams}{Parameters}
+{\em login} & Логин нового пользователя \\
+\hline
+{\em password} & Пароль нового пользователя \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Строка с результатом регистрации
+\end{DoxyReturn}
+Создает новый аккаунт пользователя с ролью "{}user"{} после проверки уникальности логина. 
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_database_singleton_aaa3b2396193cfa6fbd129a5e21b98e35}\index{DatabaseSingleton@{DatabaseSingleton}!DatabaseSingletonDestroyer@{DatabaseSingletonDestroyer}}
+\index{DatabaseSingletonDestroyer@{DatabaseSingletonDestroyer}!DatabaseSingleton@{DatabaseSingleton}}
+\doxysubsubsection{\texorpdfstring{DatabaseSingletonDestroyer}{DatabaseSingletonDestroyer}}
+{\footnotesize\ttfamily \label{class_database_singleton_aaa3b2396193cfa6fbd129a5e21b98e35} 
+friend class \mbox{\hyperlink{class_database_singleton_destroyer}{Database\+Singleton\+Destroyer}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Дружественный класс для доступа к деструктору 
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_database_singleton_a614cca9b7d33e72fe60de5ac76312732}\index{DatabaseSingleton@{DatabaseSingleton}!db@{db}}
+\index{db@{db}!DatabaseSingleton@{DatabaseSingleton}}
+\doxysubsubsection{\texorpdfstring{db}{db}}
+{\footnotesize\ttfamily \label{class_database_singleton_a614cca9b7d33e72fe60de5ac76312732} 
+QSql\+Database Database\+Singleton\+::db\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Объект соединения с базой данных SQLite. 
+
+\Hypertarget{class_database_singleton_ae3cd0967fa32ffa43164aaf48e21cb70}\index{DatabaseSingleton@{DatabaseSingleton}!destroyer@{destroyer}}
+\index{destroyer@{destroyer}!DatabaseSingleton@{DatabaseSingleton}}
+\doxysubsubsection{\texorpdfstring{destroyer}{destroyer}}
+{\footnotesize\ttfamily \label{class_database_singleton_ae3cd0967fa32ffa43164aaf48e21cb70} 
+\mbox{\hyperlink{class_database_singleton_destroyer}{Database\+Singleton\+Destroyer}} Database\+Singleton\+::destroyer\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Статический объект-\/деструктор для автоматической очистки ресурсов 
+
+\Hypertarget{class_database_singleton_ac7c1db43f4bf20f42d9ed54cece16ca0}\index{DatabaseSingleton@{DatabaseSingleton}!p\_instance@{p\_instance}}
+\index{p\_instance@{p\_instance}!DatabaseSingleton@{DatabaseSingleton}}
+\doxysubsubsection{\texorpdfstring{p\_instance}{p\_instance}}
+{\footnotesize\ttfamily \label{class_database_singleton_ac7c1db43f4bf20f42d9ed54cece16ca0} 
+\mbox{\hyperlink{class_database_singleton}{Database\+Singleton}} \texorpdfstring{$\ast$}{*} Database\+Singleton\+::p\+\_\+instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Статический указатель на единственный экземпляр класса 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+DB\+\_\+singleton/\mbox{\hyperlink{databasesingleton_8h}{databasesingleton.\+h}}\item 
+/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+DB\+\_\+singleton/\mbox{\hyperlink{databasesingleton_8cpp}{databasesingleton.\+cpp}}\end{DoxyCompactItemize}

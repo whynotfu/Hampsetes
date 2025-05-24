@@ -2,49 +2,66 @@
 \hypertarget{casinomainwindow_8h_source}{}\label{casinomainwindow_8h_source}\index{/Users/sasha/polytech/Hampsetes/hampsters/Cazik/casinomainwindow.h@{/Users/sasha/polytech/Hampsetes/hampsters/Cazik/casinomainwindow.h}}
 \mbox{\hyperlink{casinomainwindow_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CASINOMAINWINDOW\_H}}
-\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CASINOMAINWINDOW\_H}}
-\DoxyCodeLine{00003\ }
-\DoxyCodeLine{00012\ }
-\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
-\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QPixmap>}}
-\DoxyCodeLine{00015\ }
-\DoxyCodeLine{00016\ \textcolor{keyword}{namespace\ }Ui\ \{}
-\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ui_1_1_casino_main_window}{CasinoMainWindow}};}
-\DoxyCodeLine{00021\ \}}
-\DoxyCodeLine{00022\ }
-\DoxyCodeLine{00029\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_casino_main_window_af39626e04442543326e7bab06eba3536}{CasinoMainWindow}}\ :\ \textcolor{keyword}{public}\ QMainWindow}
-\DoxyCodeLine{00030\ \{}
-\DoxyCodeLine{00031\ \ \ \ \ Q\_OBJECT}
-\DoxyCodeLine{00032\ }
-\DoxyCodeLine{00033\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_casino_main_window_af39626e04442543326e7bab06eba3536}{CasinoMainWindow}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{00043\ }
-\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{class_casino_main_window_ae81612d7888a5cbb8ea8f17cee9fb1fa}{\string~CasinoMainWindow}}();}
-\DoxyCodeLine{00050\ }
-\DoxyCodeLine{00051\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{class_ui_1_1_casino_main_window}{Ui::CasinoMainWindow}}\ *ui;\ }
-\DoxyCodeLine{00053\ }
-\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{int}\ game\_slot;}
-\DoxyCodeLine{00060\ }
-\DoxyCodeLine{00064\ \ \ \ \ QPixmap\ Image;}
-\DoxyCodeLine{00065\ }
-\DoxyCodeLine{00069\ \ \ \ \ QPixmap\ Name;}
-\DoxyCodeLine{00070\ }
-\DoxyCodeLine{00071\ \textcolor{keyword}{public}\ slots:}
-\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_casino_main_window_a488484045b1548b69e7732becb7b3226}{slot\_show}}();}
-\DoxyCodeLine{00078\ }
-\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_casino_main_window_aeeaef20cc8cb3d6e5d94bde36a518b44}{change\_minigame}}(\textcolor{keywordtype}{bool}\ change,\ QPixmap\ image,\ QPixmap\ name);}
-\DoxyCodeLine{00090\ }
-\DoxyCodeLine{00091\ \textcolor{keyword}{private}\ slots:}
-\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_NextGameButton\_clicked();}
-\DoxyCodeLine{00098\ }
-\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_PlayButton\_clicked();}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifndef\ CASINOMAINWINDOW\_H}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ CASINOMAINWINDOW\_H}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <QMessageBox>}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ui}{Ui}}\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }CasinoMainWindow;}
+\DoxyCodeLine{00020\ \}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_casino_main_window_af39626e04442543326e7bab06eba3536}{CasinoMainWindow}}\ :\ \textcolor{keyword}{public}\ QMainWindow}
+\DoxyCodeLine{00036\ \{}
+\DoxyCodeLine{00037\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_casino_main_window_af39626e04442543326e7bab06eba3536}{CasinoMainWindow}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00048\ \ \ \ \ }
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{class_casino_main_window_ae81612d7888a5cbb8ea8f17cee9fb1fa}{\string~CasinoMainWindow}}();}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00058\ \ \ \ \ Ui::CasinoMainWindow\ *\mbox{\hyperlink{class_casino_main_window_ac741e2e94305fd89ba2f162932d81293}{ui}};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_casino_main_window_a30f9d661760758c1d38e45308494f677}{game\_slot}};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00064\ \ \ \ \ QPixmap\ \mbox{\hyperlink{class_casino_main_window_a239d304fa3a012eab60343dad4c7b81b}{Image}};}
+\DoxyCodeLine{00065\ \ \ \ \ }
+\DoxyCodeLine{00067\ \ \ \ \ QPixmap\ \mbox{\hyperlink{class_casino_main_window_acc6cd28080eef8124db7e1202ac383bf}{Name}};}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_casino_main_window_a488484045b1548b69e7732becb7b3226}{slot\_show}}();}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_casino_main_window_a2fd729bceb38d50b29aea585af4b0c36}{change\_minigame}}(\textcolor{keywordtype}{bool}\ direction,\ QPixmap\ image,\ QPixmap\ name);}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_casino_main_window_a6e3fdfc3457e1e19a2d11d1be7684b0d}{on\_NextGameButton\_clicked}}();}
+\DoxyCodeLine{00097\ \ \ \ \ }
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_casino_main_window_a04bc55d39380f68afe21b0ad8e734b3c}{on\_PlayButton\_clicked}}();}
 \DoxyCodeLine{00105\ }
-\DoxyCodeLine{00106\ signals:}
-\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_casino_main_window_abeed997a965c5696f0153f342b0ea720}{baraban\_sig}}();}
-\DoxyCodeLine{00113\ \};}
-\DoxyCodeLine{00114\ }
-\DoxyCodeLine{00115\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CASINOMAINWINDOW\_H}}
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_casino_main_window_a8e05f9fafdeb68bdb357f05a1e1c757f}{on\_Admin\_page\_button\_clicked}}();}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_casino_main_window_a04c1040a5693a188b4e4e78dc9ac89fa}{on\_pushButton\_clicked}}();}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00122\ signals:}
+\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_casino_main_window_abeed997a965c5696f0153f342b0ea720}{baraban\_sig}}();}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00127\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_casino_main_window_ac55ae1ca9ca0f788a8985da9f80dc70a}{ruletka\_sig}}();}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00130\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_casino_main_window_ac42036b76b9f3be70ff64528467a6d04}{clicker\_sig}}();}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00133\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_casino_main_window_aae3f8eaca5c3b9b59157cb5392b41d13}{kosti\_sig}}();}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00136\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_casino_main_window_a5b15487f45ab6d5801b02729e1b6d630}{gtn\_sig}}();}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00139\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_casino_main_window_a046f0778ed18a19affc1fd03a293f6bf}{admn\_sig}}();}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00142\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_casino_main_window_a51303f10cac5f1eb90638cb89797db4f}{user\_sig}}();}
+\DoxyCodeLine{00143\ \};}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00145\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CASINOMAINWINDOW\_H}}
 
 \end{DoxyCode}

@@ -1,0 +1,78 @@
+\doxysection{databasesingleton.\+h}
+\hypertarget{databasesingleton_8h_source}{}\label{databasesingleton_8h_source}\index{/Users/sasha/polytech/Hampsetes/hampsters/DB\_singleton/databasesingleton.h@{/Users/sasha/polytech/Hampsetes/hampsters/DB\_singleton/databasesingleton.h}}
+\mbox{\hyperlink{databasesingleton_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifndef\ DATABASESINGLETON\_H}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ DATABASESINGLETON\_H}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QVariant>}\ \textcolor{comment}{//для\ хранения\ различных\ типов\ данных\ в\ Qt}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <QDebug>}\ \textcolor{comment}{//для\ вывода\ отладочной\ инф-\/и\ в\ консоль}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <QSqlDatabase>}\ \textcolor{comment}{//для\ работы\ с\ базами\ данных}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <QSqlQuery>}\ \textcolor{comment}{//классы\ для\ выполнения\ SQL-\/запросов\ к\ базе\ данных}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <QSqlError>}\ \textcolor{comment}{//классы\ для\ обработки\ ошибок,\ возникающих\ при\ работе\ с\ БД}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <QSqlRecord>}\ \textcolor{comment}{//классы\ для\ доступа\ к\ данным,\ полученным\ через\ SQL-\/запрос}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ DataBaseName\ "{}C:/Users/alina/Downloads/DataBase.db"{}\ }\textcolor{comment}{//путь\ к\ используемой\ БД}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_database_singleton}{DatabaseSingleton}};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_database_singleton_destroyer}{DatabaseSingletonDestroyer}}}
+\DoxyCodeLine{00037\ \{}
+\DoxyCodeLine{00038\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{class_database_singleton}{DatabaseSingleton}}\ *\ \mbox{\hyperlink{class_database_singleton_destroyer_abc40b3f7e6cf0db0481feaec6a760ede}{p\_instance}};}
+\DoxyCodeLine{00041\ \ \ \ \ }
+\DoxyCodeLine{00042\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{class_database_singleton_destroyer_a94634428d6a9c7cf508287a01c0e1f7d}{\string~DatabaseSingletonDestroyer}}();}
+\DoxyCodeLine{00050\ \ \ \ \ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_database_singleton_destroyer_a40fd42e7109b9f3ea613cc594e8f9f48}{initialize}}(\mbox{\hyperlink{class_database_singleton}{DatabaseSingleton}}\ *\ p);}
+\DoxyCodeLine{00059\ \};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00080\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_database_singleton_a9162627fc7a3bfac857649a427aaf2e4}{DatabaseSingleton}}}
+\DoxyCodeLine{00081\ \{}
+\DoxyCodeLine{00082\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_database_singleton_a9162627fc7a3bfac857649a427aaf2e4}{DatabaseSingleton}}\ *\ \mbox{\hyperlink{class_database_singleton_ac7c1db43f4bf20f42d9ed54cece16ca0}{p\_instance}};}
+\DoxyCodeLine{00085\ \ \ \ \ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_database_singleton_aaa3b2396193cfa6fbd129a5e21b98e35}{DatabaseSingletonDestroyer}}\ \mbox{\hyperlink{class_database_singleton_ae3cd0967fa32ffa43164aaf48e21cb70}{destroyer}};}
+\DoxyCodeLine{00088\ \ \ \ \ }
+\DoxyCodeLine{00090\ \ \ \ \ QSqlDatabase\ \mbox{\hyperlink{class_database_singleton_a614cca9b7d33e72fe60de5ac76312732}{db}};}
+\DoxyCodeLine{00091\ \ \ \ \ }
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_database_singleton_a3577221d1b807fe9f6608e0550fa74a2}{isUserAuthenticated}}(\textcolor{keywordtype}{int}\ userId);}
+\DoxyCodeLine{00100\ \ \ \ \ }
+\DoxyCodeLine{00101\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00108\ \ \ \ \ \mbox{\hyperlink{class_database_singleton_a9162627fc7a3bfac857649a427aaf2e4}{DatabaseSingleton}}();}
+\DoxyCodeLine{00109\ \ \ \ \ }
+\DoxyCodeLine{00111\ \ \ \ \ \mbox{\hyperlink{class_database_singleton_a4144bc06af454c7d1acad452d9c71b96}{DatabaseSingleton}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_database_singleton_a9162627fc7a3bfac857649a427aaf2e4}{DatabaseSingleton}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00112\ \ \ \ \ }
+\DoxyCodeLine{00114\ \ \ \ \ \mbox{\hyperlink{class_database_singleton_a9162627fc7a3bfac857649a427aaf2e4}{DatabaseSingleton}}\&\ \mbox{\hyperlink{class_database_singleton_a1e20d784f0a8f9d7b3c1cbd5497e2a0a}{operator\ =\ }}(\mbox{\hyperlink{class_database_singleton_a9162627fc7a3bfac857649a427aaf2e4}{DatabaseSingleton}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00115\ \ \ \ \ }
+\DoxyCodeLine{00121\ \ \ \ \ \mbox{\hyperlink{class_database_singleton_a73c69471929858e65225b6aa27bc4a33}{\string~DatabaseSingleton}}();}
+\DoxyCodeLine{00122\ \ \ \ \ }
+\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_database_singleton_aaa3b2396193cfa6fbd129a5e21b98e35}{DatabaseSingletonDestroyer}};}
+\DoxyCodeLine{00125\ \ \ \ \ }
+\DoxyCodeLine{00134\ \ \ \ \ QStringList\ \mbox{\hyperlink{class_database_singleton_aaa0b7a9310c7d1f02622f934549e8218}{getquery}}(QSqlQuery\&\ query);}
+\DoxyCodeLine{00135\ \ \ \ \ }
+\DoxyCodeLine{00136\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00144\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_database_singleton_a9162627fc7a3bfac857649a427aaf2e4}{DatabaseSingleton}}*\ \mbox{\hyperlink{class_database_singleton_af68374209d720df201e96564a7fa798d}{getInstance}}();}
+\DoxyCodeLine{00145\ \ \ \ \ }
+\DoxyCodeLine{00155\ \ \ \ \ QString\ \mbox{\hyperlink{class_database_singleton_aa6d52238b8ac3c41304a6d5df2c80ab0}{auth}}(QString\ login,\ QString\ password);}
+\DoxyCodeLine{00156\ \ \ \ \ }
+\DoxyCodeLine{00166\ \ \ \ \ QString\ \mbox{\hyperlink{class_database_singleton_a4d60ebaffa8ed72dacc453cedea18f04}{Registration}}(\textcolor{keyword}{const}\ QString\&\ login,\ \textcolor{keyword}{const}\ QString\&\ password);}
+\DoxyCodeLine{00167\ \ \ \ \ }
+\DoxyCodeLine{00176\ \ \ \ \ QString\ \mbox{\hyperlink{func2server_8cpp_a38b9ec72745ca025b3f4f5984a18d0b7}{MyStats}}(\textcolor{keywordtype}{int}\ socket\_id);}
+\DoxyCodeLine{00177\ \ \ \ \ }
+\DoxyCodeLine{00185\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_database_singleton_a0848339d8d7525d8694cb948353076d6}{isUserAdmin}}(\textcolor{keywordtype}{int}\ socket\_id);}
+\DoxyCodeLine{00186\ \ \ \ \ }
+\DoxyCodeLine{00195\ \ \ \ \ QList<QString>\ \mbox{\hyperlink{func2server_8cpp_aba521f9c3213875ad7e229197cb75583}{AllStats}}(\textcolor{keywordtype}{int}\ socket\_id);}
+\DoxyCodeLine{00196\ \ \ \ \ }
+\DoxyCodeLine{00206\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_database_singleton_ad864c63831fdcc59109908797dbd41ee}{addWin}}(\textcolor{keywordtype}{int}\ socket\_id,\ \textcolor{keywordtype}{double}\ winAmount);}
+\DoxyCodeLine{00207\ \ \ \ \ }
+\DoxyCodeLine{00215\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_database_singleton_ab2e3520c90c6685f79c7233d87e42418}{getBalance}}(\textcolor{keywordtype}{int}\ socket\_id);}
+\DoxyCodeLine{00216\ \};}
+\DoxyCodeLine{00217\ }
+\DoxyCodeLine{00218\ }
+\DoxyCodeLine{00219\ }
+\DoxyCodeLine{00220\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ DATABASESINGLETON\_H}}
+
+\end{DoxyCode}

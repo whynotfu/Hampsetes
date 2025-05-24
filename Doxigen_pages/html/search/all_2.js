@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['casinomainwindow_0',['CasinoMainWindow',['../class_casino_main_window.html',1,'CasinoMainWindow'],['../class_ui_1_1_casino_main_window.html',1,'Ui::CasinoMainWindow'],['../class_casino_main_window.html#af39626e04442543326e7bab06eba3536',1,'CasinoMainWindow::CasinoMainWindow()']]],
-  ['casinomainwindow_2ecpp_1',['casinomainwindow.cpp',['../casinomainwindow_8cpp.html',1,'']]],
-  ['casinomainwindow_2eh_2',['casinomainwindow.h',['../casinomainwindow_8h.html',1,'']]],
-  ['change_5fminigame_3',['change_minigame',['../class_casino_main_window.html#aeeaef20cc8cb3d6e5d94bde36a518b44',1,'CasinoMainWindow']]],
-  ['client_5ffunctions_2ecpp_4',['client_functions.cpp',['../client__functions_8cpp.html',1,'']]],
-  ['client_5ffunctions_2eh_5',['client_functions.h',['../client__functions_8h.html',1,'']]]
+  ['balance_0',['balance',['../struct_user.html#a656f555d559d402e87d8a9698e03e2ba',1,'User']]],
+  ['baraban_1',['Baraban',['../class_baraban.html',1,'Baraban'],['../class_baraban.html#af7d23f0163e5f629cad0c5adafed98dd',1,'Baraban::Baraban()']]],
+  ['baraban_2ecpp_2',['baraban.cpp',['../baraban_8cpp.html',1,'']]],
+  ['baraban_2eh_3',['baraban.h',['../baraban_8h.html',1,'']]],
+  ['baraban_5fsig_4',['baraban_sig',['../class_casino_main_window.html#abeed997a965c5696f0153f342b0ea720',1,'CasinoMainWindow']]],
+  ['barabanform_5',['barabanform',['../class_manager_form.html#a270a9154f32367168c2be6ac0ca2fe0b',1,'ManagerForm']]],
+  ['block_6',['block',['../class_gtn.html#a004f51b6d66d4988eac48c6a119f7812',1,'Gtn']]]
 ];

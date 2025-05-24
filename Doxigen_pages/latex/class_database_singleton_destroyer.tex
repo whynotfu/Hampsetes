@@ -1,0 +1,80 @@
+\doxysection{Database\+Singleton\+Destroyer Class Reference}
+\hypertarget{class_database_singleton_destroyer}{}\label{class_database_singleton_destroyer}\index{DatabaseSingletonDestroyer@{DatabaseSingletonDestroyer}}
+
+
+Класс-\/деструктор для синглтона базы данных  
+
+
+
+
+{\ttfamily \#include $<$databasesingleton.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_database_singleton_destroyer_a94634428d6a9c7cf508287a01c0e1f7d}{\texorpdfstring{$\sim$}{\string~}\+Database\+Singleton\+Destroyer}} ()
+\begin{DoxyCompactList}\small\item\em Деструктор класса-\/уничтожителя \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_database_singleton_destroyer_a40fd42e7109b9f3ea613cc594e8f9f48}{initialize}} (\mbox{\hyperlink{class_database_singleton}{Database\+Singleton}} \texorpdfstring{$\ast$}{*}p)
+\begin{DoxyCompactList}\small\item\em Инициализация указателя на синглтон \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_database_singleton}{Database\+Singleton}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_database_singleton_destroyer_abc40b3f7e6cf0db0481feaec6a760ede}{p\+\_\+instance}}
+\begin{DoxyCompactList}\small\item\em Указатель на экземпляр класса \doxylink{class_database_singleton}{Database\+Singleton}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс-\/деструктор для синглтона базы данных 
+
+Класс \doxylink{class_database_singleton_destroyer}{Database\+Singleton\+Destroyer} отвечает за корректное удаление экземпляра синглтона при завершении работы приложения. Гарантирует освобождение ресурсов и закрытие соединения с БД.
+
+Реализует паттерн RAII (Resource Acquisition Is Initialization) для автоматического управления ресурсами. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_database_singleton_destroyer_a94634428d6a9c7cf508287a01c0e1f7d}\index{DatabaseSingletonDestroyer@{DatabaseSingletonDestroyer}!````~DatabaseSingletonDestroyer@{\texorpdfstring{$\sim$}{\string~}DatabaseSingletonDestroyer}}
+\index{````~DatabaseSingletonDestroyer@{\texorpdfstring{$\sim$}{\string~}DatabaseSingletonDestroyer}!DatabaseSingletonDestroyer@{DatabaseSingletonDestroyer}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}DatabaseSingletonDestroyer()}{\string~DatabaseSingletonDestroyer()}}
+{\footnotesize\ttfamily \label{class_database_singleton_destroyer_a94634428d6a9c7cf508287a01c0e1f7d} 
+Database\+Singleton\+Destroyer\+::\texorpdfstring{$\sim$}{\string~}\+Database\+Singleton\+Destroyer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Деструктор класса-\/уничтожителя 
+
+Автоматически вызывается при завершении работы приложения и удаляет экземпляр синглтона, освобождая ресурсы. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_database_singleton_destroyer_a40fd42e7109b9f3ea613cc594e8f9f48}\index{DatabaseSingletonDestroyer@{DatabaseSingletonDestroyer}!initialize@{initialize}}
+\index{initialize@{initialize}!DatabaseSingletonDestroyer@{DatabaseSingletonDestroyer}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily \label{class_database_singleton_destroyer_a40fd42e7109b9f3ea613cc594e8f9f48} 
+void Database\+Singleton\+Destroyer\+::initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_database_singleton}{Database\+Singleton}} \texorpdfstring{$\ast$}{*}}]{p}{}\end{DoxyParamCaption})}
+
+
+
+Инициализация указателя на синглтон 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Указатель на экземпляр \doxylink{class_database_singleton}{Database\+Singleton}\\
+\hline
+\end{DoxyParams}
+Устанавливает указатель на экземпляр синглтона для последующего удаления в деструкторе. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_database_singleton_destroyer_abc40b3f7e6cf0db0481feaec6a760ede}\index{DatabaseSingletonDestroyer@{DatabaseSingletonDestroyer}!p\_instance@{p\_instance}}
+\index{p\_instance@{p\_instance}!DatabaseSingletonDestroyer@{DatabaseSingletonDestroyer}}
+\doxysubsubsection{\texorpdfstring{p\_instance}{p\_instance}}
+{\footnotesize\ttfamily \label{class_database_singleton_destroyer_abc40b3f7e6cf0db0481feaec6a760ede} 
+\mbox{\hyperlink{class_database_singleton}{Database\+Singleton}}\texorpdfstring{$\ast$}{*} Database\+Singleton\+Destroyer\+::p\+\_\+instance\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Указатель на экземпляр класса \doxylink{class_database_singleton}{Database\+Singleton}. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+DB\+\_\+singleton/\mbox{\hyperlink{databasesingleton_8h}{databasesingleton.\+h}}\item 
+/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+DB\+\_\+singleton/\mbox{\hyperlink{databasesingleton_8cpp}{databasesingleton.\+cpp}}\end{DoxyCompactItemize}

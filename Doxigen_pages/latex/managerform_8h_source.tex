@@ -2,35 +2,53 @@
 \hypertarget{managerform_8h_source}{}\label{managerform_8h_source}\index{/Users/sasha/polytech/Hampsetes/hampsters/Cazik/managerform.h@{/Users/sasha/polytech/Hampsetes/hampsters/Cazik/managerform.h}}
 \mbox{\hyperlink{managerform_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MANAGERFORM\_H}}
-\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MANAGERFORM\_H}}
-\DoxyCodeLine{00003\ }
-\DoxyCodeLine{00012\ }
-\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
-\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{authregform_8h}{authregform.h}}"{}}}
-\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{casinomainwindow_8h}{casinomainwindow.h}}"{}}}
-\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{baraban_8h}{baraban.h}}"{}}}
-\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ruletka_8h}{ruletka.h}}"{}}}
-\DoxyCodeLine{00018\ }
-\DoxyCodeLine{00026\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_manager_form_aa00f7e537972402489c8498de6d0b076}{ManagerForm}}\ :\ \textcolor{keyword}{public}\ QMainWindow}
-\DoxyCodeLine{00027\ \{}
-\DoxyCodeLine{00028\ \ \ \ \ Q\_OBJECT}
-\DoxyCodeLine{00029\ }
-\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_manager_form_aa00f7e537972402489c8498de6d0b076}{ManagerForm}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{00040\ }
-\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_manager_form_af888ce054fd432a689c9343841831d47}{\string~ManagerForm}}();}
-\DoxyCodeLine{00047\ }
-\DoxyCodeLine{00048\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00050\ \ \ \ \ AuthRegForm*\ current\_auth;}
-\DoxyCodeLine{00051\ }
-\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{class_casino_main_window}{CasinoMainWindow}}*\ main\_form;}
-\DoxyCodeLine{00054\ }
-\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{class_baraban}{Baraban}}*\ barabanform;}
-\DoxyCodeLine{00057\ }
-\DoxyCodeLine{00059\ \ \ \ \ \mbox{\hyperlink{class_ruletka}{Ruletka}}*\ ruletka;}
-\DoxyCodeLine{00060\ \};}
-\DoxyCodeLine{00061\ }
-\DoxyCodeLine{00062\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MANAGERFORM\_H}}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifndef\ MANAGERFORM\_H}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ MANAGERFORM\_H}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{authregform_8h}{authregform.h}}"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{casinomainwindow_8h}{casinomainwindow.h}}"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{baraban_8h}{baraban.h}}"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ruletka_8h}{ruletka.h}}"{}}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{kliker_8h}{kliker.h}}"{}}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{gtn_8h}{gtn.h}}"{}}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{kosti_8h}{kosti.h}}"{}}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{admin__page_8h}{admin\_page.h}}"{}}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{personal__page_8h}{personal\_page.h}}"{}}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_manager_form_aa00f7e537972402489c8498de6d0b076}{ManagerForm}}\ :\ \textcolor{keyword}{public}\ QMainWindow}
+\DoxyCodeLine{00039\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{class_manager_form_aa00f7e537972402489c8498de6d0b076}{ManagerForm}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00051\ \ \ \ \ }
+\DoxyCodeLine{00057\ \ \ \ \ \mbox{\hyperlink{class_manager_form_af888ce054fd432a689c9343841831d47}{\string~ManagerForm}}();}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{comment}{//\ Основные\ формы\ приложения}}
+\DoxyCodeLine{00061\ \ \ \ \ }
+\DoxyCodeLine{00063\ \ \ \ \ \mbox{\hyperlink{class_auth_reg_form}{AuthRegForm}}*\ \mbox{\hyperlink{class_manager_form_ad683126ecc8eb2c2032f9cad692800fe}{current\_auth}};}
+\DoxyCodeLine{00064\ \ \ \ \ }
+\DoxyCodeLine{00066\ \ \ \ \ \mbox{\hyperlink{class_casino_main_window}{CasinoMainWindow}}*\ \mbox{\hyperlink{class_manager_form_a8b42b291cd720a8b75767c63bc21be32}{main\_form}};}
+\DoxyCodeLine{00067\ \ \ \ \ }
+\DoxyCodeLine{00069\ \ \ \ \ \mbox{\hyperlink{class_baraban}{Baraban}}*\ \mbox{\hyperlink{class_manager_form_a270a9154f32367168c2be6ac0ca2fe0b}{barabanform}};}
+\DoxyCodeLine{00070\ \ \ \ \ }
+\DoxyCodeLine{00072\ \ \ \ \ \mbox{\hyperlink{class_ruletka}{Ruletka}}*\ \mbox{\hyperlink{class_manager_form_a218fa0f05faf77852d753c0bc8d6eeea}{ruletka}};}
+\DoxyCodeLine{00073\ \ \ \ \ }
+\DoxyCodeLine{00075\ \ \ \ \ \mbox{\hyperlink{class_kliker}{Kliker}}*\ \mbox{\hyperlink{class_manager_form_a01a67d81b85bf34ecfd43711fca223f7}{clicker}};}
+\DoxyCodeLine{00076\ \ \ \ \ }
+\DoxyCodeLine{00078\ \ \ \ \ \mbox{\hyperlink{class_kosti}{Kosti}}*\ \mbox{\hyperlink{class_manager_form_acd4b9432b8ac556c04a3d7ca8192e9c1}{kosti}};}
+\DoxyCodeLine{00079\ \ \ \ \ }
+\DoxyCodeLine{00081\ \ \ \ \ \mbox{\hyperlink{class_gtn}{Gtn}}*\ \mbox{\hyperlink{class_manager_form_a972e1684a1f2788f93417beb766c7fa3}{gtn}};}
+\DoxyCodeLine{00082\ \ \ \ \ }
+\DoxyCodeLine{00084\ \ \ \ \ \mbox{\hyperlink{classadmin__page}{admin\_page}}*\ \mbox{\hyperlink{class_manager_form_a54fc36f0f77175e6354e5456eecba67e}{adminPanel}};}
+\DoxyCodeLine{00085\ \ \ \ \ }
+\DoxyCodeLine{00087\ \ \ \ \ \mbox{\hyperlink{classpersonal__page}{personal\_page}}*\ \mbox{\hyperlink{class_manager_form_af0de5197960fc70ad834eff6b519b19c}{userPanel}};}
+\DoxyCodeLine{00088\ \};}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MANAGERFORM\_H}}
 
 \end{DoxyCode}

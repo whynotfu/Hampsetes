@@ -1,3 +1,14 @@
+/**
+ * @file personal_page.cpp
+ * @brief Реализация персональной страницы пользователя
+ * @author Команда разработчиков
+ * @date 2025
+ * @version 1.0
+ * 
+ * Содержит реализацию класса personal_page для отображения
+ * статистики пользователя и управления личным кабинетом.
+ */
+
 #include "personal_page.h"
 #include "ui_personal_page.h"
 #include "client_functions.h" // Подключаем глобальные данные

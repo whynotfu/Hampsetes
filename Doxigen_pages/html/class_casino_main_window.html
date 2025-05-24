@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Hampsetes: CasinoMainWindow Class Reference</title>
+<title>Hampsetes Casino: CasinoMainWindow Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,8 +32,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Hampsetes
+   <div id="projectname">Hampsetes Casino<span id="projectnumber">&#160;1.0</span>
    </div>
+   <div id="projectbrief">Qt-based Casino Application with Multiple Mini-Games</div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -106,12 +107,14 @@ $(function(){initNavTree('class_casino_main_window.html',''); initResizable(true
 <a href="#pub-slots">Public Slots</a> &#124;
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-slots">Private Slots</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_casino_main_window-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">CasinoMainWindow Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс <a class="el" href="class_casino_main_window.html" title="Класс CasinoMainWindow.">CasinoMainWindow</a>.  
+<p>Главное окно казино с меню выбора игр  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="casinomainwindow_8h_source.html">casinomainwindow.h</a>&gt;</code></p>
@@ -125,30 +128,85 @@ Inheritance diagram for CasinoMainWindow:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-slots" name="pub-slots"></a>
 Public Slots</h2></td></tr>
 <tr class="memitem:a488484045b1548b69e7732becb7b3226" id="r_a488484045b1548b69e7732becb7b3226"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a488484045b1548b69e7732becb7b3226">slot_show</a> ()</td></tr>
-<tr class="memdesc:a488484045b1548b69e7732becb7b3226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отображает главное окно казино.  <br /></td></tr>
+<tr class="memdesc:a488484045b1548b69e7732becb7b3226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот для показа главного окна  <br /></td></tr>
 <tr class="separator:a488484045b1548b69e7732becb7b3226"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeeaef20cc8cb3d6e5d94bde36a518b44" id="r_aeeaef20cc8cb3d6e5d94bde36a518b44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeeaef20cc8cb3d6e5d94bde36a518b44">change_minigame</a> (bool change, QPixmap image, QPixmap name)</td></tr>
-<tr class="memdesc:aeeaef20cc8cb3d6e5d94bde36a518b44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменяет изображение и название выбранной мини-игры.  <br /></td></tr>
-<tr class="separator:aeeaef20cc8cb3d6e5d94bde36a518b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fd729bceb38d50b29aea585af4b0c36" id="r_a2fd729bceb38d50b29aea585af4b0c36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fd729bceb38d50b29aea585af4b0c36">change_minigame</a> (bool direction, QPixmap image, QPixmap name)</td></tr>
+<tr class="memdesc:a2fd729bceb38d50b29aea585af4b0c36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Смена отображаемой мини-игры в превью  <br /></td></tr>
+<tr class="separator:a2fd729bceb38d50b29aea585af4b0c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
 Signals</h2></td></tr>
 <tr class="memitem:abeed997a965c5696f0153f342b0ea720" id="r_abeed997a965c5696f0153f342b0ea720"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abeed997a965c5696f0153f342b0ea720">baraban_sig</a> ()</td></tr>
-<tr class="memdesc:abeed997a965c5696f0153f342b0ea720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сигнал для перехода к окну со слотами.  <br /></td></tr>
+<tr class="memdesc:abeed997a965c5696f0153f342b0ea720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сигнал для перехода к игре в слот-машину  <br /></td></tr>
 <tr class="separator:abeed997a965c5696f0153f342b0ea720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac55ae1ca9ca0f788a8985da9f80dc70a" id="r_ac55ae1ca9ca0f788a8985da9f80dc70a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac55ae1ca9ca0f788a8985da9f80dc70a">ruletka_sig</a> ()</td></tr>
+<tr class="memdesc:ac55ae1ca9ca0f788a8985da9f80dc70a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сигнал для перехода к игре в рулетку  <br /></td></tr>
+<tr class="separator:ac55ae1ca9ca0f788a8985da9f80dc70a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac42036b76b9f3be70ff64528467a6d04" id="r_ac42036b76b9f3be70ff64528467a6d04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac42036b76b9f3be70ff64528467a6d04">clicker_sig</a> ()</td></tr>
+<tr class="memdesc:ac42036b76b9f3be70ff64528467a6d04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сигнал для перехода к игре-кликеру  <br /></td></tr>
+<tr class="separator:ac42036b76b9f3be70ff64528467a6d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae3f8eaca5c3b9b59157cb5392b41d13" id="r_aae3f8eaca5c3b9b59157cb5392b41d13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae3f8eaca5c3b9b59157cb5392b41d13">kosti_sig</a> ()</td></tr>
+<tr class="memdesc:aae3f8eaca5c3b9b59157cb5392b41d13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сигнал для перехода к игре в кости  <br /></td></tr>
+<tr class="separator:aae3f8eaca5c3b9b59157cb5392b41d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b15487f45ab6d5801b02729e1b6d630" id="r_a5b15487f45ab6d5801b02729e1b6d630"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b15487f45ab6d5801b02729e1b6d630">gtn_sig</a> ()</td></tr>
+<tr class="memdesc:a5b15487f45ab6d5801b02729e1b6d630"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сигнал для перехода к игре "больше-меньше".  <br /></td></tr>
+<tr class="separator:a5b15487f45ab6d5801b02729e1b6d630"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a046f0778ed18a19affc1fd03a293f6bf" id="r_a046f0778ed18a19affc1fd03a293f6bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a046f0778ed18a19affc1fd03a293f6bf">admn_sig</a> ()</td></tr>
+<tr class="memdesc:a046f0778ed18a19affc1fd03a293f6bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сигнал для перехода к административной панели  <br /></td></tr>
+<tr class="separator:a046f0778ed18a19affc1fd03a293f6bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51303f10cac5f1eb90638cb89797db4f" id="r_a51303f10cac5f1eb90638cb89797db4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51303f10cac5f1eb90638cb89797db4f">user_sig</a> ()</td></tr>
+<tr class="memdesc:a51303f10cac5f1eb90638cb89797db4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сигнал для перехода к пользовательской панели  <br /></td></tr>
+<tr class="separator:a51303f10cac5f1eb90638cb89797db4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af39626e04442543326e7bab06eba3536" id="r_af39626e04442543326e7bab06eba3536"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af39626e04442543326e7bab06eba3536">CasinoMainWindow</a> (QWidget *parent=nullptr)</td></tr>
-<tr class="memdesc:af39626e04442543326e7bab06eba3536"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор <a class="el" href="class_casino_main_window.html" title="Класс CasinoMainWindow.">CasinoMainWindow</a>.  <br /></td></tr>
+<tr class="memdesc:af39626e04442543326e7bab06eba3536"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор главного окна казино  <br /></td></tr>
 <tr class="separator:af39626e04442543326e7bab06eba3536"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae81612d7888a5cbb8ea8f17cee9fb1fa" id="r_ae81612d7888a5cbb8ea8f17cee9fb1fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae81612d7888a5cbb8ea8f17cee9fb1fa">~CasinoMainWindow</a> ()</td></tr>
-<tr class="memdesc:ae81612d7888a5cbb8ea8f17cee9fb1fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор <a class="el" href="class_casino_main_window.html" title="Класс CasinoMainWindow.">CasinoMainWindow</a>.  <br /></td></tr>
+<tr class="memdesc:ae81612d7888a5cbb8ea8f17cee9fb1fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор главного окна казино  <br /></td></tr>
 <tr class="separator:ae81612d7888a5cbb8ea8f17cee9fb1fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-slots" name="pri-slots"></a>
+Private Slots</h2></td></tr>
+<tr class="memitem:a6e3fdfc3457e1e19a2d11d1be7684b0d" id="r_a6e3fdfc3457e1e19a2d11d1be7684b0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e3fdfc3457e1e19a2d11d1be7684b0d">on_NextGameButton_clicked</a> ()</td></tr>
+<tr class="memdesc:a6e3fdfc3457e1e19a2d11d1be7684b0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработчик кнопки переключения на следующую игру  <br /></td></tr>
+<tr class="separator:a6e3fdfc3457e1e19a2d11d1be7684b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04bc55d39380f68afe21b0ad8e734b3c" id="r_a04bc55d39380f68afe21b0ad8e734b3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04bc55d39380f68afe21b0ad8e734b3c">on_PlayButton_clicked</a> ()</td></tr>
+<tr class="memdesc:a04bc55d39380f68afe21b0ad8e734b3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработчик кнопки начала игры  <br /></td></tr>
+<tr class="separator:a04bc55d39380f68afe21b0ad8e734b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e05f9fafdeb68bdb357f05a1e1c757f" id="r_a8e05f9fafdeb68bdb357f05a1e1c757f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e05f9fafdeb68bdb357f05a1e1c757f">on_Admin_page_button_clicked</a> ()</td></tr>
+<tr class="memdesc:a8e05f9fafdeb68bdb357f05a1e1c757f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработчик кнопки перехода к админ-панели  <br /></td></tr>
+<tr class="separator:a8e05f9fafdeb68bdb357f05a1e1c757f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04c1040a5693a188b4e4e78dc9ac89fa" id="r_a04c1040a5693a188b4e4e78dc9ac89fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04c1040a5693a188b4e4e78dc9ac89fa">on_pushButton_clicked</a> ()</td></tr>
+<tr class="memdesc:a04c1040a5693a188b4e4e78dc9ac89fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработчик кнопки личной страницы пользователя  <br /></td></tr>
+<tr class="separator:a04c1040a5693a188b4e4e78dc9ac89fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ac741e2e94305fd89ba2f162932d81293" id="r_ac741e2e94305fd89ba2f162932d81293"><td class="memItemLeft" align="right" valign="top">Ui::CasinoMainWindow *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac741e2e94305fd89ba2f162932d81293">ui</a></td></tr>
+<tr class="memdesc:ac741e2e94305fd89ba2f162932d81293"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на UI объект главного окна  <br /></td></tr>
+<tr class="separator:ac741e2e94305fd89ba2f162932d81293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30f9d661760758c1d38e45308494f677" id="r_a30f9d661760758c1d38e45308494f677"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30f9d661760758c1d38e45308494f677">game_slot</a></td></tr>
+<tr class="memdesc:a30f9d661760758c1d38e45308494f677"><td class="mdescLeft">&#160;</td><td class="mdescRight">Индекс текущей выбранной мини-игры для циклического переключения  <br /></td></tr>
+<tr class="separator:a30f9d661760758c1d38e45308494f677"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a239d304fa3a012eab60343dad4c7b81b" id="r_a239d304fa3a012eab60343dad4c7b81b"><td class="memItemLeft" align="right" valign="top">QPixmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a239d304fa3a012eab60343dad4c7b81b">Image</a></td></tr>
+<tr class="memdesc:a239d304fa3a012eab60343dad4c7b81b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изображение текущей выбранной игры  <br /></td></tr>
+<tr class="separator:a239d304fa3a012eab60343dad4c7b81b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc6cd28080eef8124db7e1202ac383bf" id="r_acc6cd28080eef8124db7e1202ac383bf"><td class="memItemLeft" align="right" valign="top">QPixmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc6cd28080eef8124db7e1202ac383bf">Name</a></td></tr>
+<tr class="memdesc:acc6cd28080eef8124db7e1202ac383bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Название текущей выбранной игры  <br /></td></tr>
+<tr class="separator:acc6cd28080eef8124db7e1202ac383bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Класс <a class="el" href="class_casino_main_window.html" title="Класс CasinoMainWindow.">CasinoMainWindow</a>. </p>
-<p>Основное окно казино, предоставляющее возможность выбора мини-игр, отображения их изображений и перехода к соответствующим игровым окнам. </p>
+<div class="textblock"><p>Главное окно казино с меню выбора игр </p>
+<p>Класс <a class="el" href="class_casino_main_window.html" title="Главное окно казино с меню выбора игр">CasinoMainWindow</a> представляет центральное меню приложения казино. Предоставляет пользователю возможность:</p><ul>
+<li>Выбирать из доступных мини-игр</li>
+<li>Просматривать превью игр с изображениями</li>
+<li>Переходить к админ-панели (для администраторов)</li>
+<li>Открывать личную страницу пользователя</li>
+<li>Просматривать текущий баланс и статистику</li>
+</ul>
+<p>Окно служит хабом для навигации по всем разделам приложения. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af39626e04442543326e7bab06eba3536" name="af39626e04442543326e7bab06eba3536"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af39626e04442543326e7bab06eba3536">&#9670;&#160;</a></span>CasinoMainWindow()</h2>
@@ -173,21 +231,14 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Конструктор <a class="el" href="class_casino_main_window.html" title="Класс CasinoMainWindow.">CasinoMainWindow</a>. </p>
-<p>Инициализирует главное окно казино, устанавливая необходимые параметры, и настраивает пользовательский интерфейс.</p>
+<p>Конструктор главного окна казино </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parent</td><td>Родительский виджет (по умолчанию <code>nullptr</code>).</td></tr>
+    <tr><td class="paramname">parent</td><td>Родительский виджет (по умолчанию nullptr)</td></tr>
   </table>
   </dd>
 </dl>
-<p>Инициализирует главное окно казино, устанавливая иконку, заголовок, фиксированный размер, а также заменяя текстовые элементы изображениями. Кроме того, задается начальное значение выбора мини-игры.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">parent</td><td>Родительский виджет (по умолчанию <code>nullptr</code>). </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Инициализирует интерфейс главного меню и настраивает начальное состояние компонентов. </p>
 
 </div>
 </div>
@@ -206,13 +257,39 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Деструктор <a class="el" href="class_casino_main_window.html" title="Класс CasinoMainWindow.">CasinoMainWindow</a>. </p>
-<p>Освобождает выделенные ресурсы.</p>
-<p>Освобождает ресурсы, связанные с пользовательским интерфейсом. </p>
+<p>Деструктор главного окна казино </p>
+<p>Освобождает ресурсы, используемые главным меню. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a046f0778ed18a19affc1fd03a293f6bf" name="a046f0778ed18a19affc1fd03a293f6bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a046f0778ed18a19affc1fd03a293f6bf">&#9670;&#160;</a></span>admn_sig</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CasinoMainWindow::admn_sig </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel signal">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сигнал для перехода к административной панели </p>
+
+</div>
+</div>
 <a id="abeed997a965c5696f0153f342b0ea720" name="abeed997a965c5696f0153f342b0ea720"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abeed997a965c5696f0153f342b0ea720">&#9670;&#160;</a></span>baraban_sig</h2>
 
@@ -236,13 +313,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Сигнал для перехода к окну со слотами. </p>
-<p>Генерируется при выборе соответствующей мини-игры, например, барабана. </p>
+<p>Сигнал для перехода к игре в слот-машину </p>
 
 </div>
 </div>
-<a id="aeeaef20cc8cb3d6e5d94bde36a518b44" name="aeeaef20cc8cb3d6e5d94bde36a518b44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeeaef20cc8cb3d6e5d94bde36a518b44">&#9670;&#160;</a></span>change_minigame</h2>
+<a id="a2fd729bceb38d50b29aea585af4b0c36" name="a2fd729bceb38d50b29aea585af4b0c36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fd729bceb38d50b29aea585af4b0c36">&#9670;&#160;</a></span>change_minigame</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -253,7 +329,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void CasinoMainWindow::change_minigame </td>
           <td>(</td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>change</em></span>, </td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>direction</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -273,25 +349,236 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Изменяет изображение и название выбранной мини-игры. </p>
-<p>Функция обновляет отображаемые изображения мини-игры и её названия в зависимости от направления изменения.</p>
+<p>Смена отображаемой мини-игры в превью </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">change</td><td>Логическое значение, определяющее направление смены (true - следующая, false - предыдущая). </td></tr>
-    <tr><td class="paramname">image</td><td>Новое изображение мини-игры. </td></tr>
-    <tr><td class="paramname">name</td><td>Новое изображение названия мини-игры.</td></tr>
+    <tr><td class="paramname">direction</td><td>Направление переключения (true - вперед, false - назад) </td></tr>
+    <tr><td class="paramname">image</td><td>Изображение игры для отображения </td></tr>
+    <tr><td class="paramname">name</td><td>Название игры для отображения</td></tr>
   </table>
   </dd>
 </dl>
-<p>Функция обновляет индекс выбранной мини-игры (<code>game_slot</code>) в зависимости от значения <em class="arg">change</em>, загружает соответствующие изображения для мини-игры и обновляет элементы интерфейса, отображающие изображение мини-игры и её название.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">change</td><td>Если <code>true</code>, индекс увеличивается; если <code>false</code>, индекс уменьшается. </td></tr>
-    <tr><td class="paramname">image</td><td>QPixmap, представляющий текущее изображение мини-игры. </td></tr>
-    <tr><td class="paramname">name</td><td>QPixmap, представляющий текущее изображение названия мини-игры. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Обновляет превью игры в главном меню, показывая изображение и название выбранной игры. </p>
+
+</div>
+</div>
+<a id="ac42036b76b9f3be70ff64528467a6d04" name="ac42036b76b9f3be70ff64528467a6d04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac42036b76b9f3be70ff64528467a6d04">&#9670;&#160;</a></span>clicker_sig</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CasinoMainWindow::clicker_sig </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel signal">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сигнал для перехода к игре-кликеру </p>
+
+</div>
+</div>
+<a id="a5b15487f45ab6d5801b02729e1b6d630" name="a5b15487f45ab6d5801b02729e1b6d630"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b15487f45ab6d5801b02729e1b6d630">&#9670;&#160;</a></span>gtn_sig</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CasinoMainWindow::gtn_sig </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel signal">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сигнал для перехода к игре "больше-меньше". </p>
+
+</div>
+</div>
+<a id="aae3f8eaca5c3b9b59157cb5392b41d13" name="aae3f8eaca5c3b9b59157cb5392b41d13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae3f8eaca5c3b9b59157cb5392b41d13">&#9670;&#160;</a></span>kosti_sig</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CasinoMainWindow::kosti_sig </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel signal">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сигнал для перехода к игре в кости </p>
+
+</div>
+</div>
+<a id="a8e05f9fafdeb68bdb357f05a1e1c757f" name="a8e05f9fafdeb68bdb357f05a1e1c757f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e05f9fafdeb68bdb357f05a1e1c757f">&#9670;&#160;</a></span>on_Admin_page_button_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CasinoMainWindow::on_Admin_page_button_clicked </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обработчик кнопки перехода к админ-панели </p>
+<p>Открывает административную панель для управления системой (доступно только администраторам). </p>
+
+</div>
+</div>
+<a id="a6e3fdfc3457e1e19a2d11d1be7684b0d" name="a6e3fdfc3457e1e19a2d11d1be7684b0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e3fdfc3457e1e19a2d11d1be7684b0d">&#9670;&#160;</a></span>on_NextGameButton_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CasinoMainWindow::on_NextGameButton_clicked </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обработчик кнопки переключения на следующую игру </p>
+<p>Циклически переключает отображаемую игру в превью, обновляя изображения и описания. </p>
+
+</div>
+</div>
+<a id="a04bc55d39380f68afe21b0ad8e734b3c" name="a04bc55d39380f68afe21b0ad8e734b3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04bc55d39380f68afe21b0ad8e734b3c">&#9670;&#160;</a></span>on_PlayButton_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CasinoMainWindow::on_PlayButton_clicked </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обработчик кнопки начала игры </p>
+<p>Запускает выбранную в данный момент мини-игру, генерируя соответствующий сигнал для перехода. </p>
+
+</div>
+</div>
+<a id="a04c1040a5693a188b4e4e78dc9ac89fa" name="a04c1040a5693a188b4e4e78dc9ac89fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04c1040a5693a188b4e4e78dc9ac89fa">&#9670;&#160;</a></span>on_pushButton_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CasinoMainWindow::on_pushButton_clicked </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обработчик кнопки личной страницы пользователя </p>
+<p>Открывает персональную страницу пользователя со статистикой игр и настройками аккаунта. </p>
+
+</div>
+</div>
+<a id="ac55ae1ca9ca0f788a8985da9f80dc70a" name="ac55ae1ca9ca0f788a8985da9f80dc70a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac55ae1ca9ca0f788a8985da9f80dc70a">&#9670;&#160;</a></span>ruletka_sig</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CasinoMainWindow::ruletka_sig </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel signal">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сигнал для перехода к игре в рулетку </p>
 
 </div>
 </div>
@@ -318,14 +605,137 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Отображает главное окно казино. </p>
-<p>Слот для показа главного окна. </p>
+<p>Слот для показа главного окна </p>
+<p>Отображает главное меню казино и обновляет информацию о текущем пользователе и его балансе. </p>
+
+</div>
+</div>
+<a id="a51303f10cac5f1eb90638cb89797db4f" name="a51303f10cac5f1eb90638cb89797db4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51303f10cac5f1eb90638cb89797db4f">&#9670;&#160;</a></span>user_sig</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CasinoMainWindow::user_sig </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel signal">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сигнал для перехода к пользовательской панели </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a30f9d661760758c1d38e45308494f677" name="a30f9d661760758c1d38e45308494f677"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30f9d661760758c1d38e45308494f677">&#9670;&#160;</a></span>game_slot</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CasinoMainWindow::game_slot</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Индекс текущей выбранной мини-игры для циклического переключения </p>
+
+</div>
+</div>
+<a id="a239d304fa3a012eab60343dad4c7b81b" name="a239d304fa3a012eab60343dad4c7b81b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a239d304fa3a012eab60343dad4c7b81b">&#9670;&#160;</a></span>Image</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPixmap CasinoMainWindow::Image</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Изображение текущей выбранной игры </p>
+
+</div>
+</div>
+<a id="acc6cd28080eef8124db7e1202ac383bf" name="acc6cd28080eef8124db7e1202ac383bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc6cd28080eef8124db7e1202ac383bf">&#9670;&#160;</a></span>Name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPixmap CasinoMainWindow::Name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Название текущей выбранной игры </p>
+
+</div>
+</div>
+<a id="ac741e2e94305fd89ba2f162932d81293" name="ac741e2e94305fd89ba2f162932d81293"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac741e2e94305fd89ba2f162932d81293">&#9670;&#160;</a></span>ui</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ui::CasinoMainWindow* CasinoMainWindow::ui</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Указатель на UI объект главного окна </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/Users/sasha/polytech/Hampsetes/hampsters/Cazik/<a class="el" href="casinomainwindow_8h_source.html">casinomainwindow.h</a></li>
-<li>/Users/sasha/polytech/Hampsetes/hampsters/Cazik/build/Desktop_Qt_6_8_2_MinGW_64_bit-Release/release/<b>moc_casinomainwindow.cpp</b></li>
 <li>/Users/sasha/polytech/Hampsetes/hampsters/Cazik/<a class="el" href="casinomainwindow_8cpp.html">casinomainwindow.cpp</a></li>
 </ul>
 </div><!-- contents -->

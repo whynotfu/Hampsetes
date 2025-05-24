@@ -1,0 +1,160 @@
+\doxysection{Kliker Class Reference}
+\hypertarget{class_kliker}{}\label{class_kliker}\index{Kliker@{Kliker}}
+
+
+Класс игры-\/кликера для заработка робуксов  
+
+
+
+
+{\ttfamily \#include $<$kliker.\+h$>$}
+
+Inheritance diagram for Kliker\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_kliker}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_kliker_a0acd53fdbe4cc12cb6f516356656f369}{to\+\_\+main}} ()
+\begin{DoxyCompactList}\small\item\em Сигнал возврата в главное меню \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_kliker_a3aea14f7fe789bb3b04f7e7e7446b6cd}{Kliker}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Конструктор игры-\/кликера \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_kliker_a082b381823a288538e26e88af952609e}{\texorpdfstring{$\sim$}{\string~}\+Kliker}} ()
+\begin{DoxyCompactList}\small\item\em Деструктор игры-\/кликера \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_kliker_a19571d76c769d48df79c6cd50b12dbaa}{slot\+\_\+show}} ()
+\begin{DoxyCompactList}\small\item\em Слот для показа окна кликера \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_kliker_a3eeafdafda93c0b4864ea2485a85a9a4}{on\+\_\+push\+Button\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em Обработчик кнопки возврата в главное меню \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_kliker_ad07e40fa2e93b70203a752f8d5546510}{on\+\_\+push\+Button\+Tap\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em Обработчик кнопки клика для заработка \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Kliker \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_kliker_a44b382be8b734351d3a116cce546bae8}{ui}}
+\begin{DoxyCompactList}\small\item\em Указатель на UI объект кликера \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_kliker_a7fe15100c9a2ae4e2682a4dc252a52b6}{Robux100}}
+\begin{DoxyCompactList}\small\item\em Счетчик заработанных робуксов за текущую сессию кликера \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс игры-\/кликера для заработка робуксов 
+
+Класс \doxylink{class_kliker}{Kliker} реализует простую игру-\/кликер, где игрок может заработать робуксы многократным нажатием на кнопку.
+
+Механика игры\+:
+\begin{DoxyItemize}
+\item Игрок нажимает на кнопку для получения робуксов
+\item За каждое нажатие начисляется определенное количество робуксов
+\item Заработанные робуксы автоматически добавляются к балансу игрока
+\item Игра предназначена для пополнения баланса без риска потерь
+\end{DoxyItemize}
+
+Это альтернативный способ получения игровой валюты помимо выигрышей в азартных играх казино. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_kliker_a3aea14f7fe789bb3b04f7e7e7446b6cd}\index{Kliker@{Kliker}!Kliker@{Kliker}}
+\index{Kliker@{Kliker}!Kliker@{Kliker}}
+\doxysubsubsection{\texorpdfstring{Kliker()}{Kliker()}}
+{\footnotesize\ttfamily \label{class_kliker_a3aea14f7fe789bb3b04f7e7e7446b6cd} 
+Kliker\+::\+Kliker (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Конструктор игры-\/кликера 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Родительский виджет (по умолчанию nullptr)\\
+\hline
+\end{DoxyParams}
+Инициализирует интерфейс кликера и устанавливает начальные значения счетчиков. \Hypertarget{class_kliker_a082b381823a288538e26e88af952609e}\index{Kliker@{Kliker}!````~Kliker@{\texorpdfstring{$\sim$}{\string~}Kliker}}
+\index{````~Kliker@{\texorpdfstring{$\sim$}{\string~}Kliker}!Kliker@{Kliker}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Kliker()}{\string~Kliker()}}
+{\footnotesize\ttfamily \label{class_kliker_a082b381823a288538e26e88af952609e} 
+Kliker\+::\texorpdfstring{$\sim$}{\string~}\+Kliker (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Деструктор игры-\/кликера 
+
+Освобождает ресурсы, используемые кликером. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_kliker_a3eeafdafda93c0b4864ea2485a85a9a4}\index{Kliker@{Kliker}!on\_pushButton\_clicked@{on\_pushButton\_clicked}}
+\index{on\_pushButton\_clicked@{on\_pushButton\_clicked}!Kliker@{Kliker}}
+\doxysubsubsection{\texorpdfstring{on\_pushButton\_clicked}{on\_pushButton\_clicked}}
+{\footnotesize\ttfamily \label{class_kliker_a3eeafdafda93c0b4864ea2485a85a9a4} 
+void Kliker\+::on\+\_\+push\+Button\+\_\+clicked (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Обработчик кнопки возврата в главное меню 
+
+Закрывает окно кликера и возвращает игрока в главное меню казино. \Hypertarget{class_kliker_ad07e40fa2e93b70203a752f8d5546510}\index{Kliker@{Kliker}!on\_pushButtonTap\_clicked@{on\_pushButtonTap\_clicked}}
+\index{on\_pushButtonTap\_clicked@{on\_pushButtonTap\_clicked}!Kliker@{Kliker}}
+\doxysubsubsection{\texorpdfstring{on\_pushButtonTap\_clicked}{on\_pushButtonTap\_clicked}}
+{\footnotesize\ttfamily \label{class_kliker_ad07e40fa2e93b70203a752f8d5546510} 
+void Kliker\+::on\+\_\+push\+Button\+Tap\+\_\+clicked (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Обработчик кнопки клика для заработка 
+
+Основная функция кликера -\/ начисляет робуксы за каждое нажатие. Обновляет счетчик заработанных робуксов и общий баланс игрока. Может включать анимации и звуковые эффекты для улучшения UX. \Hypertarget{class_kliker_a19571d76c769d48df79c6cd50b12dbaa}\index{Kliker@{Kliker}!slot\_show@{slot\_show}}
+\index{slot\_show@{slot\_show}!Kliker@{Kliker}}
+\doxysubsubsection{\texorpdfstring{slot\_show()}{slot\_show()}}
+{\footnotesize\ttfamily \label{class_kliker_a19571d76c769d48df79c6cd50b12dbaa} 
+void Kliker\+::slot\+\_\+show (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Слот для показа окна кликера 
+
+Отображает интерфейс кликера и обновляет информацию о текущем балансе игрока. \Hypertarget{class_kliker_a0acd53fdbe4cc12cb6f516356656f369}\index{Kliker@{Kliker}!to\_main@{to\_main}}
+\index{to\_main@{to\_main}!Kliker@{Kliker}}
+\doxysubsubsection{\texorpdfstring{to\_main}{to\_main}}
+{\footnotesize\ttfamily \label{class_kliker_a0acd53fdbe4cc12cb6f516356656f369} 
+void Kliker\+::to\+\_\+main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Сигнал возврата в главное меню 
+
+Испускается при нажатии кнопки возврата для перехода к главному меню казино. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_kliker_a7fe15100c9a2ae4e2682a4dc252a52b6}\index{Kliker@{Kliker}!Robux100@{Robux100}}
+\index{Robux100@{Robux100}!Kliker@{Kliker}}
+\doxysubsubsection{\texorpdfstring{Robux100}{Robux100}}
+{\footnotesize\ttfamily \label{class_kliker_a7fe15100c9a2ae4e2682a4dc252a52b6} 
+int Kliker\+::\+Robux100\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Счетчик заработанных робуксов за текущую сессию кликера 
+
+\Hypertarget{class_kliker_a44b382be8b734351d3a116cce546bae8}\index{Kliker@{Kliker}!ui@{ui}}
+\index{ui@{ui}!Kliker@{Kliker}}
+\doxysubsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily \label{class_kliker_a44b382be8b734351d3a116cce546bae8} 
+Ui\+::\+Kliker\texorpdfstring{$\ast$}{*} Kliker\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Указатель на UI объект кликера 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/\mbox{\hyperlink{kliker_8h}{kliker.\+h}}\item 
+/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/\mbox{\hyperlink{kliker_8cpp}{kliker.\+cpp}}\end{DoxyCompactItemize}

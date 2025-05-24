@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Hampsetes: Ruletka Class Reference</title>
+<title>Hampsetes Casino: Ruletka Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,8 +32,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Hampsetes
+   <div id="projectname">Hampsetes Casino<span id="projectnumber">&#160;1.0</span>
    </div>
+   <div id="projectbrief">Qt-based Casino Application with Multiple Mini-Games</div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -103,13 +104,16 @@ $(function(){initNavTree('class_ruletka.html',''); initResizable(true); });
 
 <div class="header">
   <div class="summary">
+<a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-slots">Private Slots</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_ruletka-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Ruletka Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс <a class="el" href="class_ruletka.html" title="Класс Ruletka.">Ruletka</a>.  
+<p>Игра в рулетку с цветными секторами  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="ruletka_8h_source.html">ruletka.h</a>&gt;</code></p>
@@ -120,18 +124,76 @@ Inheritance diagram for Ruletka:</div>
   <img src="class_ruletka.png" alt=""/>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:aa0e1c0c8a4d4e9071726bc776cc614cb" id="r_aa0e1c0c8a4d4e9071726bc776cc614cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0e1c0c8a4d4e9071726bc776cc614cb">to_main</a> ()</td></tr>
+<tr class="memdesc:aa0e1c0c8a4d4e9071726bc776cc614cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сигнал возврата в главное меню  <br /></td></tr>
+<tr class="separator:aa0e1c0c8a4d4e9071726bc776cc614cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9310c1a5eb9e5412fcedbd7d9a99fc6c" id="r_a9310c1a5eb9e5412fcedbd7d9a99fc6c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9310c1a5eb9e5412fcedbd7d9a99fc6c">Ruletka</a> (QWidget *parent=nullptr)</td></tr>
-<tr class="memdesc:a9310c1a5eb9e5412fcedbd7d9a99fc6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса <a class="el" href="class_ruletka.html" title="Класс Ruletka.">Ruletka</a>.  <br /></td></tr>
+<tr class="memdesc:a9310c1a5eb9e5412fcedbd7d9a99fc6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор игры в рулетку  <br /></td></tr>
 <tr class="separator:a9310c1a5eb9e5412fcedbd7d9a99fc6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8395a199ed7b64ce08121db92d44d0c6" id="r_a8395a199ed7b64ce08121db92d44d0c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8395a199ed7b64ce08121db92d44d0c6">slot_show</a> ()</td></tr>
+<tr class="memdesc:a8395a199ed7b64ce08121db92d44d0c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот для отображения окна игры  <br /></td></tr>
+<tr class="separator:a8395a199ed7b64ce08121db92d44d0c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1708f92d7d89ca12e0ed11b792c70e00" id="r_a1708f92d7d89ca12e0ed11b792c70e00"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1708f92d7d89ca12e0ed11b792c70e00">~Ruletka</a> ()</td></tr>
-<tr class="memdesc:a1708f92d7d89ca12e0ed11b792c70e00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор класса <a class="el" href="class_ruletka.html" title="Класс Ruletka.">Ruletka</a>.  <br /></td></tr>
+<tr class="memdesc:a1708f92d7d89ca12e0ed11b792c70e00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор игры в рулетку  <br /></td></tr>
 <tr class="separator:a1708f92d7d89ca12e0ed11b792c70e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-slots" name="pri-slots"></a>
+Private Slots</h2></td></tr>
+<tr class="memitem:ab41d19a65c5f4a6b497c1cc527dcd3f3" id="r_ab41d19a65c5f4a6b497c1cc527dcd3f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab41d19a65c5f4a6b497c1cc527dcd3f3">on_BackButton_clicked</a> ()</td></tr>
+<tr class="memdesc:ab41d19a65c5f4a6b497c1cc527dcd3f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработчик кнопки возврата в главное меню  <br /></td></tr>
+<tr class="separator:ab41d19a65c5f4a6b497c1cc527dcd3f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a152118dfb649b39103e234942b047819" id="r_a152118dfb649b39103e234942b047819"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a152118dfb649b39103e234942b047819">on_ButtonPlay_clicked</a> ()</td></tr>
+<tr class="memdesc:a152118dfb649b39103e234942b047819"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработчик кнопки запуска игры  <br /></td></tr>
+<tr class="separator:a152118dfb649b39103e234942b047819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20169b08d1313b56b31359669ab7d3b9" id="r_a20169b08d1313b56b31359669ab7d3b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20169b08d1313b56b31359669ab7d3b9">on_ButtonStavka100_clicked</a> ()</td></tr>
+<tr class="memdesc:a20169b08d1313b56b31359669ab7d3b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработчик кнопки ставки 100 robux.  <br /></td></tr>
+<tr class="separator:a20169b08d1313b56b31359669ab7d3b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a148018f700bac96aa70349598493fb2c" id="r_a148018f700bac96aa70349598493fb2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a148018f700bac96aa70349598493fb2c">on_ButtonStavka500_clicked</a> ()</td></tr>
+<tr class="memdesc:a148018f700bac96aa70349598493fb2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработчик кнопки ставки 500 robux.  <br /></td></tr>
+<tr class="separator:a148018f700bac96aa70349598493fb2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fb4f213ca3b8533d1871e8de14b0152" id="r_a3fb4f213ca3b8533d1871e8de14b0152"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3fb4f213ca3b8533d1871e8de14b0152">on_ButtonStavka1000_clicked</a> ()</td></tr>
+<tr class="memdesc:a3fb4f213ca3b8533d1871e8de14b0152"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработчик кнопки ставки 1000 robux.  <br /></td></tr>
+<tr class="separator:a3fb4f213ca3b8533d1871e8de14b0152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a09f6263721723be519b1c40f24b515" id="r_a7a09f6263721723be519b1c40f24b515"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a09f6263721723be519b1c40f24b515">on_ButtonStavkaRed_clicked</a> ()</td></tr>
+<tr class="memdesc:a7a09f6263721723be519b1c40f24b515"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработчик ставки на красный цвет  <br /></td></tr>
+<tr class="separator:a7a09f6263721723be519b1c40f24b515"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebd6284eb36174847e83b3609924349b" id="r_aebd6284eb36174847e83b3609924349b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aebd6284eb36174847e83b3609924349b">on_ButtonStavkaBlack_clicked</a> ()</td></tr>
+<tr class="memdesc:aebd6284eb36174847e83b3609924349b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработчик ставки на черный цвет  <br /></td></tr>
+<tr class="separator:aebd6284eb36174847e83b3609924349b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac450d297dd6149e1c9668f58af6c739b" id="r_ac450d297dd6149e1c9668f58af6c739b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac450d297dd6149e1c9668f58af6c739b">on_ButtonStavkaGreen_clicked</a> ()</td></tr>
+<tr class="memdesc:ac450d297dd6149e1c9668f58af6c739b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработчик ставки на зеленый цвет  <br /></td></tr>
+<tr class="separator:ac450d297dd6149e1c9668f58af6c739b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a1ceac392b43a8c27201594abe6ae28f7" id="r_a1ceac392b43a8c27201594abe6ae28f7"><td class="memItemLeft" align="right" valign="top">Ui::Ruletka *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ceac392b43a8c27201594abe6ae28f7">ui</a></td></tr>
+<tr class="memdesc:a1ceac392b43a8c27201594abe6ae28f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на UI объект игры  <br /></td></tr>
+<tr class="separator:a1ceac392b43a8c27201594abe6ae28f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a263100492aec3d05c14048f9bb1cb0c7" id="r_a263100492aec3d05c14048f9bb1cb0c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a263100492aec3d05c14048f9bb1cb0c7">size_of_stavka</a></td></tr>
+<tr class="memdesc:a263100492aec3d05c14048f9bb1cb0c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Размер текущей ставки (100, 500 или 1000 robux)  <br /></td></tr>
+<tr class="separator:a263100492aec3d05c14048f9bb1cb0c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb847c65309abf6f86eecbc92958d4a8" id="r_afb847c65309abf6f86eecbc92958d4a8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb847c65309abf6f86eecbc92958d4a8">object_of_stavka</a></td></tr>
+<tr class="memdesc:afb847c65309abf6f86eecbc92958d4a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект ставки: 1 - красный, 2 - черный, 3 - зеленый  <br /></td></tr>
+<tr class="separator:afb847c65309abf6f86eecbc92958d4a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Класс <a class="el" href="class_ruletka.html" title="Класс Ruletka.">Ruletka</a>. </p>
-<p>Класс <a class="el" href="class_ruletka.html" title="Класс Ruletka.">Ruletka</a> представляет окно игры "Рулетка", наследуемое от QDialog. Он отвечает за инициализацию и отображение пользовательского интерфейса игры. </p>
+<div class="textblock"><p>Игра в рулетку с цветными секторами </p>
+<p>Класс <a class="el" href="class_ruletka.html" title="Игра в рулетку с цветными секторами">Ruletka</a> реализует классическую игру в рулетку со следующими особенностями:</p><ul>
+<li>Ставки на красный, черный или зеленый цвет</li>
+<li>Возможность выбора размера ставки (100, 500, 1000 robux)</li>
+<li>Анимация вращения рулетки</li>
+<li>Автоматический подсчет выигрышей</li>
+</ul>
+<p>Правила игры:</p><ul>
+<li>Красный/Черный: коэффициент выигрыша x2</li>
+<li>Зеленый: коэффициент выигрыша x14 (редкий сектор)</li>
+<li>При проигрыше ставка теряется полностью </li>
+</ul>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9310c1a5eb9e5412fcedbd7d9a99fc6c" name="a9310c1a5eb9e5412fcedbd7d9a99fc6c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9310c1a5eb9e5412fcedbd7d9a99fc6c">&#9670;&#160;</a></span>Ruletka()</h2>
@@ -156,21 +218,14 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Конструктор класса <a class="el" href="class_ruletka.html" title="Класс Ruletka.">Ruletka</a>. </p>
-<p>Инициализирует окно игры "Рулетка" и настраивает его пользовательский интерфейс.</p>
+<p>Конструктор игры в рулетку </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parent</td><td>Родительский виджет (по умолчанию <code>nullptr</code>).</td></tr>
+    <tr><td class="paramname">parent</td><td>Родительский виджет (по умолчанию nullptr)</td></tr>
   </table>
   </dd>
 </dl>
-<p>Инициализирует окно игры "Рулетка", устанавливая пользовательский интерфейс.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">parent</td><td>Родительский виджет (по умолчанию <code>nullptr</code>). </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Инициализирует интерфейс игры и начальные параметры рулетки. </p>
 
 </div>
 </div>
@@ -189,8 +244,354 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Деструктор класса <a class="el" href="class_ruletka.html" title="Класс Ruletka.">Ruletka</a>. </p>
-<p>Освобождает ресурсы, связанные с пользовательским интерфейсом. </p>
+<p>Деструктор игры в рулетку </p>
+<p>Освобождает ресурсы, используемые игрой. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab41d19a65c5f4a6b497c1cc527dcd3f3" name="ab41d19a65c5f4a6b497c1cc527dcd3f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab41d19a65c5f4a6b497c1cc527dcd3f3">&#9670;&#160;</a></span>on_BackButton_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ruletka::on_BackButton_clicked </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обработчик кнопки возврата в главное меню </p>
+<p>Закрывает окно рулетки и возвращает игрока в главное меню казино. </p>
+
+</div>
+</div>
+<a id="a152118dfb649b39103e234942b047819" name="a152118dfb649b39103e234942b047819"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a152118dfb649b39103e234942b047819">&#9670;&#160;</a></span>on_ButtonPlay_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ruletka::on_ButtonPlay_clicked </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обработчик кнопки запуска игры </p>
+<p>Запускает процесс вращения рулетки, проверяет баланс, вычисляет результат и начисляет выигрыш при наличии. </p>
+
+</div>
+</div>
+<a id="a3fb4f213ca3b8533d1871e8de14b0152" name="a3fb4f213ca3b8533d1871e8de14b0152"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fb4f213ca3b8533d1871e8de14b0152">&#9670;&#160;</a></span>on_ButtonStavka1000_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ruletka::on_ButtonStavka1000_clicked </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обработчик кнопки ставки 1000 robux. </p>
+<p>Устанавливает размер ставки на максимальную сумму. Кнопка доступна только при достаточном балансе. </p>
+
+</div>
+</div>
+<a id="a20169b08d1313b56b31359669ab7d3b9" name="a20169b08d1313b56b31359669ab7d3b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20169b08d1313b56b31359669ab7d3b9">&#9670;&#160;</a></span>on_ButtonStavka100_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ruletka::on_ButtonStavka100_clicked </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обработчик кнопки ставки 100 robux. </p>
+<p>Устанавливает размер ставки на минимальную сумму. Базовая ставка, доступная всегда. </p>
+
+</div>
+</div>
+<a id="a148018f700bac96aa70349598493fb2c" name="a148018f700bac96aa70349598493fb2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a148018f700bac96aa70349598493fb2c">&#9670;&#160;</a></span>on_ButtonStavka500_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ruletka::on_ButtonStavka500_clicked </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обработчик кнопки ставки 500 robux. </p>
+<p>Устанавливает размер ставки на среднюю сумму. </p>
+
+</div>
+</div>
+<a id="aebd6284eb36174847e83b3609924349b" name="aebd6284eb36174847e83b3609924349b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebd6284eb36174847e83b3609924349b">&#9670;&#160;</a></span>on_ButtonStavkaBlack_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ruletka::on_ButtonStavkaBlack_clicked </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обработчик ставки на черный цвет </p>
+<p>Устанавливает ставку на черные сектора рулетки. Коэффициент выигрыша: x2 </p>
+
+</div>
+</div>
+<a id="ac450d297dd6149e1c9668f58af6c739b" name="ac450d297dd6149e1c9668f58af6c739b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac450d297dd6149e1c9668f58af6c739b">&#9670;&#160;</a></span>on_ButtonStavkaGreen_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ruletka::on_ButtonStavkaGreen_clicked </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обработчик ставки на зеленый цвет </p>
+<p>Устанавливает ставку на зеленый сектор рулетки. Коэффициент выигрыша: x14 (редкий сектор) </p>
+
+</div>
+</div>
+<a id="a7a09f6263721723be519b1c40f24b515" name="a7a09f6263721723be519b1c40f24b515"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a09f6263721723be519b1c40f24b515">&#9670;&#160;</a></span>on_ButtonStavkaRed_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ruletka::on_ButtonStavkaRed_clicked </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обработчик ставки на красный цвет </p>
+<p>Устанавливает ставку на красные сектора рулетки. Коэффициент выигрыша: x2 </p>
+
+</div>
+</div>
+<a id="a8395a199ed7b64ce08121db92d44d0c6" name="a8395a199ed7b64ce08121db92d44d0c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8395a199ed7b64ce08121db92d44d0c6">&#9670;&#160;</a></span>slot_show()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ruletka::slot_show </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Слот для отображения окна игры </p>
+<p>Показывает окно рулетки и обновляет информацию о балансе игрока и текущих ставках. </p>
+
+</div>
+</div>
+<a id="aa0e1c0c8a4d4e9071726bc776cc614cb" name="aa0e1c0c8a4d4e9071726bc776cc614cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0e1c0c8a4d4e9071726bc776cc614cb">&#9670;&#160;</a></span>to_main</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ruletka::to_main </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel signal">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сигнал возврата в главное меню </p>
+<p>Испускается при нажатии кнопки возврата для перехода обратно в главное меню. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="afb847c65309abf6f86eecbc92958d4a8" name="afb847c65309abf6f86eecbc92958d4a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb847c65309abf6f86eecbc92958d4a8">&#9670;&#160;</a></span>object_of_stavka</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Ruletka::object_of_stavka</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Объект ставки: 1 - красный, 2 - черный, 3 - зеленый </p>
+
+</div>
+</div>
+<a id="a263100492aec3d05c14048f9bb1cb0c7" name="a263100492aec3d05c14048f9bb1cb0c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a263100492aec3d05c14048f9bb1cb0c7">&#9670;&#160;</a></span>size_of_stavka</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Ruletka::size_of_stavka</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Размер текущей ставки (100, 500 или 1000 robux) </p>
+
+</div>
+</div>
+<a id="a1ceac392b43a8c27201594abe6ae28f7" name="a1ceac392b43a8c27201594abe6ae28f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ceac392b43a8c27201594abe6ae28f7">&#9670;&#160;</a></span>ui</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ui::Ruletka* Ruletka::ui</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Указатель на UI объект игры </p>
 
 </div>
 </div>

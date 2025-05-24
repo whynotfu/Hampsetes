@@ -1,0 +1,123 @@
+\doxysection{User Struct Reference}
+\hypertarget{struct_user}{}\label{struct_user}\index{User@{User}}
+
+
+Структура данных пользователя  
+
+
+
+
+{\ttfamily \#include $<$client\+\_\+functions.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QString \mbox{\hyperlink{struct_user_a0ab5f495e1b57445d048d25b1485638d}{login}}
+\begin{DoxyCompactList}\small\item\em Логин пользователя (уникальный идентификатор) \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{struct_user_ac887622f22a898c097d156ad964be846}{password}}
+\begin{DoxyCompactList}\small\item\em Пароль пользователя (хранится в зашифрованном виде) \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{struct_user_a7a706c6c735beb76e4da1dfc2a857302}{role}}
+\begin{DoxyCompactList}\small\item\em Роль пользователя ("{}user"{} или "{}admin"{}) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_user_a656f555d559d402e87d8a9698e03e2ba}{balance}}
+\begin{DoxyCompactList}\small\item\em Текущий баланс пользователя в robux. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_user_a7828070fef5c1ea03c80f7c4e4518b43}{total\+\_\+bets}}
+\begin{DoxyCompactList}\small\item\em Общее количество сделанных ставок \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_user_a8169ac15fb18ebc7e796d1486483bec6}{total\+\_\+wins}}
+\begin{DoxyCompactList}\small\item\em Общая сумма выигрышей за все время \end{DoxyCompactList}\item 
+QDate\+Time \mbox{\hyperlink{struct_user_a84e0f48f6f74e1caf41d42d494deb09b}{last\+\_\+login}}
+\begin{DoxyCompactList}\small\item\em Время последней авторизации пользователя \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_user_a58c97bff2f5c9b64274d869fb076cd03}{is\+\_\+auth}}
+\begin{DoxyCompactList}\small\item\em Флаг текущего состояния авторизации \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Структура данных пользователя 
+
+Содержит всю необходимую информацию о пользователе системы, включая учетные данные, баланс и статистику игр. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_user_a656f555d559d402e87d8a9698e03e2ba}\index{User@{User}!balance@{balance}}
+\index{balance@{balance}!User@{User}}
+\doxysubsubsection{\texorpdfstring{balance}{balance}}
+{\footnotesize\ttfamily \label{struct_user_a656f555d559d402e87d8a9698e03e2ba} 
+int User\+::balance}
+
+
+
+Текущий баланс пользователя в robux. 
+
+\Hypertarget{struct_user_a58c97bff2f5c9b64274d869fb076cd03}\index{User@{User}!is\_auth@{is\_auth}}
+\index{is\_auth@{is\_auth}!User@{User}}
+\doxysubsubsection{\texorpdfstring{is\_auth}{is\_auth}}
+{\footnotesize\ttfamily \label{struct_user_a58c97bff2f5c9b64274d869fb076cd03} 
+bool User\+::is\+\_\+auth}
+
+
+
+Флаг текущего состояния авторизации 
+
+\Hypertarget{struct_user_a84e0f48f6f74e1caf41d42d494deb09b}\index{User@{User}!last\_login@{last\_login}}
+\index{last\_login@{last\_login}!User@{User}}
+\doxysubsubsection{\texorpdfstring{last\_login}{last\_login}}
+{\footnotesize\ttfamily \label{struct_user_a84e0f48f6f74e1caf41d42d494deb09b} 
+QDate\+Time User\+::last\+\_\+login}
+
+
+
+Время последней авторизации пользователя 
+
+\Hypertarget{struct_user_a0ab5f495e1b57445d048d25b1485638d}\index{User@{User}!login@{login}}
+\index{login@{login}!User@{User}}
+\doxysubsubsection{\texorpdfstring{login}{login}}
+{\footnotesize\ttfamily \label{struct_user_a0ab5f495e1b57445d048d25b1485638d} 
+QString User\+::login}
+
+
+
+Логин пользователя (уникальный идентификатор) 
+
+\Hypertarget{struct_user_ac887622f22a898c097d156ad964be846}\index{User@{User}!password@{password}}
+\index{password@{password}!User@{User}}
+\doxysubsubsection{\texorpdfstring{password}{password}}
+{\footnotesize\ttfamily \label{struct_user_ac887622f22a898c097d156ad964be846} 
+QString User\+::password}
+
+
+
+Пароль пользователя (хранится в зашифрованном виде) 
+
+\Hypertarget{struct_user_a7a706c6c735beb76e4da1dfc2a857302}\index{User@{User}!role@{role}}
+\index{role@{role}!User@{User}}
+\doxysubsubsection{\texorpdfstring{role}{role}}
+{\footnotesize\ttfamily \label{struct_user_a7a706c6c735beb76e4da1dfc2a857302} 
+QString User\+::role}
+
+
+
+Роль пользователя ("{}user"{} или "{}admin"{}) 
+
+\Hypertarget{struct_user_a7828070fef5c1ea03c80f7c4e4518b43}\index{User@{User}!total\_bets@{total\_bets}}
+\index{total\_bets@{total\_bets}!User@{User}}
+\doxysubsubsection{\texorpdfstring{total\_bets}{total\_bets}}
+{\footnotesize\ttfamily \label{struct_user_a7828070fef5c1ea03c80f7c4e4518b43} 
+int User\+::total\+\_\+bets}
+
+
+
+Общее количество сделанных ставок 
+
+\Hypertarget{struct_user_a8169ac15fb18ebc7e796d1486483bec6}\index{User@{User}!total\_wins@{total\_wins}}
+\index{total\_wins@{total\_wins}!User@{User}}
+\doxysubsubsection{\texorpdfstring{total\_wins}{total\_wins}}
+{\footnotesize\ttfamily \label{struct_user_a8169ac15fb18ebc7e796d1486483bec6} 
+int User\+::total\+\_\+wins}
+
+
+
+Общая сумма выигрышей за все время 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/\mbox{\hyperlink{client__functions_8h}{client\+\_\+functions.\+h}}\end{DoxyCompactItemize}

@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['set_5fitem1_0',['set_item1',['../class_baraban.html#a5e5956247647d1b042d031f72c0f0b28',1,'Baraban']]],
-  ['set_5fitem2_1',['set_item2',['../class_baraban.html#a61bbc7fa70f02c7aaba2875b36e6e0c7',1,'Baraban']]],
-  ['set_5fitem3_2',['set_item3',['../class_baraban.html#a1818030e64a05302d30f69200fc2142b',1,'Baraban']]],
-  ['shufflearray_3',['shuffleArray',['../client__functions_8cpp.html#a406e5450879c8a56256c1fd82e910f61',1,'shuffleArray(int *arr, int size):&#160;client_functions.cpp'],['../client__functions_8h.html#a5933a8a7fe1159ec591100b171c67747',1,'shuffleArray(int *, int):&#160;client_functions.cpp']]],
-  ['slot_5fshow_4',['slot_show',['../class_baraban.html#a6159b2fef808a49d7dead6a4efa411bf',1,'Baraban::slot_show()'],['../class_casino_main_window.html#a488484045b1548b69e7732becb7b3226',1,'CasinoMainWindow::slot_show()']]],
-  ['slots_5frand_5',['slots_rand',['../client__functions_8cpp.html#a30d7d6086f6efb8157876ace8cf004dd',1,'slots_rand():&#160;client_functions.cpp'],['../client__functions_8h.html#a30d7d6086f6efb8157876ace8cf004dd',1,'slots_rand():&#160;client_functions.cpp']]]
+  ['main_0',['main',['../hampsters_2_cazik_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;main.cpp'],['../hampsters_2_d_b__singleton_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;main.cpp'],['../ser__ver_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;main.cpp']]],
+  ['managerform_1',['ManagerForm',['../class_manager_form.html#aa00f7e537972402489c8498de6d0b076',1,'ManagerForm']]],
+  ['mystats_2',['MyStats',['../class_database_singleton.html#a7f7458ff15a286f6516ca5e3323d08c6',1,'DatabaseSingleton::MyStats()'],['../func2server_8cpp.html#a38b9ec72745ca025b3f4f5984a18d0b7',1,'MyStats():&#160;func2server.cpp'],['../func2server_8h.html#a38b9ec72745ca025b3f4f5984a18d0b7',1,'MyStats():&#160;func2server.cpp']]],
+  ['mytcpserver_3',['MyTcpServer',['../class_my_tcp_server.html#acf367c4695b4d160c7a2d25c2afaaec4',1,'MyTcpServer']]]
 ];

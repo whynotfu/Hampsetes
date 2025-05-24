@@ -2,7 +2,7 @@
 \hypertarget{class_ruletka}{}\label{class_ruletka}\index{Ruletka@{Ruletka}}
 
 
-Класс \doxylink{class_ruletka}{Ruletka}.  
+Игра в рулетку с цветными секторами  
 
 
 
@@ -15,19 +15,67 @@ Inheritance diagram for Ruletka\+:\begin{figure}[H]
 \includegraphics[height=2.000000cm]{class_ruletka}
 \end{center}
 \end{figure}
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_ruletka_aa0e1c0c8a4d4e9071726bc776cc614cb}{to\+\_\+main}} ()
+\begin{DoxyCompactList}\small\item\em Сигнал возврата в главное меню \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_ruletka_a9310c1a5eb9e5412fcedbd7d9a99fc6c}{Ruletka}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
-\begin{DoxyCompactList}\small\item\em Конструктор класса \doxylink{class_ruletka}{Ruletka}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Конструктор игры в рулетку \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ruletka_a8395a199ed7b64ce08121db92d44d0c6}{slot\+\_\+show}} ()
+\begin{DoxyCompactList}\small\item\em Слот для отображения окна игры \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_ruletka_a1708f92d7d89ca12e0ed11b792c70e00}{\texorpdfstring{$\sim$}{\string~}\+Ruletka}} ()
-\begin{DoxyCompactList}\small\item\em Деструктор класса \doxylink{class_ruletka}{Ruletka}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Деструктор игры в рулетку \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_ruletka_ab41d19a65c5f4a6b497c1cc527dcd3f3}{on\+\_\+\+Back\+Button\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em Обработчик кнопки возврата в главное меню \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ruletka_a152118dfb649b39103e234942b047819}{on\+\_\+\+Button\+Play\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em Обработчик кнопки запуска игры \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ruletka_a20169b08d1313b56b31359669ab7d3b9}{on\+\_\+\+Button\+Stavka100\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em Обработчик кнопки ставки 100 robux. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ruletka_a148018f700bac96aa70349598493fb2c}{on\+\_\+\+Button\+Stavka500\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em Обработчик кнопки ставки 500 robux. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ruletka_a3fb4f213ca3b8533d1871e8de14b0152}{on\+\_\+\+Button\+Stavka1000\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em Обработчик кнопки ставки 1000 robux. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ruletka_a7a09f6263721723be519b1c40f24b515}{on\+\_\+\+Button\+Stavka\+Red\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em Обработчик ставки на красный цвет \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ruletka_aebd6284eb36174847e83b3609924349b}{on\+\_\+\+Button\+Stavka\+Black\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em Обработчик ставки на черный цвет \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ruletka_ac450d297dd6149e1c9668f58af6c739b}{on\+\_\+\+Button\+Stavka\+Green\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em Обработчик ставки на зеленый цвет \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Ruletka \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ruletka_a1ceac392b43a8c27201594abe6ae28f7}{ui}}
+\begin{DoxyCompactList}\small\item\em Указатель на UI объект игры \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_ruletka_a263100492aec3d05c14048f9bb1cb0c7}{size\+\_\+of\+\_\+stavka}}
+\begin{DoxyCompactList}\small\item\em Размер текущей ставки (100, 500 или 1000 robux) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_ruletka_afb847c65309abf6f86eecbc92958d4a8}{object\+\_\+of\+\_\+stavka}}
+\begin{DoxyCompactList}\small\item\em Объект ставки\+: 1 -\/ красный, 2 -\/ черный, 3 -\/ зеленый \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Класс \doxylink{class_ruletka}{Ruletka}. 
+Игра в рулетку с цветными секторами 
 
-Класс \doxylink{class_ruletka}{Ruletka} представляет окно игры "{}Рулетка"{}, наследуемое от QDialog. Он отвечает за инициализацию и отображение пользовательского интерфейса игры. 
+Класс \doxylink{class_ruletka}{Ruletka} реализует классическую игру в рулетку со следующими особенностями\+:
+\begin{DoxyItemize}
+\item Ставки на красный, черный или зеленый цвет
+\item Возможность выбора размера ставки (100, 500, 1000 robux)
+\item Анимация вращения рулетки
+\item Автоматический подсчет выигрышей
+\end{DoxyItemize}
+
+Правила игры\+:
+\begin{DoxyItemize}
+\item Красный/Черный\+: коэффициент выигрыша x2
+\item Зеленый\+: коэффициент выигрыша x14 (редкий сектор)
+\item При проигрыше ставка теряется полностью 
+\end{DoxyItemize}
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{class_ruletka_a9310c1a5eb9e5412fcedbd7d9a99fc6c}\index{Ruletka@{Ruletka}!Ruletka@{Ruletka}}
@@ -38,23 +86,14 @@ Ruletka\+::\+Ruletka (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\a
 
 
 
-Конструктор класса \doxylink{class_ruletka}{Ruletka}. 
-
-Инициализирует окно игры "{}Рулетка"{} и настраивает его пользовательский интерфейс.
+Конструктор игры в рулетку 
 
 
 \begin{DoxyParams}{Parameters}
-{\em parent} & Родительский виджет (по умолчанию {\ttfamily nullptr}).\\
+{\em parent} & Родительский виджет (по умолчанию nullptr)\\
 \hline
 \end{DoxyParams}
-Инициализирует окно игры "{}Рулетка"{}, устанавливая пользовательский интерфейс.
-
-
-\begin{DoxyParams}{Parameters}
-{\em parent} & Родительский виджет (по умолчанию {\ttfamily nullptr}). \\
-\hline
-\end{DoxyParams}
-\Hypertarget{class_ruletka_a1708f92d7d89ca12e0ed11b792c70e00}\index{Ruletka@{Ruletka}!````~Ruletka@{\texorpdfstring{$\sim$}{\string~}Ruletka}}
+Инициализирует интерфейс игры и начальные параметры рулетки. \Hypertarget{class_ruletka_a1708f92d7d89ca12e0ed11b792c70e00}\index{Ruletka@{Ruletka}!````~Ruletka@{\texorpdfstring{$\sim$}{\string~}Ruletka}}
 \index{````~Ruletka@{\texorpdfstring{$\sim$}{\string~}Ruletka}!Ruletka@{Ruletka}}
 \doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Ruletka()}{\string~Ruletka()}}
 {\footnotesize\ttfamily \label{class_ruletka_a1708f92d7d89ca12e0ed11b792c70e00} 
@@ -62,9 +101,145 @@ Ruletka\+::\texorpdfstring{$\sim$}{\string~}\+Ruletka (\begin{DoxyParamCaption}{
 
 
 
-Деструктор класса \doxylink{class_ruletka}{Ruletka}. 
+Деструктор игры в рулетку 
 
-Освобождает ресурсы, связанные с пользовательским интерфейсом. 
+Освобождает ресурсы, используемые игрой. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ruletka_ab41d19a65c5f4a6b497c1cc527dcd3f3}\index{Ruletka@{Ruletka}!on\_BackButton\_clicked@{on\_BackButton\_clicked}}
+\index{on\_BackButton\_clicked@{on\_BackButton\_clicked}!Ruletka@{Ruletka}}
+\doxysubsubsection{\texorpdfstring{on\_BackButton\_clicked}{on\_BackButton\_clicked}}
+{\footnotesize\ttfamily \label{class_ruletka_ab41d19a65c5f4a6b497c1cc527dcd3f3} 
+void Ruletka\+::on\+\_\+\+Back\+Button\+\_\+clicked (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Обработчик кнопки возврата в главное меню 
+
+Закрывает окно рулетки и возвращает игрока в главное меню казино. \Hypertarget{class_ruletka_a152118dfb649b39103e234942b047819}\index{Ruletka@{Ruletka}!on\_ButtonPlay\_clicked@{on\_ButtonPlay\_clicked}}
+\index{on\_ButtonPlay\_clicked@{on\_ButtonPlay\_clicked}!Ruletka@{Ruletka}}
+\doxysubsubsection{\texorpdfstring{on\_ButtonPlay\_clicked}{on\_ButtonPlay\_clicked}}
+{\footnotesize\ttfamily \label{class_ruletka_a152118dfb649b39103e234942b047819} 
+void Ruletka\+::on\+\_\+\+Button\+Play\+\_\+clicked (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Обработчик кнопки запуска игры 
+
+Запускает процесс вращения рулетки, проверяет баланс, вычисляет результат и начисляет выигрыш при наличии. \Hypertarget{class_ruletka_a3fb4f213ca3b8533d1871e8de14b0152}\index{Ruletka@{Ruletka}!on\_ButtonStavka1000\_clicked@{on\_ButtonStavka1000\_clicked}}
+\index{on\_ButtonStavka1000\_clicked@{on\_ButtonStavka1000\_clicked}!Ruletka@{Ruletka}}
+\doxysubsubsection{\texorpdfstring{on\_ButtonStavka1000\_clicked}{on\_ButtonStavka1000\_clicked}}
+{\footnotesize\ttfamily \label{class_ruletka_a3fb4f213ca3b8533d1871e8de14b0152} 
+void Ruletka\+::on\+\_\+\+Button\+Stavka1000\+\_\+clicked (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Обработчик кнопки ставки 1000 robux. 
+
+Устанавливает размер ставки на максимальную сумму. Кнопка доступна только при достаточном балансе. \Hypertarget{class_ruletka_a20169b08d1313b56b31359669ab7d3b9}\index{Ruletka@{Ruletka}!on\_ButtonStavka100\_clicked@{on\_ButtonStavka100\_clicked}}
+\index{on\_ButtonStavka100\_clicked@{on\_ButtonStavka100\_clicked}!Ruletka@{Ruletka}}
+\doxysubsubsection{\texorpdfstring{on\_ButtonStavka100\_clicked}{on\_ButtonStavka100\_clicked}}
+{\footnotesize\ttfamily \label{class_ruletka_a20169b08d1313b56b31359669ab7d3b9} 
+void Ruletka\+::on\+\_\+\+Button\+Stavka100\+\_\+clicked (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Обработчик кнопки ставки 100 robux. 
+
+Устанавливает размер ставки на минимальную сумму. Базовая ставка, доступная всегда. \Hypertarget{class_ruletka_a148018f700bac96aa70349598493fb2c}\index{Ruletka@{Ruletka}!on\_ButtonStavka500\_clicked@{on\_ButtonStavka500\_clicked}}
+\index{on\_ButtonStavka500\_clicked@{on\_ButtonStavka500\_clicked}!Ruletka@{Ruletka}}
+\doxysubsubsection{\texorpdfstring{on\_ButtonStavka500\_clicked}{on\_ButtonStavka500\_clicked}}
+{\footnotesize\ttfamily \label{class_ruletka_a148018f700bac96aa70349598493fb2c} 
+void Ruletka\+::on\+\_\+\+Button\+Stavka500\+\_\+clicked (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Обработчик кнопки ставки 500 robux. 
+
+Устанавливает размер ставки на среднюю сумму. \Hypertarget{class_ruletka_aebd6284eb36174847e83b3609924349b}\index{Ruletka@{Ruletka}!on\_ButtonStavkaBlack\_clicked@{on\_ButtonStavkaBlack\_clicked}}
+\index{on\_ButtonStavkaBlack\_clicked@{on\_ButtonStavkaBlack\_clicked}!Ruletka@{Ruletka}}
+\doxysubsubsection{\texorpdfstring{on\_ButtonStavkaBlack\_clicked}{on\_ButtonStavkaBlack\_clicked}}
+{\footnotesize\ttfamily \label{class_ruletka_aebd6284eb36174847e83b3609924349b} 
+void Ruletka\+::on\+\_\+\+Button\+Stavka\+Black\+\_\+clicked (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Обработчик ставки на черный цвет 
+
+Устанавливает ставку на черные сектора рулетки. Коэффициент выигрыша\+: x2 \Hypertarget{class_ruletka_ac450d297dd6149e1c9668f58af6c739b}\index{Ruletka@{Ruletka}!on\_ButtonStavkaGreen\_clicked@{on\_ButtonStavkaGreen\_clicked}}
+\index{on\_ButtonStavkaGreen\_clicked@{on\_ButtonStavkaGreen\_clicked}!Ruletka@{Ruletka}}
+\doxysubsubsection{\texorpdfstring{on\_ButtonStavkaGreen\_clicked}{on\_ButtonStavkaGreen\_clicked}}
+{\footnotesize\ttfamily \label{class_ruletka_ac450d297dd6149e1c9668f58af6c739b} 
+void Ruletka\+::on\+\_\+\+Button\+Stavka\+Green\+\_\+clicked (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Обработчик ставки на зеленый цвет 
+
+Устанавливает ставку на зеленый сектор рулетки. Коэффициент выигрыша\+: x14 (редкий сектор) \Hypertarget{class_ruletka_a7a09f6263721723be519b1c40f24b515}\index{Ruletka@{Ruletka}!on\_ButtonStavkaRed\_clicked@{on\_ButtonStavkaRed\_clicked}}
+\index{on\_ButtonStavkaRed\_clicked@{on\_ButtonStavkaRed\_clicked}!Ruletka@{Ruletka}}
+\doxysubsubsection{\texorpdfstring{on\_ButtonStavkaRed\_clicked}{on\_ButtonStavkaRed\_clicked}}
+{\footnotesize\ttfamily \label{class_ruletka_a7a09f6263721723be519b1c40f24b515} 
+void Ruletka\+::on\+\_\+\+Button\+Stavka\+Red\+\_\+clicked (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Обработчик ставки на красный цвет 
+
+Устанавливает ставку на красные сектора рулетки. Коэффициент выигрыша\+: x2 \Hypertarget{class_ruletka_a8395a199ed7b64ce08121db92d44d0c6}\index{Ruletka@{Ruletka}!slot\_show@{slot\_show}}
+\index{slot\_show@{slot\_show}!Ruletka@{Ruletka}}
+\doxysubsubsection{\texorpdfstring{slot\_show()}{slot\_show()}}
+{\footnotesize\ttfamily \label{class_ruletka_a8395a199ed7b64ce08121db92d44d0c6} 
+void Ruletka\+::slot\+\_\+show (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Слот для отображения окна игры 
+
+Показывает окно рулетки и обновляет информацию о балансе игрока и текущих ставках. \Hypertarget{class_ruletka_aa0e1c0c8a4d4e9071726bc776cc614cb}\index{Ruletka@{Ruletka}!to\_main@{to\_main}}
+\index{to\_main@{to\_main}!Ruletka@{Ruletka}}
+\doxysubsubsection{\texorpdfstring{to\_main}{to\_main}}
+{\footnotesize\ttfamily \label{class_ruletka_aa0e1c0c8a4d4e9071726bc776cc614cb} 
+void Ruletka\+::to\+\_\+main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Сигнал возврата в главное меню 
+
+Испускается при нажатии кнопки возврата для перехода обратно в главное меню. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_ruletka_afb847c65309abf6f86eecbc92958d4a8}\index{Ruletka@{Ruletka}!object\_of\_stavka@{object\_of\_stavka}}
+\index{object\_of\_stavka@{object\_of\_stavka}!Ruletka@{Ruletka}}
+\doxysubsubsection{\texorpdfstring{object\_of\_stavka}{object\_of\_stavka}}
+{\footnotesize\ttfamily \label{class_ruletka_afb847c65309abf6f86eecbc92958d4a8} 
+int Ruletka\+::object\+\_\+of\+\_\+stavka\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Объект ставки\+: 1 -\/ красный, 2 -\/ черный, 3 -\/ зеленый 
+
+\Hypertarget{class_ruletka_a263100492aec3d05c14048f9bb1cb0c7}\index{Ruletka@{Ruletka}!size\_of\_stavka@{size\_of\_stavka}}
+\index{size\_of\_stavka@{size\_of\_stavka}!Ruletka@{Ruletka}}
+\doxysubsubsection{\texorpdfstring{size\_of\_stavka}{size\_of\_stavka}}
+{\footnotesize\ttfamily \label{class_ruletka_a263100492aec3d05c14048f9bb1cb0c7} 
+int Ruletka\+::size\+\_\+of\+\_\+stavka\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Размер текущей ставки (100, 500 или 1000 robux) 
+
+\Hypertarget{class_ruletka_a1ceac392b43a8c27201594abe6ae28f7}\index{Ruletka@{Ruletka}!ui@{ui}}
+\index{ui@{ui}!Ruletka@{Ruletka}}
+\doxysubsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily \label{class_ruletka_a1ceac392b43a8c27201594abe6ae28f7} 
+Ui\+::\+Ruletka\texorpdfstring{$\ast$}{*} Ruletka\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Указатель на UI объект игры 
+
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

@@ -1,3 +1,14 @@
+/**
+ * @file admin_page.cpp
+ * @brief Реализация административной панели казино
+ * @author Команда разработчиков
+ * @date 2025
+ * @version 1.0
+ * 
+ * Содержит реализацию класса admin_page для управления пользователями,
+ * просмотра статистики и администрирования системы казино.
+ */
+
 #include "admin_page.h"
 #include "ui_admin_page.h"
 #include <QTableWidgetItem>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Hampsetes: /Users/sasha/polytech/Hampsetes/hampsters/Cazik/ruletka.h Source File</title>
+<title>Hampsetes Casino: /Users/sasha/polytech/Hampsetes/hampsters/Cazik/ruletka.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,8 +32,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Hampsetes
+   <div id="projectname">Hampsetes Casino<span id="projectnumber">&#160;1.0</span>
    </div>
+   <div id="projectbrief">Qt-based Casino Application with Multiple Mini-Games</div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -105,41 +106,81 @@ $(function(){initNavTree('ruletka_8h_source.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">ruletka.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="ruletka_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef RULETKA_H</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define RULETKA_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;QDialog&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span>Ui {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">class </span><a class="code hl_class" href="class_ui_1_1_ruletka.html">Ruletka</a>;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>}</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span></div>
-<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_ruletka.html">   26</a></span><span class="keyword">class </span><a class="code hl_function" href="class_ruletka.html#a9310c1a5eb9e5412fcedbd7d9a99fc6c">Ruletka</a> : <span class="keyword">public</span> QDialog</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    Q_OBJECT</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_ruletka.html#a9310c1a5eb9e5412fcedbd7d9a99fc6c">Ruletka</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_function" href="class_ruletka.html#a1708f92d7d89ca12e0ed11b792c70e00">~Ruletka</a>();</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_class" href="class_ui_1_1_ruletka.html">Ui::Ruletka</a> *ui; </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>};</div>
+<a href="ruletka_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef RULETKA_H</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define RULETKA_H</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;QDialog&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_ui.html">Ui</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">class </span>Ruletka;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>}</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span></div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="};">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_ruletka.html">   35</a></span><span class="keyword">class </span><a class="code hl_function" href="class_ruletka.html#a9310c1a5eb9e5412fcedbd7d9a99fc6c">Ruletka</a> : <span class="keyword">public</span> QDialog</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    Q_OBJECT</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_ruletka.html#a9310c1a5eb9e5412fcedbd7d9a99fc6c">Ruletka</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_ruletka.html#a8395a199ed7b64ce08121db92d44d0c6">slot_show</a>();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <a class="code hl_function" href="class_ruletka.html#a1708f92d7d89ca12e0ed11b792c70e00">~Ruletka</a>();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">private</span> slots:</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_ruletka.html#ab41d19a65c5f4a6b497c1cc527dcd3f3">on_BackButton_clicked</a>();</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_ruletka.html#a152118dfb649b39103e234942b047819">on_ButtonPlay_clicked</a>();</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_ruletka.html#a20169b08d1313b56b31359669ab7d3b9">on_ButtonStavka100_clicked</a>();</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_ruletka.html#a148018f700bac96aa70349598493fb2c">on_ButtonStavka500_clicked</a>();</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_ruletka.html#a3fb4f213ca3b8533d1871e8de14b0152">on_ButtonStavka1000_clicked</a>();</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_ruletka.html#a7a09f6263721723be519b1c40f24b515">on_ButtonStavkaRed_clicked</a>();</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_ruletka.html#aebd6284eb36174847e83b3609924349b">on_ButtonStavkaBlack_clicked</a>();</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_ruletka.html#ac450d297dd6149e1c9668f58af6c739b">on_ButtonStavkaGreen_clicked</a>();</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="class_ruletka.html#a1ceac392b43a8c27201594abe6ae28f7">  129</a></span>    Ui::Ruletka *<a class="code hl_variable" href="class_ruletka.html#a1ceac392b43a8c27201594abe6ae28f7">ui</a>;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="class_ruletka.html#a263100492aec3d05c14048f9bb1cb0c7">  132</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_ruletka.html#a263100492aec3d05c14048f9bb1cb0c7">size_of_stavka</a>;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="class_ruletka.html#afb847c65309abf6f86eecbc92958d4a8">  135</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_ruletka.html#afb847c65309abf6f86eecbc92958d4a8">object_of_stavka</a>;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>signals:</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="class_ruletka.html#aa0e1c0c8a4d4e9071726bc776cc614cb">  144</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="class_ruletka.html#aa0e1c0c8a4d4e9071726bc776cc614cb">to_main</a>();</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>};</div>
 </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#endif </span><span class="comment">// RULETKA_H</span></div>
-<div class="ttc" id="aclass_ruletka_html_a1708f92d7d89ca12e0ed11b792c70e00"><div class="ttname"><a href="class_ruletka.html#a1708f92d7d89ca12e0ed11b792c70e00">Ruletka::~Ruletka</a></div><div class="ttdeci">~Ruletka()</div><div class="ttdoc">Деструктор класса Ruletka.</div><div class="ttdef"><b>Definition</b> ruletka.cpp:31</div></div>
-<div class="ttc" id="aclass_ruletka_html_a9310c1a5eb9e5412fcedbd7d9a99fc6c"><div class="ttname"><a href="class_ruletka.html#a9310c1a5eb9e5412fcedbd7d9a99fc6c">Ruletka::Ruletka</a></div><div class="ttdeci">Ruletka(QWidget *parent=nullptr)</div><div class="ttdoc">Конструктор класса Ruletka.</div><div class="ttdef"><b>Definition</b> ruletka.cpp:19</div></div>
-<div class="ttc" id="aclass_ui_1_1_ruletka_html"><div class="ttname"><a href="class_ui_1_1_ruletka.html">Ui::Ruletka</a></div><div class="ttdef"><b>Definition</b> ui_ruletka.h:47</div></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="preprocessor">#endif </span><span class="comment">// RULETKA_H</span></div>
+<div class="ttc" id="aclass_ruletka_html_a148018f700bac96aa70349598493fb2c"><div class="ttname"><a href="class_ruletka.html#a148018f700bac96aa70349598493fb2c">Ruletka::on_ButtonStavka500_clicked</a></div><div class="ttdeci">void on_ButtonStavka500_clicked()</div><div class="ttdoc">Обработчик кнопки ставки 500 robux.</div><div class="ttdef"><b>Definition</b> ruletka.cpp:129</div></div>
+<div class="ttc" id="aclass_ruletka_html_a152118dfb649b39103e234942b047819"><div class="ttname"><a href="class_ruletka.html#a152118dfb649b39103e234942b047819">Ruletka::on_ButtonPlay_clicked</a></div><div class="ttdeci">void on_ButtonPlay_clicked()</div><div class="ttdoc">Обработчик кнопки запуска игры</div><div class="ttdef"><b>Definition</b> ruletka.cpp:72</div></div>
+<div class="ttc" id="aclass_ruletka_html_a1708f92d7d89ca12e0ed11b792c70e00"><div class="ttname"><a href="class_ruletka.html#a1708f92d7d89ca12e0ed11b792c70e00">Ruletka::~Ruletka</a></div><div class="ttdeci">~Ruletka()</div><div class="ttdoc">Деструктор игры в рулетку</div><div class="ttdef"><b>Definition</b> ruletka.cpp:60</div></div>
+<div class="ttc" id="aclass_ruletka_html_a1ceac392b43a8c27201594abe6ae28f7"><div class="ttname"><a href="class_ruletka.html#a1ceac392b43a8c27201594abe6ae28f7">Ruletka::ui</a></div><div class="ttdeci">Ui::Ruletka * ui</div><div class="ttdoc">Указатель на UI объект игры</div><div class="ttdef"><b>Definition</b> ruletka.h:129</div></div>
+<div class="ttc" id="aclass_ruletka_html_a20169b08d1313b56b31359669ab7d3b9"><div class="ttname"><a href="class_ruletka.html#a20169b08d1313b56b31359669ab7d3b9">Ruletka::on_ButtonStavka100_clicked</a></div><div class="ttdeci">void on_ButtonStavka100_clicked()</div><div class="ttdoc">Обработчик кнопки ставки 100 robux.</div><div class="ttdef"><b>Definition</b> ruletka.cpp:110</div></div>
+<div class="ttc" id="aclass_ruletka_html_a263100492aec3d05c14048f9bb1cb0c7"><div class="ttname"><a href="class_ruletka.html#a263100492aec3d05c14048f9bb1cb0c7">Ruletka::size_of_stavka</a></div><div class="ttdeci">int size_of_stavka</div><div class="ttdoc">Размер текущей ставки (100, 500 или 1000 robux)</div><div class="ttdef"><b>Definition</b> ruletka.h:132</div></div>
+<div class="ttc" id="aclass_ruletka_html_a3fb4f213ca3b8533d1871e8de14b0152"><div class="ttname"><a href="class_ruletka.html#a3fb4f213ca3b8533d1871e8de14b0152">Ruletka::on_ButtonStavka1000_clicked</a></div><div class="ttdeci">void on_ButtonStavka1000_clicked()</div><div class="ttdoc">Обработчик кнопки ставки 1000 robux.</div><div class="ttdef"><b>Definition</b> ruletka.cpp:148</div></div>
+<div class="ttc" id="aclass_ruletka_html_a7a09f6263721723be519b1c40f24b515"><div class="ttname"><a href="class_ruletka.html#a7a09f6263721723be519b1c40f24b515">Ruletka::on_ButtonStavkaRed_clicked</a></div><div class="ttdeci">void on_ButtonStavkaRed_clicked()</div><div class="ttdoc">Обработчик ставки на красный цвет</div><div class="ttdef"><b>Definition</b> ruletka.cpp:167</div></div>
+<div class="ttc" id="aclass_ruletka_html_a8395a199ed7b64ce08121db92d44d0c6"><div class="ttname"><a href="class_ruletka.html#a8395a199ed7b64ce08121db92d44d0c6">Ruletka::slot_show</a></div><div class="ttdeci">void slot_show()</div><div class="ttdoc">Слот для отображения окна игры</div><div class="ttdef"><b>Definition</b> ruletka.cpp:55</div></div>
+<div class="ttc" id="aclass_ruletka_html_a9310c1a5eb9e5412fcedbd7d9a99fc6c"><div class="ttname"><a href="class_ruletka.html#a9310c1a5eb9e5412fcedbd7d9a99fc6c">Ruletka::Ruletka</a></div><div class="ttdeci">Ruletka(QWidget *parent=nullptr)</div><div class="ttdoc">Конструктор игры в рулетку</div><div class="ttdef"><b>Definition</b> ruletka.cpp:20</div></div>
+<div class="ttc" id="aclass_ruletka_html_aa0e1c0c8a4d4e9071726bc776cc614cb"><div class="ttname"><a href="class_ruletka.html#aa0e1c0c8a4d4e9071726bc776cc614cb">Ruletka::to_main</a></div><div class="ttdeci">void to_main()</div><div class="ttdoc">Сигнал возврата в главное меню</div></div>
+<div class="ttc" id="aclass_ruletka_html_ab41d19a65c5f4a6b497c1cc527dcd3f3"><div class="ttname"><a href="class_ruletka.html#ab41d19a65c5f4a6b497c1cc527dcd3f3">Ruletka::on_BackButton_clicked</a></div><div class="ttdeci">void on_BackButton_clicked()</div><div class="ttdoc">Обработчик кнопки возврата в главное меню</div><div class="ttdef"><b>Definition</b> ruletka.cpp:65</div></div>
+<div class="ttc" id="aclass_ruletka_html_ac450d297dd6149e1c9668f58af6c739b"><div class="ttname"><a href="class_ruletka.html#ac450d297dd6149e1c9668f58af6c739b">Ruletka::on_ButtonStavkaGreen_clicked</a></div><div class="ttdeci">void on_ButtonStavkaGreen_clicked()</div><div class="ttdoc">Обработчик ставки на зеленый цвет</div><div class="ttdef"><b>Definition</b> ruletka.cpp:181</div></div>
+<div class="ttc" id="aclass_ruletka_html_aebd6284eb36174847e83b3609924349b"><div class="ttname"><a href="class_ruletka.html#aebd6284eb36174847e83b3609924349b">Ruletka::on_ButtonStavkaBlack_clicked</a></div><div class="ttdeci">void on_ButtonStavkaBlack_clicked()</div><div class="ttdoc">Обработчик ставки на черный цвет</div><div class="ttdef"><b>Definition</b> ruletka.cpp:174</div></div>
+<div class="ttc" id="aclass_ruletka_html_afb847c65309abf6f86eecbc92958d4a8"><div class="ttname"><a href="class_ruletka.html#afb847c65309abf6f86eecbc92958d4a8">Ruletka::object_of_stavka</a></div><div class="ttdeci">int object_of_stavka</div><div class="ttdoc">Объект ставки: 1 - красный, 2 - черный, 3 - зеленый</div><div class="ttdef"><b>Definition</b> ruletka.h:135</div></div>
+<div class="ttc" id="anamespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition</b> admin_page.h:20</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_a7690dc35b9702c851111664ecaf3491.html">Cazik</a></li><li class="navelem"><a class="el" href="ruletka_8h.html">ruletka.h</a></li>
+    <li class="navelem"><a class="el" href="dir_0637f99e2e53177cae592c516f1d0aa6.html">hampsters</a></li><li class="navelem"><a class="el" href="dir_68e325a1e11e96ef234efbe27afd5205.html">Cazik</a></li><li class="navelem"><a class="el" href="ruletka_8h.html">ruletka.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>

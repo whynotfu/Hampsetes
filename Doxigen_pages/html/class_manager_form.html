@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Hampsetes: ManagerForm Class Reference</title>
+<title>Hampsetes Casino: ManagerForm Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,8 +32,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Hampsetes
+   <div id="projectname">Hampsetes Casino<span id="projectnumber">&#160;1.0</span>
    </div>
+   <div id="projectbrief">Qt-based Casino Application with Multiple Mini-Games</div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -104,12 +105,13 @@ $(function(){initNavTree('class_manager_form.html',''); initResizable(true); });
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_manager_form-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ManagerForm Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс <a class="el" href="class_manager_form.html" title="Класс ManagerForm.">ManagerForm</a>.  
+<p>Главный менеджер форм приложения казино  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="managerform_8h_source.html">managerform.h</a>&gt;</code></p>
@@ -123,15 +125,50 @@ Inheritance diagram for ManagerForm:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa00f7e537972402489c8498de6d0b076" id="r_aa00f7e537972402489c8498de6d0b076"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa00f7e537972402489c8498de6d0b076">ManagerForm</a> (QWidget *parent=nullptr)</td></tr>
-<tr class="memdesc:aa00f7e537972402489c8498de6d0b076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса <a class="el" href="class_manager_form.html" title="Класс ManagerForm.">ManagerForm</a>.  <br /></td></tr>
+<tr class="memdesc:aa00f7e537972402489c8498de6d0b076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор менеджера форм  <br /></td></tr>
 <tr class="separator:aa00f7e537972402489c8498de6d0b076"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af888ce054fd432a689c9343841831d47" id="r_af888ce054fd432a689c9343841831d47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af888ce054fd432a689c9343841831d47">~ManagerForm</a> ()</td></tr>
-<tr class="memdesc:af888ce054fd432a689c9343841831d47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор класса <a class="el" href="class_manager_form.html" title="Класс ManagerForm.">ManagerForm</a>.  <br /></td></tr>
+<tr class="memdesc:af888ce054fd432a689c9343841831d47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор менеджера форм  <br /></td></tr>
 <tr class="separator:af888ce054fd432a689c9343841831d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ad683126ecc8eb2c2032f9cad692800fe" id="r_ad683126ecc8eb2c2032f9cad692800fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_auth_reg_form.html">AuthRegForm</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad683126ecc8eb2c2032f9cad692800fe">current_auth</a></td></tr>
+<tr class="memdesc:ad683126ecc8eb2c2032f9cad692800fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Форма авторизации и регистрации пользователей  <br /></td></tr>
+<tr class="separator:ad683126ecc8eb2c2032f9cad692800fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b42b291cd720a8b75767c63bc21be32" id="r_a8b42b291cd720a8b75767c63bc21be32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_casino_main_window.html">CasinoMainWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b42b291cd720a8b75767c63bc21be32">main_form</a></td></tr>
+<tr class="memdesc:a8b42b291cd720a8b75767c63bc21be32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Главное меню казино с выбором игр  <br /></td></tr>
+<tr class="separator:a8b42b291cd720a8b75767c63bc21be32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a270a9154f32367168c2be6ac0ca2fe0b" id="r_a270a9154f32367168c2be6ac0ca2fe0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_baraban.html">Baraban</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a270a9154f32367168c2be6ac0ca2fe0b">barabanform</a></td></tr>
+<tr class="memdesc:a270a9154f32367168c2be6ac0ca2fe0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Форма игры в слот-машину (барабаны)  <br /></td></tr>
+<tr class="separator:a270a9154f32367168c2be6ac0ca2fe0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a218fa0f05faf77852d753c0bc8d6eeea" id="r_a218fa0f05faf77852d753c0bc8d6eeea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ruletka.html">Ruletka</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a218fa0f05faf77852d753c0bc8d6eeea">ruletka</a></td></tr>
+<tr class="memdesc:a218fa0f05faf77852d753c0bc8d6eeea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Форма игры в рулетку  <br /></td></tr>
+<tr class="separator:a218fa0f05faf77852d753c0bc8d6eeea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01a67d81b85bf34ecfd43711fca223f7" id="r_a01a67d81b85bf34ecfd43711fca223f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kliker.html">Kliker</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01a67d81b85bf34ecfd43711fca223f7">clicker</a></td></tr>
+<tr class="memdesc:a01a67d81b85bf34ecfd43711fca223f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Форма игры-кликера  <br /></td></tr>
+<tr class="separator:a01a67d81b85bf34ecfd43711fca223f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd4b9432b8ac556c04a3d7ca8192e9c1" id="r_acd4b9432b8ac556c04a3d7ca8192e9c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kosti.html">Kosti</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd4b9432b8ac556c04a3d7ca8192e9c1">kosti</a></td></tr>
+<tr class="memdesc:acd4b9432b8ac556c04a3d7ca8192e9c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Форма игры в кости  <br /></td></tr>
+<tr class="separator:acd4b9432b8ac556c04a3d7ca8192e9c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a972e1684a1f2788f93417beb766c7fa3" id="r_a972e1684a1f2788f93417beb766c7fa3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_gtn.html">Gtn</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a972e1684a1f2788f93417beb766c7fa3">gtn</a></td></tr>
+<tr class="memdesc:a972e1684a1f2788f93417beb766c7fa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Форма игры "угадай число" (больше/меньше)  <br /></td></tr>
+<tr class="separator:a972e1684a1f2788f93417beb766c7fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54fc36f0f77175e6354e5456eecba67e" id="r_a54fc36f0f77175e6354e5456eecba67e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classadmin__page.html">admin_page</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54fc36f0f77175e6354e5456eecba67e">adminPanel</a></td></tr>
+<tr class="memdesc:a54fc36f0f77175e6354e5456eecba67e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Административная панель для управления системой  <br /></td></tr>
+<tr class="separator:a54fc36f0f77175e6354e5456eecba67e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0de5197960fc70ad834eff6b519b19c" id="r_af0de5197960fc70ad834eff6b519b19c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpersonal__page.html">personal_page</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0de5197960fc70ad834eff6b519b19c">userPanel</a></td></tr>
+<tr class="memdesc:af0de5197960fc70ad834eff6b519b19c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Персональная страница пользователя со статистикой  <br /></td></tr>
+<tr class="separator:af0de5197960fc70ad834eff6b519b19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Класс <a class="el" href="class_manager_form.html" title="Класс ManagerForm.">ManagerForm</a>. </p>
-<p>Менеджер форм отвечает за инициализацию и управление основными окнами приложения. Он создает экземпляры форм для регистрации/авторизации, главного меню казино, слотов и рулетки, а также устанавливает связи между ними посредством сигналов и слотов. </p>
+<div class="textblock"><p>Главный менеджер форм приложения казино </p>
+<p>Класс <a class="el" href="class_manager_form.html" title="Главный менеджер форм приложения казино">ManagerForm</a> является центральным контроллером, который управляет всеми окнами и формами приложения. Он отвечает за:</p><ul>
+<li>Инициализацию всех игровых окон</li>
+<li>Установку связей между формами через сигналы и слоты</li>
+<li>Координацию переходов между различными разделами приложения</li>
+</ul>
+<p>Архитектура основана на паттерне "Медиатор", где <a class="el" href="class_manager_form.html" title="Главный менеджер форм приложения казино">ManagerForm</a> выступает посредником между всеми формами приложения. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa00f7e537972402489c8498de6d0b076" name="aa00f7e537972402489c8498de6d0b076"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa00f7e537972402489c8498de6d0b076">&#9670;&#160;</a></span>ManagerForm()</h2>
@@ -148,31 +185,14 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Конструктор класса <a class="el" href="class_manager_form.html" title="Класс ManagerForm.">ManagerForm</a>. </p>
-<p>Инициализирует все формы приложения и устанавливает связи между сигналами и слотами для перехода между окнами.</p>
+<p>Конструктор менеджера форм </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parent</td><td>Родительский виджет (по умолчанию <code>nullptr</code>).</td></tr>
+    <tr><td class="paramname">parent</td><td>Родительский виджет (по умолчанию nullptr)</td></tr>
   </table>
   </dd>
 </dl>
-<p>Инициализирует все окна приложения:</p><ul>
-<li>Окно регистрации/авторизации (AuthRegForm)</li>
-<li>Главное окно казино (<a class="el" href="class_casino_main_window.html" title="Класс CasinoMainWindow.">CasinoMainWindow</a>)</li>
-<li>Окно со слотами (<a class="el" href="class_baraban.html" title="Класс Baraban.">Baraban</a>)</li>
-<li>Окно рулетки (<a class="el" href="class_ruletka.html" title="Класс Ruletka.">Ruletka</a>)</li>
-</ul>
-<p>После инициализации окно регистрации/авторизации показывается, а также устанавливаются соединения между сигналами и слотами для переходов между окнами:</p><ul>
-<li>При успешной авторизации окно регистрации закрывается, и показывается главное окно казино.</li>
-<li>При выборе мини-игры из главного окна казино открывается окно со слотами.</li>
-<li>При выходе из окна со слотами осуществляется возврат в главное окно казино.</li>
-</ul>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">parent</td><td>Родительский виджет (по умолчанию <code>nullptr</code>). </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Инициализирует все формы приложения и устанавливает связи между ними через систему сигналов и слотов Qt. </p>
 
 </div>
 </div>
@@ -191,9 +211,225 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Деструктор класса <a class="el" href="class_manager_form.html" title="Класс ManagerForm.">ManagerForm</a>. </p>
-<p>Освобождает ресурсы, связанные с экземплярами форм.</p>
-<p>Освобождает ресурсы, связанные с объектом <a class="el" href="class_manager_form.html" title="Класс ManagerForm.">ManagerForm</a>. </p>
+<p>Деструктор менеджера форм </p>
+<p>Освобождает память, занятую всеми формами приложения. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a54fc36f0f77175e6354e5456eecba67e" name="a54fc36f0f77175e6354e5456eecba67e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54fc36f0f77175e6354e5456eecba67e">&#9670;&#160;</a></span>adminPanel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classadmin__page.html">admin_page</a>* ManagerForm::adminPanel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Административная панель для управления системой </p>
+
+</div>
+</div>
+<a id="a270a9154f32367168c2be6ac0ca2fe0b" name="a270a9154f32367168c2be6ac0ca2fe0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a270a9154f32367168c2be6ac0ca2fe0b">&#9670;&#160;</a></span>barabanform</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_baraban.html">Baraban</a>* ManagerForm::barabanform</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Форма игры в слот-машину (барабаны) </p>
+
+</div>
+</div>
+<a id="a01a67d81b85bf34ecfd43711fca223f7" name="a01a67d81b85bf34ecfd43711fca223f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01a67d81b85bf34ecfd43711fca223f7">&#9670;&#160;</a></span>clicker</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_kliker.html">Kliker</a>* ManagerForm::clicker</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Форма игры-кликера </p>
+
+</div>
+</div>
+<a id="ad683126ecc8eb2c2032f9cad692800fe" name="ad683126ecc8eb2c2032f9cad692800fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad683126ecc8eb2c2032f9cad692800fe">&#9670;&#160;</a></span>current_auth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_auth_reg_form.html">AuthRegForm</a>* ManagerForm::current_auth</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Форма авторизации и регистрации пользователей </p>
+
+</div>
+</div>
+<a id="a972e1684a1f2788f93417beb766c7fa3" name="a972e1684a1f2788f93417beb766c7fa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a972e1684a1f2788f93417beb766c7fa3">&#9670;&#160;</a></span>gtn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_gtn.html">Gtn</a>* ManagerForm::gtn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Форма игры "угадай число" (больше/меньше) </p>
+
+</div>
+</div>
+<a id="acd4b9432b8ac556c04a3d7ca8192e9c1" name="acd4b9432b8ac556c04a3d7ca8192e9c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd4b9432b8ac556c04a3d7ca8192e9c1">&#9670;&#160;</a></span>kosti</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_kosti.html">Kosti</a>* ManagerForm::kosti</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Форма игры в кости </p>
+
+</div>
+</div>
+<a id="a8b42b291cd720a8b75767c63bc21be32" name="a8b42b291cd720a8b75767c63bc21be32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b42b291cd720a8b75767c63bc21be32">&#9670;&#160;</a></span>main_form</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_casino_main_window.html">CasinoMainWindow</a>* ManagerForm::main_form</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Главное меню казино с выбором игр </p>
+
+</div>
+</div>
+<a id="a218fa0f05faf77852d753c0bc8d6eeea" name="a218fa0f05faf77852d753c0bc8d6eeea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a218fa0f05faf77852d753c0bc8d6eeea">&#9670;&#160;</a></span>ruletka</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_ruletka.html">Ruletka</a>* ManagerForm::ruletka</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Форма игры в рулетку </p>
+
+</div>
+</div>
+<a id="af0de5197960fc70ad834eff6b519b19c" name="af0de5197960fc70ad834eff6b519b19c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0de5197960fc70ad834eff6b519b19c">&#9670;&#160;</a></span>userPanel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classpersonal__page.html">personal_page</a>* ManagerForm::userPanel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Персональная страница пользователя со статистикой </p>
 
 </div>
 </div>

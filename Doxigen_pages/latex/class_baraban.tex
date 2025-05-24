@@ -2,7 +2,7 @@
 \hypertarget{class_baraban}{}\label{class_baraban}\index{Baraban@{Baraban}}
 
 
-Класс \doxylink{class_baraban}{Baraban}.  
+Игра в слот-\/машину с тремя барабанами  
 
 
 
@@ -18,29 +18,74 @@ Inheritance diagram for Baraban\+:\begin{figure}[H]
 \doxysubsubsection*{Signals}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_baraban_a85b64580307f88e187c1bd45e4bd60cf}{to\+\_\+main}} (QString)
-\begin{DoxyCompactList}\small\item\em Сигнал для возврата в главное меню. \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_baraban_a6841e7563f25f3443adebd606e6e05d7}{to\+\_\+main}} (QString player\+\_\+login)
+\begin{DoxyCompactList}\small\item\em Сигнал возврата в главное меню \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_baraban_af7d23f0163e5f629cad0c5adafed98dd}{Baraban}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
-\begin{DoxyCompactList}\small\item\em Конструктор класса \doxylink{class_baraban}{Baraban}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Конструктор игры в слоты \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_baraban_a5270aa5bb3f6fece17023f7dd39ea8d9}{\texorpdfstring{$\sim$}{\string~}\+Baraban}} ()
-\begin{DoxyCompactList}\small\item\em Деструктор класса \doxylink{class_baraban}{Baraban}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Деструктор игры в слоты \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_baraban_a6159b2fef808a49d7dead6a4efa411bf}{slot\+\_\+show}} ()
-\begin{DoxyCompactList}\small\item\em Отображает окно игры. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_baraban_a5e5956247647d1b042d031f72c0f0b28}{set\+\_\+item1}} (int)
-\begin{DoxyCompactList}\small\item\em Устанавливает изображение для первого слота. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_baraban_a61bbc7fa70f02c7aaba2875b36e6e0c7}{set\+\_\+item2}} (int)
-\begin{DoxyCompactList}\small\item\em Устанавливает изображение для второго слота. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_baraban_a1818030e64a05302d30f69200fc2142b}{set\+\_\+item3}} (int)
-\begin{DoxyCompactList}\small\item\em Устанавливает изображение для третьего слота. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Слот для отображения окна игры \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_baraban_a8ffa632905103a314ebe90c594ffd8a8}{set\+\_\+item1}} (int item\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Установка изображения первого барабана \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_baraban_aad58bde03f06afec57c84bff327fe99a}{set\+\_\+item2}} (int item\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Установка изображения второго барабана \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_baraban_a27912a6f6bd52efd118e609507e98c9a}{set\+\_\+item3}} (int item\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Установка изображения третьего барабана \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_baraban_a57ca5374e719bd8febe6e98e893231aa}{on\+\_\+push\+Button\+Play\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em Обработчик кнопки запуска игры \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_baraban_aff48d938a8e5196aabaf5d0b12143dba}{on\+\_\+push\+Button1000\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em Обработчик кнопки ставки 1000 robux. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_baraban_a7c1c68cd69d29c005083ffe96f90d369}{on\+\_\+push\+Button500\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em Обработчик кнопки ставки 500 robux. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_baraban_af26de4026c849846a3f8fd76f75cdb87}{on\+\_\+push\+Button100\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em Обработчик кнопки ставки 100 robux. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_baraban_a3b359c01b418e06151eac398c15bdcda}{on\+\_\+\+Back\+Button\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em Обработчик кнопки возврата в главное меню \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_baraban_a61059625bb5a3bf6164756114cb43c1a}{run\+\_\+slots}} (int result\+\_\+combination)
+\begin{DoxyCompactList}\small\item\em Запуск анимации вращения барабанов \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Baraban \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_baraban_aced9f1c9b579c9edf06c99e58c825c23}{ui}}
+\begin{DoxyCompactList}\small\item\em Указатель на UI объект игры \end{DoxyCompactList}\item 
+QPixmap \mbox{\hyperlink{class_baraban_a722f6dc7749d1f0bd8359d5c1bb5499d}{Item1}}
+\begin{DoxyCompactList}\small\item\em Изображение символа на первом барабане \end{DoxyCompactList}\item 
+QPixmap \mbox{\hyperlink{class_baraban_afcab9f60e115e21e8fc762a3e82006de}{Item2}}
+\begin{DoxyCompactList}\small\item\em Изображение символа на втором барабане \end{DoxyCompactList}\item 
+QPixmap \mbox{\hyperlink{class_baraban_af014fbbe8c9035666f6c800dd6193427}{Item3}}
+\begin{DoxyCompactList}\small\item\em Изображение символа на третьем барабане \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_baraban_a83f30f5e9de909b55c2057c0fafb3c66}{size\+\_\+of\+\_\+stavka}}
+\begin{DoxyCompactList}\small\item\em Размер текущей ставки (100, 500 или 1000 robux) \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Класс \doxylink{class_baraban}{Baraban}. 
+Игра в слот-\/машину с тремя барабанами 
 
-Класс \doxylink{class_baraban}{Baraban} реализует окно игрового автомата, позволяющее пользователю устанавливать ставки, запускать игровой процесс (слоты) и управлять своим балансом. Также предоставляет возможность возвращения в главное меню. 
+Класс \doxylink{class_baraban}{Baraban} реализует классическую игру в слоты с следующими особенностями\+:
+\begin{DoxyItemize}
+\item Три барабана с различными символами
+\item Возможность выбора размера ставки (100, 500, 1000 robux)
+\item Анимация вращения барабанов
+\item Автоматический подсчет выигрышей
+\item Различные комбинации для выигрыша
+\end{DoxyItemize}
+
+Правила игры\+:
+\begin{DoxyItemize}
+\item Три одинаковых символа = большой выигрыш
+\item Два одинаковых символа = малый выигрыш
+\item Размер выигрыша зависит от ставки 
+\end{DoxyItemize}
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{class_baraban_af7d23f0163e5f629cad0c5adafed98dd}\index{Baraban@{Baraban}!Baraban@{Baraban}}
@@ -51,23 +96,14 @@ Baraban\+::\+Baraban (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\a
 
 
 
-Конструктор класса \doxylink{class_baraban}{Baraban}. 
-
-Инициализирует окно игрового автомата, устанавливает начальное состояние элементов управления, загружает изображения и получает стартовый баланс робуксов.
+Конструктор игры в слоты 
 
 
 \begin{DoxyParams}{Parameters}
-{\em parent} & Родительский виджет (по умолчанию {\ttfamily nullptr}).\\
+{\em parent} & Родительский виджет (по умолчанию nullptr)\\
 \hline
 \end{DoxyParams}
-Инициализирует окно игры\+: устанавливает иконку, заголовок, фиксированный размер, загружает изображения для фона, игрового автомата и меток робуксов, а также устанавливает начальные значения для ставки и робуксов.
-
-
-\begin{DoxyParams}{Parameters}
-{\em parent} & Родительский виджет (по умолчанию {\ttfamily nullptr}). \\
-\hline
-\end{DoxyParams}
-\Hypertarget{class_baraban_a5270aa5bb3f6fece17023f7dd39ea8d9}\index{Baraban@{Baraban}!````~Baraban@{\texorpdfstring{$\sim$}{\string~}Baraban}}
+Инициализирует интерфейс игры и начальные значения барабанов. \Hypertarget{class_baraban_a5270aa5bb3f6fece17023f7dd39ea8d9}\index{Baraban@{Baraban}!````~Baraban@{\texorpdfstring{$\sim$}{\string~}Baraban}}
 \index{````~Baraban@{\texorpdfstring{$\sim$}{\string~}Baraban}!Baraban@{Baraban}}
 \doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Baraban()}{\string~Baraban()}}
 {\footnotesize\ttfamily \label{class_baraban_a5270aa5bb3f6fece17023f7dd39ea8d9} 
@@ -75,84 +111,122 @@ Baraban\+::\texorpdfstring{$\sim$}{\string~}\+Baraban (\begin{DoxyParamCaption}{
 
 
 
-Деструктор класса \doxylink{class_baraban}{Baraban}. 
+Деструктор игры в слоты 
 
-Освобождает ресурсы, связанные с пользовательским интерфейсом. 
+Освобождает ресурсы, используемые игрой. 
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{class_baraban_a5e5956247647d1b042d031f72c0f0b28}\index{Baraban@{Baraban}!set\_item1@{set\_item1}}
+\Hypertarget{class_baraban_a3b359c01b418e06151eac398c15bdcda}\index{Baraban@{Baraban}!on\_BackButton\_clicked@{on\_BackButton\_clicked}}
+\index{on\_BackButton\_clicked@{on\_BackButton\_clicked}!Baraban@{Baraban}}
+\doxysubsubsection{\texorpdfstring{on\_BackButton\_clicked}{on\_BackButton\_clicked}}
+{\footnotesize\ttfamily \label{class_baraban_a3b359c01b418e06151eac398c15bdcda} 
+void Baraban\+::on\+\_\+\+Back\+Button\+\_\+clicked (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Обработчик кнопки возврата в главное меню 
+
+Закрывает окно слот-\/машины и возвращает игрока в главное меню казино. \Hypertarget{class_baraban_aff48d938a8e5196aabaf5d0b12143dba}\index{Baraban@{Baraban}!on\_pushButton1000\_clicked@{on\_pushButton1000\_clicked}}
+\index{on\_pushButton1000\_clicked@{on\_pushButton1000\_clicked}!Baraban@{Baraban}}
+\doxysubsubsection{\texorpdfstring{on\_pushButton1000\_clicked}{on\_pushButton1000\_clicked}}
+{\footnotesize\ttfamily \label{class_baraban_aff48d938a8e5196aabaf5d0b12143dba} 
+void Baraban\+::on\+\_\+push\+Button1000\+\_\+clicked (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Обработчик кнопки ставки 1000 robux. 
+
+Устанавливает размер ставки на максимальную сумму. Кнопка доступна только при достаточном балансе. \Hypertarget{class_baraban_af26de4026c849846a3f8fd76f75cdb87}\index{Baraban@{Baraban}!on\_pushButton100\_clicked@{on\_pushButton100\_clicked}}
+\index{on\_pushButton100\_clicked@{on\_pushButton100\_clicked}!Baraban@{Baraban}}
+\doxysubsubsection{\texorpdfstring{on\_pushButton100\_clicked}{on\_pushButton100\_clicked}}
+{\footnotesize\ttfamily \label{class_baraban_af26de4026c849846a3f8fd76f75cdb87} 
+void Baraban\+::on\+\_\+push\+Button100\+\_\+clicked (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Обработчик кнопки ставки 100 robux. 
+
+Устанавливает размер ставки на минимальную сумму. Базовая ставка, доступная всегда. \Hypertarget{class_baraban_a7c1c68cd69d29c005083ffe96f90d369}\index{Baraban@{Baraban}!on\_pushButton500\_clicked@{on\_pushButton500\_clicked}}
+\index{on\_pushButton500\_clicked@{on\_pushButton500\_clicked}!Baraban@{Baraban}}
+\doxysubsubsection{\texorpdfstring{on\_pushButton500\_clicked}{on\_pushButton500\_clicked}}
+{\footnotesize\ttfamily \label{class_baraban_a7c1c68cd69d29c005083ffe96f90d369} 
+void Baraban\+::on\+\_\+push\+Button500\+\_\+clicked (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Обработчик кнопки ставки 500 robux. 
+
+Устанавливает размер ставки на среднюю сумму. \Hypertarget{class_baraban_a57ca5374e719bd8febe6e98e893231aa}\index{Baraban@{Baraban}!on\_pushButtonPlay\_clicked@{on\_pushButtonPlay\_clicked}}
+\index{on\_pushButtonPlay\_clicked@{on\_pushButtonPlay\_clicked}!Baraban@{Baraban}}
+\doxysubsubsection{\texorpdfstring{on\_pushButtonPlay\_clicked}{on\_pushButtonPlay\_clicked}}
+{\footnotesize\ttfamily \label{class_baraban_a57ca5374e719bd8febe6e98e893231aa} 
+void Baraban\+::on\+\_\+push\+Button\+Play\+\_\+clicked (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Обработчик кнопки запуска игры 
+
+Запускает процесс вращения барабанов, проверяет баланс, вычисляет результат и начисляет выигрыш при наличии. \Hypertarget{class_baraban_a61059625bb5a3bf6164756114cb43c1a}\index{Baraban@{Baraban}!run\_slots@{run\_slots}}
+\index{run\_slots@{run\_slots}!Baraban@{Baraban}}
+\doxysubsubsection{\texorpdfstring{run\_slots()}{run\_slots()}}
+{\footnotesize\ttfamily \label{class_baraban_a61059625bb5a3bf6164756114cb43c1a} 
+void Baraban\+::run\+\_\+slots (\begin{DoxyParamCaption}\item[{int}]{result\+\_\+combination}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Запуск анимации вращения барабанов 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result\+\_\+combination} & Результирующая комбинация барабанов\\
+\hline
+\end{DoxyParams}
+Выполняет анимацию вращения всех трех барабанов и устанавливает финальную комбинацию символов. \Hypertarget{class_baraban_a8ffa632905103a314ebe90c594ffd8a8}\index{Baraban@{Baraban}!set\_item1@{set\_item1}}
 \index{set\_item1@{set\_item1}!Baraban@{Baraban}}
 \doxysubsubsection{\texorpdfstring{set\_item1()}{set\_item1()}}
-{\footnotesize\ttfamily \label{class_baraban_a5e5956247647d1b042d031f72c0f0b28} 
-void Baraban\+::set\+\_\+item1 (\begin{DoxyParamCaption}\item[{int}]{num}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{class_baraban_a8ffa632905103a314ebe90c594ffd8a8} 
+void Baraban\+::set\+\_\+item1 (\begin{DoxyParamCaption}\item[{int}]{item\+\_\+id}{}\end{DoxyParamCaption})}
 
 
 
-Устанавливает изображение для первого слота. 
-
-Принимает число, определяющее, какое изображение установить.
-
-
-\begin{DoxyParams}{Parameters}
-{\em num} & Число, определяющее изображение (например, 1, 2 или 3).\\
-\hline
-\end{DoxyParams}
-Принимает число от 1 до 3 и устанавливает соответствующее изображение.
+Установка изображения первого барабана 
 
 
 \begin{DoxyParams}{Parameters}
-{\em num} & Число, определяющее, какое изображение установить (1, 2 или 3). \\
+{\em item\+\_\+id} & Идентификатор изображения (1-\/3)\\
 \hline
 \end{DoxyParams}
-\Hypertarget{class_baraban_a61bbc7fa70f02c7aaba2875b36e6e0c7}\index{Baraban@{Baraban}!set\_item2@{set\_item2}}
+Устанавливает изображение на первом барабане в соответствии с переданным идентификатором символа. \Hypertarget{class_baraban_aad58bde03f06afec57c84bff327fe99a}\index{Baraban@{Baraban}!set\_item2@{set\_item2}}
 \index{set\_item2@{set\_item2}!Baraban@{Baraban}}
 \doxysubsubsection{\texorpdfstring{set\_item2()}{set\_item2()}}
-{\footnotesize\ttfamily \label{class_baraban_a61bbc7fa70f02c7aaba2875b36e6e0c7} 
-void Baraban\+::set\+\_\+item2 (\begin{DoxyParamCaption}\item[{int}]{num}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{class_baraban_aad58bde03f06afec57c84bff327fe99a} 
+void Baraban\+::set\+\_\+item2 (\begin{DoxyParamCaption}\item[{int}]{item\+\_\+id}{}\end{DoxyParamCaption})}
 
 
 
-Устанавливает изображение для второго слота. 
-
-Принимает число, определяющее, какое изображение установить.
-
-
-\begin{DoxyParams}{Parameters}
-{\em num} & Число, определяющее изображение (например, 1, 2 или 3).\\
-\hline
-\end{DoxyParams}
-Принимает число от 1 до 3 и устанавливает соответствующее изображение.
+Установка изображения второго барабана 
 
 
 \begin{DoxyParams}{Parameters}
-{\em num} & Число, определяющее, какое изображение установить (1, 2 или 3). \\
+{\em item\+\_\+id} & Идентификатор изображения (1-\/3)\\
 \hline
 \end{DoxyParams}
-\Hypertarget{class_baraban_a1818030e64a05302d30f69200fc2142b}\index{Baraban@{Baraban}!set\_item3@{set\_item3}}
+Устанавливает изображение на втором барабане в соответствии с переданным идентификатором символа. \Hypertarget{class_baraban_a27912a6f6bd52efd118e609507e98c9a}\index{Baraban@{Baraban}!set\_item3@{set\_item3}}
 \index{set\_item3@{set\_item3}!Baraban@{Baraban}}
 \doxysubsubsection{\texorpdfstring{set\_item3()}{set\_item3()}}
-{\footnotesize\ttfamily \label{class_baraban_a1818030e64a05302d30f69200fc2142b} 
-void Baraban\+::set\+\_\+item3 (\begin{DoxyParamCaption}\item[{int}]{num}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{class_baraban_a27912a6f6bd52efd118e609507e98c9a} 
+void Baraban\+::set\+\_\+item3 (\begin{DoxyParamCaption}\item[{int}]{item\+\_\+id}{}\end{DoxyParamCaption})}
 
 
 
-Устанавливает изображение для третьего слота. 
-
-Принимает число, определяющее, какое изображение установить.
-
-
-\begin{DoxyParams}{Parameters}
-{\em num} & Число, определяющее изображение (например, 1, 2 или 3).\\
-\hline
-\end{DoxyParams}
-Принимает число от 1 до 3 и устанавливает соответствующее изображение.
+Установка изображения третьего барабана 
 
 
 \begin{DoxyParams}{Parameters}
-{\em num} & Число, определяющее, какое изображение установить (1, 2 или 3). \\
+{\em item\+\_\+id} & Идентификатор изображения (1-\/3)\\
 \hline
 \end{DoxyParams}
-\Hypertarget{class_baraban_a6159b2fef808a49d7dead6a4efa411bf}\index{Baraban@{Baraban}!slot\_show@{slot\_show}}
+Устанавливает изображение на третьем барабане в соответствии с переданным идентификатором символа. \Hypertarget{class_baraban_a6159b2fef808a49d7dead6a4efa411bf}\index{Baraban@{Baraban}!slot\_show@{slot\_show}}
 \index{slot\_show@{slot\_show}!Baraban@{Baraban}}
 \doxysubsubsection{\texorpdfstring{slot\_show()}{slot\_show()}}
 {\footnotesize\ttfamily \label{class_baraban_a6159b2fef808a49d7dead6a4efa411bf} 
@@ -160,31 +234,79 @@ void Baraban\+::slot\+\_\+show (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaptio
 
 
 
-Отображает окно игры. 
+Слот для отображения окна игры 
 
-Слот для показа окна \doxylink{class_baraban}{Baraban}.
-
-Слот для показа окна. \Hypertarget{class_baraban_a85b64580307f88e187c1bd45e4bd60cf}\index{Baraban@{Baraban}!to\_main@{to\_main}}
+Показывает окно слот-\/машины и обновляет информацию о балансе игрока. \Hypertarget{class_baraban_a6841e7563f25f3443adebd606e6e05d7}\index{Baraban@{Baraban}!to\_main@{to\_main}}
 \index{to\_main@{to\_main}!Baraban@{Baraban}}
 \doxysubsubsection{\texorpdfstring{to\_main}{to\_main}}
-{\footnotesize\ttfamily \label{class_baraban_a85b64580307f88e187c1bd45e4bd60cf} 
-void Baraban\+::to\+\_\+main (\begin{DoxyParamCaption}\item[{QString}]{\+\_\+t1}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+{\footnotesize\ttfamily \label{class_baraban_a6841e7563f25f3443adebd606e6e05d7} 
+void Baraban\+::to\+\_\+main (\begin{DoxyParamCaption}\item[{QString}]{player\+\_\+login}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
 
 
 
-Сигнал для возврата в главное меню. 
-
-Генерируется при нажатии кнопки "{}\+Back"{} с передачей текущего баланса робуксов.
+Сигнал возврата в главное меню 
 
 
 \begin{DoxyParams}{Parameters}
-{\em QString} & Строка, содержащая количество робуксов. \\
+{\em player\+\_\+login} & Логин игрока для сохранения прогресса\\
 \hline
 \end{DoxyParams}
+Испускается при нажатии кнопки возврата для перехода обратно в главное меню. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_baraban_a722f6dc7749d1f0bd8359d5c1bb5499d}\index{Baraban@{Baraban}!Item1@{Item1}}
+\index{Item1@{Item1}!Baraban@{Baraban}}
+\doxysubsubsection{\texorpdfstring{Item1}{Item1}}
+{\footnotesize\ttfamily \label{class_baraban_a722f6dc7749d1f0bd8359d5c1bb5499d} 
+QPixmap Baraban\+::\+Item1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Изображение символа на первом барабане 
+
+\Hypertarget{class_baraban_afcab9f60e115e21e8fc762a3e82006de}\index{Baraban@{Baraban}!Item2@{Item2}}
+\index{Item2@{Item2}!Baraban@{Baraban}}
+\doxysubsubsection{\texorpdfstring{Item2}{Item2}}
+{\footnotesize\ttfamily \label{class_baraban_afcab9f60e115e21e8fc762a3e82006de} 
+QPixmap Baraban\+::\+Item2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Изображение символа на втором барабане 
+
+\Hypertarget{class_baraban_af014fbbe8c9035666f6c800dd6193427}\index{Baraban@{Baraban}!Item3@{Item3}}
+\index{Item3@{Item3}!Baraban@{Baraban}}
+\doxysubsubsection{\texorpdfstring{Item3}{Item3}}
+{\footnotesize\ttfamily \label{class_baraban_af014fbbe8c9035666f6c800dd6193427} 
+QPixmap Baraban\+::\+Item3\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Изображение символа на третьем барабане 
+
+\Hypertarget{class_baraban_a83f30f5e9de909b55c2057c0fafb3c66}\index{Baraban@{Baraban}!size\_of\_stavka@{size\_of\_stavka}}
+\index{size\_of\_stavka@{size\_of\_stavka}!Baraban@{Baraban}}
+\doxysubsubsection{\texorpdfstring{size\_of\_stavka}{size\_of\_stavka}}
+{\footnotesize\ttfamily \label{class_baraban_a83f30f5e9de909b55c2057c0fafb3c66} 
+int Baraban\+::size\+\_\+of\+\_\+stavka\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Размер текущей ставки (100, 500 или 1000 robux) 
+
+\Hypertarget{class_baraban_aced9f1c9b579c9edf06c99e58c825c23}\index{Baraban@{Baraban}!ui@{ui}}
+\index{ui@{ui}!Baraban@{Baraban}}
+\doxysubsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily \label{class_baraban_aced9f1c9b579c9edf06c99e58c825c23} 
+Ui\+::\+Baraban\texorpdfstring{$\ast$}{*} Baraban\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Указатель на UI объект игры 
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 /\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/\mbox{\hyperlink{baraban_8h}{baraban.\+h}}\item 
-/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/\mbox{\hyperlink{baraban_8cpp}{baraban.\+cpp}}\item 
-/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/build/\+Desktop\+\_\+\+Qt\+\_\+6\+\_\+8\+\_\+2\+\_\+\+Min\+GW\+\_\+64\+\_\+bit-\/\+Release/release/moc\+\_\+baraban.\+cpp\end{DoxyCompactItemize}
+/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/\mbox{\hyperlink{baraban_8cpp}{baraban.\+cpp}}\end{DoxyCompactItemize}

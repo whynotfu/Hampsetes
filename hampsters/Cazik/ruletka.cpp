@@ -1,3 +1,14 @@
+/**
+ * @file ruletka.cpp
+ * @brief Реализация игры в рулетку
+ * @author Команда разработчиков
+ * @date 2025
+ * @version 1.0
+ * 
+ * Содержит реализацию класса Ruletka - классической азартной игры
+ * в рулетку с цветными секторами и анимацией вращения.
+ */
+
 #include "ruletka.h"
 #include "ui_ruletka.h"
 #include "client_functions.h"

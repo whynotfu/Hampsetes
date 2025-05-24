@@ -1,0 +1,26 @@
+var dir_68e325a1e11e96ef234efbe27afd5205 =
+[
+    [ "admin_page.cpp", "admin__page_8cpp.html", null ],
+    [ "admin_page.h", "admin__page_8h.html", "admin__page_8h" ],
+    [ "authregform.cpp", "authregform_8cpp.html", null ],
+    [ "authregform.h", "authregform_8h.html", "authregform_8h" ],
+    [ "baraban.cpp", "baraban_8cpp.html", null ],
+    [ "baraban.h", "baraban_8h.html", "baraban_8h" ],
+    [ "casinomainwindow.cpp", "casinomainwindow_8cpp.html", null ],
+    [ "casinomainwindow.h", "casinomainwindow_8h.html", "casinomainwindow_8h" ],
+    [ "client_functions.cpp", "client__functions_8cpp.html", "client__functions_8cpp" ],
+    [ "client_functions.h", "client__functions_8h.html", "client__functions_8h" ],
+    [ "gtn.cpp", "gtn_8cpp.html", null ],
+    [ "gtn.h", "gtn_8h.html", "gtn_8h" ],
+    [ "kliker.cpp", "kliker_8cpp.html", null ],
+    [ "kliker.h", "kliker_8h.html", "kliker_8h" ],
+    [ "kosti.cpp", "kosti_8cpp.html", null ],
+    [ "kosti.h", "kosti_8h.html", "kosti_8h" ],
+    [ "main.cpp", "hampsters_2_cazik_2main_8cpp.html", "hampsters_2_cazik_2main_8cpp" ],
+    [ "managerform.cpp", "managerform_8cpp.html", null ],
+    [ "managerform.h", "managerform_8h.html", "managerform_8h" ],
+    [ "personal_page.cpp", "personal__page_8cpp.html", null ],
+    [ "personal_page.h", "personal__page_8h.html", "personal__page_8h" ],
+    [ "ruletka.cpp", "ruletka_8cpp.html", "ruletka_8cpp" ],
+    [ "ruletka.h", "ruletka_8h.html", "ruletka_8h" ]
+];

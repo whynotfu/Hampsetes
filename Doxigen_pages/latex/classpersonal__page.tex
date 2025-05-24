@@ -1,0 +1,125 @@
+\doxysection{personal\+\_\+page Class Reference}
+\hypertarget{classpersonal__page}{}\label{classpersonal__page}\index{personal\_page@{personal\_page}}
+
+
+Класс персональной страницы пользователя  
+
+
+
+
+{\ttfamily \#include $<$personal\+\_\+page.\+h$>$}
+
+Inheritance diagram for personal\+\_\+page\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpersonal__page}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpersonal__page_ad0fba3bcef08cee151f23ff0680fe557}{personal\+\_\+page}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Конструктор персональной страницы \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpersonal__page_a9806e85f52aace942170d161fdff92a5}{display\+User\+Statistics}} (const QString \&\mbox{\hyperlink{client__functions_8cpp_a5acf3c401ce11768a8f3c1a2d6184743}{current\+Username}})
+\begin{DoxyCompactList}\small\item\em Отображение статистики пользователя \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpersonal__page_a2b06e244bdb6f7e647385d2b0d3d065d}{slot\+\_\+show}} ()
+\begin{DoxyCompactList}\small\item\em Слот для показа персональной страницы \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classpersonal__page_af2f47163eacb6e8c49a8560a04737de3}{\texorpdfstring{$\sim$}{\string~}personal\+\_\+page}} ()
+\begin{DoxyCompactList}\small\item\em Деструктор персональной страницы \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::personal\+\_\+page \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classpersonal__page_a1cbf63ce68f05854efaf20e6d6b6affb}{ui}}
+\begin{DoxyCompactList}\small\item\em Указатель на UI объект персональной страницы \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс персональной страницы пользователя 
+
+Класс \doxylink{classpersonal__page}{personal\+\_\+page} реализует интерфейс личного кабинета игрока, где он может просматривать свою игровую статистику и управлять аккаунтом.
+
+Функциональность страницы\+:
+\begin{DoxyItemize}
+\item Отображение текущего баланса робуксов
+\item Статистика по всем играм (количество игр, выигрыши, проигрыши)
+\item История последних игровых сессий
+\item Общий процент выигрышей
+\item Время регистрации и последней активности
+\item Настройки профиля пользователя
+\end{DoxyItemize}
+
+Страница предоставляет подробную аналитику игровой активности для помощи игроку в отслеживании своих результатов. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpersonal__page_ad0fba3bcef08cee151f23ff0680fe557}\index{personal\_page@{personal\_page}!personal\_page@{personal\_page}}
+\index{personal\_page@{personal\_page}!personal\_page@{personal\_page}}
+\doxysubsubsection{\texorpdfstring{personal\_page()}{personal\_page()}}
+{\footnotesize\ttfamily \label{classpersonal__page_ad0fba3bcef08cee151f23ff0680fe557} 
+personal\+\_\+page\+::personal\+\_\+page (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Конструктор персональной страницы 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Родительский виджет (по умолчанию nullptr)\\
+\hline
+\end{DoxyParams}
+Инициализирует интерфейс личного кабинета и настраивает элементы для отображения пользовательской статистики. \Hypertarget{classpersonal__page_af2f47163eacb6e8c49a8560a04737de3}\index{personal\_page@{personal\_page}!````~personal\_page@{\texorpdfstring{$\sim$}{\string~}personal\_page}}
+\index{````~personal\_page@{\texorpdfstring{$\sim$}{\string~}personal\_page}!personal\_page@{personal\_page}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}personal\_page()}{\string~personal\_page()}}
+{\footnotesize\ttfamily \label{classpersonal__page_af2f47163eacb6e8c49a8560a04737de3} 
+personal\+\_\+page\+::\texorpdfstring{$\sim$}{\string~}personal\+\_\+page (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Деструктор персональной страницы 
+
+Освобождает ресурсы, используемые личным кабинетом. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpersonal__page_a9806e85f52aace942170d161fdff92a5}\index{personal\_page@{personal\_page}!displayUserStatistics@{displayUserStatistics}}
+\index{displayUserStatistics@{displayUserStatistics}!personal\_page@{personal\_page}}
+\doxysubsubsection{\texorpdfstring{displayUserStatistics()}{displayUserStatistics()}}
+{\footnotesize\ttfamily \label{classpersonal__page_a9806e85f52aace942170d161fdff92a5} 
+void personal\+\_\+page\+::display\+User\+Statistics (\begin{DoxyParamCaption}\item[{const QString \&}]{current\+Username}{}\end{DoxyParamCaption})}
+
+
+
+Отображение статистики пользователя 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Username} & Имя пользователя для загрузки статистики\\
+\hline
+\end{DoxyParams}
+Загружает из базы данных и отображает на странице подробную статистику указанного пользователя\+: баланс, количество игр, выигрыши, проигрыши и другие показатели активности. \Hypertarget{classpersonal__page_a2b06e244bdb6f7e647385d2b0d3d065d}\index{personal\_page@{personal\_page}!slot\_show@{slot\_show}}
+\index{slot\_show@{slot\_show}!personal\_page@{personal\_page}}
+\doxysubsubsection{\texorpdfstring{slot\_show()}{slot\_show()}}
+{\footnotesize\ttfamily \label{classpersonal__page_a2b06e244bdb6f7e647385d2b0d3d065d} 
+void personal\+\_\+page\+::slot\+\_\+show (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Слот для показа персональной страницы 
+
+Отображает личный кабинет пользователя и обновляет всю статистическую информацию на текущий момент. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpersonal__page_a1cbf63ce68f05854efaf20e6d6b6affb}\index{personal\_page@{personal\_page}!ui@{ui}}
+\index{ui@{ui}!personal\_page@{personal\_page}}
+\doxysubsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily \label{classpersonal__page_a1cbf63ce68f05854efaf20e6d6b6affb} 
+Ui\+::personal\+\_\+page\texorpdfstring{$\ast$}{*} personal\+\_\+page\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Указатель на UI объект персональной страницы 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/\mbox{\hyperlink{personal__page_8h}{personal\+\_\+page.\+h}}\item 
+/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/\mbox{\hyperlink{personal__page_8cpp}{personal\+\_\+page.\+cpp}}\end{DoxyCompactItemize}

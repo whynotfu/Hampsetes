@@ -1,0 +1,299 @@
+\doxysection{Gtn Class Reference}
+\hypertarget{class_gtn}{}\label{class_gtn}\index{Gtn@{Gtn}}
+
+
+Класс игры "{}Угадай число"{} (Больше-\/Меньше)  
+
+
+
+
+{\ttfamily \#include $<$gtn.\+h$>$}
+
+Inheritance diagram for Gtn\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_gtn}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_gtn_ac800de96811d9ac0d13463758e37b63c}{to\+\_\+main}} ()
+\begin{DoxyCompactList}\small\item\em Сигнал возврата в главное меню \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_gtn_a35ef6ce0d6627149bcd4b742ac8b62a8}{Gtn}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Конструктор игры "{}Угадай число"{}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gtn_ac459fe27c425e9e0ed5f5f2e5f137f6c}{\texorpdfstring{$\sim$}{\string~}\+Gtn}} ()
+\begin{DoxyCompactList}\small\item\em Деструктор игры "{}Угадай число"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gtn_a27f9ad83c8ab6cff15d33fedceab79ce}{slot\+\_\+show}} ()
+\begin{DoxyCompactList}\small\item\em Слот для показа окна игры \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_gtn_a3a848e1ba39d6b4f96159037eebaca29}{on\+\_\+new\+\_\+number\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em Обработчик кнопки генерации нового числа \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gtn_ae1edb8ea2609d5b73cd717cca26b460c}{on\+\_\+button100\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em Обработчик кнопки ставки 100 робуксов \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gtn_a8d213647c458456d0f7d4879bc45ac87}{on\+\_\+button500\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em Обработчик кнопки ставки 500 робуксов \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gtn_a30a2d89a5ab49b06ef376747c5b1f615}{on\+\_\+button1000\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em Обработчик кнопки ставки 1000 робуксов \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gtn_aa47cbc4067acd87f46f01c76b413aeed}{on\+\_\+greater\+\_\+button\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em Обработчик кнопки "{}Больше"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gtn_a9b4e15140e9f12098ed6b228f6292f5b}{on\+\_\+less\+\_\+button\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em Обработчик кнопки "{}Меньше"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gtn_a91d587a89352e7577caa76b841b53ae6}{on\+\_\+play\+\_\+button\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em Обработчик кнопки "{}Играть"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gtn_a23f7695ccc3f1637f47cec5e2ae4ac25}{on\+\_\+push\+Button\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em Обработчик кнопки возврата в главное меню \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_gtn_ad8d4245bff3367d4019e70c3818d4d18}{new\+\_\+number}} ()
+\begin{DoxyCompactList}\small\item\em Генерация нового случайного числа \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Gtn \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_gtn_a6972a8971972e17143803361899aad21}{ui}}
+\begin{DoxyCompactList}\small\item\em Указатель на UI объект игры \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_gtn_ae93c272c60fcf4f61a6ab706522698c3}{num}}
+\begin{DoxyCompactList}\small\item\em Загаданное число (от 1 до 100) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_gtn_a574309216eeb69e71d6261bbbc4a6c25}{now\+\_\+num}}
+\begin{DoxyCompactList}\small\item\em Текущее отображаемое число для сравнения \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_gtn_a004f51b6d66d4988eac48c6a119f7812}{block}}
+\begin{DoxyCompactList}\small\item\em Флаг блокировки интерфейса во время игры \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_gtn_af71bb03b6397a36f5788d6ca5b0d5b04}{rstavka}}
+\begin{DoxyCompactList}\small\item\em Размер текущей ставки игрока \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_gtn_a5d468bf9ce1b1ee1284549b234ca787e}{zstavka}}
+\begin{DoxyCompactList}\small\item\em Общая сумма ставок за сессию \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс игры "{}Угадай число"{} (Больше-\/Меньше) 
+
+Класс \doxylink{class_gtn}{Gtn} реализует логическую мини-\/игру, где игрок должен угадать случайное число, выбирая "{}больше"{} или "{}меньше"{} от текущего числа.
+
+Правила игры\+:
+\begin{DoxyItemize}
+\item Генерируется случайное число от 1 до 100
+\item Игрок делает ставку (100, 500 или 1000 робуксов)
+\item Игрок видит начальное число и выбирает "{}больше"{} или "{}меньше"{}
+\item При правильном угадывании игрок удваивает ставку
+\item При неправильном угадывании игрок теряет ставку
+\end{DoxyItemize}
+
+Игра основана на элементе удачи и интуиции игрока. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_gtn_a35ef6ce0d6627149bcd4b742ac8b62a8}\index{Gtn@{Gtn}!Gtn@{Gtn}}
+\index{Gtn@{Gtn}!Gtn@{Gtn}}
+\doxysubsubsection{\texorpdfstring{Gtn()}{Gtn()}}
+{\footnotesize\ttfamily \label{class_gtn_a35ef6ce0d6627149bcd4b742ac8b62a8} 
+Gtn\+::\+Gtn (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Конструктор игры "{}Угадай число"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Родительский виджет (по умолчанию nullptr)\\
+\hline
+\end{DoxyParams}
+Инициализирует интерфейс игры и устанавливает начальные значения. \Hypertarget{class_gtn_ac459fe27c425e9e0ed5f5f2e5f137f6c}\index{Gtn@{Gtn}!````~Gtn@{\texorpdfstring{$\sim$}{\string~}Gtn}}
+\index{````~Gtn@{\texorpdfstring{$\sim$}{\string~}Gtn}!Gtn@{Gtn}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Gtn()}{\string~Gtn()}}
+{\footnotesize\ttfamily \label{class_gtn_ac459fe27c425e9e0ed5f5f2e5f137f6c} 
+Gtn\+::\texorpdfstring{$\sim$}{\string~}\+Gtn (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Деструктор игры "{}Угадай число"{}. 
+
+Освобождает ресурсы, используемые игрой. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_gtn_ad8d4245bff3367d4019e70c3818d4d18}\index{Gtn@{Gtn}!new\_number@{new\_number}}
+\index{new\_number@{new\_number}!Gtn@{Gtn}}
+\doxysubsubsection{\texorpdfstring{new\_number()}{new\_number()}}
+{\footnotesize\ttfamily \label{class_gtn_ad8d4245bff3367d4019e70c3818d4d18} 
+int Gtn\+::new\+\_\+number (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Генерация нового случайного числа 
+
+\begin{DoxyReturn}{Returns}
+Случайное число от 1 до 100
+\end{DoxyReturn}
+Создает новое случайное число для игровой сессии. \Hypertarget{class_gtn_a30a2d89a5ab49b06ef376747c5b1f615}\index{Gtn@{Gtn}!on\_button1000\_clicked@{on\_button1000\_clicked}}
+\index{on\_button1000\_clicked@{on\_button1000\_clicked}!Gtn@{Gtn}}
+\doxysubsubsection{\texorpdfstring{on\_button1000\_clicked}{on\_button1000\_clicked}}
+{\footnotesize\ttfamily \label{class_gtn_a30a2d89a5ab49b06ef376747c5b1f615} 
+void Gtn\+::on\+\_\+button1000\+\_\+clicked (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Обработчик кнопки ставки 1000 робуксов 
+
+Устанавливает размер ставки в 1000 робуксов для текущей игры. Проверяет достаточность средств на балансе игрока. \Hypertarget{class_gtn_ae1edb8ea2609d5b73cd717cca26b460c}\index{Gtn@{Gtn}!on\_button100\_clicked@{on\_button100\_clicked}}
+\index{on\_button100\_clicked@{on\_button100\_clicked}!Gtn@{Gtn}}
+\doxysubsubsection{\texorpdfstring{on\_button100\_clicked}{on\_button100\_clicked}}
+{\footnotesize\ttfamily \label{class_gtn_ae1edb8ea2609d5b73cd717cca26b460c} 
+void Gtn\+::on\+\_\+button100\+\_\+clicked (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Обработчик кнопки ставки 100 робуксов 
+
+Устанавливает размер ставки в 100 робуксов для текущей игры. Проверяет достаточность средств на балансе игрока. \Hypertarget{class_gtn_a8d213647c458456d0f7d4879bc45ac87}\index{Gtn@{Gtn}!on\_button500\_clicked@{on\_button500\_clicked}}
+\index{on\_button500\_clicked@{on\_button500\_clicked}!Gtn@{Gtn}}
+\doxysubsubsection{\texorpdfstring{on\_button500\_clicked}{on\_button500\_clicked}}
+{\footnotesize\ttfamily \label{class_gtn_a8d213647c458456d0f7d4879bc45ac87} 
+void Gtn\+::on\+\_\+button500\+\_\+clicked (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Обработчик кнопки ставки 500 робуксов 
+
+Устанавливает размер ставки в 500 робуксов для текущей игры. Проверяет достаточность средств на балансе игрока. \Hypertarget{class_gtn_aa47cbc4067acd87f46f01c76b413aeed}\index{Gtn@{Gtn}!on\_greater\_button\_clicked@{on\_greater\_button\_clicked}}
+\index{on\_greater\_button\_clicked@{on\_greater\_button\_clicked}!Gtn@{Gtn}}
+\doxysubsubsection{\texorpdfstring{on\_greater\_button\_clicked}{on\_greater\_button\_clicked}}
+{\footnotesize\ttfamily \label{class_gtn_aa47cbc4067acd87f46f01c76b413aeed} 
+void Gtn\+::on\+\_\+greater\+\_\+button\+\_\+clicked (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Обработчик кнопки "{}Больше"{}. 
+
+Регистрирует выбор игрока "{}больше"{} и готовит игру к проверке результата при нажатии кнопки "{}Играть"{}. \Hypertarget{class_gtn_a9b4e15140e9f12098ed6b228f6292f5b}\index{Gtn@{Gtn}!on\_less\_button\_clicked@{on\_less\_button\_clicked}}
+\index{on\_less\_button\_clicked@{on\_less\_button\_clicked}!Gtn@{Gtn}}
+\doxysubsubsection{\texorpdfstring{on\_less\_button\_clicked}{on\_less\_button\_clicked}}
+{\footnotesize\ttfamily \label{class_gtn_a9b4e15140e9f12098ed6b228f6292f5b} 
+void Gtn\+::on\+\_\+less\+\_\+button\+\_\+clicked (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Обработчик кнопки "{}Меньше"{}. 
+
+Регистрирует выбор игрока "{}меньше"{} и готовит игру к проверке результата при нажатии кнопки "{}Играть"{}. \Hypertarget{class_gtn_a3a848e1ba39d6b4f96159037eebaca29}\index{Gtn@{Gtn}!on\_new\_number\_clicked@{on\_new\_number\_clicked}}
+\index{on\_new\_number\_clicked@{on\_new\_number\_clicked}!Gtn@{Gtn}}
+\doxysubsubsection{\texorpdfstring{on\_new\_number\_clicked}{on\_new\_number\_clicked}}
+{\footnotesize\ttfamily \label{class_gtn_a3a848e1ba39d6b4f96159037eebaca29} 
+void Gtn\+::on\+\_\+new\+\_\+number\+\_\+clicked (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Обработчик кнопки генерации нового числа 
+
+Генерирует новое случайное число для игры и обновляет интерфейс для начала новой попытки. \Hypertarget{class_gtn_a91d587a89352e7577caa76b841b53ae6}\index{Gtn@{Gtn}!on\_play\_button\_clicked@{on\_play\_button\_clicked}}
+\index{on\_play\_button\_clicked@{on\_play\_button\_clicked}!Gtn@{Gtn}}
+\doxysubsubsection{\texorpdfstring{on\_play\_button\_clicked}{on\_play\_button\_clicked}}
+{\footnotesize\ttfamily \label{class_gtn_a91d587a89352e7577caa76b841b53ae6} 
+void Gtn\+::on\+\_\+play\+\_\+button\+\_\+clicked (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Обработчик кнопки "{}Играть"{}. 
+
+Выполняет основную логику игры\+: сравнивает загаданное число с выбором игрока, определяет победителя и начисляет/списывает робуксы в зависимости от результата. \Hypertarget{class_gtn_a23f7695ccc3f1637f47cec5e2ae4ac25}\index{Gtn@{Gtn}!on\_pushButton\_clicked@{on\_pushButton\_clicked}}
+\index{on\_pushButton\_clicked@{on\_pushButton\_clicked}!Gtn@{Gtn}}
+\doxysubsubsection{\texorpdfstring{on\_pushButton\_clicked}{on\_pushButton\_clicked}}
+{\footnotesize\ttfamily \label{class_gtn_a23f7695ccc3f1637f47cec5e2ae4ac25} 
+void Gtn\+::on\+\_\+push\+Button\+\_\+clicked (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Обработчик кнопки возврата в главное меню 
+
+Закрывает окно игры и возвращает игрока в главное меню казино. \Hypertarget{class_gtn_a27f9ad83c8ab6cff15d33fedceab79ce}\index{Gtn@{Gtn}!slot\_show@{slot\_show}}
+\index{slot\_show@{slot\_show}!Gtn@{Gtn}}
+\doxysubsubsection{\texorpdfstring{slot\_show()}{slot\_show()}}
+{\footnotesize\ttfamily \label{class_gtn_a27f9ad83c8ab6cff15d33fedceab79ce} 
+void Gtn\+::slot\+\_\+show (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Слот для показа окна игры 
+
+Отображает интерфейс игры и сбрасывает состояние для начала новой игровой сессии. \Hypertarget{class_gtn_ac800de96811d9ac0d13463758e37b63c}\index{Gtn@{Gtn}!to\_main@{to\_main}}
+\index{to\_main@{to\_main}!Gtn@{Gtn}}
+\doxysubsubsection{\texorpdfstring{to\_main}{to\_main}}
+{\footnotesize\ttfamily \label{class_gtn_ac800de96811d9ac0d13463758e37b63c} 
+void Gtn\+::to\+\_\+main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Сигнал возврата в главное меню 
+
+Испускается при нажатии кнопки возврата для перехода к главному меню казино. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_gtn_a004f51b6d66d4988eac48c6a119f7812}\index{Gtn@{Gtn}!block@{block}}
+\index{block@{block}!Gtn@{Gtn}}
+\doxysubsubsection{\texorpdfstring{block}{block}}
+{\footnotesize\ttfamily \label{class_gtn_a004f51b6d66d4988eac48c6a119f7812} 
+int Gtn\+::block\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Флаг блокировки интерфейса во время игры 
+
+\Hypertarget{class_gtn_a574309216eeb69e71d6261bbbc4a6c25}\index{Gtn@{Gtn}!now\_num@{now\_num}}
+\index{now\_num@{now\_num}!Gtn@{Gtn}}
+\doxysubsubsection{\texorpdfstring{now\_num}{now\_num}}
+{\footnotesize\ttfamily \label{class_gtn_a574309216eeb69e71d6261bbbc4a6c25} 
+int Gtn\+::now\+\_\+num\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Текущее отображаемое число для сравнения 
+
+\Hypertarget{class_gtn_ae93c272c60fcf4f61a6ab706522698c3}\index{Gtn@{Gtn}!num@{num}}
+\index{num@{num}!Gtn@{Gtn}}
+\doxysubsubsection{\texorpdfstring{num}{num}}
+{\footnotesize\ttfamily \label{class_gtn_ae93c272c60fcf4f61a6ab706522698c3} 
+int Gtn\+::num\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Загаданное число (от 1 до 100) 
+
+\Hypertarget{class_gtn_af71bb03b6397a36f5788d6ca5b0d5b04}\index{Gtn@{Gtn}!rstavka@{rstavka}}
+\index{rstavka@{rstavka}!Gtn@{Gtn}}
+\doxysubsubsection{\texorpdfstring{rstavka}{rstavka}}
+{\footnotesize\ttfamily \label{class_gtn_af71bb03b6397a36f5788d6ca5b0d5b04} 
+int Gtn\+::rstavka\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Размер текущей ставки игрока 
+
+\Hypertarget{class_gtn_a6972a8971972e17143803361899aad21}\index{Gtn@{Gtn}!ui@{ui}}
+\index{ui@{ui}!Gtn@{Gtn}}
+\doxysubsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily \label{class_gtn_a6972a8971972e17143803361899aad21} 
+Ui\+::\+Gtn\texorpdfstring{$\ast$}{*} Gtn\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Указатель на UI объект игры 
+
+\Hypertarget{class_gtn_a5d468bf9ce1b1ee1284549b234ca787e}\index{Gtn@{Gtn}!zstavka@{zstavka}}
+\index{zstavka@{zstavka}!Gtn@{Gtn}}
+\doxysubsubsection{\texorpdfstring{zstavka}{zstavka}}
+{\footnotesize\ttfamily \label{class_gtn_a5d468bf9ce1b1ee1284549b234ca787e} 
+int Gtn\+::zstavka\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Общая сумма ставок за сессию 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/\mbox{\hyperlink{gtn_8h}{gtn.\+h}}\item 
+/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/\mbox{\hyperlink{gtn_8cpp}{gtn.\+cpp}}\end{DoxyCompactItemize}
