@@ -1,0 +1,87 @@
+\doxysection{Manager\+Form Class Reference}
+\hypertarget{class_manager_form}{}\label{class_manager_form}\index{ManagerForm@{ManagerForm}}
+
+
+Класс \doxylink{class_manager_form}{Manager\+Form}.  
+
+
+
+
+{\ttfamily \#include $<$managerform.\+h$>$}
+
+Inheritance diagram for Manager\+Form\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_manager_form}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_manager_form_aa00f7e537972402489c8498de6d0b076}{Manager\+Form}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \doxylink{class_manager_form}{Manager\+Form}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_manager_form_af888ce054fd432a689c9343841831d47}{\texorpdfstring{$\sim$}{\string~}\+Manager\+Form}} ()
+\begin{DoxyCompactList}\small\item\em Деструктор класса \doxylink{class_manager_form}{Manager\+Form}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс \doxylink{class_manager_form}{Manager\+Form}. 
+
+Менеджер форм отвечает за инициализацию и управление основными окнами приложения. Он создает экземпляры форм для регистрации/авторизации, главного меню казино, слотов и рулетки, а также устанавливает связи между ними посредством сигналов и слотов. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_manager_form_aa00f7e537972402489c8498de6d0b076}\index{ManagerForm@{ManagerForm}!ManagerForm@{ManagerForm}}
+\index{ManagerForm@{ManagerForm}!ManagerForm@{ManagerForm}}
+\doxysubsubsection{\texorpdfstring{ManagerForm()}{ManagerForm()}}
+{\footnotesize\ttfamily \label{class_manager_form_aa00f7e537972402489c8498de6d0b076} 
+Manager\+Form\+::\+Manager\+Form (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \doxylink{class_manager_form}{Manager\+Form}. 
+
+Инициализирует все формы приложения и устанавливает связи между сигналами и слотами для перехода между окнами.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Родительский виджет (по умолчанию {\ttfamily nullptr}).\\
+\hline
+\end{DoxyParams}
+Инициализирует все окна приложения\+:
+\begin{DoxyItemize}
+\item Окно регистрации/авторизации (Auth\+Reg\+Form)
+\item Главное окно казино (\doxylink{class_casino_main_window}{Casino\+Main\+Window})
+\item Окно со слотами (\doxylink{class_baraban}{Baraban})
+\item Окно рулетки (\doxylink{class_ruletka}{Ruletka})
+\end{DoxyItemize}
+
+После инициализации окно регистрации/авторизации показывается, а также устанавливаются соединения между сигналами и слотами для переходов между окнами\+:
+\begin{DoxyItemize}
+\item При успешной авторизации окно регистрации закрывается, и показывается главное окно казино.
+\item При выборе мини-\/игры из главного окна казино открывается окно со слотами.
+\item При выходе из окна со слотами осуществляется возврат в главное окно казино.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Родительский виджет (по умолчанию {\ttfamily nullptr}). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_manager_form_af888ce054fd432a689c9343841831d47}\index{ManagerForm@{ManagerForm}!````~ManagerForm@{\texorpdfstring{$\sim$}{\string~}ManagerForm}}
+\index{````~ManagerForm@{\texorpdfstring{$\sim$}{\string~}ManagerForm}!ManagerForm@{ManagerForm}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ManagerForm()}{\string~ManagerForm()}}
+{\footnotesize\ttfamily \label{class_manager_form_af888ce054fd432a689c9343841831d47} 
+Manager\+Form\+::\texorpdfstring{$\sim$}{\string~}\+Manager\+Form (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Деструктор класса \doxylink{class_manager_form}{Manager\+Form}. 
+
+Освобождает ресурсы, связанные с экземплярами форм.
+
+Освобождает ресурсы, связанные с объектом \doxylink{class_manager_form}{Manager\+Form}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/\mbox{\hyperlink{managerform_8h}{managerform.\+h}}\item 
+/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/\mbox{\hyperlink{managerform_8cpp}{managerform.\+cpp}}\end{DoxyCompactItemize}

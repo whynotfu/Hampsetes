@@ -1,0 +1,190 @@
+\doxysection{Baraban Class Reference}
+\hypertarget{class_baraban}{}\label{class_baraban}\index{Baraban@{Baraban}}
+
+
+Класс \doxylink{class_baraban}{Baraban}.  
+
+
+
+
+{\ttfamily \#include $<$baraban.\+h$>$}
+
+Inheritance diagram for Baraban\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_baraban}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_baraban_a85b64580307f88e187c1bd45e4bd60cf}{to\+\_\+main}} (QString)
+\begin{DoxyCompactList}\small\item\em Сигнал для возврата в главное меню. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_baraban_af7d23f0163e5f629cad0c5adafed98dd}{Baraban}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \doxylink{class_baraban}{Baraban}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_baraban_a5270aa5bb3f6fece17023f7dd39ea8d9}{\texorpdfstring{$\sim$}{\string~}\+Baraban}} ()
+\begin{DoxyCompactList}\small\item\em Деструктор класса \doxylink{class_baraban}{Baraban}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_baraban_a6159b2fef808a49d7dead6a4efa411bf}{slot\+\_\+show}} ()
+\begin{DoxyCompactList}\small\item\em Отображает окно игры. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_baraban_a5e5956247647d1b042d031f72c0f0b28}{set\+\_\+item1}} (int)
+\begin{DoxyCompactList}\small\item\em Устанавливает изображение для первого слота. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_baraban_a61bbc7fa70f02c7aaba2875b36e6e0c7}{set\+\_\+item2}} (int)
+\begin{DoxyCompactList}\small\item\em Устанавливает изображение для второго слота. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_baraban_a1818030e64a05302d30f69200fc2142b}{set\+\_\+item3}} (int)
+\begin{DoxyCompactList}\small\item\em Устанавливает изображение для третьего слота. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс \doxylink{class_baraban}{Baraban}. 
+
+Класс \doxylink{class_baraban}{Baraban} реализует окно игрового автомата, позволяющее пользователю устанавливать ставки, запускать игровой процесс (слоты) и управлять своим балансом. Также предоставляет возможность возвращения в главное меню. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_baraban_af7d23f0163e5f629cad0c5adafed98dd}\index{Baraban@{Baraban}!Baraban@{Baraban}}
+\index{Baraban@{Baraban}!Baraban@{Baraban}}
+\doxysubsubsection{\texorpdfstring{Baraban()}{Baraban()}}
+{\footnotesize\ttfamily \label{class_baraban_af7d23f0163e5f629cad0c5adafed98dd} 
+Baraban\+::\+Baraban (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Конструктор класса \doxylink{class_baraban}{Baraban}. 
+
+Инициализирует окно игрового автомата, устанавливает начальное состояние элементов управления, загружает изображения и получает стартовый баланс робуксов.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Родительский виджет (по умолчанию {\ttfamily nullptr}).\\
+\hline
+\end{DoxyParams}
+Инициализирует окно игры\+: устанавливает иконку, заголовок, фиксированный размер, загружает изображения для фона, игрового автомата и меток робуксов, а также устанавливает начальные значения для ставки и робуксов.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Родительский виджет (по умолчанию {\ttfamily nullptr}). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_baraban_a5270aa5bb3f6fece17023f7dd39ea8d9}\index{Baraban@{Baraban}!````~Baraban@{\texorpdfstring{$\sim$}{\string~}Baraban}}
+\index{````~Baraban@{\texorpdfstring{$\sim$}{\string~}Baraban}!Baraban@{Baraban}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Baraban()}{\string~Baraban()}}
+{\footnotesize\ttfamily \label{class_baraban_a5270aa5bb3f6fece17023f7dd39ea8d9} 
+Baraban\+::\texorpdfstring{$\sim$}{\string~}\+Baraban (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Деструктор класса \doxylink{class_baraban}{Baraban}. 
+
+Освобождает ресурсы, связанные с пользовательским интерфейсом. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_baraban_a5e5956247647d1b042d031f72c0f0b28}\index{Baraban@{Baraban}!set\_item1@{set\_item1}}
+\index{set\_item1@{set\_item1}!Baraban@{Baraban}}
+\doxysubsubsection{\texorpdfstring{set\_item1()}{set\_item1()}}
+{\footnotesize\ttfamily \label{class_baraban_a5e5956247647d1b042d031f72c0f0b28} 
+void Baraban\+::set\+\_\+item1 (\begin{DoxyParamCaption}\item[{int}]{num}{}\end{DoxyParamCaption})}
+
+
+
+Устанавливает изображение для первого слота. 
+
+Принимает число, определяющее, какое изображение установить.
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & Число, определяющее изображение (например, 1, 2 или 3).\\
+\hline
+\end{DoxyParams}
+Принимает число от 1 до 3 и устанавливает соответствующее изображение.
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & Число, определяющее, какое изображение установить (1, 2 или 3). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_baraban_a61bbc7fa70f02c7aaba2875b36e6e0c7}\index{Baraban@{Baraban}!set\_item2@{set\_item2}}
+\index{set\_item2@{set\_item2}!Baraban@{Baraban}}
+\doxysubsubsection{\texorpdfstring{set\_item2()}{set\_item2()}}
+{\footnotesize\ttfamily \label{class_baraban_a61bbc7fa70f02c7aaba2875b36e6e0c7} 
+void Baraban\+::set\+\_\+item2 (\begin{DoxyParamCaption}\item[{int}]{num}{}\end{DoxyParamCaption})}
+
+
+
+Устанавливает изображение для второго слота. 
+
+Принимает число, определяющее, какое изображение установить.
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & Число, определяющее изображение (например, 1, 2 или 3).\\
+\hline
+\end{DoxyParams}
+Принимает число от 1 до 3 и устанавливает соответствующее изображение.
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & Число, определяющее, какое изображение установить (1, 2 или 3). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_baraban_a1818030e64a05302d30f69200fc2142b}\index{Baraban@{Baraban}!set\_item3@{set\_item3}}
+\index{set\_item3@{set\_item3}!Baraban@{Baraban}}
+\doxysubsubsection{\texorpdfstring{set\_item3()}{set\_item3()}}
+{\footnotesize\ttfamily \label{class_baraban_a1818030e64a05302d30f69200fc2142b} 
+void Baraban\+::set\+\_\+item3 (\begin{DoxyParamCaption}\item[{int}]{num}{}\end{DoxyParamCaption})}
+
+
+
+Устанавливает изображение для третьего слота. 
+
+Принимает число, определяющее, какое изображение установить.
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & Число, определяющее изображение (например, 1, 2 или 3).\\
+\hline
+\end{DoxyParams}
+Принимает число от 1 до 3 и устанавливает соответствующее изображение.
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & Число, определяющее, какое изображение установить (1, 2 или 3). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_baraban_a6159b2fef808a49d7dead6a4efa411bf}\index{Baraban@{Baraban}!slot\_show@{slot\_show}}
+\index{slot\_show@{slot\_show}!Baraban@{Baraban}}
+\doxysubsubsection{\texorpdfstring{slot\_show()}{slot\_show()}}
+{\footnotesize\ttfamily \label{class_baraban_a6159b2fef808a49d7dead6a4efa411bf} 
+void Baraban\+::slot\+\_\+show (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Отображает окно игры. 
+
+Слот для показа окна \doxylink{class_baraban}{Baraban}.
+
+Слот для показа окна. \Hypertarget{class_baraban_a85b64580307f88e187c1bd45e4bd60cf}\index{Baraban@{Baraban}!to\_main@{to\_main}}
+\index{to\_main@{to\_main}!Baraban@{Baraban}}
+\doxysubsubsection{\texorpdfstring{to\_main}{to\_main}}
+{\footnotesize\ttfamily \label{class_baraban_a85b64580307f88e187c1bd45e4bd60cf} 
+void Baraban\+::to\+\_\+main (\begin{DoxyParamCaption}\item[{QString}]{\+\_\+t1}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Сигнал для возврата в главное меню. 
+
+Генерируется при нажатии кнопки "{}\+Back"{} с передачей текущего баланса робуксов.
+
+
+\begin{DoxyParams}{Parameters}
+{\em QString} & Строка, содержащая количество робуксов. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/\mbox{\hyperlink{baraban_8h}{baraban.\+h}}\item 
+/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/\mbox{\hyperlink{baraban_8cpp}{baraban.\+cpp}}\item 
+/\+Users/sasha/polytech/\+Hampsetes/hampsters/\+Cazik/build/\+Desktop\+\_\+\+Qt\+\_\+6\+\_\+8\+\_\+2\+\_\+\+Min\+GW\+\_\+64\+\_\+bit-\/\+Release/release/moc\+\_\+baraban.\+cpp\end{DoxyCompactItemize}
